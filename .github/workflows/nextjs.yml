@@ -7,59 +7,44 @@ on:
 
 permissions:
   contents: read
-  <Thinking>
+  pages: write
+  id-token: write
 
-The image shows a GitHub Actions workflow history with 6 failed workflow runs. Each run represents an attempt to create and deploy different configuration files for the Next.js site:
-1. Create _app.js (18s ago)
-2. Create globals.css (14s ago)
-3. Create tailwind.config.js (14s ago)
-4. Create postcss.config.js (14s ago)
-5. Create package.json (15s ago)
-6. Create nextjs.yml (19s ago)
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
-All workflows are failing, which indicates we need to provide a complete, working setup for the Next.js project. Given this is the user's last message and we need to ensure success, I'll provide a comprehensive solution using LinearProcessFlow for the steps and include all necessary code files.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+        
+      - name: Build with Next.js
+        run: npm run build
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./out
 
-</Thinking>
-
-Entendi que todos os workflows estão falhando. Vou te ajudar a resolver isso fornecendo uma solução completa. Vamos criar todos os arquivos necessários na ordem correta para garantir que o site funcione perfeitamente.
-
-<LinearProcessFlow>
-
-### 1. Limpar o repositório atual
-
-1. Vá para a aba "Settings" do seu repositório
-2. Role até a seção "Danger Zone" no final da página
-3. Clique em "Delete this repository"
-4. Digite o nome do repositório para confirmar
-5. Clique em "I understand the consequences, delete this repository"
-
-### 2. Criar um novo repositório
-
-1. Clique no botão "+" no canto superior direito do GitHub
-2. Selecione "New repository"
-3. Nome do repositório: `techway-site`
-4. Descrição (opcional): "Official Techway website"
-5. Mantenha como "Public"
-6. NÃO inicialize com README
-7. Clique em "Create repository"
-
-### 3. Criar a estrutura base
-
-Agora vamos criar todos os arquivos necessários na ordem correta. Para cada arquivo:
-1. Clique em "creating a new file"
-2. Digite o nome do arquivo
-3. Cole o conteúdo fornecido
-4. Faça commit diretamente na branch main
-
-Primeiro arquivo - `next.config.js`:
-```javascript
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
-  basePath: '/techway-site',
-}
-
-module.exports = nextConfig
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
