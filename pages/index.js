@@ -11,19 +11,25 @@ export default function Home() {
       </Head>
 
       <header className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <Image src="/techway-site/logo_techway.png" alt="Techway Logo" width={120} height={40} />
-          </div>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#about" className="hover:text-blue-400">Sobre</a></li>
-              <li><a href="#services" className="hover:text-blue-400">Serviços</a></li>
-              <li><a href="#contact" className="hover:text-blue-400">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+  <div className="container mx-auto px-4 flex justify-between items-center">
+    <div className="flex items-center">
+      <Image
+        src="/techway-logo.png"
+        alt="TECHWAY Logo"
+        width={120}
+        height={40}
+        className="h-8 w-auto"
+      />
+    </div>
+    <nav>
+      <ul className="flex space-x-4">
+        <li><a href="#about" className="hover:text-blue-400">About</a></li>
+        <li><a href="#services" className="hover:text-blue-400">Services</a></li>
+        <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
       <main className="flex-grow">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
