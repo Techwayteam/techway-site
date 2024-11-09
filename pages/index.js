@@ -13,7 +13,7 @@ export default function Home() {
       <header className="bg-gray-900 text-white py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
-            <Image src="/techway_logo.png" alt="Techway Logo" width={120} height={40} />
+            <Image src="/logo_techway.png" alt="Techway Logo" width={120} height={40} />
           </div>
           <nav>
             <ul className="flex space-x-4">
