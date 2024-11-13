@@ -7,14 +7,14 @@ export default function Home() {
       <Head>
         <title>Techway - Seu Caminho para a Eficiência</title>
         <meta name="description" content="A Techway fornece soluções inteligentes sob medida para as necessidades únicas de cada negócio." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/techway-site/favicon.ico" />
       </Head>
 
       <header className="bg-gray-900 text-white py-4">
   <div className="container mx-auto px-4 flex justify-between items-center">
     <div className="flex items-center">
       <Image
-        src="/logo_techway.png"
+        src="/techway-site/logo_techway.png"
         alt="TECHWAY Logo"
         width={120}
         height={40}
