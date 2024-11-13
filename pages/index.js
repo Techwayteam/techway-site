@@ -14,9 +14,9 @@ export default function Home() {
   <div className="container mx-auto px-4 flex justify-between items-center">
     <div className="flex items-center">
       <Image
-        src="/techway-site/logo_techway_transparent.png"
+        src="/techway-site/logo_techway_semslogan_transparent.png"
         alt="TECHWAY Logo"
-        width={437}
+        width={674}
         height={109}
         className="h-8 w-auto"
       />
