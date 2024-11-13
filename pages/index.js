@@ -23,9 +23,9 @@ export default function Home() {
     </div>
     <nav>
       <ul className="flex space-x-4">
-        <li><a href="#about" className="hover:text-blue-400">About</a></li>
-        <li><a href="#services" className="hover:text-blue-400">Services</a></li>
-        <li><a href="#contact" className="hover:text-blue-400">Contact</a></li>
+        <li><a href="#sobre" className="hover:text-blue-400">About</a></li>
+        <li><a href="#serviços" className="hover:text-blue-400">Services</a></li>
+        <li><a href="#contato" className="hover:text-blue-400">Contact</a></li>
       </ul>
     </nav>
   </div>
