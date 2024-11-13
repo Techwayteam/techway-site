@@ -14,10 +14,10 @@ export default function Home() {
   <div className="container mx-auto px-4 flex justify-between items-center">
     <div className="flex items-center">
       <Image
-        src="/techway-site/logo_techway.png"
+        src="/techway-site/logo_techway_transparent.png"
         alt="TECHWAY Logo"
-        width={120}
-        height={40}
+        width={437}
+        height={109}
         className="h-8 w-auto"
       />
     </div>
