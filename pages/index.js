@@ -68,15 +68,11 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Chega de <span className="text-blue-400">perder tempo</span>
-            </h1>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              Chega de <span className="text-blue-400">perder tempo</span> <br />
               com processos manuais
             </h1>
             <p className="text-xl mb-8">
-              A Techway <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida
-            </p>
-            <p className="text-xl mb-8">
+              A Techway <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida <br />
               <span className="text-blue-400">Mais produtividade</span>, menos dor de cabeça
             </p>
             <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
