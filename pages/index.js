@@ -10,14 +10,14 @@ export default function Home() {
       <Head>
         <title>Techway - Seu Caminho para a Eficiência</title>
         <meta name="description" content="A Techway resolve problemas de produtividade e organização com soluções personalizadas. Otimize processos, automatize tarefas e tome decisões baseadas em dados." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/techway-site/favicon.ico" />
       </Head>
 
       <header className="bg-gray-900 text-white py-4 fixed w-full z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/techway-logo.png"
+              src="/techway-site/techway-logo.png"
               alt="Logo da TECHWAY"
               width={120}
               height={40}
@@ -58,7 +58,7 @@ export default function Home() {
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/collaboration.jpg"
+              src="/techway-site/collaboration.jpg"
               alt="Equipe colaborando em soluções tecnológicas personalizadas"
               layout="fill"
               objectFit="cover"
