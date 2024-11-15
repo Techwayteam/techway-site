@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Head>
-        <title>Techway - Seu Caminho para a Eficiência</title>
-        <meta name="description" content="A Techway resolve problemas de produtividade e organização com soluções personalizadas. Otimize processos, automatize tarefas e tome decisões baseadas em dados." />
+        <title>TECHWAY - Seu Caminho para a Eficiência</title>
+        <meta name="description" content="A TECHWAY resolve problemas de produtividade e organização com soluções personalizadas. Otimize processos, automatize tarefas e tome decisões baseadas em dados." />
         <link rel="icon" href="/techway-site/techway_favicon.ico" />
       </Head>
 
@@ -71,8 +71,8 @@ export default function Home() {
               Chega de <span className="text-blue-400">perder tempo</span> <br />
               com processos manuais
             </h1>
-            <p className="text-xl mb-8 text-center">
-              A Techway <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida <br />
+            <p className="text-xl mb-8 text-center font-bold">
+              A TECHWAY <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida <br />
               <span className="text-blue-400 font-bold">Mais produtividade</span> <br />
               <span className="font-bold">Menos dor de cabeça</span>
             </p>
@@ -85,11 +85,11 @@ export default function Home() {
         <section id="about" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Sobre <span className="text-blue-400">Techway</span>
+              Sobre <span className="text-blue-400">TECHWAY</span>
             </h2>
             <div className="max-w-3xl mx-auto">
               <p className="text-lg mb-4 text-center">
-                Na Techway, simplificamos o complexo. Fundada por três entusiastas de tecnologia, criamos soluções inteligentes sob medida para as necessidades de cada negócio – desde fluxos de trabalho automatizados até insights baseados em dados.
+                Na TECHWAY, simplificamos o complexo. Fundada por três entusiastas de tecnologia, criamos soluções inteligentes sob medida para as necessidades de cada negócio – desde fluxos de trabalho automatizados até insights baseados em dados.
               </p>
               <p className="text-lg mb-4 text-center">
                 Nossa missão é ser o caminho para a eficiência, oferecendo soluções tecnológicas ágeis, personalizadas e eficazes que geram resultados reais.
@@ -131,7 +131,7 @@ export default function Home() {
 
       <footer className="bg-gray-900 text-white py-4">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} Techway. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
