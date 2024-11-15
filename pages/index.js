@@ -58,7 +58,7 @@ export default function Home() {
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/techway-site/collaboration.jpg"
+              src="/techway-site/collaboration.webp"
               alt="Equipe colaborando em soluções tecnológicas personalizadas"
               layout="fill"
               objectFit="cover"
