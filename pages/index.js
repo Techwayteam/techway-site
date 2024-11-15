@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/techway-site/techway_favicon.ico" />
       </Head>
 
-      <header className="bg-gray-900 text-white py-4 fixed w-full z-10">
+      <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
             <Image
