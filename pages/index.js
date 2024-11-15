@@ -10,14 +10,14 @@ export default function Home() {
       <Head>
         <title>Techway - Seu Caminho para a Eficiência</title>
         <meta name="description" content="A Techway resolve problemas de produtividade e organização com soluções personalizadas. Otimize processos, automatize tarefas e tome decisões baseadas em dados." />
-        <link rel="icon" href="/techway-site/favicon.ico" />
+        <link rel="icon" href="/techway-site/techway_favicon.ico" />
       </Head>
 
       <header className="bg-gray-900 text-white py-4 fixed w-full z-10">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center">
             <Image
-              src="/techway-site/techway-logo.png"
+              src="/techway-site/logo_techway_semslogan_transparent.png"
               alt="Logo da TECHWAY"
               width={120}
               height={40}
@@ -68,11 +68,16 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-4 text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Chega de <span className="text-blue-400">perder tempo</span> com processos manuais.
+              Chega de <span className="text-blue-400">perder tempo</span>
+            </h1>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              com processos manuais
             </h1>
             <p className="text-xl mb-8">
-              A Techway <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida. 
-              <span className="text-blue-400">Mais produtividade</span>, menos dor de cabeça.
+              A Techway <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida
+            </p>
+            <p className="text-xl mb-8">
+              <span className="text-blue-400">Mais produtividade</span>, menos dor de cabeça
             </p>
             <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
               Otimize Já os Seus Processos
