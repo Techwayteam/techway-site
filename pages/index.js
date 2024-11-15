@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
+import { UserCheck, TrendingUp, Zap } from 'lucide-react';
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -83,7 +84,7 @@ export default function Home() {
 
         <section id="sobre" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">De Pessoas Para Pessoas, </br> com Paixão por Tecnologia</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">De Pessoas Para Pessoas, <br /> com Paixão por Tecnologia</h2>
             <p className="text-xl mb-12 text-center max-w-3xl mx-auto">
               Somos três amigos, apaixonados por tecnologia e movidos pelo desejo de ajudar empresas a economizar tempo e alcançar resultados incríveis. Com uma abordagem personalizada, criamos soluções que simplificam o trabalho e tornam o dia a dia mais leve.
             </p>
