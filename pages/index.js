@@ -72,9 +72,8 @@ export default function Home() {
               com processos manuais
             </h1>
             <p className="text-xl mb-8 text-center font-bold">
-              A TECHWAY <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida <br />
-              <span className="text-blue-400 font-bold">Mais produtividade</span> <br />
-              <span className="font-bold">Menos dor de cabeça</span>
+              A TECHWAY <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida. <br />
+              <span className="text-blue-400 font-bold">Mais produtividade.</span> <span className="font-bold">Menos dor de cabeça.</span>
             </p>
             <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
               Otimize Já os Seus Processos
