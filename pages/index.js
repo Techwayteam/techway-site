@@ -81,18 +81,40 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="bg-gray-800 text-white py-20">
+        <section id="sobre" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-              Sobre <span className="text-blue-400">TECHWAY</span>
-            </h2>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-lg mb-4 text-center">
-                Na TECHWAY, simplificamos o complexo. Fundada por três entusiastas de tecnologia, criamos soluções inteligentes sob medida para as necessidades de cada negócio – desde fluxos de trabalho automatizados até insights baseados em dados.
-              </p>
-              <p className="text-lg mb-4 text-center">
-                Nossa missão é ser o caminho para a eficiência, oferecendo soluções tecnológicas ágeis, personalizadas e eficazes que geram resultados reais.
-              </p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">De Pessoas Para Pessoas, </br> com Paixão por Tecnologia</h2>
+            <p className="text-xl mb-12 text-center max-w-3xl mx-auto">
+              Somos três amigos, apaixonados por tecnologia e movidos pelo desejo de ajudar empresas a economizar tempo e alcançar resultados incríveis. Com uma abordagem personalizada, criamos soluções que simplificam o trabalho e tornam o dia a dia mais leve.
+            </p>
+            <div className="grid md:grid-cols-3 gap-8 mb-12">
+              <div className="bg-gray-700 p-6 rounded-lg text-center">
+                <div className="mb-4 flex justify-center">
+                  <UserCheck className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Atendimento Personalizado</h3>
+                <p>Cada solução é feita sob medida para suas necessidades.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg text-center">
+                <div className="mb-4 flex justify-center">
+                  <TrendingUp className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Soluções Escaláveis</h3>
+                <p>Perfeitas para empresas de qualquer tamanho.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg text-center">
+                <div className="mb-4 flex justify-center">
+                  <Zap className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Resultados Rápidos</h3>
+                <p>Economize tempo e aumente a produtividade.</p>
+              </div>
+            </div>
+            <p className="text-xl mb-8 text-center">Vamos juntos transformar seu negócio com soluções inteligentes.</p>
+            <div className="text-center">
+              <a href="#solucoes" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                Descubra Nossas Soluções
+              </a>
             </div>
           </div>
         </section>
