@@ -116,7 +116,7 @@ export default function Home() {
                   <Zap className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Resultados Rápidos</h3>
-                <p ClassName="mb-4"> Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. </p>
+                <p ClassName="mb-4"> Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. Entregamos a primeira versão da sua solução em poucas semanas, não meses.</p>
                 <p> <span className="text-blue-400 font-bold mt-4"> Menos espera, mais resultados para o seu negócio. </span> </p>
               </div>
             </div>
