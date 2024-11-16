@@ -85,13 +85,13 @@ export default function Home() {
         <section id="sobre" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">SIMPLIFICANDO A TECNOLOGIA < br/> PARA IMPULSIONAR O SEU NEGÓCIO </h2>
-            <p className="text-xl mb-4 text-center max-w-4xl mx-auto font-bold">
+            <p className="text-xl mb-4 text-center max-w-5xl mx-auto font-bold">
               Somos três amigos apaixonados por criar soluções tecnológicas que podem transformar a sua empresa.
                 </p>
-            <p className="text-xl mb-4 text-center max-w-4xl mx-auto">
+            <p className="text-xl mb-4 text-center max-w-5xl mx-auto">
               Nosso foco é tornar a tecnologia acessível e eficiente, adaptada às suas necessidades específicas. Com uma abordagem personalizada, ajudamos empresas como a sua a economizar tempo, simplificar processos e alcançar resultados extraordinários.
                 </p>
-            <p className="text-xl mb-4 text-center max-w-4xl mx-auto">
+            <p className="text-xl mb-12 text-center max-w-5xl mx-auto">
               Porque, no final, sua empresa merece o melhor da tecnologia, sem complicações.
                 </p>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
@@ -101,7 +101,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Atendimento Personalizado</h3>
                 <p> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </p> 
-                <p classname="mt-3"> <span className="text-blue-400 font-bold"> Você merece uma solução que entenda o seu negócio. </span> </p>
+                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Você merece uma solução que entenda o seu negócio. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Soluções Escaláveis</h3>
                 <p>Seja você uma pequena empresa ou uma grande organização, nossas soluções crescem junto com o seu negócio. Projetamos ferramentas que se adaptam à sua evolução, oferecendo estabilidade e eficiência em qualquer etapa. </p>
-                <p classname="mt-3"> <span className="text-blue-400 font-bold"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
+                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
@@ -117,7 +117,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Resultados Rápidos</h3>
                 <p>Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. </p>
-                <p classname="mt-3"> <span className="text-blue-400 font-bold"> Menos espera, mais resultados para o seu negócio. </span> </p>
+                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Menos espera, mais resultados para o seu negócio. </span> </p>
               </div>
             </div>
             <p className="text-xl mb-8 text-center">Vamos juntos transformar seu negócio com soluções inteligentes.</p>
