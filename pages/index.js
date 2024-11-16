@@ -101,7 +101,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Atendimento Personalizado</h3>
                 <p> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </p> 
-                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Você merece uma solução que entenda o seu negócio. </span> </p>
+                <p> <span className="text-blue-400 font-bold mt-4"> Você merece uma solução que entenda o seu negócio. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
@@ -109,7 +109,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Soluções Escaláveis</h3>
                 <p>Seja você uma pequena empresa ou uma grande organização, nossas soluções crescem junto com o seu negócio. Projetamos ferramentas que se adaptam à sua evolução, oferecendo estabilidade e eficiência em qualquer etapa. </p>
-                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
+                <p> <span className="text-blue-400 font-bold mt-4"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
@@ -117,7 +117,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-3">Resultados Rápidos</h3>
                 <p>Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. </p>
-                <p ClassName="mt-4"> <span className="text-blue-400 font-bold"> Menos espera, mais resultados para o seu negócio. </span> </p>
+                <p> <span className="text-blue-400 font-bold mt-4"> Menos espera, mais resultados para o seu negócio. </span> </p>
               </div>
             </div>
             <p className="text-xl mb-8 text-center">Vamos juntos transformar seu negócio com soluções inteligentes.</p>
