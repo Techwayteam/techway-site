@@ -84,9 +84,11 @@ export default function Home() {
 
         <section id="sobre" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">De Pessoas Para Pessoas, <br /> com Paixão por Tecnologia</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">SIMPLIFICANDO A TECNOLOGIA < br/> PARA IMPULSIONAR O SEU NEGÓCIO </h2>
             <p className="text-xl mb-12 text-center max-w-3xl mx-auto">
-              Somos três amigos, apaixonados por tecnologia e movidos pelo desejo de ajudar empresas a economizar tempo e alcançar resultados incríveis. Com uma abordagem personalizada, criamos soluções que simplificam o trabalho e tornam o dia a dia mais leve.
+              Somos três amigos apaixonados por criar soluções tecnológicas que podem transformar a sua empresa. < br/>
+              Nosso foco é tornar a tecnologia acessível e eficiente, adaptada às suas necessidades específicas. Com uma abordagem personalizada, ajudamos empresas como a sua a economizar tempo, simplificar processos e alcançar resultados extraordinários.  < br/>
+              Porque, no final, sua empresa merece o melhor da tecnologia, sem complicações.
             </p>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-gray-700 p-6 rounded-lg text-center">
@@ -94,7 +96,8 @@ export default function Home() {
                   <UserCheck className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">Atendimento Personalizado</h3>
-                <p>Cada solução é feita sob medida para suas necessidades.</p>
+                <p> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </p> 
+                <p> <span className="text-blue-400"> Você merece uma solução que entenda o seu negócio. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
