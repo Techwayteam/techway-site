@@ -95,23 +95,25 @@ export default function Home() {
                 <div className="mb-4 flex justify-center">
                   <UserCheck className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Atendimento Personalizado</h3>
+                <h3 className="text-xl font-bold mb-3">Atendimento Personalizado</h3>
                 <p> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </p> 
-                <p> <span className="text-blue-400"> Você merece uma solução que entenda o seu negócio. </span> </p>
+                <p classname="mt-3"> <span className="text-blue-400 font-semibold"> Você merece uma solução que entenda o seu negócio. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
                   <TrendingUp className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Soluções Escaláveis</h3>
-                <p>Perfeitas para empresas de qualquer tamanho.</p>
+                <h3 className="text-xl font-bold mb-3">Soluções Escaláveis</h3>
+                <p>Seja você uma pequena empresa ou uma grande organização, nossas soluções crescem junto com o seu negócio. Projetamos ferramentas que se adaptam à sua evolução, oferecendo estabilidade e eficiência em qualquer etapa. </p>
+                <p classname="mt-3"> <span className="text-blue-400 font-semibold"> Tecnologia feita para acompanhar o seu sucesso.</p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
                   <Zap className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold mb-2">Resultados Rápidos</h3>
-                <p>Economize tempo e aumente a produtividade.</p>
+                <h3 className="text-xl font-bold mb-3">Resultados Rápidos</h3>
+                <p>Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. </p>
+                <p classname="mt-3"> <span className="text-blue-400 font-semibold"> Menos espera, mais resultados para o seu negócio.</p>
               </div>
             </div>
             <p className="text-xl mb-8 text-center">Vamos juntos transformar seu negócio com soluções inteligentes.</p>
