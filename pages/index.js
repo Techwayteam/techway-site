@@ -100,24 +100,24 @@ export default function Home() {
                   <UserCheck className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Atendimento Personalizado</h3>
-                <p ClassName="mb-4"> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </p> 
-                <p> <span className="text-blue-400 font-bold mt-4"> Você merece uma solução que entenda o seu negócio. </span> </p>
+                <p> <span className="mb-4"> Nós não trabalhamos com soluções prontas. Cada projeto é desenvolvido sob medida para a realidade da sua empresa, garantindo que suas necessidades específicas sejam atendidas com precisão. </span> </p> 
+                <p> <span className="text-blue-400 font-bold"> Você merece uma solução que entenda o seu negócio. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
                   <TrendingUp className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Soluções Escaláveis</h3>
-                <p ClassName="mb-4"> Seja você uma pequena empresa ou uma grande organização, nossas soluções crescem junto com o seu negócio. Projetamos ferramentas que se adaptam à sua evolução, oferecendo estabilidade e eficiência em qualquer etapa. </p>
-                <p> <span className="text-blue-400 font-bold mt-4"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
+                <p> <span className="mb-4"> Seja você uma pequena empresa ou uma grande organização, nossas soluções crescem junto com o seu negócio. Projetamos ferramentas que se adaptam à sua evolução, oferecendo estabilidade e eficiência em qualquer etapa. </span> </p>
+                <p> <span className="text-blue-400 font-bold"> Tecnologia feita para acompanhar o seu sucesso. </span> </p>
               </div>
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
                   <Zap className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">Resultados Rápidos</h3>
-                <p ClassName="mb-4"> Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. Entregamos a primeira versão da sua solução em poucas semanas, não meses.</p>
-                <p> <span className="text-blue-400 font-bold mt-4"> Menos espera, mais resultados para o seu negócio. </span> </p>
+                <p> <span className="mb-4"> Sabemos que o tempo é precioso. Por isso, focamos em implementar soluções que gerem impacto imediato no seu dia a dia, eliminando gargalos e otimizando processos. Entregamos a primeira versão da sua solução em poucas semanas, não meses.</span> </p>
+                <p> <span className="text-blue-400 font-bold"> Menos espera, mais resultados para o seu negócio. </span> </p>
               </div>
             </div>
             <p className="text-xl mb-8 text-center">Vamos juntos transformar seu negócio com soluções inteligentes.</p>
