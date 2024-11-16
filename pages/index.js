@@ -85,11 +85,15 @@ export default function Home() {
         <section id="sobre" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">SIMPLIFICANDO A TECNOLOGIA < br/> PARA IMPULSIONAR O SEU NEGÓCIO </h2>
-            <p className="text-xl mb-12 text-center max-w-3xl mx-auto">
-              Somos três amigos apaixonados por criar soluções tecnológicas que podem transformar a sua empresa. < br/>
-              Nosso foco é tornar a tecnologia acessível e eficiente, adaptada às suas necessidades específicas. Com uma abordagem personalizada, ajudamos empresas como a sua a economizar tempo, simplificar processos e alcançar resultados extraordinários.  < br/>
+            <p className="text-xl mb-4 text-center max-w-4xl mx-auto font-bold">
+              Somos três amigos apaixonados por criar soluções tecnológicas que podem transformar a sua empresa.
+                </p>
+            <p className="text-xl mb-4 text-center max-w-4xl mx-auto">
+              Nosso foco é tornar a tecnologia acessível e eficiente, adaptada às suas necessidades específicas. Com uma abordagem personalizada, ajudamos empresas como a sua a economizar tempo, simplificar processos e alcançar resultados extraordinários.
+                </p>
+            <p className="text-xl mb-4 text-center max-w-4xl mx-auto">
               Porque, no final, sua empresa merece o melhor da tecnologia, sem complicações.
-            </p>
+                </p>
             <div className="grid md:grid-cols-3 gap-8 mb-12">
               <div className="bg-gray-700 p-6 rounded-lg text-center">
                 <div className="mb-4 flex justify-center">
