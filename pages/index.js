@@ -148,7 +148,7 @@ export default function Home() {
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    Descubra como transformar sua operação
+                    > Descubra como transformar sua operação <
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -163,7 +163,7 @@ export default function Home() {
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    Veja seus dados trabalhando por você
+                    > Veja seus dados trabalhando por você <
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -178,7 +178,7 @@ export default function Home() {
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    Descubra o impacto das nossas ferramentas
+                    > Descubra o impacto das nossas ferramentas <
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
