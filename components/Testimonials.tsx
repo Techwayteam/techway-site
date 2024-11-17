@@ -20,7 +20,7 @@ const testimonials: Testimonial[] = [
     name: "Maria Silva",
     position: "CFO",
     company: "TechCorp",
-    image: "/techway-site/techway_favicon.ico",
+    image: "/techway-site/techcorp-logo.png",
     text: "Com a Techway, automatizamos 80% dos nossos processos financeiros. Hoje, economizamos mais de 15 horas por semana!",
     impact: "Redução de 30% nos custos operacionais"
   },
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     name: "João Santos",
     position: "Gerente de Operações",
     company: "LogisTech",
-    image: "/techway-site/techway_favicon.ico",
+    image: "/techway-site/logistech-logo.png",
     text: "As soluções da Techway revolucionaram nossa logística. Reduzimos erros em 60% e aumentamos a eficiência em 40%.",
     impact: "Aumento de 40% na produtividade"
   },
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     name: "Ana Rodrigues",
     position: "CEO",
     company: "StartupX",
-    image: "/techway-site/techway_favicon.ico",
+    image: "/techway-site/startupx-logo.png",
     text: "A Techway nos ajudou a escalar rapidamente. Seus dashboards nos dão insights valiosos para tomar decisões ágeis.",
     impact: "Crescimento de 200% em 6 meses"
   }
@@ -80,7 +80,7 @@ export default function Testimonials() {
   }
 
   return (
-    <section id="depoimentos" className="bg-gray-800 text-white py-20">
+    <section id="depoimentos" className="bg-gray-900 text-white py-20">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
           Pessoas que otimizaram seus processos
@@ -88,32 +88,32 @@ export default function Testimonials() {
         <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           Conheça alguns dos nossos clientes que desenvolveram soluções conosco e transformaram suas operações. Suas histórias de sucesso são nossa maior recompensa.
         </p>
-        <div className="relative max-w-4xl mx-auto">
-          <div className="flex items-center justify-center">
-            <div className="w-1/4 opacity-50 transform scale-75 transition-all duration-300 ease-in-out">
+        <div className="relative w-full mx-auto px-0 overflow-hidden">
+          <div className="flex items-center justify-center gap-4">
+            <div className="w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -ml-10">
               <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
             </div>
             <div 
-              className="w-1/2 z-10 transition-all duration-300 ease-in-out"
+              className="w-[40%] z-10 transition-all duration-300 ease-in-out"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
               <TestimonialCard testimonial={testimonials[currentIndex]} showImpact />
             </div>
-            <div className="w-1/4 opacity-50 transform scale-75 transition-all duration-300 ease-in-out">
+            <div className="w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -mr-10">
               <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
             </div>
           </div>
           <button
             onClick={goToPrevious}
-            className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200"
+            className="absolute left-[28%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200"
+            className="absolute right-[28%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
@@ -147,7 +147,7 @@ function TestimonialCard({ testimonial, showImpact = false }: { testimonial: Tes
       </div>
       <p className="text-gray-100 mb-4">{testimonial.text}</p>
       {showImpact && (
-          <p className="font-bold text-blue-600">Impacto: {testimonial.impact}</p>
+          <p className="font-bold text-blue-500">Impacto: {testimonial.impact}</p>
       )}
     </div>
   )
