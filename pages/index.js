@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { UserCheck, TrendingUp, Zap } from 'lucide-react';
+import { Zap, BarChart2, Settings } from 'lucide-react'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -129,26 +130,65 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="services" className="bg-gray-900 text-white py-20">
+        <section id="solucoes" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">Nossos <span className="text-blue-400">Serviços</span></h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              Veja como podemos transformar a sua rotina
+            </h2>
+            <p className="text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+              Na TECHWAY, nosso foco está em entender profundamente o seu problema, porque é nele que encontramos as melhores oportunidades de transformação. Atuamos em diferentes níveis do seu negócio, desde o chão de fábrica até a sala de reuniões, entregando soluções que fazem sentido para cada etapa. Com uma equipe multidisciplinar, unimos diversas perspectivas para criar estratégias ricas e personalizadas, sempre voltadas para resultados reais.
+            </p>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-gray-800 p-6 rounded-lg border-2 border-blue-500">
-                <h3 className="text-xl font-bold mb-4">Automação de Processos</h3>
-                <p>Simplifique seus fluxos de trabalho com soluções de automação personalizadas</p>
+              <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
+                <div className="flex justify-center mb-6">
+                  <Zap className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-center">Automação de Processos</h3>
+                <p className="text-gray-300 mb-6 text-center">
+                  Elimine processos repetitivos e concentre-se no que realmente importa. Nossa automação ajusta-se perfeitamente às suas operações, economizando tempo e recursos.
+                </p>
+                <div className="text-center">
+                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                    Descubra como transformar sua operação
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </a>
+                </div>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg border-2 border-blue-500">
-                <h3 className="text-xl font-bold mb-4">Soluções Digitais</h3>
-                <p>Aplicações e ferramentas personalizadas para suas necessidades específicas</p>
+              <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
+                <div className="flex justify-center mb-6">
+                  <BarChart2 className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-center">KPIs e Dashboards Estratégicos</h3>
+                <p className="text-gray-300 mb-6 text-center">
+                  Tenha total controle dos seus dados. Dashboards sob medida que transformam números em decisões estratégicas para o seu negócio.
+                </p>
+                <div className="text-center">
+                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                    Veja como seus dados podem trabalhar por você
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </a>
+                </div>
               </div>
-              <div className="bg-gray-800 p-6 rounded-lg border-2 border-blue-500">
-                <h3 className="text-xl font-bold mb-4">Insights de Dados</h3>
-                <p>Transforme seus dados em insights acionáveis</p>
+              <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
+                <div className="flex justify-center mb-6">
+                  <Settings className="w-12 h-12 text-blue-400" />
+                </div>
+                <h3 className="text-xl font-semibold mb-4 text-center">Soluções Automatizadas Personalizadas</h3>
+                <p className="text-gray-300 mb-6 text-center">
+                  Automatize tarefas do dia a dia com soluções simples e eficientes. Não importa o tamanho da sua empresa, criamos ferramentas que fazem a diferença.
+                </p>
+                <div className="text-center">
+                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                    Saiba como simplificar o seu trabalho
+                    <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
+                
         <section id="contact" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8">Entre em <span className="text-blue-400">Contato</span></h2>
