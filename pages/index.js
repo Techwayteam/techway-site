@@ -163,7 +163,7 @@ export default function Home() {
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    Veja como seus dados podem trabalhar por você
+                    Veja seus dados trabalhando por você
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -174,7 +174,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-center"> Ferramentas Sob Medida </h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Nossas ferramentas farão a diferença onde sua empresa mais precisa.
+                  Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Nossas ferramentas certamente farão a diferença onde sua empresa mais precisa.
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
