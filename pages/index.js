@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
-import { UserCheck, TrendingUp, Zap, BarChart2, Settings, Tool } from 'lucide-react'
+import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -170,11 +170,11 @@ export default function Home() {
               </div>
               <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
                 <div className="flex justify-center mb-6">
-                  <Tool className="w-12 h-12 text-blue-400" />
+                  <Wrench className="w-12 h-12 text-blue-400" />
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-center"> Ferramentas Sob Medida </h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Desde a simplificação de processos até ferramentas avançadas, nossas soluções fazem a diferença onde sua empresa mais precisa.
+                  Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Nossas ferramentas farão a diferença onde sua empresa mais precisa.
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
