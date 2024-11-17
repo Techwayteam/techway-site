@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
-import Testimonials from '/techway-site/components/Testimonials.js'
+import Testimonials from '../components/Testimonials'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
