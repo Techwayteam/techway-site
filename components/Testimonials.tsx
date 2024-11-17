@@ -20,7 +20,7 @@ const testimonials: Testimonial[] = [
     name: "Maria Silva",
     position: "CFO",
     company: "TechCorp",
-    image: "/techway-site/techcorp-logo.png",
+    image: "/techway-site/techway_favicon.ico",
     text: "Com a Techway, automatizamos 80% dos nossos processos financeiros. Hoje, economizamos mais de 15 horas por semana!",
     impact: "Redução de 30% nos custos operacionais"
   },
@@ -29,7 +29,7 @@ const testimonials: Testimonial[] = [
     name: "João Santos",
     position: "Gerente de Operações",
     company: "LogisTech",
-    image: "/techway-site/logistech-logo.png",
+    image: "/techway-site/techway_favicon.ico",
     text: "As soluções da Techway revolucionaram nossa logística. Reduzimos erros em 60% e aumentamos a eficiência em 40%.",
     impact: "Aumento de 40% na produtividade"
   },
@@ -38,7 +38,7 @@ const testimonials: Testimonial[] = [
     name: "Ana Rodrigues",
     position: "CEO",
     company: "StartupX",
-    image: "/techway-site/startupx-logo.png",
+    image: "/techway-site/techway_favicon.ico",
     text: "A Techway nos ajudou a escalar rapidamente. Seus dashboards nos dão insights valiosos para tomar decisões ágeis.",
     impact: "Crescimento de 200% em 6 meses"
   }
@@ -106,14 +106,14 @@ export default function Testimonials() {
           </div>
           <button
             onClick={goToPrevious}
-            className="absolute left-[28%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute left-[20%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-[28%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute right-[20%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
