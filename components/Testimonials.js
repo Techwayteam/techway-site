@@ -5,12 +5,12 @@ import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 type Testimonial = {
-  id: number
-  name: string
-  position: string
-  company: string
-  image: string
-  text: string
+  id: number,
+  name: string,
+  position: string,
+  company: string,
+  image: string,
+  text: string,
   impact: string
 }
 
@@ -147,9 +147,7 @@ function TestimonialCard({ testimonial, showImpact = false }: { testimonial: Tes
       </div>
       <p className="text-gray-100 mb-4">{testimonial.text}</p>
       {showImpact && (
-        <div className="mt-4 bg-blue-600 p-2 rounded-md">
-          <p className="font-bold text-white">Impacto: {testimonial.impact}</p>
-        </div>
+          <p className="font-bold text-blue-600">Impacto: {testimonial.impact}</p>
       )}
     </div>
   )
