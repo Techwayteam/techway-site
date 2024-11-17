@@ -106,14 +106,14 @@ export default function Testimonials() {
           </div>
           <button
             onClick={goToPrevious}
-            className="absolute left-[20%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-[20%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
