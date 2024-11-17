@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
-import { UserCheck, TrendingUp, Zap, BarChart2, Settings } from 'lucide-react'
+import { UserCheck, TrendingUp, Zap, BarChart2, Settings, Tool } from 'lucide-react'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -134,7 +134,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               Veja como podemos transformar a sua rotina
             </h2>
-            <p className="text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+            <p className="text-gray-300 mb-12 text-xl text-center max-w-5xl mx-auto">
               Na TECHWAY, nosso foco está em entender profundamente o seu problema, porque é nele que encontramos as melhores oportunidades de transformação. Atuamos em diferentes níveis do seu negócio, desde o chão de fábrica até a sala de reuniões, entregando soluções que fazem sentido para cada etapa. Com uma equipe multidisciplinar, unimos diversas perspectivas para criar estratégias ricas e personalizadas, sempre voltadas para resultados reais.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
@@ -144,7 +144,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-center">Automação de Processos</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  Elimine processos repetitivos e concentre-se no que realmente importa. Nossa automação ajusta-se perfeitamente às suas operações, economizando tempo e recursos.
+                  Elimine processos repetitivos e concentre-se no que realmente importa. Nossas automações se ajustarão perfeitamente às suas operações, economizando tempo e recursos.
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
@@ -159,7 +159,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-semibold mb-4 text-center">KPIs e Dashboards Estratégicos</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  Tenha total controle dos seus dados. Dashboards sob medida que transformam números em decisões estratégicas para o seu negócio.
+                  Quem tem controle dos seus dados, está a um passo do sucesso. Elaboramos Dashboards sob medida para o seu negócio, que transformam números em decisões estratégicas.
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
@@ -170,15 +170,15 @@ export default function Home() {
               </div>
               <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
                 <div className="flex justify-center mb-6">
-                  <Settings className="w-12 h-12 text-blue-400" />
+                  <Tool className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">Soluções Automatizadas Personalizadas</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center"> Ferramentas Sob Medida </h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  Automatize tarefas do dia a dia com soluções simples e eficientes. Não importa o tamanho da sua empresa, criamos ferramentas que fazem a diferença.
+                  Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Desde a simplificação de processos até ferramentas avançadas, nossas soluções fazem a diferença onde sua empresa mais precisa.
                 </p>
                 <div className="text-center">
                   <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    Saiba como simplificar o seu trabalho
+                    Descubra o impacto das nossas ferramentas
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
