@@ -11,8 +11,8 @@ type Testimonial = {
   company: string,
   image: string,
   text: string,
-  impact: string,
-}
+  impact: string
+};
 
 const testimonials: Testimonial[] = [
   {
@@ -42,7 +42,7 @@ const testimonials: Testimonial[] = [
     text: "A Techway nos ajudou a escalar rapidamente. Seus dashboards nos dão insights valiosos para tomar decisões ágeis.",
     impact: "Crescimento de 200% em 6 meses"
   }
-]
+];
 
 export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
