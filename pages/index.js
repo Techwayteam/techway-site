@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
-import Testimonials from '../components/Testimonials'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -187,8 +186,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <Testimonials />
                 
         <section id="contact" className="bg-gray-800 text-white py-20">
           <div className="container mx-auto px-4 text-center">
