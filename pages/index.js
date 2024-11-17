@@ -1,8 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
-import { UserCheck, TrendingUp, Zap } from 'lucide-react';
-import { Zap, BarChart2, Settings } from 'lucide-react'
+import { UserCheck, TrendingUp, Zap, BarChart2, Settings } from 'lucide-react'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
