@@ -196,7 +196,9 @@ export default function Home() {
               Ainda com dúvidas? <span className="text-blue-400">Vamos conversar!</span>
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
-              Não importa se você já sabe exatamente o que precisa ou se só tem uma ideia vaga. Nossa equipe está aqui para ouvir, entender e, muito provavelmente, encontrar a solução certa para você. Vamos começar?
+              Não importa se você já sabe exatamente o que precisa ou se só tem uma ideia vaga. <br/> 
+              Nossa equipe está aqui para ouvir, entender e, muito provavelmente, encontrar a solução certa para você. <br/>
+              Bora conversar?
             </p>
             <div className="flex justify-center space-x-4">
               <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
@@ -210,11 +212,39 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-gray-900 text-white py-4">
-        <div className="container mx-auto px-4 text-center">
-          <p>&copy; {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+    <footer className="bg-gray-900 text-gray-300 py-8">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+    
+    {/* Identidade */}
+    <div>
+      <h3 className="text-lg font-bold text-white mb-2">Techway</h3>
+      <p>Transformando negócios com tecnologia eficiente e personalizada.</p>
     </div>
+    
+    {/* Contato */}
+    <div>
+      <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
+      <p>E-mail: <a href="mailto:contato@techway.com" className="hover:text-blue-400">contato@techway.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/5599999999999" className="hover:text-blue-400">(XX) XXXX-XXXX</a></p>
+      <div className="flex space-x-4 mt-4">
+        <a href="https://facebook.com" aria-label="Facebook" className="hover:text-blue-400">
+          <i className="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://linkedin.com" aria-label="LinkedIn" className="hover:text-blue-400">
+          <i className="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://instagram.com" aria-label="Instagram" className="hover:text-blue-400">
+          <i className="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  {/* Informações Legais */}
+  <div className="text-center mt-8 text-sm text-gray-500">
+    <p>© {new Date().getFullYear()} Techway. Todos os direitos reservados.</p>
+    <p><a href="#termos" className="hover:text-blue-400">Termos de Uso</a> | <a href="#privacidade" className="hover:text-blue-400">Política de Privacidade</a></p>
+  </div>
+</footer>
   )
 }
