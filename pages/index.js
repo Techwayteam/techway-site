@@ -190,16 +190,24 @@ export default function Home() {
 
         <Testimonials />
                       
-        <section id="contact" className="bg-gray-800 text-white py-20">
+        <section id="contato" className="bg-gradient-to-br from-gray-800 to-gray-900 text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Entre em <span className="text-blue-400">Contato</span></h2>
-            <p className="text-xl mb-8">Pronto para iniciar sua jornada para a eficiência? Entre em contato conosco hoje!</p>
-            <a href="mailto:contact@techway.com" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">
-              Fale Conosco
-            </a>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Ainda com dúvidas? <span className="text-blue-400">Vamos conversar!</span>
+            </h2>
+            <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+              Não importa se você já sabe exatamente o que precisa ou se só tem uma ideia vaga. Nossa equipe está aqui para ouvir, entender e, muito provavelmente, encontrar a solução certa para você. Vamos começar?
+            </p>
+            <div className="flex justify-center space-x-4">
+              <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                Fale com a gente agora
+              </a>
+              <a href="#solucoes" className="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+                Conheça nossas soluções
+              </a>
+            </div>
           </div>
         </section>
-      </main>
 
       <footer className="bg-gray-900 text-white py-4">
         <div className="container mx-auto px-4 text-center">
