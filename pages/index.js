@@ -259,9 +259,7 @@ export default function Home() {
   </div>
 </footer>
 
-// Adicione o fechamento do componente principal:
-</div>
-);
-
-)
+      </main>
+    </div>
+  )
 }
