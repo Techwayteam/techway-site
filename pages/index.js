@@ -12,9 +12,36 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Head>
+        {/* Título e Descrição */}
         <title>TECHWAY - Seu Caminho para a Eficiência</title>
-        <meta name="description" content="A TECHWAY resolve problemas de produtividade e organização com soluções personalizadas. Otimize processos, automatize tarefas e tome decisões baseadas em dados." />
+        <meta name="description" content="A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação." />
+      
+        {/* Favicon */}
         <link rel="icon" href="/techway-site/techway_favicon.ico" />
+      
+        {/* Meta Tags de SEO */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="automação de processos, dashboards, KPIs, eficiência, tecnologia, produtividade, Techway" />
+        <meta name="author" content="Techway Team" />
+      
+        {/* Meta Tags para Redes Sociais */}
+        <meta property="og:title" content="TECHWAY - Seu Caminho para a Eficiência" />
+        <meta property="og:description" content="A TECHWAY oferece soluções personalizadas para otimizar processos e aumentar a eficiência da sua empresa. Descubra nossas soluções inteligentes." />
+        <meta property="og:image" content="/techway-site/techway_favicon.ico" />
+        <meta property="og:url" content="https://techwayteam.github.io/techway-site/" />
+        <meta property="og:type" content="website" />
+      
+        {/* Twitter Cards */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="TECHWAY - Seu Caminho para a Eficiência" />
+        <meta name="twitter:description" content="Transforme sua empresa com soluções tecnológicas personalizadas. Otimize processos, automatize tarefas e alcance resultados extraordinários." />
+        <meta name="twitter:image" content="/techway-site/techway_favicon.ico" />
+      
+        {/* Robots e Indexação */}
+        <meta name="robots" content="index, follow" />
+      
+        {/* CSS para Fontes ou Estilos Adicionais */}
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
       <header />
