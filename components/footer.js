@@ -58,7 +58,7 @@ export default function Footer() {
       <div className="text-center mt-8 text-sm text-white">
         <p>© {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.</p>
         <p>
-          <a href="#termos" className="hover:text-blue-400">
+          <a href="/termos" className="hover:text-blue-400">
             Termos de Uso
           </a>{" "}
           |{" "}
