@@ -3,8 +3,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
 import Testimonials from '../components/Testimonials'
-import header from '../components/header'
-import footer from '../components/footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
