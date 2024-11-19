@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
 import { Book, Shield, Scale, Clock } from 'lucide-react'
-import header from '../components/header'
-import footer from '../components/footer'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function TermosDeUso() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -32,7 +32,7 @@ export default function TermosDeUso() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <header />
+      <Header />
 
       <main className="flex-grow pt-24">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
@@ -125,7 +125,7 @@ export default function TermosDeUso() {
         </section>
       </main>
 
-      <footer />
+      <Footer />
     
     </div>
   )
