@@ -44,7 +44,7 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
-      <header />
+      <Header />
 
       <main className="flex-grow pt-16">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
@@ -180,7 +180,7 @@ export default function Home() {
 
         <Testimonials />
                       
-        <footer />
+        <Footer />
 
       </main>
     </div>
