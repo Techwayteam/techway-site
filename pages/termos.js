@@ -32,7 +32,7 @@ export default function TermosDeUso() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
-      <Header />
+      <header />
 
       <main className="flex-grow pt-24">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
