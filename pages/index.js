@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
 import Testimonials from '../components/Testimonials'
+import header from '../componetes/header'
+import footer from '../componetes/footer'
 
 export default function Home() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -15,46 +17,7 @@ export default function Home() {
         <link rel="icon" href="/techway-site/techway_favicon.ico" />
       </Head>
 
-      <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
-        <div className="container mx-auto px-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <Image
-              src="/techway-site/logo_techway_semslogan_transparent.png"
-              alt="Logo da TECHWAY"
-              width={120}
-              height={40}
-              className="h-8 w-auto"
-            />
-          </div>
-          <nav className="hidden md:block">
-            <ul className="flex space-x-4">
-              <li><a href="#sobre" className="hover:text-blue-400">Sobre</a></li>
-              <li><a href="#solucoes" className="hover:text-blue-400">Soluções</a></li>
-              <li><a href="#depoimentos" className="hover:text-blue-400">Depoimentos</a></li>
-              <li><a href="#contato" className="hover:text-blue-400">Contato</a></li>
-            </ul>
-          </nav>
-          <button 
-            className="md:hidden"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-        {isMenuOpen && (
-          <div className="md:hidden bg-gray-800 py-2">
-            <ul className="flex flex-col items-center space-y-2">
-              <li><a href="#sobre" className="hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>Sobre</a></li>
-              <li><a href="#solucoes" className="hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>Soluções</a></li>
-              <li><a href="#depoimentos" className="hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>Depoimentos</a></li>
-              <li><a href="#contato" className="hover:text-blue-400" onClick={() => setIsMenuOpen(false)}>Contato</a></li>
-            </ul>
-          </div>
-        )}
-      </header>
-
+      <header />
 
       <main className="flex-grow pt-16">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
@@ -190,74 +153,7 @@ export default function Home() {
 
         <Testimonials />
                       
-<footer className="bg-gray-700 text-white py-8">
-  <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-    {/* Identidade */}
-    <div>
-      <h3 className="text-lg font-bold text-white mb-2">Techway</h3>
-      <p>Transformando negócios com tecnologia eficiente e personalizada.</p>
-    </div>
-
-    {/* Contato */}
-    <div>
-      <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
-      <p>
-        <span className="font-bold"> E-mail: {" "} </span>
-        <a href="mailto:contato@techway.com" className="hover:text-blue-400">
-          contato@techway.com
-        </a>
-      </p>
-      <p>
-        <span className="font-bold"> WhatsApp: {" "} </span>
-        <a
-          href="https://wa.me/5521980343553"
-          className="hover:text-blue-400"
-        >
-          (21) 9 8034-3553
-        </a>
-      </p>
-      <div className="flex space-x-4 mt-4">
-        <a
-          href="https://facebook.com"
-          aria-label="Facebook"
-          className="hover:text-blue-400"
-        >
-          <i className="fab fa-facebook-f"></i>
-        </a>
-        <a
-          href="https://linkedin.com"
-          aria-label="LinkedIn"
-          className="hover:text-blue-400"
-        >
-          <i className="fab fa-linkedin-in"></i>
-        </a>
-        <a
-          href="https://instagram.com"
-          aria-label="Instagram"
-          className="hover:text-blue-400"
-        >
-          <i className="fab fa-instagram"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  {/* Informações Legais */}
-  <div className="text-center mt-8 text-sm text-white">
-    <p>
-      © {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.
-    </p>
-    <p>
-      <a href="#termos" className="hover:text-blue-400">
-        Termos de Uso
-      </a>{" "}
-      |{" "}
-      <a href="#privacidade" className="hover:text-blue-400">
-        Política de Privacidade
-      </a>
-    </p>
-  </div>
-</footer>
+        <footer />
 
       </main>
     </div>
