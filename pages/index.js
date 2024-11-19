@@ -202,13 +202,13 @@ export default function Home() {
     <div>
       <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
       <p>
-        E-mail: {" "}
+        <span className="font-bold"> E-mail: {" "} </span>
         <a href="mailto:contato@techway.com" className="hover:text-blue-400">
           contato@techway.com
         </a>
       </p>
       <p>
-        WhatsApp: {" "}
+        <span className="font-bold"> WhatsApp: {" "} </span>
         <a
           href="https://wa.me/5521980343553"
           className="hover:text-blue-400"
