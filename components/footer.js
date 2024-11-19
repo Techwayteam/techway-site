@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -15,7 +17,7 @@ export default function Footer() {
           <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
           <p>
             <span className="font-bold">E-mail:{" "}</span>
-            <a href="mailto:contato@techway.com" className="hover:text-blue-400">
+            <a href="mailto:contato@techway.com" className="hover:text-blue-400 transition-colors duration-300">
               contato@techway.com
             </a>
           </p>
@@ -23,7 +25,7 @@ export default function Footer() {
             <span className="font-bold">WhatsApp:{" "}</span>
             <a
               href="https://wa.me/5521980343553"
-              className="hover:text-blue-400"
+              className="hover:text-blue-400 transition-colors duration-300"
             >
               (21) 9 8034-3553
             </a>
@@ -32,23 +34,23 @@ export default function Footer() {
             <a
               href="https://facebook.com"
               aria-label="Facebook"
-              className="hover:text-blue-400"
+              className="hover:text-blue-400 transition-colors duration-300"
             >
-              <i className="fab fa-facebook-f"></i>
+              <Facebook className="w-5 h-5" />
             </a>
             <a
               href="https://linkedin.com"
               aria-label="LinkedIn"
-              className="hover:text-blue-400"
+              className="hover:text-blue-400 transition-colors duration-300"
             >
-              <i className="fab fa-linkedin-in"></i>
+              <Linkedin className="w-5 h-5" />
             </a>
             <a
               href="https://instagram.com"
               aria-label="Instagram"
-              className="hover:text-blue-400"
+              className="hover:text-blue-400 transition-colors duration-300"
             >
-              <i className="fab fa-instagram"></i>
+              <Instagram className="w-5 h-5" />
             </a>
           </div>
         </div>
@@ -58,13 +60,13 @@ export default function Footer() {
       <div className="text-center mt-8 text-sm text-white">
         <p>© {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.</p>
         <p>
-          <a href="/termos" className="hover:text-blue-400">
+          <Link href="/termos" className="hover:text-blue-400 transition-colors duration-300">
             Termos de Uso
-          </a>{" "}
+          </Link>{" "}
           |{" "}
-          <a href="#privacidade" className="hover:text-blue-400">
+          <Link href="/privacidade" className="hover:text-blue-400 transition-colors duration-300">
             Política de Privacidade
-          </a>
+          </Link>
         </p>
       </div>
     </footer>
