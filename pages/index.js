@@ -190,7 +190,7 @@ export default function Home() {
 
         <Testimonials />
                       
-<footer className="bg-blue-500 text-white py-8">
+<footer className="bg-gray-700 text-white py-8">
   <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
     {/* Identidade */}
     <div>
@@ -202,18 +202,18 @@ export default function Home() {
     <div>
       <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
       <p>
-        E-mail:{" "}
+        <span className="font-bold">E-mail:</span> {" "}
         <a href="mailto:contato@techway.com" className="hover:text-blue-400">
           contato@techway.com
         </a>
       </p>
       <p>
-        WhatsApp:{" "}
+        <span className="font-bold">WhatsApp:</span>{" "}
         <a
-          href="https://wa.me/5599999999999"
+          href="https://wa.me/5521980343553"
           className="hover:text-blue-400"
         >
-          (XX) XXXX-XXXX
+          (21) 9 8034-3553
         </a>
       </p>
       <div className="flex space-x-4 mt-4">
@@ -243,9 +243,9 @@ export default function Home() {
   </div>
 
   {/* Informações Legais */}
-  <div className="text-center mt-8 text-sm text-gray-500">
+  <div className="text-center mt-8 text-sm text-white">
     <p>
-      © {new Date().getFullYear()} Techway. Todos os direitos reservados.
+      © {new Date().getFullYear()} TECHWAY. Todos os direitos reservados.
     </p>
     <p>
       <a href="#termos" className="hover:text-blue-400">
