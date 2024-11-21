@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="flex items-center">
           <Image
-            src="/techway-site/logo_techway_semslogan_transparent.png"
+            src="/logo_techway_semslogan_transparent.png"
             alt="Logo da TECHWAY"
             width={120}
             height={40}
