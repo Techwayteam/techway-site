@@ -17,7 +17,7 @@ export default function Home() {
         <meta name="description" content="A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação." />
       
         {/* Favicon */}
-        <link rel="icon" href="/techway-site/techway_favicon.ico" />
+        <link rel="icon" href="/techway_favicon.ico" />
       
         {/* Meta Tags de SEO */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -27,15 +27,15 @@ export default function Home() {
         {/* Meta Tags para Redes Sociais */}
         <meta property="og:title" content="TECHWAY - Seu Caminho para a Eficiência" />
         <meta property="og:description" content="A TECHWAY oferece soluções personalizadas para otimizar processos e aumentar a eficiência da sua empresa. Descubra nossas soluções inteligentes." />
-        <meta property="og:image" content="/techway-site/techway_favicon.ico" />
-        <meta property="og:url" content="https://techwayteam.github.io/techway-site/" />
+        <meta property="og:image" content="/techway_favicon.ico" />
+        <meta property="og:url" content="https://techway.one" />
         <meta property="og:type" content="website" />
       
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="TECHWAY - Seu Caminho para a Eficiência" />
         <meta name="twitter:description" content="Transforme sua empresa com soluções tecnológicas personalizadas. Otimize processos, automatize tarefas e alcance resultados extraordinários." />
-        <meta name="twitter:image" content="/techway-site/techway_favicon.ico" />
+        <meta name="twitter:image" content="/techway_favicon.ico" />
       
         {/* Robots e Indexação */}
         <meta name="robots" content="index, follow" />
@@ -50,7 +50,7 @@ export default function Home() {
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
           <div className="absolute inset-0 z-0">
             <Image
-              src="/techway-site/collaboration.webp"
+              src="/collaboration.webp"
               alt="Equipe colaborando em soluções tecnológicas personalizadas"
               layout="fill"
               objectFit="cover"
