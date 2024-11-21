@@ -20,12 +20,12 @@ export default function PoliticaDePrivacidade() {
         {/* Open Graph para redes sociais */}
         <meta property="og:title" content="TECHWAY - Política de Privacidade" />
         <meta property="og:description" content="Saiba como a TECHWAY protege seus dados pessoais e garante sua privacidade." />
-        <meta property="og:image" content="/techway-site/techway_logo.png" />
-        <meta property="og:url" content="https://www.techway.com/politica-de-privacidade" />
+        <meta property="og:image" content="/techway_logo.png" />
+        <meta property="og:url" content="https://techway.one/politica-de-privacidade" />
         <meta property="og:type" content="website" />
         
         {/* Favicon */}
-        <link rel="icon" href="/techway-site/techway_favicon.ico" />
+        <link rel="icon" href="/techway_favicon.ico" />
         
         {/* Responsividade */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
