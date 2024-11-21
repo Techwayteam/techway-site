@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/techway-site',
+  basePath: '',
 }
 
 module.exports = nextConfig
