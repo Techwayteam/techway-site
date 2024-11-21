@@ -21,12 +21,12 @@ export default function TermosDeUso() {
         {/* Open Graph para redes sociais */}
         <meta property="og:title" content="TECHWAY - Termos de Uso" />
         <meta property="og:description" content="Saiba mais sobre os Termos de Uso da TECHWAY e nossos compromissos com você." />
-        <meta property="og:image" content="/techway-site/techway_logo.png" />
+        <meta property="og:image" content="/techway_logo.png" />
         <meta property="og:url" content="https://www.techway.com/termos-de-uso" />
         <meta property="og:type" content="website" />
         
         {/* Favicon */}
-        <link rel="icon" href="/techway-site/techway_favicon.ico" />
+        <link rel="icon" href="/techway_favicon.ico" />
         
         {/* Responsividade */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
