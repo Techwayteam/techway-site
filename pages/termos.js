@@ -34,7 +34,7 @@ export default function TermosDeUso() {
 
       <Header />
 
-      <main className="flex-grow pt-24">
+      <main className="flex-grow pt-16">
         <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Termos de Uso</h1>
