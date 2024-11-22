@@ -1,16 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { useState } from 'react'
 import { Book, Shield, Scale, Clock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const TermosDeUso: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
-
+const TermosDeUso: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-
       <Head>
         <title>TECHWAY - Termos de Uso</title>
         <meta name="description" content="Leia os Termos de Uso da TECHWAY e entenda como nossos serviços são oferecidos, garantindo transparência e segurança em nossa parceria." />
@@ -18,24 +13,21 @@ const TermosDeUso: React.FC = () => {
         <meta name="author" content="TECHWAY" />
         <meta name="robots" content="noindex, follow" />
         
-        {/* Open Graph para redes sociais */}
         <meta property="og:title" content="TECHWAY - Termos de Uso" />
         <meta property="og:description" content="Saiba mais sobre os Termos de Uso da TECHWAY e nossos compromissos com você." />
         <meta property="og:image" content="/techway_logo.png" />
         <meta property="og:url" content="https://www.techway.com/termos-de-uso" />
         <meta property="og:type" content="website" />
         
-        {/* Favicon */}
         <link rel="icon" href="/techway_favicon.ico" />
         
-        {/* Responsividade */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <Header />
 
       <main className="flex-grow pt-16">
-        <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
+        <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20" aria-label="Introdução aos Termos de Uso">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Termos de Uso</h1>
             <p className="text-xl mb-8 text-center max-w-3xl mx-auto">
@@ -44,7 +36,7 @@ const TermosDeUso: React.FC = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-800">
+        <section className="py-16 bg-gray-800" aria-label="Detalhes dos Termos de Uso">
           <div className="container mx-auto px-4 space-y-12">
             <div className="bg-gray-700 rounded-lg shadow-lg p-8 transform transition-all duration-300 hover:scale-105">
               <h2 className="text-2xl font-bold mb-6 flex items-center justify-center">
@@ -112,7 +104,7 @@ const TermosDeUso: React.FC = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-900">
+        <section className="py-16 bg-gray-900" aria-label="Contato para dúvidas">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">Dúvidas sobre nossos Termos de Uso?</h2>
             <p className="mb-8 text-xl">
@@ -126,7 +118,6 @@ const TermosDeUso: React.FC = () => {
       </main>
 
       <Footer />
-    
     </div>
   )
 };
