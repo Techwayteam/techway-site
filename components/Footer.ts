@@ -2,7 +2,9 @@ import React from 'react';
 import Link from 'next/link';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
 
-export default function Footer() {
+interface FooterProps {}
+
+const Footer: React.FC<FooterProps> = () => {
   return (
     <footer className="bg-gray-700 text-white py-8">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -17,7 +19,10 @@ export default function Footer() {
           <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
           <p>
             <span className="font-bold">E-mail:{" "}</span>
-            <a href="mailto:contato@techway.com" className="hover:text-blue-400 transition-colors duration-300">
+            <a
+              href="mailto:contato@techway.com"
+              className="hover:text-blue-400 transition-colors duration-300"
+            >
               contato@techway.com
             </a>
           </p>
@@ -71,4 +76,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;
