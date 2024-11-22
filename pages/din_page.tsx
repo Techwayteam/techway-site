@@ -7,7 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Testimonials from '../components/Testimonials'
 import { landingPages } from '../data/landingPages'
-import { PageData } from '../types/PageData'
+import type { PageData } from '../types/PageData'
 
 const iconComponents = {
   CheckCircle,
