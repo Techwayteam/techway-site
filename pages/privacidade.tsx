@@ -1,15 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { useState } from 'react'
 import { Shield, Database, Eye, Lock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-interface PoliticaDePrivacidadeProps {}
-
-const PoliticaDePrivacidade: React.FC<PoliticaDePrivacidadeProps> = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
-
+const PoliticaDePrivacidade: React.FC = (): JSX.Element => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
       <Head>
@@ -19,24 +13,21 @@ const PoliticaDePrivacidade: React.FC<PoliticaDePrivacidadeProps> = () => {
         <meta name="author" content="TECHWAY" />
         <meta name="robots" content="noindex, follow" />
         
-        {/* Open Graph para redes sociais */}
         <meta property="og:title" content="TECHWAY - Política de Privacidade" />
         <meta property="og:description" content="Saiba como a TECHWAY protege seus dados pessoais e garante sua privacidade." />
         <meta property="og:image" content="/techway_logo.png" />
         <meta property="og:url" content="https://techway.one/politica-de-privacidade" />
         <meta property="og:type" content="website" />
         
-        {/* Favicon */}
         <link rel="icon" href="/techway_favicon.ico" />
         
-        {/* Responsividade */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
 
       <Header />
 
       <main className="flex-grow pt-16">
-        <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20">
+        <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20" aria-label="Introdução à Política de Privacidade">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-center">Política de Privacidade</h1>
             <p className="text-xl mb-8 text-center max-w-3xl mx-auto">
@@ -45,7 +36,7 @@ const PoliticaDePrivacidade: React.FC<PoliticaDePrivacidadeProps> = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-800">
+        <section className="py-16 bg-gray-800" aria-label="Detalhes da Política de Privacidade">
           <div className="container mx-auto px-4 space-y-12">
             <div className="bg-gray-700 rounded-lg shadow-lg p-8 transform transition-all duration-300 hover:scale-105">
               <h2 className="text-2xl font-bold mb-6 flex items-center justify-center">
@@ -113,7 +104,7 @@ const PoliticaDePrivacidade: React.FC<PoliticaDePrivacidadeProps> = () => {
           </div>
         </section>
 
-        <section className="py-16 bg-gray-900">
+        <section className="py-16 bg-gray-900" aria-label="Contato para dúvidas">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">Dúvidas sobre nossa Política de Privacidade?</h2>
             <p className="mb-8 text-xl">
