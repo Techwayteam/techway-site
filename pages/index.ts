@@ -6,48 +6,69 @@ import Testimonials from '../components/Testimonials'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function Home() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+const Home: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Head>
         {/* Título e Descrição */}
         <title>TECHWAY - Seu Caminho para a Eficiência</title>
-        <meta name="description" content="A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação." />
-      
+        <meta
+          name="description"
+          content="A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação."
+        />
+
         {/* Favicon */}
         <link rel="icon" href="/techway_favicon.ico" />
-      
+
         {/* Meta Tags de SEO */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="automação de processos, dashboards, KPIs, eficiência, tecnologia, produtividade, Techway" />
+        <meta
+          name="keywords"
+          content="automação de processos, dashboards, KPIs, eficiência, tecnologia, produtividade, Techway"
+        />
         <meta name="author" content="Techway Team" />
-      
+
         {/* Meta Tags para Redes Sociais */}
-        <meta property="og:title" content="TECHWAY - Seu Caminho para a Eficiência" />
-        <meta property="og:description" content="A TECHWAY oferece soluções personalizadas para otimizar processos e aumentar a eficiência da sua empresa. Descubra nossas soluções inteligentes." />
+        <meta
+          property="og:title"
+          content="TECHWAY - Seu Caminho para a Eficiência"
+        />
+        <meta
+          property="og:description"
+          content="A TECHWAY oferece soluções personalizadas para otimizar processos e aumentar a eficiência da sua empresa. Descubra nossas soluções inteligentes."
+        />
         <meta property="og:image" content="/techway_favicon.ico" />
         <meta property="og:url" content="https://techway.one" />
         <meta property="og:type" content="website" />
-      
+
         {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="TECHWAY - Seu Caminho para a Eficiência" />
-        <meta name="twitter:description" content="Transforme sua empresa com soluções tecnológicas personalizadas. Otimize processos, automatize tarefas e alcance resultados extraordinários." />
+        <meta
+          name="twitter:title"
+          content="TECHWAY - Seu Caminho para a Eficiência"
+        />
+        <meta
+          name="twitter:description"
+          content="Transforme sua empresa com soluções tecnológicas personalizadas. Otimize processos, automatize tarefas e alcance resultados extraordinários."
+        />
         <meta name="twitter:image" content="/techway_favicon.ico" />
-      
+
         {/* Robots e Indexação */}
         <meta name="robots" content="index, follow" />
-      
+
         {/* CSS para Fontes ou Estilos Adicionais */}
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Header />
 
       <main className="flex-grow pt-16">
-        <section className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
+        <section id="hero" className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
           <div className="absolute inset-0 z-0">
             <Image
               src="/collaboration.webp"
