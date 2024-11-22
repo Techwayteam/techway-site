@@ -3,12 +3,17 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
 
-export default function Header() {
+interface MenuItem {
+  href: string;
+  label: string;
+}
+
+export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
-  const menuItems = [
+  const menuItems: MenuItem[] = [
     { href: "/#sobre", label: "Sobre" },
     { href: "/#solucoes", label: "Soluções" },
     { href: "/#depoimentos", label: "Depoimentos" },
@@ -38,7 +43,7 @@ export default function Header() {
             ))}
           </ul>
         </nav>
-        <button 
+        <button
           className="md:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-300"
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
@@ -52,9 +57,9 @@ export default function Header() {
           <ul className="flex flex-col items-center space-y-2">
             {menuItems.map((item) => (
               <li key={item.href}>
-                <Link 
-                  href={item.href} 
-                  className="hover:text-blue-400 transition-colors duration-300" 
+                <Link
+                  href={item.href}
+                  className="hover:text-blue-400 transition-colors duration-300"
                   onClick={toggleMenu}
                 >
                   {item.label}
