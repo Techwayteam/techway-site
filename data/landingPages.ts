@@ -1,4 +1,4 @@
-import { PageData } from '../types/PageData'
+import type { PageData } from '../types/PageData'
 
 export const landingPages: Record<string, PageData> = {
   default: {
