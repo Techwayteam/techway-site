@@ -7,7 +7,16 @@ jobs:
   setup-typescript:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          
+      - name: Setup Git LFS
+        run: |
+          git lfs install
+          git lfs pull
+          
       - uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -19,10 +28,16 @@ jobs:
       - name: Initialize TypeScript
         run: npx tsc --init
       
+      - name: Configure Git LFS
+        run: |
+          git lfs track "node_modules/@next/swc-linux-x64-gnu/next-swc.linux-x64-gnu.node"
+          git lfs track "node_modules/@next/swc-linux-x64-musl/next-swc.linux-x64-musl.node"
+      
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git add .gitattributes
           git add .
-          git commit -m "Initialize TypeScript" -a || echo "No changes to commit"
+          git commit -m "Initialize TypeScript and configure Git LFS" -a || echo "No changes to commit"
           git push
