@@ -1,68 +1,38 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { useState } from 'react'
+import dynamic from 'next/dynamic'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
-import Testimonials from '../components/Testimonials'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-const Home: React.FC = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+const DynamicTestimonials = dynamic(() => import('../components/Testimonials'), {
+  loading: () => <p>Carregando depoimentos...</p>,
+})
 
+const SITE_NAME = 'TECHWAY'
+const SITE_DESCRIPTION = 'A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação.'
+
+const Home: React.FC = () => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
       <Head>
-        {/* Título e Descrição */}
-        <title>TECHWAY - Seu Caminho para a Eficiência</title>
-        <meta
-          name="description"
-          content="A TECHWAY oferece soluções personalizadas para otimizar processos, automatizar tarefas e aumentar a produtividade da sua empresa. Descubra como podemos transformar a sua operação."
-        />
-
-        {/* Favicon */}
+        <title>{`${SITE_NAME} - Seu Caminho para a Eficiência`}</title>
+        <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="icon" href="/techway_favicon.ico" />
-
-        {/* Meta Tags de SEO */}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta
-          name="keywords"
-          content="automação de processos, dashboards, KPIs, eficiência, tecnologia, produtividade, Techway"
-        />
+        <meta name="keywords" content="automação de processos, dashboards, KPIs, eficiência, tecnologia, produtividade, Techway" />
         <meta name="author" content="Techway Team" />
-
-        {/* Meta Tags para Redes Sociais */}
-        <meta
-          property="og:title"
-          content="TECHWAY - Seu Caminho para a Eficiência"
-        />
-        <meta
-          property="og:description"
-          content="A TECHWAY oferece soluções personalizadas para otimizar processos e aumentar a eficiência da sua empresa. Descubra nossas soluções inteligentes."
-        />
+        <meta property="og:title" content={`${SITE_NAME} - Seu Caminho para a Eficiência`} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="/techway_favicon.ico" />
         <meta property="og:url" content="https://techway.one" />
         <meta property="og:type" content="website" />
-
-        {/* Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta
-          name="twitter:title"
-          content="TECHWAY - Seu Caminho para a Eficiência"
-        />
-        <meta
-          name="twitter:description"
-          content="Transforme sua empresa com soluções tecnológicas personalizadas. Otimize processos, automatize tarefas e alcance resultados extraordinários."
-        />
+        <meta name="twitter:title" content={`${SITE_NAME} - Seu Caminho para a Eficiência`} />
+        <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content="/techway_favicon.ico" />
-
-        {/* Robots e Indexação */}
         <meta name="robots" content="index, follow" />
-
-        {/* CSS para Fontes ou Estilos Adicionais */}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
 
       <Header />
@@ -199,7 +169,7 @@ const Home: React.FC = () => {
           </div>
         </section>
 
-        <Testimonials />
+        <DynamicTestimonials />
                       
         <Footer />
 
