@@ -42,4 +42,4 @@ export const landingPages: Record<string, PageData> = {
   fintech: {
     // ... fintech specific content
   }
-}la
+}
