@@ -5,8 +5,10 @@ import { Shield, Database, Eye, Lock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function PoliticaDePrivacidade() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+interface PoliticaDePrivacidadeProps {}
+
+const PoliticaDePrivacidade: React.FC<PoliticaDePrivacidadeProps> = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
@@ -127,4 +129,6 @@ export default function PoliticaDePrivacidade() {
       <Footer />
     </div>
   )
-}
+};
+
+export default PoliticaDePrivacidade
