@@ -1,34 +1,34 @@
-import { type LucideIcon } from 'lucide-react'
+import * as LucideIcons from 'lucide-react';
 
 export type PageData = {
   seo: {
-    pageTitle: string
-    pageDescription: string
-    pageKeywords: string
+    pageTitle: string;
+    pageDescription: string;
+    pageKeywords: string;
   }
   hero: {
-    heroTitle: string
-    heroSubtitle: string
-    heroCTA: string
-    heroImage: string
+    heroTitle: string;
+    heroSubtitle: string;
+    heroCTA: string;
+    heroImage: string;
   }
   story: {
-    storyTitle: string
-    storyText: string
-    storyImage: string
+    storyTitle: string;
+    storyText: string;
+    storyImage: string;
   }
   benefits: Array<{
-    title: string
-    description: string
-    icon: keyof typeof import('lucide-react')
+    title: string;
+    description: string;
+    icon: keyof typeof LucideIcons;
   }>
   solution: {
-    solutionTitle: string
-    solutionText: string
+    solutionTitle: string;
+    solutionText: string;
   }
   cta: {
-    ctaText: string
-    ctaButton: string
-    ctaLink: string
+    ctaText: string;
+    ctaButton: string;
+    ctaLink: string;
   }
 }
