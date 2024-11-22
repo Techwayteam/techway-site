@@ -5,8 +5,8 @@ import { Book, Shield, Scale, Clock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function TermosDeUso() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+const TermosDeUso: React.FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
@@ -129,4 +129,6 @@ export default function TermosDeUso() {
     
     </div>
   )
-}
+};
+
+export default TermosDeUso
