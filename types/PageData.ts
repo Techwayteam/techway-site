@@ -1,4 +1,4 @@
-import type { LucideIcon } from 'lucide-react'
+import type { CheckCircle, Award, Zap, BarChart2, Headphones } from 'lucide-react'
 
 export interface PageData {
   seo: {
