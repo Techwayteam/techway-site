@@ -34,12 +34,5 @@ export const landingPages: Record<string, PageData> = {
       ctaButton: "Fale Conosco",
       ctaLink: "#contato"
     }
-  },
-  // You can add more variations here
-  ecommerce: {
-    // ... e-commerce specific content
-  },
-  fintech: {
-    // ... fintech specific content
   }
 }
