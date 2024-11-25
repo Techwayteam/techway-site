@@ -1,3 +1,5 @@
+const path = require('path');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
@@ -6,6 +8,7 @@ const nextConfig = {
   },
   basePath: '',
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    // Adicione suas configurações personalizadas aqui
     config.module.rules.push({
       test: /\.svg$/,
       use: ['@svgr/webpack'],
@@ -27,4 +30,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
