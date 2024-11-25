@@ -20,11 +20,11 @@ const nextConfig = {
       '@styles': path.resolve(__dirname, 'styles'),
     };
 
-    if (!isServer) {
-      config.node = {
-        fs: 'empty',
-      };
-    }
+    // if (!isServer) {
+    //   config.node = {
+    //    fs: 'empty',
+    //   };
+    //  }
 
     return config;
   },
