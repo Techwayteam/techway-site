@@ -28,11 +28,6 @@ jobs:
       - name: Initialize TypeScript
         run: npx tsc --init
       
-      - name: Configure Git LFS
-        run: |
-          git lfs track "node_modules/@next/swc-linux-x64-gnu/next-swc.linux-x64-gnu.node"
-          git lfs track "node_modules/@next/swc-linux-x64-musl/next-swc.linux-x64-musl.node"
-      
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
