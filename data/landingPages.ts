@@ -19,6 +19,15 @@ export const landingPages: Record<string, PageData> = {
       storyImage: "/placeholder.svg?height=500&width=500",
       storyImageDescription: "Nossa História"
     },
+    solution: {
+    aboutsolution: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere. Donec imperdiet molestie leo, vel finibus magna mollis et. Nullam non est vel mauris varius porta ut in enim. Curabitur imperdiet sem a sem fermentum, et vestibulum neque rhoncus. Quisque hendrerit odio orci, ut pharetra ipsum viverra sit amet.",
+    solutionTitle_1: "Lorem Ipsum",
+    solutionText_1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere.",
+    solutionTitle_2: "Lorem Ipsum",
+    solutionText_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere.",
+    solutionTitle_3: "Lorem Ipsum",
+    solutionText_3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere.",
+    },
     benefits: [
       { title: "Personalização", description: "Soluções adaptadas às suas necessidades específicas, garantindo que cada aspecto da tecnologia esteja alinhado com seus objetivos de negócio.", icon: "CheckCircle" },
       { title: "Eficiência", description: "Otimização de processos para maior produtividade, eliminando gargalos e maximizando o desempenho de sua equipe e sistemas.", icon: "Award" },
@@ -26,10 +35,6 @@ export const landingPages: Record<string, PageData> = {
       { title: "Análise de Dados", description: "Insights poderosos através de análises avançadas, permitindo tomadas de decisão mais informadas e estratégicas.", icon: "BarChart2" },
       { title: "Suporte Contínuo", description: "Assistência técnica dedicada e atualizações constantes, garantindo que seus sistemas estejam sempre funcionando no seu melhor.", icon: "Headphones" }
     ],
-    solution: {
-      solutionTitle: "Nossa Abordagem",
-      solutionText: "Na TECHWAY, não acreditamos em soluções de tamanho único. Nossa equipe de especialistas trabalha em estreita colaboração com você para entender profundamente seus desafios e objetivos. Com base nessa compreensão, desenvolvemos soluções tecnológicas sob medida que se integram perfeitamente ao seu negócio, impulsionando a eficiência e o crescimento."
-    },
     cta: {
       ctaText: "Pronto para transformar seu negócio com tecnologia personalizada?",
       ctaButton: "Fale Conosco",
