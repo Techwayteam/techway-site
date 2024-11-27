@@ -3,7 +3,7 @@ import type { PageData } from '../types/PageData'
 export const landingPages: Record<string, PageData> = {
   default: {
     seo: {
-      pageTitle: "Aumente sua Produtividade com Soluções TECHWAY",
+      pageTitle: "TECHWAY - Aumente sua Produtividade Agora",
       pageDescription: "Descubra como a TECHWAY pode otimizar seus processos e aumentar sua eficiência com soluções tecnológicas personalizadas.",
       pageKeywords: "eficiência no trabalho, produtividade, automação de processos, soluções tecnológicas, TECHWAY"
     },
