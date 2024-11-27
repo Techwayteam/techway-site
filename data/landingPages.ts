@@ -66,7 +66,7 @@ improvisation: {
     story: {
       storyTitle: "O problema não é você, é o sistema.",
       storyText: "Quantas vezes você já perdeu tempo tentando resolver problemas com ferramentas que não foram feitas para a sua realidade? Na TECHWAY, entendemos que cada desafio exige uma solução única. Por isso, criamos ferramentas que realmente funcionam para o seu negócio.",
-      storyImage: "/placeholder_frustration.svg",
+      storyImage: "/improvisation_work_load.webp",
       storyImageDescription: "Profissional frustrado com soluções genéricas."
     },
     solution: {
@@ -114,7 +114,7 @@ improvisation: {
     simulate: {
       simulateTitle: "Como será sua rotina com a TECHWAY?",
       simulateText: "Imagine uma rotina mais leve, onde o tempo perdido com tarefas ineficientes se transforma em produtividade real. Com as nossas soluções, você terá mais tempo para o que realmente importa.",
-      simulateImage: "/placeholder_post_techway.svg",
+      simulateImage: "/organized_work_tool .webp",
       simulateImageDescription: "Profissional tranquilo e produtivo após adotar a TECHWAY."
     },
     cta: {
