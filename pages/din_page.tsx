@@ -55,7 +55,7 @@ export default function DynamicLandingPage() {
 
       <Header />
 
-      <main className="flex-grow">
+      <main className="flex-grow pt-16">
         {/* Hero Section */}
         <section id="hero" className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
           <div className="absolute inset-0 z-0">
@@ -172,7 +172,7 @@ export default function DynamicLandingPage() {
               {pageData.benefits.map((benefit, index) => {
                 const IconComponent = iconComponents[benefit.icon]
                 return (
-                  <div key={index} className="bg-gray-800 rounded-lg shadow-lg p-6 transition duration-300 hover:bg-gray-700 flex items-center">
+                  <div key={index} className="bg-gray-700 rounded-lg shadow-lg p-6 transition duration-300 hover:bg-gray-700 flex items-center">
                     <div className="flex-shrink-0 mr-6">
                       <div className="bg-blue-500 rounded-full p-3">
                         <IconComponent className="w-8 h-8 text-white" />
@@ -193,7 +193,7 @@ export default function DynamicLandingPage() {
         <Testimonials />
 
         {/* CTA Section */}
-        <section id="contato" className="py-20 bg-gray-900">
+        <section id="contato" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20"">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">{pageData.cta.ctaText}</h2>
             <a
