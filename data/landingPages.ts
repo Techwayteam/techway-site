@@ -40,6 +40,12 @@ benefits: [
   { title: "Simples e Intuitivo", description: "Soluções que qualquer pessoa pode usar, sem complicações ou treinamentos extensivos.", icon: "Box" },
   { title: "Apoio Constante", description: "Nossa equipe está com você em cada passo, oferecendo suporte e atualizações sempre que precisar.", icon: "Headphones" }
 ],
+simulate: {
+  simulateTitle: "Como será a sua rotina com a TECHWAY?",
+  simulateText: "Com a nossa parceria, as tarefas manuais e repetitivas são coisa do passado. Junto com a TECHWAY, você terá mais tempo para se concentrar no que realmente importa, enquanto nossas soluções simplificam e otimizam seus processos. Não é apenas produtividade, é liberdade para focar no crescimento e nos resultados.",
+  simulateImage: "/path/to/simulate-image.jpg", // Atualize com o caminho da imagem
+  simulateImageDescription: "Pessoa relaxada em ambiente organizado, representando eficiência e tranquilidade."
+},
     cta: {
       ctaText: "Pronto para transformar seu trabalho?",
       ctaButton: "Converse com um Especialista",
