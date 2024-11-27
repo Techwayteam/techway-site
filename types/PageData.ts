@@ -26,6 +26,12 @@ export interface PageData {
     solutionText_2: string
     solutionTitle_3: string
     solutionText_3: string
+    solutionctatext_1: string
+    solutionctalink_1: string
+    solutionctatext_2: string
+    solutionctalink_2: string
+    solutionctatext_3: string
+    solutionctalink_3: string
   }
   benefits: Array<{
     title: string
