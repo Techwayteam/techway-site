@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { CheckCircle, Award, Zap, BarChart2, Headphones } from 'lucide-react'
+import { CheckCircle, Award, Zap, BarChart2, Headphones, Wrench } from 'lucide-react'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
@@ -120,9 +120,11 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_1}
                 </p>
                 <div className="text-center">
-                  <a href={pageData.solution.solutionctalink_1}
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solution.solutionctatext_1} &lt;
+                  <a 
+                    href={pageData.solution.solutionctalink_1}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
+                    {pageData.solution.solutionctatext_1}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -136,9 +138,11 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_2}
                 </p>
                 <div className="text-center">
-                  <a href={pageData.solution.solutionctalink_1}
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solution.solutionctatext_2} &lt;
+                  <a 
+                    href={pageData.solution.solutionctalink_2}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
+                    {pageData.solution.solutionctatext_2}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -152,9 +156,11 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_3}
                 </p>
                 <div className="text-center">
-                  <a href={pageData.solution.solutionctalink_1}
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solution.solutionctatext_3} &lt;
+                  <a 
+                    href={pageData.solution.solutionctalink_3}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
+                    {pageData.solution.solutionctatext_3}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -174,7 +180,7 @@ export default function DynamicLandingPage() {
                   <div key={index} className="bg-gray-700 rounded-lg shadow-lg p-6 transition duration-300 hover:bg-gray-700 flex items-center">
                     <div className="flex-shrink-0 mr-6">
                       <div className="bg-blue-500 rounded-full p-3">
-                        <IconComponent className="w-8 h-8 text-white" />
+                        {IconComponent && <IconComponent className="w-8 h-8 text-white" />}
                       </div>
                     </div>
                     <div>
@@ -192,7 +198,7 @@ export default function DynamicLandingPage() {
         <Testimonials />
 
         {/* CTA Section */}
-        <section id="contato" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20"">
+        <section id="contato" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">{pageData.cta.ctaText}</h2>
             <a
