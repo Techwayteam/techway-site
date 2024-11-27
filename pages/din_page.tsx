@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { CheckCircle, Award, Zap, BarChart2, Headphones, Wrench, Clock, Target, TrendingUp, Box } from 'lucide-react'
+import { CheckCircle, Award, Zap, BarChart2, Headphones, Wrench, Clock, Target, TrendingUp, Box, Settings } from 'lucide-react'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import Header from '../components/Header'
@@ -18,7 +18,8 @@ const iconComponents = {
   Clock, 
   Target, 
   TrendingUp, 
-  Box 
+  Box,
+  Settings
 }
 
 export default function DynamicLandingPage() {
