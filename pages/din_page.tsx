@@ -201,6 +201,27 @@ export default function DynamicLandingPage() {
         {/* Testimonials Section */}
         <Testimonials />
 
+        {/* Simulate Section */}
+        <section id="simulate" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="md:w-1/2 mb-8 md:mb-0">
+                <Image
+                  src={pageData.simulate.simulateImage}
+                  alt={pageData.simulate.simulateImageDescription}
+                  width={500}
+                  height={500}
+                  className="rounded-lg shadow-lg"
+                />
+              </div>
+              <div className="md:w-1/2 md:pl-12">
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{pageData.simulate.simulateTitle}</h2>
+                <p className="text-gray-300 text-lg leading-relaxed">{pageData.simulate.simulateText}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section id="contato" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
