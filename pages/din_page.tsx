@@ -56,38 +56,38 @@ export default function DynamicLandingPage() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section className="relative h-screen flex items-center justify-center text-white">
-          <Image
-            src={pageData.hero.heroImage}
-            alt="Hero background"
-            layout="fill"
-            objectFit="cover"
-            quality={100}
-            className="z-0"
-          />
-          <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
-          <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
-            <div className="bg-gray-900 bg-opacity-70 p-8 rounded-lg">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">{pageData.hero.heroTitle}</h1>
-              <p className="text-xl sm:text-2xl md:text-3xl mb-8 text-gray-300">{pageData.hero.heroSubtitle}</p>
-              <a
-                href="#contato"
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block"
-              >
-                {pageData.hero.heroCTA}
-              </a>
-            </div>
+        <section id="hero" className="bg-gradient-to-br from-blue-900 via-gray-900 to-gray-800 text-white py-20 relative">
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/collaboration.webp"
+              alt="Equipe colaborando em soluções tecnológicas personalizadas"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              className="opacity-20"
+            />
+          </div>
+          <div className="container mx-auto px-4 text-center relative z-10">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              {pageData.hero.heroTitle}
+            </h1>
+            <p className="text-xl mb-8 text-center font-bold">
+              {pageData.hero.heroSubtitle}
+            </p>
+            <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+              {pageData.hero.heroCTA}
+            </a>
           </div>
         </section>
 
         {/* Story Section */}
-        <section id="sobre" className="py-20 bg-gray-800">
+        <section id="sobre" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row items-center">
               <div className="md:w-1/2 mb-8 md:mb-0">
                 <Image
                   src={pageData.story.storyImage}
-                  alt="Nossa história"
+                  alt={pageData.story.storyImageDescription}
                   width={500}
                   height={500}
                   className="rounded-lg shadow-lg"
@@ -101,8 +101,18 @@ export default function DynamicLandingPage() {
           </div>
         </section>
 
+        {/* Solution Section */}
+        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{pageData.solution.solutionTitle}</h2>
+              <p className="text-gray-300 text-lg leading-relaxed">{pageData.solution.solutionText}</p>
+            </div>
+          </div>
+        </section>
+        
         {/* Benefits Section */}
-        <section id="solucoes" className="py-20 bg-gray-900">
+        <section id="solucoes" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Nossas Soluções</h2>
             <div className="space-y-6">
@@ -128,16 +138,6 @@ export default function DynamicLandingPage() {
 
         {/* Testimonials Section */}
         <Testimonials />
-
-        {/* Solution Section */}
-        <section className="py-20 bg-gray-800">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{pageData.solution.solutionTitle}</h2>
-              <p className="text-gray-300 text-lg leading-relaxed">{pageData.solution.solutionText}</p>
-            </div>
-          </div>
-        </section>
 
         {/* CTA Section */}
         <section id="contato" className="py-20 bg-gray-900">
