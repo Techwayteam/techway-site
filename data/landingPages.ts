@@ -17,6 +17,7 @@ export const landingPages: Record<string, PageData> = {
       storyTitle: "Nossa História",
       storyText: "Há uma década, vimos empresas lutando com soluções tecnológicas genéricas que não atendiam suas necessidades específicas. Foi então que decidimos criar a TECHWAY, com a missão de oferecer soluções verdadeiramente personalizadas que se adaptam perfeitamente ao seu negócio.",
       storyImage: "/placeholder.svg?height=500&width=500"
+      storyImageDescription: "Nossa História"
     },
     benefits: [
       { title: "Personalização", description: "Soluções adaptadas às suas necessidades específicas, garantindo que cada aspecto da tecnologia esteja alinhado com seus objetivos de negócio.", icon: "CheckCircle" },
