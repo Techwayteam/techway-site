@@ -16,6 +16,7 @@ export interface PageData {
     storyTitle: string
     storyText: string
     storyImage: string
+    storyImageDescription: String
   }
   benefits: Array<{
     title: string
