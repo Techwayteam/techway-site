@@ -39,7 +39,7 @@ benefits: [
   { title: "Resultados Visíveis", description: "Veja a transformação real no seu trabalho, com aumento de produtividade e eficiência.", icon: "TrendingUp" },
   { title: "Simples e Intuitivo", description: "Soluções que qualquer pessoa pode usar, sem complicações ou treinamentos extensivos.", icon: "Box" },
   { title: "Apoio Constante", description: "Nossa equipe está com você em cada passo, oferecendo suporte e atualizações sempre que precisar.", icon: "Headphones" }
-]
+],
     cta: {
       ctaText: "Pronto para transformar seu trabalho?",
       ctaButton: "Converse com um Especialista",
