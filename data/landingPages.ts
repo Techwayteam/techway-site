@@ -15,7 +15,7 @@ export const landingPages: Record<string, PageData> = {
     story: {
       storyTitle: "Você não precisa fazer tudo sozinho",
       storyText: "Sabemos como é cansativo lidar com tarefas repetitivas que poderiam ser otimizadas. A TECHWAY nasceu para ajudar pessoas como você a transformar a rotina com tecnologia simples e acessível. Nossa missão é garantir que cada solução entregue faça uma diferença real no seu dia a dia.",
-      storyImage: "/placeholder.svg?height=500&width=500",
+      storyImage: "/peacefull_time_saved.webp",
       storyImageDescription: "Imagem ilustrativa de produtividade"
     },
     solution: {
