@@ -1,4 +1,4 @@
-import type { CheckCircle, Award, Zap, BarChart2, Headphones } from 'lucide-react'
+import type { CheckCircle, Award, Zap, BarChart2, Headphones, Clock, Target, TrendingUp, Box } from 'lucide-react'
 
 export interface PageData {
   seo: {
@@ -36,7 +36,7 @@ export interface PageData {
   benefits: Array<{
     title: string
     description: string
-    icon: 'CheckCircle' | 'Award' | 'Zap' | 'BarChart2' | 'Headphones'
+    icon: 'CheckCircle' | 'Award' | 'Zap' | 'BarChart2' | 'Headphones' | 'Clock' | 'Target' | 'TrendingUp' | 'Box'
   }>
   cta: {
     ctaText: string
