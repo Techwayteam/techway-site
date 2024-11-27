@@ -102,36 +102,27 @@ export default function DynamicLandingPage() {
         </section>
 
         {/* Solution Section */}
-        <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">{pageData.solution.solutionTitle}</h2>
-              <p className="text-gray-300 text-lg leading-relaxed">{pageData.solution.solutionText}</p>
-            </div>
-          </div>
-        </section>
-
         <section id="solucoes" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
               Veja como podemos transformar a sua rotina
             </h2>
             <p className="text-gray-300 mb-12 text-xl text-center max-w-5xl mx-auto">
-              {pagedata.solution.aboutsolution}
+              {pageData.solution.aboutsolution}
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
                 <div className="flex justify-center mb-6">
                   <Zap className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pagedata.solution.solutiontitle_1}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_1}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pagedata.solution.solutiontext_1}
+                  {pageData.solution.solutiontext_1}
                 </p>
                 <div className="text-center">
-                  <a href={pagedata.solution.solutionctalink_1}
+                  <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pagedata.solutionctatext_1} &lt;
+                    &gt; {pageData.solutionctatext_1} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -140,14 +131,14 @@ export default function DynamicLandingPage() {
                 <div className="flex justify-center mb-6">
                   <BarChart2 className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pagedata.solution.solutiontitle_2}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_2}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pagedata.solution.solutiontext_2}
+                  {pageData.solution.solutiontext_2}
                 </p>
                 <div className="text-center">
-                  <a href={pagedata.solution.solutionctalink_1}
+                  <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pagedata.solutionctatext_2} &lt;
+                    &gt; {pageData.solutionctatext_2} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -156,14 +147,14 @@ export default function DynamicLandingPage() {
                 <div className="flex justify-center mb-6">
                   <Wrench className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pagedata.solution.solutiontitle_3}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_3}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pagedata.solution.solutiontext_3}
+                  {pageData.solution.solutiontext_3}
                 </p>
                 <div className="text-center">
-                  <a href={pagedata.solution.solutionctalink_1}
+                  <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pagedata.solutionctatext_3} &lt;
+                    &gt; {pageData.solutionctatext_3} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
