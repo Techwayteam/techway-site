@@ -10,7 +10,6 @@ export interface PageData {
     heroTitle: string
     heroSubtitle: string
     heroCTA: string
-    heroImage: string
   }
   story: {
     storyTitle: string
