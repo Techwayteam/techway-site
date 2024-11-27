@@ -115,9 +115,9 @@ export default function DynamicLandingPage() {
                 <div className="flex justify-center mb-6">
                   <Zap className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_1}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutionTitle_1}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pageData.solution.solutiontext_1}
+                  {pageData.solution.solutionText_1}
                 </p>
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
@@ -131,9 +131,9 @@ export default function DynamicLandingPage() {
                 <div className="flex justify-center mb-6">
                   <BarChart2 className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_2}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutionTitle_2}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pageData.solution.solutiontext_2}
+                  {pageData.solution.solutionText_2}
                 </p>
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
@@ -147,9 +147,9 @@ export default function DynamicLandingPage() {
                 <div className="flex justify-center mb-6">
                   <Wrench className="w-12 h-12 text-blue-400" />
                 </div>
-                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutiontitle_3}</h3>
+                <h3 className="text-xl font-semibold mb-4 text-center">{pageData.solution.solutionTitle_3}</h3>
                 <p className="text-gray-300 mb-6 text-center">
-                  {pageData.solution.solutiontext_3}
+                  {pageData.solution.solutionText_3}
                 </p>
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
