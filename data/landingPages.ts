@@ -27,6 +27,12 @@ export const landingPages: Record<string, PageData> = {
     solutionText_2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere.",
     solutionTitle_3: "Lorem Ipsum",
     solutionText_3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac aliquam magna, non molestie lorem. Cras convallis dui in orci sollicitudin, eget efficitur ex euismod. Quisque rutrum nec urna et posuere.",
+    solutionctatext_1: "Lorem ipsum dolor sit amet",
+    solutionctalink_1: "#contato",
+    solutionctatext_2: "Lorem ipsum dolor sit amet",
+    solutionctalink_2: "#contato",
+    solutionctatext_3: "Lorem ipsum dolor sit amet",
+    solutionctalink_3: "#contato",
     },
     benefits: [
       { title: "Personalização", description: "Soluções adaptadas às suas necessidades específicas, garantindo que cada aspecto da tecnologia esteja alinhado com seus objetivos de negócio.", icon: "CheckCircle" },
