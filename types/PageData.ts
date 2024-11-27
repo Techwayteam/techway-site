@@ -37,6 +37,13 @@ export interface PageData {
     description: string
     icon: 'CheckCircle' | 'Award' | 'Zap' | 'BarChart2' | 'Headphones' | 'Clock' | 'Target' | 'TrendingUp' | 'Box'
   }>
+  
+  simulate: {
+    simulateTitle: string
+    simulateText: string
+    simulateImage: string
+    simulateImageDescription: string
+  }
   cta: {
     ctaText: string
     ctaButton: string
