@@ -18,15 +18,20 @@ export interface PageData {
     storyImage: string
     storyImageDescription: string
   }
+    solution: {
+    aboutsolution: string
+    solutionTitle_1: string
+    solutionText_1: string
+    solutionTitle_2: string
+    solutionText_2: string
+    solutionTitle_3: string
+    solutionText_3: string
+  }
   benefits: Array<{
     title: string
     description: string
     icon: 'CheckCircle' | 'Award' | 'Zap' | 'BarChart2' | 'Headphones'
   }>
-  solution: {
-    solutionTitle: string
-    solutionText: string
-  }
   cta: {
     ctaText: string
     ctaButton: string
