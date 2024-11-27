@@ -122,7 +122,7 @@ export default function DynamicLandingPage() {
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solutionctatext_1} &lt;
+                    &gt; {pageData.solution.solutionctatext_1} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -138,7 +138,7 @@ export default function DynamicLandingPage() {
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solutionctatext_2} &lt;
+                    &gt; {pageData.solution.solutionctatext_2} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
@@ -154,7 +154,7 @@ export default function DynamicLandingPage() {
                 <div className="text-center">
                   <a href={pageData.solution.solutionctalink_1}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
-                    &gt; {pageData.solutionctatext_3} &lt;
+                    &gt; {pageData.solution.solutionctatext_3} &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
                 </div>
