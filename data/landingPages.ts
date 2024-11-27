@@ -3,7 +3,7 @@ import type { PageData } from '../types/PageData'
 export const landingPages: Record<string, PageData> = {
   default: {
     seo: {
-      pageTitle: "TECHWAY - Aumente sua Produtividade Agora",
+      pageTitle: "Aumente sua Produtividade Agora | TECHWAY",
       pageDescription: "Descubra como a TECHWAY pode otimizar seus processos e aumentar sua eficiência com soluções tecnológicas personalizadas.",
       pageKeywords: "eficiência no trabalho, produtividade, automação de processos, soluções tecnológicas, TECHWAY"
     },
@@ -49,6 +49,77 @@ simulate: {
     cta: {
       ctaText: "Pronto para transformar seu trabalho?",
       ctaButton: "Converse com um Especialista",
+      ctaLink: "#contato"
+    }
+  },
+improvisation: {
+    seo: {
+      pageTitle: "Chega de Soluções Improvisadas | TECHWAY",
+      pageDescription: "Diga adeus às ferramentas ineficientes e veja como a TECHWAY pode transformar sua rotina com soluções rápidas e personalizadas.",
+      pageKeywords: "soluções rápidas, eficiência empresarial, transformação digital, produtividade, personalização tecnológica"
+    },
+    hero: {
+      heroTitle: "Chega de soluções que só quebram o galho.",
+      heroSubtitle: "Com a TECHWAY, você tem a solução ideal, rápida e sem complicações.",
+      heroCTA: "Descubra como facilitar sua rotina"
+    },
+    story: {
+      storyTitle: "O problema não é você, é o sistema.",
+      storyText: "Quantas vezes você já perdeu tempo tentando resolver problemas com ferramentas que não foram feitas para a sua realidade? Na TECHWAY, entendemos que cada desafio exige uma solução única. Por isso, criamos ferramentas que realmente funcionam para o seu negócio.",
+      storyImage: "/placeholder_frustration.svg",
+      storyImageDescription: "Profissional frustrado com soluções genéricas."
+    },
+    solution: {
+      aboutsolution: "Na TECHWAY, não acreditamos em soluções genéricas. Nossa missão é eliminar a dificuldade de criar algo eficiente e alinhado às suas necessidades. Entregamos ferramentas que transformam a sua rotina de forma prática e imediata.",
+      solutionTitle_1: "Resultados desde o primeiro dia",
+      solutionText_1: "Soluções projetadas para impacto imediato, ajudando você a economizar tempo e energia desde o início.",
+      solutionTitle_2: "Feito para você",
+      solutionText_2: "Nada de adaptações forçadas. Criamos ferramentas que atendem exatamente ao que você precisa.",
+      solutionTitle_3: "Implementação sem dor de cabeça",
+      solutionText_3: "Processos otimizados e suporte dedicado para que sua solução funcione sem complicações.",
+      solutionctatext_1: "Saiba como criar algo incrível",
+      solutionctalink_1: "#contato",
+      solutionctatext_2: "Veja como funciona",
+      solutionctalink_2: "#contato",
+      solutionctatext_3: "Converse com um especialista",
+      solutionctalink_3: "#contato"
+    },
+    benefits: [
+      {
+        title: "Agilidade",
+        description: "Soluções rápidas para que você economize tempo e atinja resultados rapidamente.",
+        icon: "Zap"
+      },
+      {
+        title: "Personalização",
+        description: "Ferramentas criadas exclusivamente para o seu negócio, sem adaptações genéricas.",
+        icon: "Settings"
+      },
+      {
+        title: "Eficiência",
+        description: "Tecnologia que elimina gargalos e melhora o desempenho do seu trabalho.",
+        icon: "TrendingUp"
+      },
+      {
+        title: "Conexão",
+        description: "Suporte próximo e contínuo, garantindo que tudo funcione como esperado.",
+        icon: "Headphones"
+      },
+      {
+        title: "Resultados Imediatos",
+        description: "Entrega de valor real desde o primeiro dia de uso.",
+        icon: "Award"
+      }
+    ],
+    simulate: {
+      simulateTitle: "Como será sua rotina com a TECHWAY?",
+      simulateText: "Imagine uma rotina mais leve, onde o tempo perdido com tarefas ineficientes se transforma em produtividade real. Com as nossas soluções, você terá mais tempo para o que realmente importa.",
+      simulateImage: "/placeholder_post_techway.svg",
+      simulateImageDescription: "Profissional tranquilo e produtivo após adotar a TECHWAY."
+    },
+    cta: {
+      ctaText: "Está pronto para transformar sua rotina e criar algo incrível?",
+      ctaButton: "Converse com a TECHWAY",
       ctaLink: "#contato"
     }
   }
