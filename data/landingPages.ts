@@ -8,7 +8,7 @@ export const landingPages: Record<string, PageData> = {
       pageKeywords: "eficiência no trabalho, produtividade, automação de processos, soluções tecnológicas, TECHWAY"
     },
     hero: {
-      heroTitle: "Chega de Perder Tempo com Tarefas Manuais!",
+      heroTitle: "Chega de <span className="text-blue-400">Perder Tempo</span> <br /> com Tarefas Manuais!",
       heroSubtitle: "A TECHWAY transforma sua rotina com soluções tecnológicas simples, rápidas e eficazes.",
       heroCTA: "Fale com um Especialista",
     },
