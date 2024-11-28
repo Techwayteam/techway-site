@@ -177,7 +177,7 @@ export default function DynamicLandingPage() {
         {/* Benefits Section */}
         <section id="beneficios" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Nossas Soluções</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Quais são os benefícios?</h2>
             <div className="space-y-6">
               {pageData.benefits.map((benefit, index) => {
                 const IconComponent = iconComponents[benefit.icon]
