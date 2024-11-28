@@ -7,7 +7,7 @@ export interface PageData {
     pageKeywords: string
   }
   hero: {
-    heroTitle: string
+    heroTitle: JSX.Element
     heroSubtitle: string
     heroCTA: string
   }
