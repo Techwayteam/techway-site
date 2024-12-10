@@ -2,7 +2,11 @@ name: Deploy Next.js site to Pages
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
+  pull_request: # Adiciona suporte para previews em PRs
+    branches:
+      - "**"
   workflow_dispatch:
 
 permissions:
@@ -46,11 +50,12 @@ jobs:
         run: npm run build
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
   deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' # Apenas na main
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -60,3 +65,15 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v3
+        with:
+          path: ./out
+
+  preview:
+    if: github.event_name == 'pull_request' # Apenas em PRs
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy Preview
+        uses: actions/deploy-pages@v3
+        with:
+          path: ./out
