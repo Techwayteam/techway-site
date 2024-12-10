@@ -10,11 +10,27 @@ type Post = {
   author: string;
   date: string;
   content: {
-    intro: string;
-    development: string;
-    conclusion: string;
+    introduction: {
+      text: string;
+      image: string;
+      imageDescription: string;
+    };
+    sections: Array<{
+      title: string;
+      text: string;
+      image: string;
+      imageDescription: string;
+    }>;
+    conclusion: {
+      text: string;
+      cta: {
+        text: string;
+        link: string;
+      };
+    };
   };
   featuredImage: string;
+  tags: string[];
 };
 
 interface PostPageProps {
@@ -27,8 +43,14 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
       {/* Head Section */}
       <Head>
         <title>{post.title} | Blog TECHWAY</title>
-        <meta name="description" content={`Leia "${post.title}" e descubra insights valiosos.`} />
-        <meta name="keywords" content={`tecnologia, produtividade, blog, ${post.title}`} />
+        <meta
+          name="description"
+          content={`Leia "${post.title}" e descubra insights valiosos.`}
+        />
+        <meta
+          name="keywords"
+          content={`tecnologia, produtividade, blog, ${post.tags.join(', ')}`}
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/techway_favicon.ico" />
       </Head>
@@ -48,19 +70,44 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
             alt={post.title}
             className="w-full h-64 object-cover rounded-lg mb-8"
           />
-          <section className="space-y-6">
-            <div>
-              <h2 className="text-2xl font-semibold mb-2">Introdução</h2>
-              <p className="text-gray-300 leading-relaxed">{post.content.intro}</p>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-2">Desenvolvimento</h2>
-              <p className="text-gray-300 leading-relaxed">{post.content.development}</p>
-            </div>
-            <div>
-              <h2 className="text-2xl font-semibold mb-2">Conclusão</h2>
-              <p className="text-gray-300 leading-relaxed">{post.content.conclusion}</p>
-            </div>
+          {/* Introduction */}
+          <section>
+            <h2 className="text-2xl font-semibold mb-4">Introdução</h2>
+            <img
+              src={post.content.introduction.image}
+              alt={post.content.introduction.imageDescription}
+              className="w-full h-64 object-cover rounded-lg mb-4"
+            />
+            <p className="text-gray-300 leading-relaxed">
+              {post.content.introduction.text}
+            </p>
+          </section>
+
+          {/* Sections */}
+          {post.content.sections.map((section, index) => (
+            <section key={index} className="mt-12">
+              <h2 className="text-2xl font-semibold mb-4">{section.title}</h2>
+              <img
+                src={section.image}
+                alt={section.imageDescription}
+                className="w-full h-64 object-cover rounded-lg mb-4"
+              />
+              <p className="text-gray-300 leading-relaxed">{section.text}</p>
+            </section>
+          ))}
+
+          {/* Conclusion */}
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold mb-4">Conclusão</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              {post.content.conclusion.text}
+            </p>
+            <a
+              href={post.content.conclusion.cta.link}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg inline-block"
+            >
+              {post.content.conclusion.cta.text}
+            </a>
           </section>
         </article>
       </main>
@@ -83,7 +130,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const post = blogPosts.find((post) => post.slug === params?.slug);
+  const slug = Array.isArray(params?.slug) ? params.slug[0] : params?.slug;
+  const post = blogPosts.find((post) => post.slug === slug);
 
   if (!post) {
     return {
