@@ -70,10 +70,13 @@ jobs:
 
   preview:
     if: github.event_name == 'pull_request' # Apenas em PRs
+    environment:
+      name: github-pages
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy Preview
+        id: deployment
         uses: actions/deploy-pages@v3
         with:
           path: ./out
