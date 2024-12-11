@@ -97,7 +97,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
             ))}
 
             <section className="mb-12 p-6 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg">
-              <p className="text-lg font-semibold mb-4">Concluindo:</p>
+              <p className="text-lg font-semibold mb-4">Para finalizar:</p>
               <p>{post.content.conclusion}</p>
             </section>
 
