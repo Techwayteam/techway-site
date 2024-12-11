@@ -1,35 +1,34 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import blogPosts from '../../data/blogPosts.json'; // Importa o JSON com os posts
+import blogPosts from '../../data/blogPosts.json';
+
+type Section = {
+  title: string;
+  text: string;
+  image?: string;
+  imageDescription?: string;
+};
 
 type Post = {
   slug: string;
   title: string;
+  subtitle: string;
   author: string;
   date: string;
-  content: {
-    introduction: {
-      text: string;
-      image: string;
-      imageDescription: string;
-    };
-    sections: Array<{
-      title: string;
-      text: string;
-      image: string;
-      imageDescription: string;
-    }>;
-    conclusion: {
-      text: string;
-      cta: {
-        text: string;
-        link: string;
-      };
-    };
-  };
   featuredImage: string;
+  content: {
+    introduction: string;
+    sections: Section[];
+    conclusion: string;
+  };
+  cta: {
+    text: string;
+    link: string;
+  };
   tags: string[];
 };
 
@@ -39,80 +38,78 @@ interface PostPageProps {
 
 const PostPage: React.FC<PostPageProps> = ({ post }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-900 text-white">
-      {/* Head Section */}
+    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       <Head>
         <title>{post.title} | Blog TECHWAY</title>
-        <meta
-          name="description"
-          content={`Leia "${post.title}" e descubra insights valiosos.`}
-        />
-        <meta
-          name="keywords"
-          content={`tecnologia, produtividade, blog, ${post.tags.join(', ')}`}
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content={post.subtitle} />
+        <meta name="keywords" content={`tecnologia, produtividade, blog, ${post.tags.join(', ')}`} />
         <link rel="icon" href="/techway_favicon.ico" />
       </Head>
 
-      {/* Header */}
       <Header />
 
-      {/* Main Content */}
-      <main className="flex-grow pt-16">
-        <article className="container mx-auto px-4 py-8">
-          <h1 className="text-4xl font-bold mb-4">{post.title}</h1>
-          <p className="text-gray-400 text-sm mb-8">
-            Por {post.author} • {new Date(post.date).toLocaleDateString()}
-          </p>
-          <img
+      <main className="flex-grow">
+        <div className="relative w-full h-[60vh]">
+          <Image
             src={post.featuredImage}
             alt={post.title}
-            className="w-full h-64 object-cover rounded-lg mb-8"
+            layout="fill"
+            objectFit="cover"
+            priority
           />
-          {/* Introduction */}
-          <section>
-            <h2 className="text-2xl font-semibold mb-4">Introdução</h2>
-            <img
-              src={post.content.introduction.image}
-              alt={post.content.introduction.imageDescription}
-              className="w-full h-64 object-cover rounded-lg mb-4"
-            />
-            <p className="text-gray-300 leading-relaxed">
-              {post.content.introduction.text}
-            </p>
-          </section>
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
+          <div className="absolute bottom-0 left-0 p-6 md:p-12 w-full">
+            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+              {post.title}
+            </h1>
+          </div>
+        </div>
 
-          {/* Sections */}
-          {post.content.sections.map((section, index) => (
-            <section key={index} className="mt-12">
-              <h2 className="text-2xl font-semibold mb-4">{section.title}</h2>
-              <img
-                src={section.image}
-                alt={section.imageDescription}
-                className="w-full h-64 object-cover rounded-lg mb-4"
-              />
-              <p className="text-gray-300 leading-relaxed">{section.text}</p>
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <header className="mb-8">
+            <p className="text-xl text-gray-600 mb-4">{post.subtitle}</p>
+            <p className="text-gray-500 text-sm">
+              Por {post.author} • {new Date(post.date).toLocaleDateString()}
+            </p>
+          </header>
+
+          <div className="prose prose-lg max-w-none">
+            <p className="mb-8">{post.content.introduction}</p>
+
+            {post.content.sections.map((section, index) => (
+              <section key={index} className="mb-12">
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4">{section.title}</h2>
+                {section.image && (
+                  <div className="mb-4">
+                    <Image
+                      src={section.image}
+                      alt={section.imageDescription || section.title}
+                      width={400}
+                      height={300}
+                      className="rounded-lg"
+                    />
+                  </div>
+                )}
+                <p>{section.text}</p>
+              </section>
+            ))}
+
+            <section className="mb-12 p-6 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg">
+              <p className="text-lg font-semibold mb-4">Concluindo:</p>
+              <p>{post.content.conclusion}</p>
             </section>
-          ))}
 
-          {/* Conclusion */}
-          <section className="mt-12">
-            <h2 className="text-2xl font-semibold mb-4">Conclusão</h2>
-            <p className="text-gray-300 leading-relaxed mb-4">
-              {post.content.conclusion.text}
-            </p>
-            <a
-              href={post.content.conclusion.cta.link}
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg inline-block"
-            >
-              {post.content.conclusion.cta.text}
-            </a>
-          </section>
+            <div className="text-center mt-12">
+              <Link href={post.cta.link}>
+                <a className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-block transition duration-300">
+                  {post.cta.text}
+                </a>
+              </Link>
+            </div>
+          </div>
         </article>
       </main>
 
-      {/* Footer */}
       <Footer />
     </div>
   );
