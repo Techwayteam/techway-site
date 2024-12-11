@@ -53,7 +53,7 @@ jobs:
         run: npm run build
         
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./out
 
@@ -68,8 +68,8 @@ jobs:
         uses: actions/deploy-pages@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-        environment:
-          name: github-pages
+      environment:
+        name: github-pages
 
   preview:
     name: Deploy Preview
@@ -82,5 +82,5 @@ jobs:
         uses: actions/deploy-pages@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-        environment:
-          name: preview-${{ github.head_ref || github.ref_name }}
+      environment:
+        name: preview-${{ github.head_ref || github.ref_name }}
