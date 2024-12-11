@@ -58,10 +58,12 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
-          <div className="absolute bottom-0 left-0 p-6 md:p-12 w-full">
-            <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
-              {post.title}
-            </h1>
+          <div className="absolute inset-x-0 bottom-0 w-full">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12">
+              <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+                {post.title}
+              </h1>
+            </div>
           </div>
         </div>
 
