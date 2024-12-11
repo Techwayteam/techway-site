@@ -4,7 +4,7 @@
     "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
     "subtitle": "Descubra estratégias eficazes para otimizar seu trabalho e aumentar seus resultados",
     "author": "Equipe TECHWAY",
-    "date": "2024-12-01",
+    "date": "2024-12-20",
     "featuredImage": "/produtividade_capa.webp",
     "content": {
       "introduction": "A produtividade é o motor do sucesso. No entanto, muitas vezes nos vemos presos em rotinas ineficientes e tarefas repetitivas. Imagine se houvesse uma forma de fazer mais com menos esforço, liberando seu tempo para focar no que realmente importa. Neste artigo, exploramos soluções práticas que podem transformar sua rotina e maximizar seus resultados.",
@@ -25,19 +25,19 @@
         }
       ],
       "conclusion": "Adotar ferramentas tecnológicas pode parecer desafiador no início, mas os resultados valem a pena. Imagine ter mais tempo para se concentrar no que realmente importa, enquanto suas tarefas repetitivas são automatizadas. Com as soluções da TECHWAY, isso é possível. Comece hoje mesmo e transforme sua produtividade.",
+      },
       "cta": {
         "text": "Descubra Nossas Soluções de Produtividade",
         "link": "/solucoes-produtividade"
       },
       "tags": ["produtividade", "tecnologia", "automação"]
-    }
-  },
+    },
   {
     "slug": "automacao-de-tarefas-repetitivas",
     "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
     "subtitle": "Saiba como a automação de processos pode transformar a maneira como você trabalha",
     "author": "Equipe TECHWAY",
-    "date": "2024-12-08",
+    "date": "2024-12-18",
     "featuredImage": "/automacao_capa.webp",
     "content": {
       "introduction": "Tarefas repetitivas consomem tempo valioso e drenam energia que poderia ser usada em atividades mais estratégicas. Imagine se você pudesse automatizar processos como entrada de dados, envio de relatórios e gestão de inventário. Neste artigo, mostramos como a automação pode revolucionar sua rotina e otimizar seus resultados.",
@@ -53,11 +53,11 @@
         }
       ],
       "conclusion": "Automatizar tarefas repetitivas não é apenas uma solução inteligente, mas também um passo essencial para quem deseja alcançar resultados consistentes e escaláveis. Com as soluções da TECHWAY, você transforma desafios em oportunidades e aproveita ao máximo seu tempo e recursos.",
+      },
       "cta": {
         "text": "Conheça Nossas Soluções de Automação",
         "link": "/solucoes-automacao"
       },
       "tags": ["automação", "eficiência", "produtividade"]
     }
-  }
 ]
