@@ -18,6 +18,7 @@ export default function Header(): JSX.Element {
     { href: "/#solucoes", label: "Soluções" },
     { href: "/#depoimentos", label: "Depoimentos" },
     { href: "/#contato", label: "Contato" },
+    { href: "/blog", label: "Blog" },
   ];
 
   return (
