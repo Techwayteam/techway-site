@@ -2,74 +2,64 @@
   {
     "slug": "como-melhorar-sua-produtividade",
     "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+    "subtitle": "Descubra estratégias eficazes para otimizar seu trabalho e aumentar seus resultados",
     "author": "Equipe TECHWAY",
     "date": "2024-12-20",
-    "excerpt": "Descubra como tecnologias simples podem transformar sua rotina e aumentar sua produtividade.",
     "featuredImage": "/images/produtividade.jpg",
     "content": {
-      "introduction": {
-        "text": "A produtividade é essencial para alcançar sucesso no trabalho e nos negócios. Descubra como a TECHWAY pode ajudar você a otimizar sua rotina.",
-        "image": "/images/produtividade_intro.jpg",
-        "imageDescription": "Profissional organizando tarefas com eficiência"
-      },
+      "introduction": "A produtividade é essencial no mundo corporativo atual. Com as ferramentas certas, você pode transformar sua rotina e alcançar resultados surpreendentes. Neste artigo, exploraremos como a tecnologia pode ser sua aliada na busca por maior eficiência.",
       "sections": [
         {
-          "title": "Por que a Produtividade é Importante?",
-          "text": "No cenário competitivo atual, ser produtivo significa fazer mais com menos tempo e esforço. Ferramentas tecnológicas personalizadas são fundamentais para alcançar esse equilíbrio.",
-          "image": "/images/produtividade_importancia.jpg",
-          "imageDescription": "Comparação entre produtividade alta e baixa"
+          "title": "Identificando Gargalos de Produtividade",
+          "text": "Antes de implementar soluções, é crucial identificar onde estão seus maiores desafios. Analise sua rotina, observe tarefas repetitivas e processos que consomem tempo excessivo. Esta análise será a base para escolher as ferramentas mais adequadas às suas necessidades.",
+          "image": "/images/produtividade_gargalos.jpg",
+          "imageDescription": "Gráfico mostrando gargalos de produtividade"
         },
         {
-          "title": "Soluções Tecnológicas para Transformar sua Rotina",
-          "text": "Automação, dashboards e personalização são as chaves para maximizar sua eficiência. Nossas ferramentas adaptam-se às suas necessidades específicas, eliminando gargalos.",
-          "image": "/images/produtividade_solucoes.jpg",
-          "imageDescription": "Ferramentas tecnológicas em ação"
+          "title": "Automatização de Tarefas Repetitivas",
+          "text": "A automação é uma das maneiras mais eficazes de aumentar a produtividade. Ferramentas de automação de fluxo de trabalho podem liberar horas do seu dia, permitindo que você se concentre em tarefas que realmente exigem sua expertise. Considere implementar soluções que automatizem e-mails, relatórios e processos de aprovação."
+        },
+        {
+          "title": "Colaboração em Tempo Real",
+          "text": "Ferramentas de colaboração em nuvem permitem que equipes trabalhem juntas de forma eficiente, independentemente da localização. Plataformas que oferecem edição simultânea de documentos, comunicação integrada e gerenciamento de projetos podem significativamente melhorar a produtividade da equipe.",
+          "image": "/images/colaboracao_tempo_real.jpg",
+          "imageDescription": "Equipe colaborando em uma plataforma online"
         }
       ],
-      "conclusion": {
-        "text": "Com as soluções da TECHWAY, você pode transformar sua rotina, economizar tempo e focar no que realmente importa. Está pronto para dar o próximo passo?",
-        "cta": {
-          "text": "Entre em Contato Agora",
-          "link": "/contato"
-        }
-      }
+      "conclusion": "Ao adotar as ferramentas tecnológicas certas e implementá-las de forma estratégica, você pode transformar sua produtividade e a de sua equipe. Lembre-se, a chave está em escolher soluções que se alinhem com suas necessidades específicas e em manter-se aberto a adaptar seus processos conforme necessário. Com a abordagem certa, a tecnologia pode ser o catalisador para levar seu desempenho a novos patamares."
+    },
+    "cta": {
+      "text": "Descubra Nossas Soluções de Produtividade",
+      "link": "/solucoes-produtividade"
     },
     "tags": ["produtividade", "tecnologia", "automação"]
   },
   {
     "slug": "automacao-de-tarefas-repetitivas",
     "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+    "subtitle": "Saiba como a automação de processos pode transformar a maneira como você trabalha",
     "author": "Equipe TECHWAY",
     "date": "2024-12-18",
-    "excerpt": "Saiba como a automação de processos pode transformar a maneira como você trabalha.",
     "featuredImage": "/images/automacao.jpg",
     "content": {
-      "introduction": {
-        "text": "Tarefas repetitivas podem consumir horas valiosas do seu dia. Descubra como a automação pode revolucionar sua rotina e trazer mais eficiência.",
-        "image": "/images/automacao_intro.jpg",
-        "imageDescription": "Trabalhador sobrecarregado com tarefas manuais"
-      },
+      "introduction": "Tarefas repetitivas podem consumir horas valiosas do seu dia. Descubra como a automação pode revolucionar sua rotina e trazer mais eficiência para o seu negócio.",
       "sections": [
         {
           "title": "O Impacto das Tarefas Repetitivas",
           "text": "Tarefas manuais não só consomem tempo, como também são mais propensas a erros. Com a automação, você elimina essas barreiras e ganha em qualidade e agilidade.",
-          "image": "/images/automacao_impacto.jpg",
+          "image": "/images/impacto_tarefas_repetitivas.jpg",
           "imageDescription": "Comparação entre trabalho manual e automatizado"
         },
         {
           "title": "Como a TECHWAY Pode Ajudar",
-          "text": "Nossas soluções de automação são projetadas para integrar-se perfeitamente ao seu fluxo de trabalho. Desde relatórios automatizados até gestão de dados, temos tudo o que você precisa.",
-          "image": "/images/automacao_techway.jpg",
-          "imageDescription": "Demonstração de solução automatizada da TECHWAY"
+          "text": "Nossas soluções de automação são projetadas para integrar-se perfeitamente ao seu fluxo de trabalho. Desde relatórios automatizados até gestão de dados, temos tudo o que você precisa para otimizar seus processos."
         }
       ],
-      "conclusion": {
-        "text": "Com a automação da TECHWAY, você economiza tempo, reduz custos e alcança resultados surpreendentes. Pronto para a mudança?",
-        "cta": {
-          "text": "Saiba Mais",
-          "link": "/automacao"
-        }
-      }
+      "conclusion": "Com a automação da TECHWAY, você economiza tempo, reduz custos e alcança resultados surpreendentes. Não deixe que tarefas repetitivas drenem sua produtividade. Invista em automação e veja sua empresa crescer."
+    },
+    "cta": {
+      "text": "Conheça Nossas Soluções de Automação",
+      "link": "/solucoes-automacao"
     },
     "tags": ["automação", "eficiência", "produtividade"]
   }
