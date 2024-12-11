@@ -82,7 +82,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
               <section key={index} className="mb-12">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4">{section.title}</h2>
                 {section.image && (
-                  <div className="mb-4">
+                  <div className="float-left mr-6 mb-4 sm:w-1/3">
                     <Image
                       src={section.image}
                       alt={section.imageDescription || section.title}
