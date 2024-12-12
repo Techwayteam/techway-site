@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 import { UserCheck, TrendingUp, Zap, BarChart2, Wrench } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import ContactChat from '../components/ContactChat';
 
 const DynamicTestimonials = dynamic(() => import('../components/Testimonials'), {
   loading: () => <p>Carregando depoimentos...</p>,
@@ -172,6 +173,8 @@ const Home: React.FC = () => {
         <DynamicTestimonials />
                       
         <Footer />
+
+        <ContactChat />
 
       </main>
     </div>
