@@ -1,6 +1,26 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { X, Send, AlertTriangle } from 'lucide-react';
 
+type MessageBubbleProps = {
+  message: string;
+  sender: 'bot' | 'user';
+};
+
+const MessageBubble: React.FC<MessageBubbleProps> = ({ message, sender }) => (
+  <div className={`flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`}>
+    <div className={`max-w-3/4 p-3 rounded-lg relative ${
+      sender === 'user' 
+        ? 'bg-blue-600 text-white' 
+        : 'bg-gray-800 text-blue-100'
+    } shadow-lg`}>
+      {message}
+      <div className={`absolute bottom-0 ${sender === 'user' ? '-right-2' : '-left-2'} w-4 h-4 ${
+        sender === 'user' ? 'bg-blue-600' : 'bg-gray-800'
+      } transform ${sender === 'user' ? 'rotate-45' : '-rotate-45'}`}></div>
+    </div>
+  </div>
+);
+
 const ContactChat: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
@@ -84,20 +104,7 @@ const ContactChat: React.FC = () => {
     // Exemplo: enviar para uma API, salvar em localStorage, etc.
   };
 
-  const MessageBubble = ({ message, sender }) => (
-    <div className={`flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`}>
-      <div className={`max-w-3/4 p-3 rounded-lg relative ${
-        sender === 'user' 
-          ? 'bg-blue-600 text-white' 
-          : 'bg-gray-800 text-blue-100'
-      } shadow-lg`}>
-        {message}
-        <div className={`absolute bottom-0 ${sender === 'user' ? '-right-2' : '-left-2'} w-4 h-4 ${
-          sender === 'user' ? 'bg-blue-600' : 'bg-gray-800'
-        } transform ${sender === 'user' ? 'rotate-45' : '-rotate-45'}`}></div>
-      </div>
-    </div>
-  );
+  
 
   if (!isOpen) {
     return (
