@@ -162,7 +162,7 @@ const ContactChat: React.FC = () => {
               onChange={(e) => setUserInput(e.target.value)}
               onKeyPress={(e) => e.key === 'Enter' && handleSendMessage()}
               placeholder="Digite sua mensagem..."
-              className="flex-1 p-2 rounded-lg bg-gray-700 bg-opacity-70 backdrop-blur-sm text-blue-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="flex-1 p-2 rounded-lg bg-gray-600 bg-opacity-70 backdrop-blur-sm text-blue-100 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <button 
               onClick={handleSendMessage}
@@ -184,7 +184,31 @@ const ContactChat: React.FC = () => {
         </div>
       </div>
       
-      {/* ... (exit confirmation modal remains unchanged) */}
+            {isExiting && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-60">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-xl border border-blue-500 max-w-md w-full">
+            <div className="flex items-center mb-4 text-yellow-500">
+              <AlertTriangle size={24} className="mr-2" />
+              <h3 className="text-xl font-bold">Atenção</h3>
+            </div>
+            <p className="text-gray-300 mb-4">Tem certeza que deseja sair? Suas informações não serão salvas.</p>
+            <div className="flex justify-end space-x-4">
+              <button 
+                onClick={() => setIsExiting(false)}
+                className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 transition-colors duration-300"
+              >
+                Cancelar
+              </button>
+              <button 
+                onClick={() => setIsOpen(false)}
+                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors duration-300"
+              >
+                Sair
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
