@@ -151,10 +151,10 @@ const ContactChat: React.FC = () => {
             space-y-4 
             [&::-webkit-scrollbar]:w-2
             [&::-webkit-scrollbar-track]:bg-transparent 
-            [&::-webkit-scrollbar-thumb]:bg-blue-600/50 
-            hover:[&::-webkit-scrollbar-thumb]:bg-blue-600/70 
+            [&::-webkit-scrollbar-thumb]:bg-gray-600/50 
+            hover:[&::-webkit-scrollbar-thumb]:bg-gray-800/50 
             [&::-webkit-scrollbar-thumb]:rounded-full
-            [&::-webkit-scrollbar-thumb]:mr-2
+            [&::-webkit-scrollbar-thumb]:mr-5
           "
         >
           {messages.map((message, index) => (
