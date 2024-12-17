@@ -13,17 +13,23 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, sender }) => (
         sender === 'user' 
           ? 'bg-blue-600 text-white' 
           : 'bg-gray-800 text-blue-100'
-      } shadow-lg`}
-      style={{
-        borderRadius: '1rem',
-        clipPath: sender === 'user' 
-          ? 'polygon(0 0, 100% 0, 100% 75%, 95% 75%, 95% 100%, 85% 75%, 0 75%)'
-          : 'polygon(0 0, 100% 0, 100% 75%, 15% 75%, 5% 100%, 5% 75%, 0 75%)'
-      }}
-    >
+      } rounded-2xl shadow-lg max-w-[75%]`}
+      >
       <div className="px-2">
         {message}
       </div>
+      <div 
+        className={`absolute w-4 h-4 ${
+          sender === 'user' 
+            ? 'right-0 -bottom-2 bg-blue-600' 
+            : 'left-0 -bottom-2 bg-gray-800'
+        }`}
+        style={{
+          clipPath: sender === 'user' 
+            ? 'polygon(0 0, 100% 0, 100% 100%)' 
+            : 'polygon(0 0, 100% 0, 0 100%)'
+        }}
+      />
     </div>
   </div>
 );
