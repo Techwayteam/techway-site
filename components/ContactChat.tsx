@@ -149,13 +149,12 @@ const ContactChat: React.FC = () => {
             overflow-y-auto 
             p-6 
             space-y-4 
-            [&::-webkit-scrollbar]:w-3
+            [&::-webkit-scrollbar]:w-2
             [&::-webkit-scrollbar-track]:bg-transparent 
             [&::-webkit-scrollbar-thumb]:bg-blue-600/50 
             hover:[&::-webkit-scrollbar-thumb]:bg-blue-600/70 
             [&::-webkit-scrollbar-thumb]:rounded-full
-            [&::-webkit-scrollbar-thumb]:m-1
-            [&::-webkit-scrollbar-track]:p-1
+            [&::-webkit-scrollbar-thumb]:mr-2
           "
         >
           {messages.map((message, index) => (
