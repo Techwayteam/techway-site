@@ -8,15 +8,22 @@ type MessageBubbleProps = {
 
 const MessageBubble: React.FC<MessageBubbleProps> = ({ message, sender }) => (
   <div className={`flex ${sender === 'user' ? 'justify-end' : 'justify-start'} mb-4`}>
-    <div className={`max-w-3/4 p-3 rounded-lg relative ${
-      sender === 'user' 
-        ? 'bg-blue-600 text-white' 
-        : 'bg-gray-800 text-blue-100'
-    } shadow-lg`}>
-      {message}
-      <div className={`absolute bottom-0 ${sender === 'user' ? '-right-2' : '-left-2'} w-4 h-4 ${
-        sender === 'user' ? 'bg-blue-600' : 'bg-gray-800'
-      } transform ${sender === 'user' ? '-rotate-45' : 'rotate-45'}`}></div>
+    <div 
+      className={`relative p-3 ${
+        sender === 'user' 
+          ? 'bg-blue-600 text-white' 
+          : 'bg-gray-800 text-blue-100'
+      } shadow-lg`}
+      style={{
+        borderRadius: '1rem',
+        clipPath: sender === 'user' 
+          ? 'polygon(0 0, 100% 0, 100% 75%, 95% 75%, 95% 100%, 85% 75%, 0 75%)'
+          : 'polygon(0 0, 100% 0, 100% 75%, 15% 75%, 5% 100%, 5% 75%, 0 75%)'
+      }}
+    >
+      <div className="px-2">
+        {message}
+      </div>
     </div>
   </div>
 );
