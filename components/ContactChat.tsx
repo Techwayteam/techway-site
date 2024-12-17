@@ -144,7 +144,19 @@ const ContactChat: React.FC = () => {
         </div>
         <div 
           ref={chatRef} 
-          className="flex-1 overflow-y-auto p-6 space-y-4 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-transparent hover:[&::-webkit-scrollbar-thumb]:bg-blue-400/50 [&::-webkit-scrollbar-thumb]:rounded"
+          className="
+            flex-1 
+            overflow-y-auto 
+            p-6 
+            space-y-4 
+            [&::-webkit-scrollbar]:w-3
+            [&::-webkit-scrollbar-track]:bg-transparent 
+            [&::-webkit-scrollbar-thumb]:bg-blue-600/50 
+            hover:[&::-webkit-scrollbar-thumb]:bg-blue-600/70 
+            [&::-webkit-scrollbar-thumb]:rounded-full
+            [&::-webkit-scrollbar-thumb]:m-1
+            [&::-webkit-scrollbar-track]:p-1
+          "
         >
           {messages.map((message, index) => (
             <MessageBubble key={index} message={message.text} sender={message.sender} />
