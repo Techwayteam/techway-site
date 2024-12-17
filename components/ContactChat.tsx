@@ -142,7 +142,7 @@ const ContactChat: React.FC = () => {
             <X size={24} />
           </button>
         </div>
-        <div ref={chatRef} className="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-thin scrollbar-thumb-blue-500 scrollbar-track-gray-800">
+        <div ref={chatRef} className="flex-1 overflow-y-auto p-6 space-y-4 scrollbar-thin hover:scrollbar-thumb-blue-400 scrollbar-thumb-transparent scrollbar-track-transparent">
           {messages.map((message, index) => (
             <MessageBubble key={index} message={message.text} sender={message.sender} />
           ))}
@@ -214,3 +214,32 @@ const ContactChat: React.FC = () => {
 };
 
 export default ContactChat;
+
+/* For Webkit browsers like Chrome/Safari */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  transition: background-color 0.2s;
+}
+
+.scrollbar-thin:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(96, 165, 250, 0.5);
+  border-radius: 2px;
+}
+
+/* For Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.scrollbar-thin:hover {
+  scrollbar-color: rgba(96, 165, 250, 0.5) transparent;
+}
