@@ -16,7 +16,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, sender }) => (
       {message}
       <div className={`absolute bottom-0 ${sender === 'user' ? '-right-2' : '-left-2'} w-4 h-4 ${
         sender === 'user' ? 'bg-blue-600' : 'bg-gray-800'
-      } transform ${sender === 'user' ? 'rotate-45' : '-rotate-45'}`}></div>
+      } transform ${sender === 'user' ? '-rotate-45' : 'rotate-45'}`}></div>
     </div>
   </div>
 );
