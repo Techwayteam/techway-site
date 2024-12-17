@@ -1,20 +1,37 @@
-name: Generate Package Lock
+name: Generate Package Lock and Send Emails
 
 on:
-  workflow_dispatch:
+  workflow_dispatch: # Gatilho manual
 
 jobs:
   install:
     runs-on: ubuntu-latest
+
     steps:
+      # 1. Checkout do repositório
       - uses: actions/checkout@v2
+
+      # 2. Configuração do Node.js
       - uses: actions/setup-node@v2
         with:
           node-version: '20'
 
+      # 3. Instalação de dependências, incluindo dotenv e nodemailer
       - name: Install Dependencies
-        run: npm install && npm install --save-dev typescript @types/react @types/node
-      
+        run: |
+          npm install
+          npm install --save-dev typescript @types/react @types/node
+          npm install dotenv nodemailer
+
+      # 4. Configura e executa o script de envio de e-mails
+      - name: Run Email Script
+        run: node sendEmailsSMTP.js
+        env:
+          SMTP_EMAIL: ${{ secrets.SMTP_EMAIL }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_EMAIL_DESTINATION: ${{ secrets.SMTP_EMAIL_DESTINATION }}
+
+      # 5. Commit e push do package-lock.json
       - name: Commit package-lock.json
         run: |
           git config --global user.name 'github-actions[bot]'
