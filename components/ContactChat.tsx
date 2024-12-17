@@ -134,7 +134,7 @@ const ContactChat: React.FC = () => {
     <div className="fixed inset-0 bg-black bg-opacity-70 backdrop-blur-sm flex items-center justify-center z-50">
       <div className="bg-gray-900 bg-opacity-80 backdrop-blur-lg w-full max-w-2xl h-3/4 rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-blue-500">
         <div className="p-4 border-b border-blue-500 flex justify-between items-center bg-gray-800 bg-opacity-50 backdrop-blur-md">
-          <h2 className="text-2xl font-bold text-blue-300">TECHWAY Chat</h2>
+          <h2 className="text-2xl font-bold text-blue-300">Bora conversar?</h2>
           <button 
             onClick={() => setIsExiting(true)} 
             className="text-gray-400 hover:text-red-500 transition-colors duration-300"
