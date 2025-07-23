@@ -18,47 +18,29 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
 
         {/* Contato */}
         <div>
-          <h3 className="text-lg font-bold text-white mb-2">Fale Conosco</h3>
-          <address className="not-italic">
+          <h3 className="text-lg text-right font-bold text-white mb-2">Fale Conosco</h3>
+          <address className="not-italic text-right">
             <p>
               <span className="font-bold">E-mail:{" "}</span>
               <a
-                href="mailto:contato@techway.com"
+                href="mailto:leonardo@techway.one"
                 className="hover:text-blue-400 transition-colors duration-300"
               >
-                contato@techway.com
+                leonardo@techway.one
               </a>
             </p>
             <p>
               <span className="font-bold">WhatsApp:{" "}</span>
               <a
-                href="https://wa.me/5521980343553"
+                href="https://wa.me/5521991673541"
                 className="hover:text-blue-400 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                (21) 9 8034-3553
+                (21) 99167-3541
               </a>
             </p>
           </address>
-          <div className="flex space-x-4 mt-4">
-            {[
-              { href: "https://facebook.com", label: "Facebook", Icon: Facebook },
-              { href: "https://linkedin.com", label: "LinkedIn", Icon: Linkedin },
-              { href: "https://instagram.com", label: "Instagram", Icon: Instagram },
-            ].map(({ href, label, Icon }) => (
-              <a
-                key={href}
-                href={href}
-                aria-label={label}
-                className="hover:text-blue-400 transition-colors duration-300"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Icon className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
 

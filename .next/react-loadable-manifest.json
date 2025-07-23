@@ -1,0 +1,14 @@
+{
+  "index.tsx -> ../components/Testimonials": {
+    "id": "index.tsx -> ../components/Testimonials",
+    "files": [
+      "static/chunks/components_Testimonials_tsx.js"
+    ]
+  },
+  "index_old.tsx -> ../components/Testimonials": {
+    "id": "index_old.tsx -> ../components/Testimonials",
+    "files": [
+      "static/chunks/components_Testimonials_tsx.js"
+    ]
+  }
+}

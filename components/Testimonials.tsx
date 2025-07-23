@@ -17,30 +17,30 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Maria Silva",
-    position: "CFO",
-    company: "TechCorp",
-    image: "/techway_favicon.ico",
-    text: "Com a Techway, automatizamos 80% dos nossos processos financeiros. Hoje, economizamos mais de 15 horas por semana!",
-    impact: "Redução de 30% nos custos operacionais"
+    name: "Luciene Galdino",
+    position: "Cabeleireira",
+    company: "Salão Lu Galdino",
+    image: "/logo_salao.jpeg",
+    text: "A techway criou uma atendente que é a cara do nosso salão. Ela fica conversando com todas as clientes, enquanto faço os atendimentos. Agora, só perco tempo no whatsapp com quem realmente precisa falar comigo.",
+    impact: "Redução de 80% de tempo nos atendimentos."
   },
   {
     id: 2,
-    name: "João Santos",
-    position: "Gerente de Operações",
-    company: "LogisTech",
-    image: "/techway_favicon.ico",
-    text: "As soluções da Techway revolucionaram nossa logística. Reduzimos erros em 60% e aumentamos a eficiência em 40%.",
-    impact: "Aumento de 40% na produtividade"
+    name: "Amanda Oliveira",
+    position: "Arquiteta Fundadora",
+    company: "Studio Criativo Móvi",
+    image: "/logo_movi.png",
+    text: "Entre meu MEI, meu CLT e meu filho, não sobrava tempo para nada. Agora tenho o atendimento dos clientes do MEI sob controle, mesmo enquanto estou trabalhando no CLT, garantindo até follow-up sobre propostas enviadas.",
+    impact: "Total controle do processo comercial"
   },
   {
     id: 3,
-    name: "Ana Rodrigues",
+    name: "Aqui pode ser você!",
     position: "CEO",
-    company: "StartupX",
-    image: "/techway_favicon.ico",
-    text: "A Techway nos ajudou a escalar rapidamente. Seus dashboards nos dão insights valiosos para tomar decisões ágeis.",
-    impact: "Crescimento de 200% em 6 meses"
+    company: "sua própria empresa",
+    image: "/logo_placeholder.png",
+    text: "Já imaginou ter mais tempo, menos estresse e clientes sendo atendidos até quando você tá dormindo? A automação certa transforma o jogo — e você só precisa dar o primeiro passo.",
+    impact: "Essa decisão vai potencializar o seu negócio!"
   }
 ];
 
@@ -142,7 +142,7 @@ function TestimonialCard({ testimonial, showImpact = false }: { testimonial: Tes
         />
         <div>
           <h3 className="font-bold text-lg">{testimonial.name}</h3>
-          <p className="text-gray-300">{testimonial.position} na {testimonial.company}</p>
+          <p className="text-gray-300">{testimonial.position} em {testimonial.company}</p>
         </div>
       </div>
       <p className="text-gray-100 mb-4">{testimonial.text}</p>
