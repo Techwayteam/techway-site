@@ -15,7 +15,7 @@ const PoliticaDePrivacidade: React.FC = (): JSX.Element => {
         
         <meta property="og:title" content="TECHWAY - Política de Privacidade" />
         <meta property="og:description" content="Saiba como a TECHWAY protege seus dados pessoais e garante sua privacidade." />
-        <meta property="og:image" content="/techway_logo.png" />
+        <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content="https://techway.one/politica-de-privacidade" />
         <meta property="og:type" content="website" />
         

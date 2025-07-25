@@ -15,7 +15,7 @@ const TermosDeUso: React.FC = (): JSX.Element => {
         
         <meta property="og:title" content="TECHWAY - Termos de Uso" />
         <meta property="og:description" content="Saiba mais sobre os Termos de Uso da TECHWAY e nossos compromissos com você." />
-        <meta property="og:image" content="/techway_logo.png" />
+        <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content="https://www.techway.com/termos-de-uso" />
         <meta property="og:type" content="website" />
         
