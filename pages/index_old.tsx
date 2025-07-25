@@ -25,13 +25,13 @@ const Home: React.FC = () => {
         <meta name="author" content="Techway Team" />
         <meta property="og:title" content={`${SITE_NAME} - Seu Caminho para a Eficiência`} />
         <meta property="og:description" content={SITE_DESCRIPTION} />
-        <meta property="og:image" content="/techway_favicon.ico" />
+        <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content="https://techway.one" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${SITE_NAME} - Seu Caminho para a Eficiência`} />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
-        <meta name="twitter:image" content="/techway_favicon.ico" />
+        <meta name="twitter:image" content="https://techway.one/og-techway.jpg" />
         <meta name="robots" content="index, follow" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
       </Head>
