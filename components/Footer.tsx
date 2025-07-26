@@ -23,10 +23,10 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <p>
               <span className="font-bold">E-mail:{" "}</span>
               <a
-                href="mailto:leonardo@techway.one"
+                href="mailto:contato@techway.one"
                 className="hover:text-blue-400 transition-colors duration-300"
               >
-                leonardo@techway.one
+                contato@techway.one
               </a>
             </p>
             <p>
