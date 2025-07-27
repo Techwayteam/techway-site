@@ -210,6 +210,75 @@ const LandingConversao: React.FC = () => {
 
 
         <DynamicTestimonials />
+        {/* Early Access Section */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
+                A Techway tá só começando. Mas quem entra agora,{" "}
+                <span className="text-blue-600">entra pra fazer história.</span>
+              </h2>
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                Estamos lançando os primeiros módulos dos nossos funcionários digitais — e queremos fazer isso junto com
+                empresas que também são mão na massa, que resolvem, testam, opinam e crescem.
+              </p>
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mt-6">
+                Por isso, criamos o programa <strong className="text-blue-600">Early Access</strong>: uma fase de acesso
+                antecipado com vantagens exclusivas pra quem topar construir o futuro com a gente.
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg p-8 md:p-12 shadow-sm border border-gray-200">
+              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">Quem entra agora, leva:</h3>
+              <div className="space-y-6 mb-12">
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700">
+                    <strong>Acesso antecipado</strong> aos nossos funcionários digitais;
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700">
+                    <strong>Condições especiais de contratação</strong> (que não se repetem);
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700">
+                    <strong>Canal direto com o time da Techway</strong> pra dar ideias e feedbacks;
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700">
+                    <strong>Chance de moldar o produto</strong> com a sua realidade;
+                  </p>
+                </div>
+                <div className="flex items-start">
+                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
+                  <p className="text-lg text-gray-700">
+                    <strong>Reconhecimento como empresa parceira fundadora.</strong>
+                  </p>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                  Se a sua empresa gosta de testar, ajustar e transformar com tecnologia de verdade —{" "}
+                  <strong className="text-blue-600">bora conversar.</strong>
+                </p>
+                <a
+                  href="#contato"
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
+                >
+                  Quero fazer parte do Early Access
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* CTA Final Section */}
         <section id="contato" className="py-20 bg-blue-600 text-white">
