@@ -215,7 +215,8 @@ const LandingConversao: React.FC = () => {
           <div className="max-w-4xl mx-auto px-4">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                A Techway tá só começando. Mas quem entra agora,{" "}
+                A Techway tá só começando.<br />
+                Mas quem entra agora,<br />
                 <span className="text-blue-600">entra pra fazer história.</span>
               </h2>
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
@@ -228,54 +229,61 @@ const LandingConversao: React.FC = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-lg p-8 md:p-12 shadow-sm border border-gray-200">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">Quem entra agora, leva:</h3>
-              <div className="space-y-6 mb-12">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Acesso antecipado</strong> aos nossos funcionários digitais;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Condições especiais de contratação</strong> (que não se repetem);
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Canal direto com o time da Techway</strong> pra dar ideias e feedbacks;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Chance de moldar o produto</strong> com a sua realidade;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Reconhecimento como empresa parceira fundadora.</strong>
-                  </p>
-                </div>
+            <h3 className="text-2xl md:text-3xl font-bold mb-12 text-center text-gray-900">Quem entra agora, leva:</h3>
+            <div className="space-y-16">
+              <div className="border-l-4 border-blue-600 pl-8">
+                <h4 className="text-xl font-bold mb-2 text-gray-900">Acesso antecipado</h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Experimente em primeira mão os novos módulos da Techway — funcionalidades que ainda nem foram lançadas
+                  oficialmente.
+                </p>
               </div>
 
-              <div className="text-center">
-                <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-                  Se a sua empresa gosta de testar, ajustar e transformar com tecnologia de verdade —{" "}
-                  <strong className="text-blue-600">bora conversar.</strong>
+              <div className="border-l-4 border-blue-600 pl-8">
+                <h4 className="text-xl font-bold mb-2 text-gray-900">Condições especiais de contratação</h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Vagas limitadas: só as 10 primeiras empresas vão garantir condições exclusivas. Os detalhes? Só descobre
+                  quem entra.
                 </p>
-                <a
-                  href="#contato"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
-                >
-                  Quero fazer parte do Early Access
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
               </div>
+
+              <div className="border-l-4 border-blue-600 pl-8">
+                <h4 className="text-xl font-bold mb-2 text-gray-900">Canal direto com o time da Techway</h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Tenha acesso direto ao nosso time e receba uma consultoria de negócio na prática, enquanto cocriamos
+                  juntos o futuro da ferramenta.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-blue-600 pl-8">
+                <h4 className="text-xl font-bold mb-2 text-gray-900">Produto moldado à sua realidade</h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Ao participar do Early Access, sua empresa ajuda a definir as soluções — e sai com um produto
+                  praticamente feito sob medida.
+                </p>
+              </div>
+
+              <div className="border-l-4 border-blue-600 pl-8">
+                <h4 className="text-xl font-bold mb-2 text-gray-900">Reconhecimento como empresa parceira fundadora</h4>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  Sua marca pode ganhar visibilidade como referência, aparecendo nas nossas comunicações e ajudando a
+                  inspirar outros negócios.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
+                Se a sua empresa gosta de testar, ajustar e transformar com tecnologia de verdade —{' '}
+                <strong className="text-blue-600">bora conversar.</strong>
+              </p>
+              <a
+                href="#contato"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
+              >
+                Quero fazer parte do Early Access
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </a>
             </div>
           </div>
         </section>
