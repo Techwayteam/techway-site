@@ -79,20 +79,24 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
             <p className="mb-8">{post.content.introduction}</p>
 
             {post.content.sections.map((section, index) => (
-              <section key={index} className="mb-12">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4">{section.title}</h2>
-                {section.image && (
-                  <div className="float-left mr-6 mb-4 sm:w-1/3">
-                    <Image
-                      src={section.image}
-                      alt={section.imageDescription || section.title}
-                      width={400}
-                      height={300}
-                      className="rounded-lg"
-                    />
+              <section key={index} className="my-12">
+                <div className="flex flex-col lg:flex-row items-center gap-10 min-h-[320px]">
+                  <div className="w-full lg:w-1/2 prose self-center">
+                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">{section.title}</h2>
+                    <p>{section.text}</p>
                   </div>
-                )}
-                <p>{section.text}</p>
+                  {section.image && (
+                    <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
+                      <Image
+                        src={section.image}
+                        alt={section.imageDescription || section.title}
+                        width={500}
+                        height={350}
+                        className="rounded-lg mx-auto"
+                      />
+                    </div>
+                  )}
+                </div>
               </section>
             ))}
 
