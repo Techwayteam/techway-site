@@ -18,8 +18,8 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
 
         {/* Contato */}
         <div>
-          <h3 className="text-lg text-right font-bold text-white mb-2">Fale Conosco</h3>
-          <address className="not-italic text-right">
+          <h3 className="text-lg font-bold text-white mb-2 text-left md:text-right">Fale Conosco</h3>
+          <address className="not-italic text-left md:text-right">
             <p>
               <span className="font-bold">E-mail:{" "}</span>
               <a
