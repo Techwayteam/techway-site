@@ -136,6 +136,7 @@ export default function Testimonials() {
           <button
             onClick={goToPrevious}
             className="hidden md:block absolute left-4 md:left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
@@ -143,6 +144,7 @@ export default function Testimonials() {
           <button
             onClick={goToNext}
             className="hidden md:block absolute right-4 md:right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
