@@ -110,7 +110,12 @@ const TermosDeUso: React.FC = (): JSX.Element => {
             <p className="mb-8 text-xl">
               Entre em contato conosco para esclarecimentos adicionais.
             </p>
-            <a href="/#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+            <a
+              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20tenho%20d%C3%BAvidas%20sobre%20os%20termos%20de%20uso."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
+            >
               Fale Conosco
             </a>
           </div>

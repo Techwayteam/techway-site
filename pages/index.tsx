@@ -72,7 +72,9 @@ const LandingConversao: React.FC = () => {
               </span>
             </div>
             <a
-              href="#solucoes"
+              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20saber%20mais."
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
             >
               Quero saber mais
@@ -278,7 +280,9 @@ const LandingConversao: React.FC = () => {
                 <strong className="text-blue-600">bora conversar.</strong>
               </p>
               <a
-                href="#contato"
+                href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20fazer%20parte%20do%20Early%20Access."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
               >
                 Quero fazer parte do Early Access
@@ -310,7 +314,7 @@ const LandingConversao: React.FC = () => {
             </div>
 
             <a
-              href="https://wa.me/5521991673541"
+              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20meu%20novo%20funcion%C3%A1rio%20digital."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white hover:bg-gray-100 text-gray-900 font-semibold py-6 px-12 rounded transition duration-300 inline-flex items-center text-xl"

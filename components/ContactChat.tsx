@@ -108,7 +108,7 @@ const ContactChat: React.FC = () => {
   const handleWhatsApp = () => {
     const message = `Olá! Meu nome é ${formData.name}. Gostaria de saber mais sobre como a TECHWAY pode me ajudar com ${formData.need}.`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/5511999999999?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/5521991673541?text=${encodedMessage}`, '_blank');
   };
 
   const handleSubmit = () => {
