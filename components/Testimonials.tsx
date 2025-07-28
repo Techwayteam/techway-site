@@ -48,6 +48,7 @@ export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
+  const touchStartX = useRef<number | null>(null)
 
   const startRotation = () => {
     if (timerRef.current) clearInterval(timerRef.current)
@@ -55,7 +56,7 @@ export default function Testimonials() {
       if (!isPaused) {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
       }
-    }, 5000)
+    }, 15000)
   }
 
   useEffect(() => {
@@ -79,6 +80,30 @@ export default function Testimonials() {
     return (currentIndex + offset + testimonials.length) % testimonials.length
   }
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setIsPaused(true)
+    touchStartX.current = e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    const startX = touchStartX.current
+    if (startX !== null) {
+      const diff = e.changedTouches[0].clientX - startX
+      if (diff > 50) {
+        goToPrevious()
+      } else if (diff < -50) {
+        goToNext()
+      }
+    }
+    setIsPaused(false)
+    touchStartX.current = null
+  }
+
+  const handleDotClick = (index: number) => {
+    setCurrentIndex(index)
+    startRotation()
+  }
+
   return (
     <section id="depoimentos" className="bg-gray-900 text-white py-20">
       <div className="container mx-auto px-4">
@@ -88,7 +113,11 @@ export default function Testimonials() {
         <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
           Conheça alguns dos nossos clientes que desenvolveram soluções conosco e transformaram suas operações. Suas histórias de sucesso são nossa maior recompensa.
         </p>
-        <div className="relative w-full mx-auto px-0 overflow-hidden">
+        <div
+          className="relative w-full mx-auto px-0 overflow-hidden"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+        >
           <div className="flex items-center justify-center gap-4">
             <div className="hidden md:block w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -ml-10">
               <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
@@ -106,18 +135,30 @@ export default function Testimonials() {
           </div>
           <button
             onClick={goToPrevious}
-            className="absolute left-4 md:left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="hidden md:block absolute left-4 md:left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 md:right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="hidden md:block absolute right-4 md:right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
           </button>
+          <div className="flex justify-center mt-4 gap-2 md:hidden">
+            {testimonials.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => handleDotClick(index)}
+                className={`w-2 h-2 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-gray-500'}`}
+                aria-label={`Ir para depoimento ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
         <div className="text-center mt-12">
           <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
