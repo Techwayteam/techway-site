@@ -92,11 +92,11 @@
         "image": "/liberdade_empresario.webp"
       }
     ],
-    "conclusion": "Se você sente que sua empresa depende 100% de você pra tudo, talvez esteja na hora de mudar. A Techway pode te ajudar a dar o primeiro passo, com soluções de atendimento automático, follow-up inteligente e muito mais. Tudo funcionando direto no WhatsApp da sua empresa, com o seu jeito. Bora destravar seu negócio?",
-    "cta": {
-      "text": "Conheça seu primeiro funcionário digital",
-      "link": "/"
-    }
+    "conclusion": "Se você sente que sua empresa depende 100% de você pra tudo, talvez esteja na hora de mudar. A Techway pode te ajudar a dar o primeiro passo, com soluções de atendimento automático, follow-up inteligente e muito mais. Tudo funcionando direto no WhatsApp da sua empresa, com o seu jeito. Bora destravar seu negócio?"
+  },
+  "cta": {
+    "text": "Conheça seu primeiro funcionário digital",
+    "link": "/"
   },
   "tags": ["atendimento", "automação", "rotina de empreendedores", "funcionário digital"]
   }
