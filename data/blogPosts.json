@@ -60,4 +60,44 @@
   },
   "tags": ["automação", "eficiência", "produtividade"]
 }
+,
+  {
+  "slug": "cuidar-do-cliente-ou-do-negocio",
+  "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+  "subtitle": "Você precisa vender, atender, organizar, divulgar e ainda dar conta da empresa. Como resolver esse caos diário?",
+  "author": "Leonardo Reis - CEO Techway",
+  "date": "2025-07-27",
+  "featuredImage": "/empreendedor_dilema_capa.webp",
+  "content": {
+    "introduction": "Todo pequeno empreendedor já viveu esse dilema: quando você para pra atender bem o cliente, o resto do negócio trava. E quando tenta organizar as finanças ou divulgar, perde atendimento, perde venda. A sobrecarga é tanta que parece que o negócio trava junto com você. Se esse é o seu caso, este artigo é pra você.",
+    "sections": [
+      {
+        "title": "O caos invisível de quem faz tudo",
+        "text": "Vender, atender no WhatsApp, organizar planilha, responder no Instagram, emitir boleto, tentar divulgar, lembrar de cobrar, tentar inovar… Tudo ao mesmo tempo. Quem toca o negócio sozinho acaba sendo 5 profissionais em 1, e isso tem um custo: estresse, perda de tempo e falta de foco no que realmente importa.",
+        "image": "/empreendedor_sobrecarregado.webp"
+      },
+      {
+        "title": "Quando atender o cliente atrasa a empresa (e vice-versa)",
+        "text": "Talvez você já tenha sentido isso: enquanto está conversando com um cliente no WhatsApp, o financeiro está atrasado. Quando para pra organizar as contas, as mensagens acumulam. Esse vai e volta constante te impede de escalar, de melhorar processos ou até de descansar em paz. No fundo, você não está só sobrecarregado — você está travado.",
+        "image": "/whatsapp_versus_gestao.webp"
+      },
+      {
+        "title": "Existe solução sem contratar alguém?",
+        "text": "Contratar ajuda pode ser caro. Mas e se existisse uma forma de ter um ‘funcionário digital’ que faz parte desse trabalho por você? Hoje, com a inteligência artificial, já é possível ter atendentes automáticos que falam como você, respondem como você e te poupam tempo de verdade. A Techway cria exatamente isso: assistentes digitais que funcionam direto no WhatsApp e assumem tarefas do seu dia a dia com inteligência, memória e personalização.",
+        "image": "/funcionario_digital_explicacao.webp"
+      },
+      {
+        "title": "Você não precisa dar conta de tudo sozinho",
+        "text": "Automatizar partes do seu negócio não significa perder o controle — significa ganhar liberdade. Liberdade pra focar no que importa, pra escalar, pra respirar. O primeiro passo pode ser simples: automatizar o atendimento. E acredite, isso já faz toda a diferença.",
+        "image": "/liberdade_empresario.webp"
+      }
+    ],
+    "conclusion": "Se você sente que sua empresa depende 100% de você pra tudo, talvez esteja na hora de mudar. A Techway pode te ajudar a dar o primeiro passo, com soluções de atendimento automático, follow-up inteligente e muito mais. Tudo funcionando direto no WhatsApp da sua empresa, com o seu jeito. Bora destravar seu negócio?",
+    "cta": {
+      "text": "Conheça seu primeiro funcionário digital",
+      "link": "/"
+    }
+  },
+  "tags": ["atendimento", "automação", "rotina de empreendedores", "funcionário digital"]
+  }
 ]
