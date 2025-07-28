@@ -90,30 +90,30 @@ export default function Testimonials() {
         </p>
         <div className="relative w-full mx-auto px-0 overflow-hidden">
           <div className="flex items-center justify-center gap-4">
-            <div className="w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -ml-10">
+            <div className="hidden md:block w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -ml-10">
               <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
             </div>
-            <div 
-              className="w-[40%] z-10 transition-all duration-300 ease-in-out"
+            <div
+              className="w-full md:w-[40%] z-10 transition-all duration-300 ease-in-out"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
             >
               <TestimonialCard testimonial={testimonials[currentIndex]} showImpact />
             </div>
-            <div className="w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -mr-10">
+            <div className="hidden md:block w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -mr-10">
               <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
             </div>
           </div>
           <button
             onClick={goToPrevious}
-            className="absolute left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute left-4 md:left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Depoimento anterior"
           >
             <ChevronLeft className="w-6 h-6 text-white" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
+            className="absolute right-4 md:right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
             aria-label="Próximo depoimento"
           >
             <ChevronRight className="w-6 h-6 text-white" />
@@ -145,7 +145,7 @@ function TestimonialCard({ testimonial, showImpact = false }: { testimonial: Tes
           <p className="text-gray-300">{testimonial.position} em {testimonial.company}</p>
         </div>
       </div>
-      <p className="text-gray-100 mb-4">{testimonial.text}</p>
+      <p className="text-gray-100 mb-4 text-center md:text-left">{testimonial.text}</p>
       {showImpact && (
           <p className="font-bold text-blue-500">Impacto: {testimonial.impact}</p>
       )}
