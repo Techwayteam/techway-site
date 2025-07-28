@@ -32,7 +32,7 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <p>
               <span className="font-bold">WhatsApp:{" "}</span>
               <a
-                href="https://wa.me/5521991673541"
+                href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20falar%20com%20o%20time." 
                 className="hover:text-blue-400 transition-colors duration-300"
                 target="_blank"
                 rel="noopener noreferrer"

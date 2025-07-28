@@ -9,6 +9,9 @@ import Testimonials from '../components/Testimonials'
 import { landingPages } from '../data/landingPages'
 import type { PageData } from '../types/PageData'
 
+const waLink = (message: string) =>
+  `https://wa.me/5521991673541?text=${encodeURIComponent(message)}`
+
 const iconComponents = {
   CheckCircle,
   Award,
@@ -79,7 +82,12 @@ export default function DynamicLandingPage() {
             <p className="text-xl mb-8 text-center font-bold">
               {pageData.hero.heroSubtitle}
             </p>
-            <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+            <a
+              href={waLink(`Olá! Vi o site de vocês e ${pageData.hero.heroCTA.toLowerCase()}.`)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
+            >
               {pageData.hero.heroCTA}
             </a>
           </div>
@@ -125,8 +133,10 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_1}
                 </p>
                 <div className="text-center">
-                  <a 
-                    href={pageData.solution.solutionctalink_1}
+                  <a
+                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_1.toLowerCase()}.`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
                   >
                     {pageData.solution.solutionctatext_1}
@@ -143,8 +153,10 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_2}
                 </p>
                 <div className="text-center">
-                  <a 
-                    href={pageData.solution.solutionctalink_2}
+                  <a
+                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_2.toLowerCase()}.`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
                   >
                     {pageData.solution.solutionctatext_2}
@@ -161,8 +173,10 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_3}
                 </p>
                 <div className="text-center">
-                  <a 
-                    href={pageData.solution.solutionctalink_3}
+                  <a
+                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_3.toLowerCase()}.`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
                   >
                     {pageData.solution.solutionctatext_3}
@@ -228,7 +242,9 @@ export default function DynamicLandingPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">{pageData.cta.ctaText}</h2>
             <a
-              href={pageData.cta.ctaLink}
+              href={waLink(`Olá! Vi o site de vocês e ${pageData.cta.ctaButton.toLowerCase()}.`)}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block"
             >
               {pageData.cta.ctaButton}

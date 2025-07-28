@@ -59,7 +59,12 @@ const Home: React.FC = () => {
               A TECHWAY <span className="text-blue-400">simplifica sua operação</span> com soluções tecnológicas sob medida. <br />
               <span className="text-blue-400 font-bold">Mais produtividade.</span> <span className="font-bold">Menos dor de cabeça.</span>
             </p>
-            <a href="#contato" className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">
+            <a
+              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20otimizar%20meus%20processos."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
+            >
               Otimize Já os Seus Processos
             </a>
           </div>
@@ -130,7 +135,12 @@ const Home: React.FC = () => {
                   Elimine processos repetitivos e concentre-se no que realmente importa. Nossas automações se ajustarão perfeitamente às suas operações, economizando tempo e recursos.
                 </p>
                 <div className="text-center">
-                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                  <a
+                    href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20transformar%20minha%20opera%C3%A7%C3%A3o."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
                     &gt; Descubra como transformar sua operação &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
@@ -145,7 +155,12 @@ const Home: React.FC = () => {
                   Quem tem controle dos seus dados, está a um passo do sucesso. Elaboramos Dashboards sob medida para o seu negócio, que transformam números em decisões estratégicas.
                 </p>
                 <div className="text-center">
-                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                  <a
+                    href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20ver%20meus%20dados%20trabalhando%20por%20mim."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
                     &gt; Veja seus dados trabalhando por você &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
@@ -160,7 +175,12 @@ const Home: React.FC = () => {
                   Criamos soluções tecnológicas sob medida, adaptadas à realidade e desafios do seu negócio. Nossas ferramentas certamente farão a diferença onde sua empresa mais precisa.
                 </p>
                 <div className="text-center">
-                  <a href="#contato" className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group">
+                  <a
+                    href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20descobrir%20o%20impacto%20das%20nossas%20ferramentas."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                  >
                     &gt; Descubra o impacto das nossas ferramentas &lt;
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
                   </a>
