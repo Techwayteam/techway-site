@@ -2,7 +2,7 @@
 
 Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público confirmado pelo fundador: **pequenos negócios que atendem pelo WhatsApp**. Primeira frente: blog.
 
-Revisão de 10/10/2026: **main sincronizada com origin/main em 78362aa**, correspondente ao deploy público confirmado naquela data. T001 confirmou igualdade dos três posts antes da implementação local de T002. T002 está tecnicamente concluída, sem publicação. Em **11/10/2026**, origin/main foi reconsultada e permanece no mesmo SHA; deploy e HTML público não foram rechecados. O plano agora prioriza S01–S04, com copy do GPT externo via usuário e execução pelo Codex. **S01 está integrada localmente**, com duas fotos geradas, comparativo HTML e metadados; autoria confirmada como Leonardo Reis - Founder Techway. Rota: `/blog/atendimento-ia-alem-respostas-automaticas`. S02–S04 aguardam copy. [Evidência da integração](evidence/2026-10-11-S01-integracao.md).
+**S01 publicada em 11/10/2026**, com duas fotos geradas, comparativo HTML, metadados e autoria confirmada como Leonardo Reis - Founder Techway. Conteúdo enviado no commit `8d158f76`; workflow e deploy de Pages success, quatro artigos e imagens públicas conferidos. T002 e a variante local de Early Access também publicadas, com preservação das rotas atuais. [Artigo público](https://techway.one/blog/atendimento-ia-alem-respostas-automaticas) e [evidência da publicação](evidence/2026-10-11-T019-publicacao.md). O plano segue com S02–S04 aguardando copy do GPT externo via usuário. T001 em 78362aa registra a reconciliação histórica anterior, não a versão atual de produção.
 
 ## Comece por aqui
 
@@ -43,4 +43,4 @@ docs/site/
 
 A referência da Luluzinha foi a **imagem da árvore de arquivos** enviada pelo usuário; o conteúdo daqueles documentos não estava disponível. Esta estrutura reproduz sua organização e adapta os contratos ao site da Techway. Não há banco de dados neste site; uma pasta SQL não acrescentaria capacidade agora. Integrações de CRM ou armazenamento entram quando houver necessidade concreta.
 
-Esta entrega é uma análise e uma estrutura operacional, seguida da sincronização solicitada pelo usuário. Os papéis de agentes estão especificados, mas não existe aqui uma automação persistente nem um serviço multiagente rodando. Foram incorporadas mudanças existentes da origem, sem publicar novos artigos ou executar redesign/deploy do roadmap.
+A etapa inicial foi análise/estrutura operacional e sincronização; depois S01 e as melhorias locais validadas foram publicadas por pedido explícito do usuário. Os papéis de agentes são contratos de trabalho, sem runtime multiagente persistente. O restante do roadmap segue nas tarefas pendentes.

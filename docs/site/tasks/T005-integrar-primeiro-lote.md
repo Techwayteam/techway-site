@@ -1,6 +1,6 @@
 # T005 — integrar a série S01–S04 por artigo
 
-Estado: **em execução — S01 integrada localmente, 1/4; sem deploy público**. Prioridade: P1. Responsável: Codex/implementação; revisor: técnico/editorial. Dependências: fonte reconciliada (T001), jornada T002, revisão T003 para os textos existentes alterados e aceite T004 do artigo a integrar. Não exige conclusão do lote inteiro de T004.
+Estado: **em execução — S01 publicada e verificada, 1/4; S02–S04 pendentes**. Prioridade: P1. Responsável: Codex/implementação; revisor: técnico/editorial. Dependências: fonte reconciliada (T001), jornada T002, revisão T003 para os textos existentes alterados e aceite T004 do artigo a integrar. Não exige conclusão do lote inteiro de T004.
 
 ## Resultado
 
@@ -23,3 +23,5 @@ Usar `editorial/serie-funcionarios-digitais.md` para slugs candidatos, direção
 - Evidência e progresso atualizados; caso publicação esteja autorizada, URL/pipeline verificados.
 
 Evidência de S01: `../evidence/2026-10-11-S01-integracao.md`. Fonte principal tem quatro artigos; três antigos preservados, com ligação adicional do dilema para S01. SEO por artigo e Open Graph adiantados; T006 completa sitemap/dados estruturados depois. S02–S04 ainda não integradas; a tarefa inteira segue aberta.
+
+Publicação de S01 concluída em T019: workflow/deploy success, conteúdo e imagens públicos conferidos. Evidência: `../evidence/2026-10-11-T019-publicacao.md`.

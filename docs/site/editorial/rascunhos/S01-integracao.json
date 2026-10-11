@@ -1,5 +1,5 @@
 {
-  "status": "integrated_locally",
+  "status": "published",
   "editorialId": "S01",
   "receivedAt": "2026-10-11",
   "slug": "atendimento-ia-alem-respostas-automaticas",
@@ -365,5 +365,7 @@
       "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
       "slug": "cuidar-do-cliente-ou-do-negocio"
     }
-  ]
+  ],
+  "publishedUrl": "https://techway.one/blog/atendimento-ia-alem-respostas-automaticas",
+  "publishedCommit": "8d158f76d0a9b12fd49cb0e8104b8d321b90c698"
 }

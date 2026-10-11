@@ -22,16 +22,15 @@ Atualização: **11/10/2026 — America/Sao_Paulo**.
 - S01 recebida, revisada e integrada localmente em `/blog/atendimento-ia-alem-respostas-automaticas`, com autoria confirmada **Leonardo Reis - Founder Techway**. Copy aprovada preservada; duas fotos geradas em WebP e comparativo HTML, metadados/canonical/Open Graph e ligação com o artigo do dilema. Listagem por data decrescente.
 - Template aceita parágrafos, citações, listas, destaques e figuras; S01 tem título/metadados antes da capa, dimensões reservadas e imagem interna lazy. Datas pt-BR estáveis. Type-check na fonte principal e build isolado aprovados; 12 páginas, quatro artigos. Rota no servidor local em localhost:3000 respondeu HTTP 200. Evidências: `evidence/2026-10-11-S01-integracao.md` e `evidence/2026-10-11-S01-imagens.md`.
 - Ajuste editorial posterior solicitado pelo usuário: S01 mantém a FEBRABAN como referência, com setor implícito, exemplo de pedido e apoio digital conforme a demanda, sem vincular a proposta ao tamanho/aumento da equipe. Fonte, artefato editorial e preparação sincronizados; type-check/build aprovados e conteúdo conferido na rota local. Evidência: `evidence/2026-10-11-S01-ajuste-editorial.md`.
+- **T019: publicação verificada** do conteúdo `8d158f76` em 11/10/2026, com workflow [38110814696](https://github.com/Techwayteam/techway-site/actions/runs/38110814696) e deployment 6990772377 em success. Onze URLs públicas conferidas: blog com S01 primeiro, quatro artigos iguais aos dados locais, duas imagens com hashes iguais, home/Early Access, landing/default, termos e privacidade. T002, S01 e variante local da home publicadas. Evidência: `evidence/2026-10-11-T019-publicacao.md` e `evidence/2026-10-11-T019-verificacao.json`.
 
 ## Estado atual
 
-Publicação autorizada em 11/10/2026: **T019 em execução**, com origem reconciliada e diff revisado; preparando commit/push e verificação de Pages/URLs. Os estados locais abaixo registram o resultado anterior a essa publicação e serão atualizados após verificação remota.
-
-T000, **T001, T002 e T018 concluídas**, sendo T002 local e ainda não publicada. T018 passou na conferência de 42 referências locais e preservação. **T004/T005: S01 aceita e integrada localmente (1/4); S02–S04 aguardam copy**. T003 segue pendente para revisão factual dos antigos; só foi adicionado link de continuidade, preservando textos, datas e CTAs. T006 tem metadados dos artigos adiantados; sitemap/dados estruturados e aceite completo pendentes. Demais tarefas seguem no backlog. Não houve commit, push, deploy público ou envio a terceiros nesta sessão.
+T000, **T001, T002, T018 e T019 concluídas**. T001/T018 mantêm evidências históricas; T019 verificou commit, push, workflow e produção. **T004/T005: S01 aceita e publicada (1/4); S02–S04 aguardam copy**. T003 segue pendente para revisão factual dos antigos; só foi adicionado link de continuidade, preservando textos, datas e CTAs. T006 tem metadados dos artigos adiantados; sitemap/dados estruturados e aceite completo pendentes. Demais tarefas seguem no backlog. Documentação da verificação registrada depois do deploy, sem nova alteração na fonte da aplicação. Sem envio de mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. Executar T003 para revisar percentuais/promessas dos antigos. S01 está na prévia local; publicação remota só quando incluída no pedido, reconciliando diff e pipeline e preservando Early Access. Edição local de S01: 11/10/2026; se o lançamento ocorrer em outra data, conferir e ajustar a data real nesse momento.
+Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. Executar T003 para revisar percentuais/promessas dos antigos. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
 
 Plano: `plans/001-blog-e-captacao.md`. Série: `editorial/serie-funcionarios-digitais.md`. B01 em `editorial/rascunhos/001-organizar-atendimento-whatsapp.md` segue apoio não aprovado/publicado. Evidência histórica de T001 em `evidence/2026-10-10-T001-reconciliacao.md`.
 
@@ -41,6 +40,6 @@ Capacidades prontas; oferta e Early Access atuais; processo comercial; provas e 
 
 ## Limites
 
-Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. T002 foi validada no export local com Chrome headless, incluindo inspeção de screenshot móvel; isso não representa auditoria completa de acessibilidade, dispositivo real ou teste de produção. O resultado técnico foi observado no ambiente Windows local; não foi disparado novo CI remoto. As consultas públicas de T001 são históricas; nenhum resultado de T002 foi apresentado como publicado.
+Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. QA local de T002/S01 incluiu Chrome e screenshots; T019 acrescentou CI remoto success e verificação de HTML/dados/arquivos públicos. Não houve novo browser QA remoto, teste em dispositivo real ou auditoria completa de acessibilidade. As consultas de T001 e as evidências anteriores à publicação continuam históricas.
 
 Build de S01 em cópia isolada para preservar `out` da prévia ativa; nenhum build executado sobre esses artefatos. Persistem avisos antigos de Browserslist e download de fonte. Imagens são fictícias e não prova comercial. QA local não comprova indexação, entrega de WhatsApp ou disponibilidade das integrações ilustradas.

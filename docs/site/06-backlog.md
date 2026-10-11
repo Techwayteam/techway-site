@@ -6,10 +6,10 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | --- | --- | --- | --- | --- | --- | --- |
 | T000 | P0 | Diagnóstico e estrutura operacional | Coordenação | — | M | Concluída nesta entrega |
 | T001 | P0 | Reconciliar fonte pública e checkout; preservar 3 posts | Coordenação + implementação | Evidência A01 | M | Concluída: main/origin 78362aa, posts iguais ao online |
-| T002 | P1 | Garantir blog → landing → contato; corrigir Link e carregamento | Implementação + QA | T001 para integração final | S | Concluída localmente; sem deploy |
+| T002 | P1 | Garantir blog → landing → contato; corrigir Link e carregamento | Implementação + QA | T001 para integração final | S | Concluída; publicada via T019 |
 | T003 | P1 | Rever 3 posts existentes e fatos da oferta | Redação + revisão de produto | T001; fatos comerciais quando citados | M | Planejada |
 | T004 | P1 | Receber e revisar copy externa de S01–S04 | Usuário/GPT + Codex/editorial + produto | Copy e fatos por artigo | M | S01 aceita; S02–S04 aguardam copy |
-| T005 | P1 | Integrar S01–S04 por artigo aceito, com capas e metadados | Codex/implementação + QA | T001/T002; T003 no conteúdo alterado; T004 por artigo | M | S01 integrada localmente (1/4); sem deploy |
+| T005 | P1 | Integrar S01–S04 por artigo aceito, com capas e metadados | Codex/implementação + QA | T001/T002; T003 no conteúdo alterado; T004 por artigo | M | S01 publicada (1/4); S02–S04 pendentes |
 | T006 | P1 | Metadados, canonical, BlogPosting e sitemap | Implementação | T001; modelo consistente | M | Planejada |
 | T007 | P1 | Definir destino comercial, eventos e confirmação de lead | Aquisição + fundador + implementação | Destino e ferramenta definidos | M | Planejada |
 | T008 | P1 | Atualizar Next/runtime com plano de regressão; lucide já atualizado | Implementação + QA | Fonte reconciliada; inventário | L | Planejada |
@@ -23,7 +23,7 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T016 | P3 | Páginas por segmento e materiais de diagnóstico | Produto + aquisição | Interesse e oferta comprovados | L | Planejada |
 | T017 | P3 | CMS/CRM e automações editoriais | Coordenação + implementação | Necessidade operacional observada | L | Planejada |
 | T018 | P1 | Replanejar próximas publicações com série S01–S04 e copy externa | Codex/coordenação | Proposta fornecida pelo usuário | S | Concluída; 42 referências locais válidas |
-| T019 | P1 | Publicar S01 e melhorias locais validadas; verificar Pages e URLs | Codex/implementação + QA | Publicação solicitada; T001/T002 e S01 aceitas | M | Em execução |
+| T019 | P1 | Publicar S01 e melhorias locais validadas; verificar Pages e URLs | Codex/implementação + QA | Publicação solicitada; T001/T002 e S01 aceitas | M | Concluída; workflow/deploy success e onze URLs conferidas |
 
 ## Política de prioridade
 

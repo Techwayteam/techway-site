@@ -35,7 +35,7 @@ assert.match(html, /<strong>O atendimento aconteceu\. O problema não foi resolv
 assert.equal((html.match(/<blockquote /g) || []).length, 3);
 assert.equal((html.match(/<li>/g) || []).length, 4);
 assert.equal(draft.content.sections.length, 6);
-assert.equal(draft.status, 'integrated_locally');
+assert.ok(['integrated_locally', 'published'].includes(draft.status));
 assert.equal(draft.date, '2026-10-11');
 assert.equal(draft.featuredImage, '/atendimento-ia-capa.webp');
 assert.equal(draft.author, 'Leonardo Reis - Founder Techway');

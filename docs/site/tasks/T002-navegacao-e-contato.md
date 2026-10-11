@@ -1,6 +1,6 @@
 # T002 — navegação do blog e contato válido
 
-Estado: **concluída — entrega técnica local em 10/10/2026**. Prioridade: P1. Responsável: implementação; revisor: QA. Dependência: T001 satisfeita. Publicação não solicitada.
+Estado: **concluída — entrega técnica em 10/10/2026, publicada via T019 em 11/10/2026**. Prioridade: P1. Responsável: implementação; revisor: QA. Dependência: T001 satisfeita. Publicação solicitada posteriormente e verificada.
 
 ## Resultado
 
@@ -28,4 +28,4 @@ Não ativar o chat legado nem inventar páginas de soluções vazias apenas para
 
 [Validação e SEO](../evidence/2026-10-10-T002-navegacao.md): type-check/build aprovados e 65 verificações do export/Chrome local, sem erros de JavaScript/hidratação. Telas de 360, 390 e 1280 px, teclado, histórico, imagens e default sem JavaScript conferidos.
 
-Recebimento de WhatsApp não foi testado. Oferta, promessas e depoimentos mantidos exigem revisão comercial/editorial, fora do aceite técnico desta tarefa. Não houve commit/push/deploy. SEO completo, canonical e sitemap permanecem em T006.
+Recebimento de WhatsApp não foi testado. Oferta, promessas e depoimentos mantidos exigem revisão comercial/editorial, fora do aceite técnico. Commit/push/deploy e rotas públicas verificados em [T019](../evidence/2026-10-11-T019-publicacao.md). Canonical dos artigos adiantada em S01; SEO completo e sitemap seguem em T006.

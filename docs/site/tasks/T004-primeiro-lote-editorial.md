@@ -1,10 +1,10 @@
 # T004 — receber e revisar a copy da série prioritária
 
-Estado: **em execução — S01 revisada e integrada localmente; S02–S04 aguardam copy**. Prioridade: P1. Copy: GPT externo via usuário. Responsável pela execução: Codex/revisão editorial; validação de oferta: fundador/produto. Dependência: copy de cada artigo e fatos necessários. Plano: `../plans/001-blog-e-captacao.md`.
+Estado: **em execução — S01 revisada e publicada; S02–S04 aguardam copy**. Prioridade: P1. Copy: GPT externo via usuário. Responsável pela execução: Codex/revisão editorial; validação de oferta: fundador/produto. Dependência: copy de cada artigo e fatos necessários. Plano: `../plans/001-blog-e-captacao.md`.
 
 ## Preparação disponível
 
-`editorial/serie-funcionarios-digitais.md`: quatro briefs, contrato de copy, links e direção de capa. S01 recebida, com autoria e participação presencial na FEBRABAN confirmadas; imagens geradas e texto aprovado integrado sem reescrita. Evidência: `../evidence/2026-10-11-S01-integracao.md`. `editorial/estrategia-e-calendario.md`: fila e 12 pautas de apoio. Briefs B01–B03 e rascunho B01 preservados. S02–S04 pendentes; nenhuma publicação pública nesta sessão.
+`editorial/serie-funcionarios-digitais.md`: quatro briefs, contrato de copy, links e direção de capa. S01 recebida, com autoria e presença na FEBRABAN confirmadas; imagens geradas e texto integrado, com ajuste posterior solicitado pelo usuário. Publicada via T019; evidência em `../evidence/2026-10-11-T019-publicacao.md`. Estratégia e 12 pautas de apoio, briefs B01–B03 e rascunho B01 preservados. S02–S04 pendentes.
 
 ## Trabalho restante
 

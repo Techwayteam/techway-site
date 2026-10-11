@@ -2,7 +2,7 @@
 
 | Plano | Objetivo | Estado |
 | --- | --- | --- |
-| [001 — blog e captação](plans/001-blog-e-captacao.md) | Preparar jornada e integrar série S01–S04 por artigo, com copy externa | Em execução; T001/T002 concluídas; S01 integrada localmente (1/4), S02–S04 aguardam copy |
+| [001 — blog e captação](plans/001-blog-e-captacao.md) | Preparar jornada e integrar série S01–S04 por artigo, com copy externa | Em execução; T001/T002 e publicação T019 concluídas; S01 publicada (1/4), S02–S04 aguardam copy |
 
 ## Contrato de um plano
 

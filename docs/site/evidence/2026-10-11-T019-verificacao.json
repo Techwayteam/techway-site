@@ -1,0 +1,64 @@
+{
+  "checkedOn": "2026-10-11",
+  "sourceSha": "8d158f76d0a9b12fd49cb0e8104b8d321b90c698",
+  "deploymentId": 6990772377,
+  "status": "success",
+  "environmentUrl": "https://techway.one/",
+  "logUrl": "https://github.com/Techwayteam/techway-site/actions/runs/38110814696/job/114385957519",
+  "checks": [
+    {
+      "url": "https://techway.one/blog",
+      "state": "ok",
+      "articles": 4,
+      "first": "atendimento-ia-alem-respostas-automaticas"
+    },
+    {
+      "url": "https://techway.one/blog/como-melhorar-sua-produtividade",
+      "state": "ok",
+      "contentMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/blog/automacao-de-tarefas-repetitivas",
+      "state": "ok",
+      "contentMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/blog/cuidar-do-cliente-ou-do-negocio",
+      "state": "ok",
+      "contentMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/blog/atendimento-ia-alem-respostas-automaticas",
+      "state": "ok",
+      "contentMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/atendimento-ia-capa.webp",
+      "state": "ok",
+      "bytes": 110440,
+      "hashMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/atendimento-humano-techway.webp",
+      "state": "ok",
+      "bytes": 102660,
+      "hashMatchesLocal": true
+    },
+    {
+      "url": "https://techway.one/",
+      "state": "ok"
+    },
+    {
+      "url": "https://techway.one/din_page?variant=default",
+      "state": "ok"
+    },
+    {
+      "url": "https://techway.one/termos",
+      "state": "ok"
+    },
+    {
+      "url": "https://techway.one/privacidade",
+      "state": "ok"
+    }
+  ]
+}

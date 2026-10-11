@@ -53,4 +53,6 @@ Não enviar WhatsApp/e-mail para testar sem autorização de envio. Para destino
 
 ## Quanto testar
 
+Publicação posterior de S01/T002: [T019](evidence/2026-10-11-T019-publicacao.md), em 11/10/2026. CI/Pages success e onze URLs públicas verificadas; quatro artigos e duas imagens iguais à fonte. Os resultados locais anteriores acima são históricos; não representam o estado completo depois dessa publicação.
+
 Documentação: validar caminhos, referências, coerência de estados e preservação do diff original. Texto editorial: validar contrato, links e fatos. Templates e filtros: testes focados nas falhas reais (slug duplicado, asset ausente, draft exportado, CTA quebrado) quando o validador existir. Evitar testes que apenas repitam código ou adicionem custo sem verificar comportamento.

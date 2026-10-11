@@ -1,6 +1,6 @@
 # Próximas publicações — funcionários digitais na rotina do pequeno negócio
 
-Atualização: **11/10/2026 — America/Sao_Paulo**. Direção incorporada ao plano a pedido do usuário, a partir da conversa com o GPT fornecida nesta sessão. Estado: **S01 recebida, revisada e integrada localmente; S02–S04 aguardando copy externa**. Nenhum destes artigos foi publicado nesta sessão.
+Atualização: **11/10/2026 — America/Sao_Paulo**. Direção incorporada ao plano a pedido do usuário. Estado: **S01 publicada e verificada; S02–S04 aguardando copy externa**. [S01 pública](https://techway.one/blog/atendimento-ia-alem-respostas-automaticas); publicação registrada em T019.
 
 ## Direção e responsabilidades
 
@@ -16,7 +16,7 @@ Ensinar antes do convite comercial; português brasileiro e situações de salã
 
 | Ordem | ID e título editorial recomendado | Pergunta e resultado para o leitor | Estado |
 | --- | --- | --- | --- |
-| 1 | S01 — Seu cliente não quer uma resposta automática. Ele quer resolver o problema. | Como distinguir uma resposta de um pedido resolvido? Identificar uma tarefa e suas condições de conclusão. | Integrada localmente, com duas fotos e comparativo HTML |
+| 1 | S01 — Seu cliente não quer uma resposta automática. Ele quer resolver o problema. | Como distinguir uma resposta de um pedido resolvido? Identificar uma tarefa e suas condições de conclusão. | Publicada em 11/10/2026, com duas fotos e comparativo HTML |
 | 2 | S02 — Inteligência artificial vai substituir o atendimento humano? | O que delegar e quando chamar uma pessoa? Definir limites e critérios de transferência. | Aguardando copy |
 | 3 | S03 — Seu WhatsApp pode fazer mais do que receber mensagens. | O que um funcionário digital precisa para executar tarefas? Separar informação, ação e dependências. | Aguardando copy |
 | 4 | S04 — Como crescer sem precisar fazer tudo sozinho? | Como reduzir a dependência do dono? Escolher um processo, um responsável e uma forma de acompanhar. | Aguardando copy |
@@ -97,6 +97,6 @@ Codex revisa o contrato, fatos, sobreposição, links e oferta; aponta correçõ
 
 S01 recebeu diretrizes visuais do usuário e autorização para adaptar quantidade e disposição. Duas fotos foram geradas com a ferramenta integrada, revisadas e otimizadas em WebP; o comparativo foi implementado em HTML. Título/subtítulo/autoria vêm antes da capa; foto humana entra após os primeiros parágrafos da seção correspondente. Prompts, arquivos e dimensões em [produção visual](../evidence/2026-10-11-S01-imagens.md). As direções de S02–S04 continuam propostas. Imagem gerada não é prova de cliente ou captura real do produto.
 
-Autoria confirmada: **Leonardo Reis - Founder Techway**. Edição local: **11/10/2026**; conferir coerência com o lançamento efetivo se publicado em outra data. [Copy original](rascunhos/S01-copy-recebida.md) preservada; [artefato estruturado](rascunhos/S01-integracao.json) registra integração local. Fonte em `data/blogPosts.json`; rota no servidor local respondeu HTTP 200. Resultado remoto permanece pendente.
+Autoria confirmada: **Leonardo Reis - Founder Techway**. Publicação: **11/10/2026**. [Copy original](rascunhos/S01-copy-recebida.md) preservada; [artefato estruturado](rascunhos/S01-integracao.json) registra estado publicado. Fonte em `data/blogPosts.json`; dados/HTML e imagens públicos iguais ao local. [Evidência remota](../evidence/2026-10-11-T019-publicacao.md).
 
 Um artigo fica pronto para integrar quando tem pergunta distinta, ação útil, copy recebida e revisada, alegações verificadas ou condicionadas, oferta/CTA pertinentes, autoria real definida e capa adequada. Integração exige slug único, links existentes, datas coerentes, metadados, imagens, type-check/build e leitura/navegação conforme `../07-validacao.md`. Publicado exige URL e resultado observados. T004/T005 acompanham aceite individual; só concluem quando os quatro tiverem os respectivos aceites.
