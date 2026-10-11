@@ -28,7 +28,7 @@
   },
   "cta": {
     "text": "Descubra Nossas Soluções de Produtividade",
-    "link": "/solucoes-produtividade"
+    "link": "/din_page?variant=default"
   },
   "tags": ["produtividade", "tecnologia", "automação"]
 },
@@ -56,7 +56,7 @@
   },
   "cta": {
     "text": "Conheça Nossas Soluções de Automação",
-    "link": "/solucoes-automacao"
+    "link": "/din_page?variant=default"
   },
   "tags": ["automação", "eficiência", "produtividade"]
 }
@@ -98,6 +98,373 @@
     "text": "Conheça seu primeiro funcionário digital",
     "link": "/"
   },
+  "related": [{ "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.", "slug": "atendimento-ia-alem-respostas-automaticas" }],
   "tags": ["atendimento", "automação", "rotina de empreendedores", "funcionário digital"]
-  }
+  },
+{
+  "slug": "atendimento-ia-alem-respostas-automaticas",
+  "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+  "subtitle": "O que os avanços da inteligência artificial no atendimento podem ensinar aos pequenos negócios.",
+  "seoTitle": "Atendimento com IA: além das respostas automáticas | Techway",
+  "metaDescription": "Descubra como a inteligência artificial pode ir além das respostas automáticas e ajudar pequenos negócios a resolver pedidos pelo WhatsApp.",
+  "author": "Leonardo Reis - Founder Techway",
+  "date": "2026-10-11",
+  "layout": "editorial",
+  "featuredImage": "/atendimento-ia-capa.webp",
+  "featuredImageAlt": "Empreendedora consultando mensagens no celular após o expediente em seu salão.",
+  "featuredImageWidth": 1600,
+  "featuredImageHeight": 900,
+  "content": {
+    "introduction": "",
+    "introductionBlocks": [
+      {
+        "type": "paragraph",
+        "text": "Imagine a seguinte situação."
+      },
+      {
+        "type": "paragraph",
+        "text": "São quase oito da noite. Você finalmente encerrou seu expediente e está aproveitando um momento com a família."
+      },
+      {
+        "type": "paragraph",
+        "text": "De repente, chega uma mensagem no WhatsApp da empresa:"
+      },
+      {
+        "type": "quote",
+        "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Se você não responder, corre o risco de perder o cliente. Se responder, terá que abrir a agenda, conferir os horários, oferecer algumas opções, esperar o retorno e confirmar o agendamento."
+      },
+      {
+        "type": "paragraph",
+        "text": "Talvez sejam apenas cinco minutos. Mas quantas vezes isso acontece durante a semana?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Agora imagine que sua empresa tenha uma resposta automática:"
+      },
+      {
+        "type": "quote",
+        "text": "Olá! Nosso horário de atendimento é de segunda a sexta, das 9h às 18h. Retornaremos assim que possível."
+      },
+      {
+        "type": "paragraph",
+        "text": "A mensagem foi respondida. Mas o cliente continua sem saber se pode agendar para amanhã."
+      },
+      {
+        "type": "paragraph",
+        "text": "**O atendimento aconteceu. O problema não foi resolvido.**"
+      },
+      {
+        "type": "paragraph",
+        "text": "E é justamente essa diferença que está mudando a maneira como empresas enxergam a inteligência artificial."
+      }
+    ],
+    "sections": [
+      {
+        "title": "Responder rápido já não é suficiente",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Durante muito tempo, automatizar o atendimento significava criar mensagens de boas-vindas, menus de opções e respostas para perguntas frequentes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Esses recursos continuam sendo úteis. Afinal, informar o horário de funcionamento ou compartilhar um endereço não precisa ocupar o tempo de alguém da equipe."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mas pense no que acontece quando o cliente precisa de algo além de uma informação."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ele quer agendar um serviço, remarcar um compromisso, consultar o andamento de um pedido ou descobrir se determinado produto está disponível."
+          },
+          {
+            "type": "paragraph",
+            "text": "Nessas situações, uma resposta automática pode até iniciar a conversa. Mas, se alguém precisar assumir todas as etapas seguintes, boa parte do trabalho continuará acontecendo manualmente."
+          },
+          {
+            "type": "paragraph",
+            "text": "**Existe uma diferença enorme entre automatizar uma mensagem e automatizar a solução de um problema.**"
+          },
+          {
+            "type": "comparison"
+          }
+        ]
+      },
+      {
+        "title": "O que as empresas estão aprendendo sobre atendimento",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Esse foi um dos aprendizados que mais nos chamou a atenção durante a FEBRABAN Tech 2026."
+          },
+          {
+            "type": "paragraph",
+            "text": "Entre tantas discussões sobre inteligência artificial, uma mudança de perspectiva ficou evidente: as empresas estão buscando maneiras de fazer com que a tecnologia vá além de conversar com o cliente."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em vez de simplesmente fornecer informações, sistemas inteligentes podem consultar dados, interpretar solicitações e executar tarefas."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pense, por exemplo, em alguém que entra em contato com uma empresa para acompanhar um pedido."
+          },
+          {
+            "type": "paragraph",
+            "text": "O que essa pessoa realmente deseja?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Receber uma lista de instruções sobre como resolver o problema? Ou sair daquela conversa com a solicitação encaminhada ou resolvida?"
+          },
+          {
+            "type": "paragraph",
+            "text": "A resposta parece óbvia."
+          },
+          {
+            "type": "paragraph",
+            "text": "E embora as grandes empresas tenham operações muito diferentes das de um salão de beleza, uma oficina ou uma pequena loja, o princípio por trás dessa evolução é o mesmo:"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Quanto menos esforço o cliente precisar fazer para resolver o que deseja, melhor será sua experiência.**"
+          },
+          {
+            "type": "paragraph",
+            "text": "A boa notícia é que essa lógica não precisa ficar restrita às grandes empresas."
+          }
+        ]
+      },
+      {
+        "title": "E se o WhatsApp da sua empresa também pudesse resolver tarefas?",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Vamos voltar à mensagem do início deste artigo."
+          },
+          {
+            "type": "quote",
+            "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Agora imagine uma experiência diferente."
+          },
+          {
+            "type": "paragraph",
+            "text": "Um atendente digital recebe a mensagem, entende o que o cliente deseja e consulta os horários disponíveis na agenda da empresa."
+          },
+          {
+            "type": "paragraph",
+            "text": "Em seguida, oferece duas ou três opções."
+          },
+          {
+            "type": "paragraph",
+            "text": "O cliente escolhe a melhor, e o agendamento é registrado automaticamente. Tudo acontece no próprio WhatsApp, sem precisar acessar outro aplicativo ou esperar que alguém da equipe esteja disponível."
+          },
+          {
+            "type": "paragraph",
+            "text": "O cliente conseguiu o que queria. A agenda está atualizada. E você não precisou interromper seu momento de descanso."
+          },
+          {
+            "type": "paragraph",
+            "text": "Esse mesmo princípio pode ser aplicado a diferentes situações:"
+          },
+          {
+            "type": "list",
+            "items": [
+              "**Em um salão de beleza:** consultar horários, agendar serviços e confirmar compromissos.",
+              "**Em uma assistência técnica:** informar o andamento de um reparo e registrar solicitações.",
+              "**Em uma loja:** verificar a disponibilidade de produtos e responder dúvidas sobre pedidos.",
+              "**Em um consultório:** organizar solicitações de agendamento e enviar lembretes."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Para que isso funcione, a inteligência artificial precisa estar conectada às informações e aos sistemas necessários, com regras claras sobre o que pode ou não fazer."
+          },
+          {
+            "type": "paragraph",
+            "text": "Não se trata de responder qualquer coisa, mas de executar tarefas específicas com segurança."
+          },
+          {
+            "type": "paragraph",
+            "text": "E talvez o mais interessante seja perceber que não estamos falando necessariamente de tecnologias futuristas ou inacessíveis."
+          },
+          {
+            "type": "paragraph",
+            "text": "Estamos falando de usar ferramentas que já fazem parte do dia a dia dos pequenos negócios de uma maneira mais inteligente."
+          }
+        ]
+      },
+      {
+        "title": "Mas isso significa deixar o atendimento humano de lado?",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Não. E essa talvez seja uma das reflexões mais importantes."
+          },
+          {
+            "type": "paragraph",
+            "text": "Pense em quantas mensagens sua empresa recebe que exigem praticamente a mesma ação."
+          },
+          {
+            "type": "paragraph",
+            "text": "Consultar um horário. Confirmar um agendamento. Informar um preço. Verificar um pedido."
+          },
+          {
+            "type": "image",
+            "src": "/atendimento-humano-techway.webp",
+            "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente.",
+            "width": 1200,
+            "height": 800,
+            "caption": "Automatizar tarefas também pode significar ter mais tempo para as pessoas. Imagem ilustrativa gerada com IA."
+          },
+          {
+            "type": "paragraph",
+            "text": "Agora pense nas situações que realmente precisam da sua experiência, sensibilidade ou capacidade de decisão."
+          },
+          {
+            "type": "paragraph",
+            "text": "Um cliente insatisfeito. Uma negociação especial. Um atendimento delicado. Uma oportunidade importante de relacionamento."
+          },
+          {
+            "type": "paragraph",
+            "text": "Faz sentido dedicar o mesmo tempo e esforço aos dois tipos de situação?"
+          },
+          {
+            "type": "paragraph",
+            "text": "A inteligência artificial pode assumir parte do trabalho repetitivo, enquanto as pessoas se concentram naquilo em que realmente fazem diferença."
+          },
+          {
+            "type": "paragraph",
+            "text": "E, quando uma situação exigir atendimento humano, a tecnologia precisa reconhecer esse limite e facilitar a continuidade da conversa, de preferência sem obrigar o cliente a explicar tudo novamente."
+          },
+          {
+            "type": "paragraph",
+            "text": "**Humanizar o atendimento não significa que uma pessoa precise executar cada tarefa. Significa fazer o cliente se sentir compreendido e bem atendido.**"
+          },
+          {
+            "type": "paragraph",
+            "text": "Às vezes, isso acontece com uma conversa acolhedora. Em outras, com uma solução simples e rápida."
+          }
+        ]
+      },
+      {
+        "title": "Por onde começar no seu negócio?",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Antes de pensar em ferramentas ou investimentos, vale fazer um exercício."
+          },
+          {
+            "type": "paragraph",
+            "text": "Abra o WhatsApp da sua empresa e observe as conversas dos últimos dias."
+          },
+          {
+            "type": "paragraph",
+            "text": "Quais perguntas aparecem com mais frequência? Quantas mensagens exigem que alguém consulte uma informação? Quantas solicitações seguem praticamente os mesmos passos até serem concluídas?"
+          },
+          {
+            "type": "paragraph",
+            "text": "Talvez você descubra que uma parte considerável do seu tempo é dedicada a atividades previsíveis."
+          },
+          {
+            "type": "paragraph",
+            "text": "E não é preciso automatizar tudo de uma vez."
+          },
+          {
+            "type": "paragraph",
+            "text": "Começar por uma tarefa frequente, que tenha regras claras e faça diferença para o cliente, já pode ser um excelente primeiro passo."
+          },
+          {
+            "type": "paragraph",
+            "text": "O objetivo não deve ser apenas reduzir o número de mensagens que você responde pessoalmente. Deve ser melhorar a experiência do cliente e recuperar tempo para cuidar do seu negócio."
+          }
+        ]
+      },
+      {
+        "title": "A tecnologia das grandes empresas, na realidade dos pequenos negócios",
+        "text": "",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Uma das coisas mais interessantes sobre acompanhar a evolução da inteligência artificial é perceber que soluções antes associadas a grandes operações estão se tornando cada vez mais acessíveis."
+          },
+          {
+            "type": "paragraph",
+            "text": "Mas existe uma diferença importante entre levar tecnologia para um pequeno negócio e simplesmente copiar o que uma grande empresa faz."
+          },
+          {
+            "type": "paragraph",
+            "text": "O pequeno empresário não precisa de sistemas enormes, dezenas de ferramentas ou processos complicados."
+          },
+          {
+            "type": "paragraph",
+            "text": "Ele precisa de soluções que entendam sua rotina, respeitem a maneira como trabalha e ajudem a resolver problemas reais."
+          },
+          {
+            "type": "paragraph",
+            "text": "É nessa direção que acreditamos que o atendimento está evoluindo."
+          },
+          {
+            "type": "paragraph",
+            "text": "E é também o que nos inspira na **Techway**: tornar a inteligência artificial útil e acessível para pequenos negócios, por meio de funcionários digitais especializados que trabalham em canais familiares, como o WhatsApp."
+          },
+          {
+            "type": "paragraph",
+            "text": "Porque, no final das contas, o objetivo não é fazer sua empresa parecer uma grande corporação."
+          },
+          {
+            "type": "paragraph",
+            "text": "**É permitir que você ofereça uma excelente experiência ao cliente, com apoio digital que atua conforme a demanda do seu negócio.**"
+          }
+        ]
+      }
+    ],
+    "conclusion": "",
+    "conclusionBlocks": [
+      {
+        "type": "paragraph",
+        "text": "Quantas tarefas do atendimento da sua empresa poderiam acontecer sem depender diretamente de você?"
+      }
+    ]
+  },
+  "cta": {
+    "text": "Conheça a Techway e descubra como os funcionários digitais podem ajudar seu negócio a ganhar autonomia.",
+    "link": "/din_page?variant=default"
+  },
+  "tags": [
+    "atendimento",
+    "inteligência artificial",
+    "WhatsApp",
+    "funcionário digital"
+  ],
+  "sources": [
+    {
+      "title": "FEBRABAN — balanço da edição 2026 e liderança humana",
+      "url": "https://portal.febraban.org.br/noticia/4491/pt-br/"
+    },
+    {
+      "title": "FEBRABAN — pesquisa sobre aplicações de IA em 2026",
+      "url": "https://portal.febraban.org.br/noticia/4490/pt-br/"
+    }
+  ],
+  "related": [
+    {
+      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+      "slug": "cuidar-do-cliente-ou-do-negocio"
+    }
+  ]
+}
 ]

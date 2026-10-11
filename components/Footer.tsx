@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { getWhatsAppUrl } from '../data/contact';
 
 interface FooterProps {
   className?: string;
@@ -32,8 +33,8 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             <p>
               <span className="font-bold">WhatsApp:{" "}</span>
               <a
-                href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20falar%20com%20o%20time." 
-                className="hover:text-blue-400 transition-colors duration-300"
+                href={getWhatsAppUrl('Olá! Vi o site de vocês e quero falar com o time.')}
+                className="hover:text-blue-400 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                 target="_blank"
                 rel="noopener noreferrer"
               >

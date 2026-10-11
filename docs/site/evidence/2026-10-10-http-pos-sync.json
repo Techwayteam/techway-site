@@ -1,0 +1,104 @@
+﻿{
+    "date":  "2026-10-10",
+    "baselineCommit":  "78362aa8a62bc41474d832471486b0e07235a91f",
+    "method":  "HTTP e inspeção de HTML público após sincronização",
+    "checks":  [
+                   {
+                       "url":  "https://techway.one/",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/blog",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/blog/",
+                       "status":  404,
+                       "error":  "O servidor remoto retornou um erro: (404) Não Localizado."
+                   },
+                   {
+                       "url":  "https://techway.one/robots.txt",
+                       "status":  404,
+                       "error":  "O servidor remoto retornou um erro: (404) Não Localizado."
+                   },
+                   {
+                       "url":  "https://techway.one/sitemap.xml",
+                       "status":  404,
+                       "error":  "O servidor remoto retornou um erro: (404) Não Localizado."
+                   },
+                   {
+                       "url":  "https://techway.one/blog/como-melhorar-sua-produtividade",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/blog/automacao-de-tarefas-repetitivas",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/blog/cuidar-do-cliente-ou-do-negocio",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/solucoes-produtividade",
+                       "status":  404,
+                       "error":  "O servidor remoto retornou um erro: (404) Não Localizado."
+                   },
+                   {
+                       "url":  "https://techway.one/solucoes-automacao",
+                       "status":  404,
+                       "error":  "O servidor remoto retornou um erro: (404) Não Localizado."
+                   },
+                   {
+                       "url":  "https://techway.one/index_old",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/din_page",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/privacidade",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   },
+                   {
+                       "url":  "https://techway.one/termos",
+                       "status":  200,
+                       "canonical":  false,
+                       "jsonLd":  false,
+                       "whatsappFloatingMarker":  true,
+                       "knownAnalyticsTagsDetected":  false
+                   }
+               ]
+}

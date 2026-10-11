@@ -1,0 +1,76 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "quotes": 3,
+      "items": 4,
+      "cta": "/din_page?variant=default",
+      "images": [
+        {
+          "src": "/atendimento-ia-capa.webp",
+          "width": "1600",
+          "height": "900",
+          "loading": "auto",
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "src": "/atendimento-humano-techway.webp",
+          "width": "1200",
+          "height": "800",
+          "loading": "lazy",
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "comparisonColumns": "358px",
+      "sections": [
+        "Responder rápido já não é suficiente",
+        "O que os grandes bancos estão aprendendo sobre atendimento",
+        "E se o WhatsApp da sua empresa também pudesse resolver tarefas?",
+        "Mas isso significa deixar o atendimento humano de lado?",
+        "Por onde começar no seu negócio?",
+        "A tecnologia das grandes empresas, na realidade dos pequenos negócios",
+        "Fontes e referências",
+        "Continue a leitura"
+      ]
+    },
+    {
+      "width": 1280,
+      "scrollWidth": 1265,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "quotes": 3,
+      "items": 4,
+      "cta": "/din_page?variant=default",
+      "images": [
+        {
+          "src": "/atendimento-ia-capa.webp",
+          "width": "1600",
+          "height": "900",
+          "loading": "auto",
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "src": "/atendimento-humano-techway.webp",
+          "width": "1200",
+          "height": "800",
+          "loading": "lazy",
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "comparisonColumns": "406px 406px",
+      "sections": [
+        "Responder rápido já não é suficiente",
+        "O que os grandes bancos estão aprendendo sobre atendimento",
+        "E se o WhatsApp da sua empresa também pudesse resolver tarefas?",
+        "Mas isso significa deixar o atendimento humano de lado?",
+        "Por onde começar no seu negócio?",
+        "A tecnologia das grandes empresas, na realidade dos pequenos negócios",
+        "Fontes e referências",
+        "Continue a leitura"
+      ]
+    }
+  ],
+  "browserErrors": [],
+  "note": "Isolated build of the current local source; not a public deployment."
+}

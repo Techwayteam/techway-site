@@ -26,11 +26,11 @@ export const landingPages: Record<string, PageData> = {
       solutionText_2: "Tenha uma visão clara do que precisa ser feito com dashboards organizados, desenvolvidos sob medida para você.",
       solutionTitle_3: "Análise de Dados Eficiente",
       solutionText_3: "Transforme dados confusos em insights práticos, permitindo decisões rápidas e assertivas.",
-      solutionctatext_1: "Descubra como otimizar seu tempo",
+      solutionctatext_1: "Converse sobre automação",
       solutionctalink_1: "#contato",
-      solutionctatext_2: "Veja seus dados organizados",
+      solutionctatext_2: "Converse sobre dashboards",
       solutionctalink_2: "#contato",
-      solutionctatext_3: "Saiba mais sobre nossas análises",
+      solutionctatext_3: "Converse sobre análise de dados",
       solutionctalink_3: "#contato"
     },
 benefits: [
@@ -61,7 +61,7 @@ improvisation: {
     hero: {
       heroTitle: "Chega de soluções que só quebram o galho.",
       heroSubtitle: "Com a TECHWAY, você tem a solução ideal, rápida e sem complicações.",
-      heroCTA: "Descubra como facilitar sua rotina"
+      heroCTA: "Converse sobre sua rotina"
     },
     story: {
       storyTitle: "O problema não é você, é o sistema.",
@@ -77,9 +77,9 @@ improvisation: {
       solutionText_2: "Nada de adaptações forçadas. Criamos ferramentas que atendem exatamente ao que você precisa.",
       solutionTitle_3: "Implementação sem dor de cabeça",
       solutionText_3: "Processos otimizados e suporte dedicado para que sua solução funcione sem complicações.",
-      solutionctatext_1: "Saiba como criar algo incrível",
+      solutionctatext_1: "Converse sobre sua rotina",
       solutionctalink_1: "#contato",
-      solutionctatext_2: "Veja como funciona",
+      solutionctatext_2: "Converse sobre uma solução personalizada",
       solutionctalink_2: "#contato",
       solutionctatext_3: "Converse com um especialista",
       solutionctalink_3: "#contato"

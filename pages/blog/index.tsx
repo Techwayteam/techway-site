@@ -13,6 +13,7 @@ type Post = {
   author: string;
   date: string;
   featuredImage: string;
+  featuredImageAlt?: string;
   tags: string[];
 };
 
@@ -44,12 +45,15 @@ const BlogHome: React.FC<BlogProps> = ({ posts }) => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {posts.map((post) => (
-              <Link href={`/blog/${post.slug}`} key={post.slug}>
-                <a className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg">
+              <Link
+                href={`/blog/${post.slug}`}
+                key={post.slug}
+                className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+              >
                   <div className="relative h-48">
                     <Image
                       src={post.featuredImage}
-                      alt={post.title}
+                      alt={post.featuredImageAlt || post.title}
                       layout="fill"
                       objectFit="cover"
                     />
@@ -58,7 +62,7 @@ const BlogHome: React.FC<BlogProps> = ({ posts }) => {
                     <h2 className="text-2xl font-semibold text-gray-900 mb-2">{post.title}</h2>
                     <p className="text-gray-600 mb-4">{post.subtitle}</p>
                     <p className="text-sm text-gray-500">
-                      Por {post.author} • {new Date(post.date).toLocaleDateString()}
+                      Por {post.author} • {new Date(`${post.date}T12:00:00Z`).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2">
                       {post.tags.map((tag) => (
@@ -68,7 +72,6 @@ const BlogHome: React.FC<BlogProps> = ({ posts }) => {
                       ))}
                     </div>
                   </div>
-                </a>
               </Link>
             ))}
           </div>
@@ -83,7 +86,7 @@ const BlogHome: React.FC<BlogProps> = ({ posts }) => {
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      posts: blogPosts,
+      posts: [...blogPosts].sort((a, b) => b.date.localeCompare(a.date)),
     },
   };
 };

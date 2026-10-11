@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-10",
+  "timezone": "America/Sao_Paulo",
+  "method": "Invoke-WebRequest -UseBasicParsing; leitura HTTP e regex de metadados; sem navegador ou envio de mensagem",
+  "checks": [
+    { "url": "https://techway.one/", "status": 200 },
+    { "url": "https://techway.one/blog", "status": 200, "canonical": false, "jsonLd": false, "knownAnalyticsTagsDetected": false, "publishedPostCount": 3 },
+    { "url": "https://techway.one/blog/", "status": 404 },
+    { "url": "https://techway.one/robots.txt", "status": 404 },
+    { "url": "https://techway.one/sitemap.xml", "status": 404 },
+    { "url": "https://techway.one/blog/como-melhorar-sua-produtividade", "status": 200, "canonical": false, "jsonLd": false, "cta": "/solucoes-produtividade" },
+    { "url": "https://techway.one/blog/automacao-de-tarefas-repetitivas", "status": 200, "canonical": false, "jsonLd": false, "cta": "/solucoes-automacao" },
+    { "url": "https://techway.one/blog/cuidar-do-cliente-ou-do-negocio", "status": 200, "canonical": false, "jsonLd": false, "cta": "/" },
+    { "url": "https://techway.one/solucoes-produtividade", "status": 404 },
+    { "url": "https://techway.one/solucoes-automacao", "status": 404 },
+    { "url": "https://techway.one/index_old", "status": 200 },
+    { "url": "https://techway.one/din_page", "status": 200 },
+    { "url": "https://techway.one/privacidade", "status": 200, "canonical": false, "jsonLd": false },
+    { "url": "https://techway.one/termos", "status": 200, "canonical": false, "jsonLd": false }
+  ],
+  "limits": [
+    "Códigos HTTP não comprovam interação, envio ou qualidade de layout.",
+    "Tags conhecidas não detectadas não comprovam ausência de toda medição possível.",
+    "Snapshot público não identifica o commit/repositório completo da publicação."
+  ]
+}

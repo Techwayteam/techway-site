@@ -7,10 +7,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Testimonials from '../components/Testimonials'
 import { landingPages } from '../data/landingPages'
-import type { PageData } from '../types/PageData'
-
-const waLink = (message: string) =>
-  `https://wa.me/5521991673541?text=${encodeURIComponent(message)}`
+import { getWhatsAppUrl } from '../data/contact'
 
 const iconComponents = {
   CheckCircle,
@@ -27,28 +24,23 @@ const iconComponents = {
 
 export default function DynamicLandingPage() {
   const router = useRouter()
-  const [pageData, setPageData] = useState<PageData | null>(null)
-  const [isLoading, setIsLoading] = useState(true)
+  const [pageVariant, setPageVariant] = useState('default')
 
   useEffect(() => {
-    const { variant = 'default' } = router.query
-    const pageVariant = typeof variant === 'string' ? variant : 'default'
+    if (!router.isReady) return
 
-    // Simulate an API call or data fetching
-    setTimeout(() => {
-      const data = landingPages[pageVariant] || landingPages.default
-      setPageData(data)
-      setIsLoading(false)
-    }, 500)
-  }, [router.query])
+    const { variant } = router.query
+    setPageVariant(
+      typeof variant === 'string' && Object.prototype.hasOwnProperty.call(landingPages, variant)
+        ? variant
+        : 'default'
+    )
+  }, [router.isReady, router.query.variant])
 
-  if (isLoading) {
-    return <div className="flex justify-center items-center h-screen">Loading...</div>
-  }
-
-  if (!pageData) {
-    return <div className="flex justify-center items-center h-screen">Error loading page data</div>
-  }
+  // A variante padrão também é exportada no HTML; queries são aplicadas após hidratação.
+  const pageData = landingPages[pageVariant]
+  const contactUrl = (subject: string) =>
+    getWhatsAppUrl(`Olá! Vi a página "${pageData.seo.pageTitle}" da Techway e quero conversar sobre ${subject}.`)
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
@@ -83,10 +75,11 @@ export default function DynamicLandingPage() {
               {pageData.hero.heroSubtitle}
             </p>
             <a
-              href={waLink(`Olá! Vi o site de vocês e ${pageData.hero.heroCTA.toLowerCase()}.`)}
+              href={contactUrl('como melhorar minha rotina')}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
+              aria-label={`${pageData.hero.heroCTA} (abre WhatsApp em nova aba)`}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
             >
               {pageData.hero.heroCTA}
             </a>
@@ -134,10 +127,11 @@ export default function DynamicLandingPage() {
                 </p>
                 <div className="text-center">
                   <a
-                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_1.toLowerCase()}.`)}
+                    href={contactUrl(pageData.solution.solutionTitle_1.toLowerCase())}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                    aria-label={`${pageData.solution.solutionctatext_1} (abre WhatsApp em nova aba)`}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_1}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -154,10 +148,11 @@ export default function DynamicLandingPage() {
                 </p>
                 <div className="text-center">
                   <a
-                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_2.toLowerCase()}.`)}
+                    href={contactUrl(pageData.solution.solutionTitle_2.toLowerCase())}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                    aria-label={`${pageData.solution.solutionctatext_2} (abre WhatsApp em nova aba)`}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_2}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -174,10 +169,11 @@ export default function DynamicLandingPage() {
                 </p>
                 <div className="text-center">
                   <a
-                    href={waLink(`Olá! Vi o site de vocês e ${pageData.solution.solutionctatext_3.toLowerCase()}.`)}
+                    href={contactUrl(pageData.solution.solutionTitle_3.toLowerCase())}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group"
+                    aria-label={`${pageData.solution.solutionctatext_3} (abre WhatsApp em nova aba)`}
+                    className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_3}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
@@ -242,10 +238,11 @@ export default function DynamicLandingPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">{pageData.cta.ctaText}</h2>
             <a
-              href={waLink(`Olá! Vi o site de vocês e ${pageData.cta.ctaButton.toLowerCase()}.`)}
+              href={contactUrl('uma solução para meu negócio')}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block"
+              aria-label={`${pageData.cta.ctaButton} (abre WhatsApp em nova aba)`}
+              className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
             >
               {pageData.cta.ctaButton}
             </a>
