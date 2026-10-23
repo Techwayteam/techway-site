@@ -1,0 +1,108 @@
+{
+  "sourceChecks": {
+    "articles": 4,
+    "exported": [
+      "como-melhorar-sua-produtividade",
+      "automacao-de-tarefas-repetitivas",
+      "cuidar-do-cliente-ou-do-negocio",
+      "atendimento-ia-alem-respostas-automaticas"
+    ],
+    "changedFields": 14,
+    "permittedChangesOnly": true,
+    "S01Preserved": true,
+    "preservedSourceFiles": true,
+    "modifiedSourceFiles": [
+      "data/blogPosts.json"
+    ]
+  },
+  "browser": [
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "viewport": 390,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/din_page?variant=default",
+      "destination": "/din_page?variant=default",
+      "contactLinks": 8,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "viewport": 390,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/din_page?variant=default",
+      "destination": "/din_page?variant=default",
+      "contactLinks": 8,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "viewport": 390,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/",
+      "destination": "/",
+      "contactLinks": 6,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    },
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "viewport": 1280,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/din_page?variant=default",
+      "destination": "/din_page?variant=default",
+      "contactLinks": 8,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "viewport": 1280,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/din_page?variant=default",
+      "destination": "/din_page?variant=default",
+      "contactLinks": 8,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "viewport": 1280,
+      "overflow": false,
+      "focused": true,
+      "keyboardFocus": {
+        "outline": "solid",
+        "ring": "none"
+      },
+      "cta": "/",
+      "destination": "/",
+      "contactLinks": 6,
+      "keyboardActivation": "Shift+Tab, Tab and Enter passed"
+    }
+  ],
+  "browserErrors": [],
+  "notes": [
+    "Isolated local export; no deployment and no WhatsApp message sent."
+  ]
+}

@@ -54,7 +54,7 @@ export default function ArticleContent({ blocks }: { blocks: ContentBlock[] }) {
           );
         }
 
-        return <p key={index} className="mb-5"><Emphasis text={block.text} /></p>;
+        return <p key={index} className="article-paragraph mb-5"><Emphasis text={block.text} /></p>;
       })}
     </>
   );

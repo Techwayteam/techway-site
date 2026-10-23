@@ -12,6 +12,8 @@ Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público c
 4. [Estratégia editorial](editorial/estrategia-e-calendario.md): quatro pautas prioritárias, 12 pautas de apoio e cadência dependente de copy/revisão.
 5. [Próximas publicações](editorial/serie-funcionarios-digitais.md): briefs de S01–S04, links, imagens e contrato de copy. [Briefs anteriores](editorial/primeiro-lote.md) preservados como apoio.
 6. [Backlog](06-backlog.md), [tarefas](tasks/README.md) e [progresso](10-progresso.md).
+7. [T003 — plano e entrega local](plans/002-T003-revisao-editorial.md): correção mínima dos três antigos concluída localmente em 12/10/2026; conteúdo integrado, type-check/build/Chrome aprovados; sem nova publicação pública.
+8. [T012 — leitura dos artigos](tasks/T012-leitura-artigos.md): layout dos quatro posts melhorado e validado localmente em 16/10/2026, com texto ao redor de imagens no desktop e empilhamento em celular; demais recortes de T012 pendentes.
 
 ## Estrutura
 

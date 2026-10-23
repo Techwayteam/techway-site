@@ -7,7 +7,7 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T000 | P0 | Diagnóstico e estrutura operacional | Coordenação | — | M | Concluída nesta entrega |
 | T001 | P0 | Reconciliar fonte pública e checkout; preservar 3 posts | Coordenação + implementação | Evidência A01 | M | Concluída: main/origin 78362aa, posts iguais ao online |
 | T002 | P1 | Garantir blog → landing → contato; corrigir Link e carregamento | Implementação + QA | T001 para integração final | S | Concluída; publicada via T019 |
-| T003 | P1 | Rever 3 posts existentes e fatos da oferta | Redação + revisão de produto | T001; fatos comerciais quando citados | M | Planejada |
+| T003 | P1 | Correção mínima de afirmações e CTAs dos 3 posts antigos | Codex/editorial | T001/T019; direção da oferta recebida em D023 | S | Concluída localmente em 12/10/2026; publicação pendente |
 | T004 | P1 | Receber e revisar copy externa de S01–S04 | Usuário/GPT + Codex/editorial + produto | Copy e fatos por artigo | M | S01 aceita; S02–S04 aguardam copy |
 | T005 | P1 | Integrar S01–S04 por artigo aceito, com capas e metadados | Codex/implementação + QA | T001/T002; T003 no conteúdo alterado; T004 por artigo | M | S01 publicada (1/4); S02–S04 pendentes |
 | T006 | P1 | Metadados, canonical, BlogPosting e sitemap | Implementação | T001; modelo consistente | M | Planejada |
@@ -16,7 +16,7 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T009 | P2 | Arquivar rotas legadas e fluxo de chat sem envio | Implementação | Histórico de uso/decisão de destino | M | Planejada |
 | T010 | P2 | Redesenhar home: demonstração, implantação e limites | UX + produto + implementação | Oferta atual; T002 | L | Planejada |
 | T011 | P2 | Criar casos de uso documentados e prova social real | Produto + redação | Consentimento e dados verificáveis | M | Planejada |
-| T012 | P2 | Melhorar leitura, relacionados, sumário e listagem | UX + implementação | Conteúdo inicial integrado | M | Planejada |
+| T012 | P2 | Melhorar leitura, relacionados, sumário e listagem | UX + implementação | Conteúdo inicial integrado | M | Parcial — layout dos quatro artigos validado localmente em 16/10; listagem/sumário/relacionados pendentes |
 | T013 | P2 | Otimizar imagens/fontes e validar movimento/QA móvel, preservando melhorias já recebidas | Implementação + QA | Template/home escolhidos | M | Planejada |
 | T014 | P2 | Higiene de .next/out, lockfile e pipeline | Implementação | Baseline; sem perda de fonte | M | Planejada |
 | T015 | P2 | Alinhar URLs e textos de privacidade/termos às práticas | Produto + responsável competente | Práticas reais de dados | M | Planejada |

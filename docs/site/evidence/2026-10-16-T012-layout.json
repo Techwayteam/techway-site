@@ -1,0 +1,681 @@
+{
+  "date": "2026-10-16",
+  "copyPreserved": true,
+  "exportedArticles": 4,
+  "cases": [
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "width": 360,
+      "scrollWidth": 360,
+      "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.7501281832165443,
+          "alt": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Identificando os Principais Gargalos de Produtividade"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Como Fortalecer a Colaboração com Ferramentas Digitais"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1146.421875,
+        "headingBottom": 1126.421875,
+        "imageWidth": 320,
+        "besideWidth": 0,
+        "belowWidth": 319.421875
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "width": 360,
+      "scrollWidth": 360,
+      "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.7501281832165443,
+          "alt": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O Impacto das Tarefas Repetitivas no Seu Desempenho"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1146.171875,
+        "headingBottom": 1126.171875,
+        "imageWidth": 320,
+        "besideWidth": 0,
+        "belowWidth": 308.828125
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "width": 360,
+      "scrollWidth": 360,
+      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000366219878416,
+          "alt": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O caos invisível de quem faz tudo"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Quando atender o cliente atrasa a empresa (e vice-versa)"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Existe solução sem contratar alguém?"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Você não precisa dar conta de tudo sozinho"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1176.90625,
+        "headingBottom": 1156.90625,
+        "imageWidth": 320,
+        "besideWidth": 0,
+        "belowWidth": 313.5
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "atendimento-ia-alem-respostas-automaticas",
+      "width": 360,
+      "scrollWidth": 360,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.7777777777777777,
+          "naturalRatio": 1.7777777777777777,
+          "shownRatio": 1.7777777777777777,
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000366219878416,
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 7748.359375,
+        "headingBottom": 7404.859375,
+        "imageWidth": 320,
+        "besideWidth": 0,
+        "belowWidth": 0
+      },
+      "comparisonColumns": 1,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.75,
+          "alt": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Identificando os Principais Gargalos de Produtividade"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Como Fortalecer a Colaboração com Ferramentas Digitais"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1103.34375,
+        "headingBottom": 1083.34375,
+        "imageWidth": 350,
+        "besideWidth": 0,
+        "belowWidth": 349.359375
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.75,
+          "alt": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O Impacto das Tarefas Repetitivas no Seu Desempenho"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1063.59375,
+        "headingBottom": 1043.59375,
+        "imageWidth": 350,
+        "besideWidth": 0,
+        "belowWidth": 349.390625
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.500033482890243,
+          "alt": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O caos invisível de quem faz tudo"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Quando atender o cliente atrasa a empresa (e vice-versa)"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Existe solução sem contratar alguém?"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Você não precisa dar conta de tudo sozinho"
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 1165.46875,
+        "headingBottom": 1145.46875,
+        "imageWidth": 350,
+        "besideWidth": 0,
+        "belowWidth": 342.765625
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "atendimento-ia-alem-respostas-automaticas",
+      "width": 390,
+      "scrollWidth": 390,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "start",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.7777777777777777,
+          "naturalRatio": 1.7777777777777777,
+          "shownRatio": 1.7777777777777777,
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.500033482890243,
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 7330.453125,
+        "headingBottom": 6986.953125,
+        "imageWidth": 350,
+        "besideWidth": 0,
+        "belowWidth": 0
+      },
+      "comparisonColumns": 1,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.750049609080446,
+          "alt": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Identificando os Principais Gargalos de Produtividade"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Como Fortalecer a Colaboração com Ferramentas Digitais"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1056.328125,
+        "headingBottom": 1032.328125,
+        "imageWidth": 275.59375,
+        "besideWidth": 381.40625,
+        "belowWidth": 689
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.750049609080446,
+          "alt": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O Impacto das Tarefas Repetitivas no Seu Desempenho"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1085.125,
+        "headingBottom": 1061.125,
+        "imageWidth": 275.59375,
+        "besideWidth": 381.40625,
+        "belowWidth": 0
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000170085382862,
+          "alt": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O caos invisível de quem faz tudo"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Quando atender o cliente atrasa a empresa (e vice-versa)"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Existe solução sem contratar alguém?"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Você não precisa dar conta de tudo sozinho"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1150.75,
+        "headingBottom": 1126.75,
+        "imageWidth": 275.59375,
+        "besideWidth": 381.40625,
+        "belowWidth": 0
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "atendimento-ia-alem-respostas-automaticas",
+      "width": 768,
+      "scrollWidth": 753,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.7777777777777777,
+          "naturalRatio": 1.7777777777777777,
+          "shownRatio": 1.7777777777777777,
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000170085382862,
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 5516.1875,
+        "headingBottom": 5257.703125,
+        "imageWidth": 689,
+        "besideWidth": 0,
+        "belowWidth": 0
+      },
+      "comparisonColumns": 2,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "como-melhorar-sua-produtividade",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.7500246491602853,
+          "alt": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Identificando os Principais Gargalos de Produtividade"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Como Fortalecer a Colaboração com Ferramentas Digitais"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1157.828125,
+        "headingBottom": 1133.828125,
+        "imageWidth": 320,
+        "besideWidth": 480,
+        "belowWidth": 832
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "automacao-de-tarefas-repetitivas",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.75,
+          "naturalRatio": 1.75,
+          "shownRatio": 1.7500246491602853,
+          "alt": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O Impacto das Tarefas Repetitivas no Seu Desempenho"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1157.828125,
+        "headingBottom": 1133.828125,
+        "imageWidth": 320,
+        "besideWidth": 480,
+        "belowWidth": 0
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "cuidar-do-cliente-ou-do-negocio",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000281706011607,
+          "alt": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "O caos invisível de quem faz tudo"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Quando atender o cliente atrasa a empresa (e vice-versa)"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Existe solução sem contratar alguém?"
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1,
+          "naturalRatio": 1,
+          "shownRatio": 1,
+          "alt": "Você não precisa dar conta de tudo sozinho"
+        }
+      ],
+      "flow": {
+        "float": "right",
+        "imageTop": 1270.65625,
+        "headingBottom": 1246.65625,
+        "imageWidth": 320,
+        "besideWidth": 480,
+        "belowWidth": 0
+      },
+      "comparisonColumns": null,
+      "keyboardCTA": true
+    },
+    {
+      "slug": "atendimento-ia-alem-respostas-automaticas",
+      "width": 1280,
+      "scrollWidth": 1265,
+      "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+      "titleBelowHeader": true,
+      "titleBeforeCover": true,
+      "alignment": "justify",
+      "images": [
+        {
+          "loaded": true,
+          "reservedRatio": 1.7777777777777777,
+          "naturalRatio": 1.7777777777777777,
+          "shownRatio": 1.7777777777777777,
+          "alt": "Empreendedora consultando mensagens no celular após o expediente em seu salão."
+        },
+        {
+          "loaded": true,
+          "reservedRatio": 1.5,
+          "naturalRatio": 1.5,
+          "shownRatio": 1.5000281706011607,
+          "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente."
+        }
+      ],
+      "flow": {
+        "float": "none",
+        "imageTop": 5213.3125,
+        "headingBottom": 5021.421875,
+        "imageWidth": 832,
+        "besideWidth": 0,
+        "belowWidth": 0
+      },
+      "comparisonColumns": 2,
+      "keyboardCTA": true
+    }
+  ],
+  "browserErrors": [],
+  "localOnly": true
+}

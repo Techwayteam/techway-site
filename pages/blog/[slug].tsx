@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import blogPosts from '../../data/blogPosts.json';
 import ArticleContent, { ContentBlock } from '../../components/blog/ArticleContent';
+import styles from '../../styles/BlogArticle.module.css';
 
 type Section = {
   title: string;
@@ -49,6 +50,13 @@ interface PostPageProps {
 }
 
 const PostPage: React.FC<PostPageProps> = ({ post }) => {
+  const coverSizes: Record<string, { width: number; height: number }> = {
+    '/produtividade_capa.webp': { width: 1792, height: 1024 },
+    '/automacao_capa.webp': { width: 1792, height: 1024 },
+    '/empreendedor_dilema_capa.webp': { width: 1536, height: 1024 },
+  };
+  const coverSize = coverSizes[post.featuredImage];
+
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
       <Head>
@@ -69,75 +77,62 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
 
       <Header />
 
-      <main className={`flex-grow ${post.layout === 'editorial' ? 'pt-20' : ''}`}>
-        {post.layout !== 'editorial' && <div className="relative w-full h-[60vh]">
-          <Image
-            src={post.featuredImage}
-            alt={post.title}
-            layout="fill"
-            objectFit="cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-70"></div>
-          <div className="absolute inset-x-0 bottom-0 w-full">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 md:py-12">
-              <h1 className="text-3xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
-                {post.title}
-              </h1>
-            </div>
-          </div>
-        </div>}
-
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <header className="mb-8">
-            {post.layout === 'editorial' && <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-gray-900 mb-5">{post.title}</h1>}
-            <p className="text-xl text-gray-600 mb-4">{post.subtitle}</p>
-            <p className="text-gray-500 text-sm">
-              Por {post.author} • {new Date(`${post.date}T12:00:00Z`).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+      <main className={styles.main}>
+        <article className={styles.article} lang="pt-BR">
+          <header className={styles.header}>
+            <Link href="/blog" className={styles.backLink}>← Todos os artigos</Link>
+            <h1 className={styles.title}>{post.title}</h1>
+            <p className={styles.subtitle}>{post.subtitle}</p>
+            <p className={styles.byline}>
+              <span>Por {post.author}</span>
+              <span aria-hidden="true">·</span>
+              <time dateTime={post.date}>{new Date(`${post.date}T12:00:00Z`).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}</time>
             </p>
           </header>
 
-          {post.layout === 'editorial' && (
-            <figure className="mb-10">
-              <Image src={post.featuredImage} alt={post.featuredImageAlt || post.title} width={post.featuredImageWidth || 1600} height={post.featuredImageHeight || 900} sizes="(max-width: 896px) 100vw, 848px" className="w-full h-auto rounded-2xl" priority />
-            </figure>
-          )}
+          <figure className={styles.cover}>
+            <Image
+              src={post.featuredImage}
+              alt={post.featuredImageAlt || post.title}
+              width={post.featuredImageWidth || coverSize?.width || 1600}
+              height={post.featuredImageHeight || coverSize?.height || 900}
+              sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 896px) calc(100vw - 64px), 832px"
+              priority
+            />
+          </figure>
 
-          <div className="prose prose-lg max-w-none text-lg leading-relaxed">
+          <div className={styles.body}>
             {post.content.introductionBlocks ? (
               <ArticleContent blocks={post.content.introductionBlocks} />
             ) : (
-              <p className="mb-8">{post.content.introduction}</p>
+              <p className="article-paragraph">{post.content.introduction}</p>
             )}
 
             {post.content.sections.map((section, index) => (
-              <section key={index} className="my-12">
-                <div className={`flex flex-col lg:flex-row items-center gap-10 ${section.image ? 'min-h-[320px]' : ''}`}>
-                  <div className={`w-full ${section.image ? 'lg:w-1/2' : ''} prose self-center`}>
-                    <h2 className="text-2xl font-semibold text-gray-800 mb-4">{section.title}</h2>
-                    {section.blocks ? <ArticleContent blocks={section.blocks} /> : <p>{section.text}</p>}
-                  </div>
-                  {section.image && (
-                    <div className="w-full lg:w-1/2 mt-6 lg:mt-0">
-                      <Image
-                        src={section.image}
-                        alt={section.imageDescription || section.title}
-                        width={500}
-                        height={350}
-                        className="rounded-lg mx-auto"
-                      />
-                    </div>
-                  )}
-                </div>
+              <section key={index} className={styles.section} aria-labelledby={`section-${index}`}>
+                <h2 id={`section-${index}`} className={styles.sectionTitle}>{section.title}</h2>
+                {section.image && (
+                  <figure className={styles.sectionImage}>
+                    <Image
+                      src={section.image}
+                      alt={section.imageDescription || section.title}
+                      width={1024}
+                      height={1024}
+                      sizes="(max-width: 640px) calc(100vw - 40px), (max-width: 767px) calc(100vw - 64px), 320px"
+                      loading="lazy"
+                    />
+                  </figure>
+                )}
+                {section.blocks ? <ArticleContent blocks={section.blocks} /> : <p className="article-paragraph">{section.text}</p>}
               </section>
             ))}
 
-            <section className="mb-12 p-6 bg-gradient-to-r from-gray-100 to-gray-200 rounded-lg">
-              <p className="text-lg font-semibold mb-4">Para finalizar:</p>
+            <section className={styles.conclusion} aria-label="Conclusão">
+              <p className={styles.conclusionLabel}>Para finalizar</p>
               {post.content.conclusionBlocks ? (
                 <ArticleContent blocks={post.content.conclusionBlocks} />
               ) : (
-                <p>{post.content.conclusion}</p>
+                <p className="article-paragraph">{post.content.conclusion}</p>
               )}
             </section>
 
@@ -167,10 +162,10 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
               </aside>
             )}
 
-            <div className="text-center mt-12">
+            <div className={styles.ctaContainer}>
               <Link
                 href={post.cta.link}
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg inline-block transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
+                className={styles.cta}
               >
                 {post.cta.text}
               </Link>

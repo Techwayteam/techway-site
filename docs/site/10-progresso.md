@@ -1,6 +1,6 @@
 # Progresso
 
-Atualização: **11/10/2026 — America/Sao_Paulo**.
+Atualização: **16/10/2026 — America/Sao_Paulo**.
 
 ## Entregue
 
@@ -26,17 +26,23 @@ Atualização: **11/10/2026 — America/Sao_Paulo**.
 
 ## Estado atual
 
-T000, **T001, T002, T018 e T019 concluídas**. T001/T018 mantêm evidências históricas; T019 verificou commit, push, workflow e produção. **T004/T005: S01 aceita e publicada (1/4); S02–S04 aguardam copy**. T003 segue pendente para revisão factual dos antigos; só foi adicionado link de continuidade, preservando textos, datas e CTAs. T006 tem metadados dos artigos adiantados; sitemap/dados estruturados e aceite completo pendentes. Demais tarefas seguem no backlog. Documentação da verificação registrada depois do deploy, sem nova alteração na fonte da aplicação. Sem envio de mensagens/campanhas a terceiros.
+**T012 — recorte de layout entregue localmente em 16/10/2026:** usuário mostrou texto preso a meia coluna e imagem centralizada verticalmente. Template dos quatro posts agora tem título/metadados antes da capa, parágrafos justificados em telas maiores e texto contornando as imagens de seção no desktop, com largura inteira abaixo delas. Em celular, imagens/texto empilhados; proporções reais, hierarquia e espaçamentos ajustados. Conteúdo de T003/S01 integralmente preservado. Type-check/build isolado e 16 cenários Chrome em 360/390/768/1280 px aprovados; screenshots inspecionadas. [Evidência](evidence/2026-10-16-T012-layout.md). Origem reconsultada em abb2fc0f, igual ao HEAD; sem nova publicação. Restante de T012 (listagem/sumário/relacionados) pendente.
+
+**T003 concluída na entrega local em 12/10/2026:** após planejamento e respostas D022/D023, usuário solicitou executar a correção mínima. Quatorze campos de texto/CTA dos três antigos revisados; percentuais 40%/50% retirados, absolutos suavizados, oferta personalizada mantida e Early Access incluído no fechamento do dilema. Slugs, títulos, estrutura, datas, autores, assets, destinos e S01 preservados. Type-check/build isolado aprovados; quatro artigos exportados e seis cenários de navegação/teclado em Chrome (390/1280 px) passaram, sem overflow/exceções. [Evidência e antes/depois](evidence/2026-10-11-T003-editorial.md). Origem reconsultada em abb2fc0f, igual ao HEAD; produção não revalidada. Nenhum commit, push ou deploy desta revisão.
+
+T000, **T001, T002, T018 e T019 concluídas**; **T003 concluída localmente, sem nova publicação**. T001/T018 mantêm evidências históricas; T019 verificou commit, push, workflow e produção anteriores à revisão T003. **T004/T005: S01 aceita e publicada (1/4); S02–S04 aguardam copy**. T006 tem metadados dos artigos adiantados; sitemap/dados estruturados e aceite completo pendentes. Demais tarefas seguem no backlog. A fonte da aplicação agora contém as correções locais de T003; versão pública não foi alterada nesta execução. Sem envio de mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. Executar T003 para revisar percentuais/promessas dos antigos. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
+Conferir os layouts atualizados na prévia local dos quatro artigos. T003 e o recorte de layout T012 estão prontos localmente para publicação quando solicitada, com nova conferência de origem/diff e verificação do pipeline/URLs. Receber S02 continua como próximo conteúdo editorial, independente da revisão dos antigos; nenhuma matriz de capacidades é requisito geral para T003.
+
+Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
 
 Plano: `plans/001-blog-e-captacao.md`. Série: `editorial/serie-funcionarios-digitais.md`. B01 em `editorial/rascunhos/001-organizar-atendimento-whatsapp.md` segue apoio não aprovado/publicado. Evidência histórica de T001 em `evidence/2026-10-10-T001-reconciliacao.md`.
 
 ## Pendências de negócio
 
-Capacidades prontas; oferta e Early Access atuais; processo comercial; provas e consentimento dos clientes. Pedir esses fatos no momento em que uma afirmação ou integração depender deles; pesquisa, redação genérica útil e trabalho técnico independente podem continuar.
+Oferta geral esclarecida em D023: solução disponível, implantação personalizada e Early Access coexistem; necessidades novas podem ser implementadas conforme a demanda. Processo comercial, provas/consentimento de clientes e detalhes operacionais de recursos específicos continuam pertinentes quando uma afirmação ou integração depender deles, sem exigir inventário completo para T003. Trabalho independente pode continuar.
 
 ## Limites
 
