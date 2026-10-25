@@ -3,6 +3,8 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import useContactPage from '../hooks/useContactPage'
+import WhatsAppLink from './WhatsAppLink'
 
 type Testimonial = {
   id: number,
@@ -45,6 +47,7 @@ const testimonials: Testimonial[] = [
 ];
 
 export default function Testimonials() {
+  const contactPage = useContactPage()
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
@@ -161,14 +164,14 @@ export default function Testimonials() {
           </div>
         </div>
         <div className="text-center mt-12">
-          <a
-            href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20resultados%20como%20esses."
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            message="Olá! Vi o site de vocês e quero resultados como esses."
+            page={contactPage}
+            cta="depoimentos"
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
           >
             Quero resultados como esses
-          </a>
+          </WhatsAppLink>
         </div>
       </div>
     </section>

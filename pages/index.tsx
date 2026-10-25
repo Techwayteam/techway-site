@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 import { ArrowRight, Check } from "lucide-react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import WhatsAppLink from "../components/WhatsAppLink"
 import { absoluteUrl } from "../lib/seo"
 
 const DynamicTestimonials = dynamic(() => import("../components/Testimonials"), {
@@ -73,15 +74,15 @@ const LandingConversao: React.FC = () => {
                 Aprende com você
               </span>
             </div>
-            <a
-              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20saber%20mais."
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Olá! Vi o site de vocês e quero saber mais."
+              page="home"
+              cta="hero"
               className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
             >
               Quero saber mais
               <ArrowRight className="ml-2 w-5 h-5" />
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
 
@@ -272,15 +273,15 @@ const LandingConversao: React.FC = () => {
                   Se a sua empresa gosta de testar, ajustar e transformar com tecnologia de verdade —{" "}
                   <strong className="text-blue-600">bora conversar.</strong>
                 </p>
-                <a
-                  href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20fazer%20parte%20do%20Early%20Access."
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <WhatsAppLink
+                  message="Olá! Vi o site de vocês e quero fazer parte do Early Access."
+                  page="home"
+                  cta="early-access"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
                 >
                   Quero fazer parte do Early Access
                   <ArrowRight className="ml-2 w-5 h-5" />
-                </a>
+                </WhatsAppLink>
               </div>
             </div>
           </div>
@@ -308,14 +309,14 @@ const LandingConversao: React.FC = () => {
               </p>
             </div>
 
-            <a
-              href="https://wa.me/5521991673541?text=Ol%C3%A1!%20Vi%20o%20site%20de%20voc%C3%AAs%20e%20quero%20meu%20novo%20funcion%C3%A1rio%20digital."
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message="Olá! Vi o site de vocês e quero meu novo funcionário digital."
+              page="home"
+              cta="final"
               className="bg-white hover:bg-gray-100 text-gray-900 font-semibold py-6 px-12 rounded transition duration-300 inline-flex items-center text-xl"
             >
               Quero meu funcionário digital
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

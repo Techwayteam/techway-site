@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "postbuild": "node scripts/generate-seo-files.cjs",
+    "postbuild": "node scripts/generate-seo-files.cjs && node scripts/verify-contact-attribution.cjs",
     "verify-seo": "node scripts/verify-seo.cjs",
+    "verify-contacts": "node scripts/verify-contact-attribution.cjs",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },

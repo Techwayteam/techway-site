@@ -5,6 +5,7 @@
 | [001 — blog e captação](plans/001-blog-e-captacao.md) | Preparar jornada e integrar série S01–S04 por artigo, com copy externa | Em execução; T001/T002 e publicação T019 concluídas; S01 publicada (1/4), S02–S04 aguardam copy |
 | [002 — revisão editorial T003](plans/002-T003-revisao-editorial.md) | Correção mínima de afirmações e CTAs dos três antigos; subplano da etapa 1B | Concluído; publicação pelo usuário verificada em 23/10/2026 |
 | [003 — SEO do blog T006](plans/003-T006-seo.md) | Metadados, BlogPosting, sitemap e robots no export estático | Publicado e verificado em 25/10/2026; workflow e URLs públicas aprovados |
+| [004 — medição de contatos T007](plans/004-T007-medicao-contatos.md) | Atribuir conversas recebidas no WhatsApp e operá-las em planilha privada | Concluído localmente em 25/10/2026; publicação e importação da planilha pendentes |
 
 ## Contrato de um plano
 
@@ -12,4 +13,4 @@ Cada plano identifica problema, resultado, escopo, não escopo, dependências, t
 
 ## Próximas iniciativas
 
-Medição (T007), manutenção técnica (T008/T014), home/casos (T010/T011) e leitura/performance (T012/T013) ganharão plano próprio quando iniciadas. SEO T006 está detalhado no plano 003. O backlog especifica prioridade e dependência; não existe execução automática desses planos.
+Manutenção técnica (T008/T014), home/casos (T010/T011) e leitura/performance (T012/T013) ganharão plano próprio quando iniciadas. SEO T006 está detalhado no plano 003 e medição T007 no plano 004. O backlog especifica prioridade e dependência; não existe execução automática desses planos.

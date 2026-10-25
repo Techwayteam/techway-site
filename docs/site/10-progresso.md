@@ -30,13 +30,15 @@ Atualização: **25/10/2026 — America/Sao_Paulo**.
 
 **T006 publicada e verificada em 25/10/2026:** commit `5c9cbe8f`, workflow [40205213139](https://github.com/Techwayteam/techway-site/actions/runs/40205213139) success. Nove páginas HTTP 200 com canonical/descrição únicos; blog com metadados sociais; quatro BlogPosting coerentes com os dados públicos; quatro capas WebP disponíveis; sitemap exato com sete URLs e robots anunciando-o. Type-check/build isolado também foram repetidos antes do envio. Sem mudança em texto, datas, slugs, layout ou lockfile. [Publicação](evidence/2026-10-25-T006-publicacao.md), [plano](plans/003-T006-seo.md), [evidência local](evidence/2026-10-23-T006-seo.md).
 
+**T007 concluída localmente em 25/10/2026, ainda sem publicação:** decisão WhatsApp + planilha privada, sem GA4. Trinta CTAs em nove páginas recebem origem/posição na mensagem; clique continua separado de conversa recebida. Type-check, build isolado, guardas de SEO/contato e QA móvel de home, landing `improvisation` e artigo passaram. O QA encontrou e corrigiu a origem incorreta dos componentes compartilhados após hidratação da query. Template CSV entregue sem dados reais; nenhuma mensagem foi enviada e nenhuma planilha externa foi criada. [Plano](plans/004-T007-medicao-contatos.md) e [evidência](evidence/2026-10-25-T007-medicao-contatos.md).
+
 Histórico preservado: T003 teve quatorze campos corrigidos, com afirmações sem fonte retiradas/condicionadas, datas/autores/slugs preservados e QA local em 12/10. T012 corrigiu fluxo de imagens/cabeçalho/tipografia, com 16 cenários Chrome em 16/10. [Evidência editorial](evidence/2026-10-11-T003-editorial.md) e [layout](evidence/2026-10-16-T012-layout.md). Restante de T012 (listagem/sumário/relacionados) pendente.
 
-T000/T001/T002/T003/T006/T018/T019 concluídas e, quando aplicável, publicadas/verificadas. T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. T007 e demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
+T000/T001/T002/T003/T006/T007/T018/T019 concluídas localmente e, quando aplicável, publicadas/verificadas. T007 aguarda publicação; T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. Demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-Executar T007, começando pela definição do destino comercial, da ferramenta de medição e do critério que separa clique de conversa efetivamente recebida. Nada de analytics ou coleta foi configurado em T006. Indexação e resultado enriquecido continuam não comprovados e não bloqueiam T007.
+Revisar/publicar a T007 quando houver autorização e, depois, verificar os marcadores nos CTAs públicos. O responsável comercial deve importar `templates/T007-registro-leads.csv` em uma planilha Google privada e registrar somente conversas realmente recebidas. GA4 permanece adiado.
 
 Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
 
@@ -48,6 +50,6 @@ Oferta geral esclarecida em D023: solução disponível, implantação personali
 
 ## Limites
 
-Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. QA local anterior incluiu Chrome/screenshots; verificações de publicação usaram CI e HTTP/HTML/JSON/CSS. T006 incluiu type-check, export e validação estrutural/negativa; sem novo browser QA, Rich Results Test remoto, Search Console, dispositivo físico ou auditoria completa de acessibilidade. Consultas anteriores permanecem históricas.
+Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. QA local incluiu Chromium móvel para T007; verificações de publicação anteriores usaram CI e HTTP/HTML/JSON/CSS. T006 incluiu type-check, export e validação estrutural/negativa; sem Rich Results Test remoto, Search Console, dispositivo físico ou auditoria completa de acessibilidade. Consultas anteriores permanecem históricas.
 
-Build de S01 em cópia isolada para preservar `out` da prévia ativa; nenhum build executado sobre esses artefatos. Persistem avisos antigos de Browserslist e download de fonte. Imagens são fictícias e não prova comercial. QA local não comprova indexação, entrega de WhatsApp ou disponibilidade das integrações ilustradas.
+Builds de S01/T006/T007 foram feitos em cópia isolada para preservar `out` da prévia ativa. Persistem avisos antigos de Browserslist e download de fonte. Imagens são fictícias e não prova comercial. QA local não comprova indexação, entrega de WhatsApp, uso real da planilha ou disponibilidade das integrações ilustradas.

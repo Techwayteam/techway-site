@@ -1,13 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { Facebook, Linkedin, Instagram } from 'lucide-react';
-import { getWhatsAppUrl } from '../data/contact';
+import useContactPage from '../hooks/useContactPage';
+import WhatsAppLink from './WhatsAppLink';
 
 interface FooterProps {
   className?: string;
 }
 
 const Footer: React.FC<FooterProps> = ({ className = '' }) => {
+  const contactPage = useContactPage();
+
   return (
     <footer className={`bg-gray-700 text-white py-8 ${className}`}>
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -32,14 +34,14 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
             </p>
             <p>
               <span className="font-bold">WhatsApp:{" "}</span>
-              <a
-                href={getWhatsAppUrl('Olá! Vi o site de vocês e quero falar com o time.')}
+              <WhatsAppLink
+                message="Olá! Vi o site de vocês e quero falar com o time."
+                page={contactPage}
+                cta="rodape"
                 className="hover:text-blue-400 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
-                target="_blank"
-                rel="noopener noreferrer"
               >
                 (21) 99167-3541
-              </a>
+              </WhatsAppLink>
             </p>
           </address>
         </div>

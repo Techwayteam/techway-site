@@ -6,8 +6,8 @@ import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Testimonials from '../components/Testimonials'
+import WhatsAppLink from '../components/WhatsAppLink'
 import { landingPages } from '../data/landingPages'
-import { getWhatsAppUrl } from '../data/contact'
 import { absoluteUrl } from '../lib/seo'
 
 const iconComponents = {
@@ -40,8 +40,9 @@ export default function DynamicLandingPage() {
 
   // A variante padrão também é exportada no HTML; queries são aplicadas após hidratação.
   const pageData = landingPages[pageVariant]
-  const contactUrl = (subject: string) =>
-    getWhatsAppUrl(`Olá! Vi a página "${pageData.seo.pageTitle}" da Techway e quero conversar sobre ${subject}.`)
+  const contactMessage = (subject: string) =>
+    `Olá! Vi a página "${pageData.seo.pageTitle}" da Techway e quero conversar sobre ${subject}.`
+  const contactPage = `landing-${pageVariant}`
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-900 text-white">
@@ -76,15 +77,15 @@ export default function DynamicLandingPage() {
             <p className="text-xl mb-8 text-center font-bold">
               {pageData.hero.heroSubtitle}
             </p>
-            <a
-              href={contactUrl('como melhorar minha rotina')}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message={contactMessage('como melhorar minha rotina')}
+              page={contactPage}
+              cta="hero"
               aria-label={`${pageData.hero.heroCTA} (abre WhatsApp em nova aba)`}
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
             >
               {pageData.hero.heroCTA}
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
 
@@ -128,16 +129,16 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_1}
                 </p>
                 <div className="text-center">
-                  <a
-                    href={contactUrl(pageData.solution.solutionTitle_1.toLowerCase())}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
+                    message={contactMessage(pageData.solution.solutionTitle_1.toLowerCase())}
+                    page={contactPage}
+                    cta="solucao-1"
                     aria-label={`${pageData.solution.solutionctatext_1} (abre WhatsApp em nova aba)`}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_1}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
               <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
@@ -149,16 +150,16 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_2}
                 </p>
                 <div className="text-center">
-                  <a
-                    href={contactUrl(pageData.solution.solutionTitle_2.toLowerCase())}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
+                    message={contactMessage(pageData.solution.solutionTitle_2.toLowerCase())}
+                    page={contactPage}
+                    cta="solucao-2"
                     aria-label={`${pageData.solution.solutionctatext_2} (abre WhatsApp em nova aba)`}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_2}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
               <div className="bg-gray-700 p-8 rounded-lg shadow-lg">
@@ -170,16 +171,16 @@ export default function DynamicLandingPage() {
                   {pageData.solution.solutionText_3}
                 </p>
                 <div className="text-center">
-                  <a
-                    href={contactUrl(pageData.solution.solutionTitle_3.toLowerCase())}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <WhatsAppLink
+                    message={contactMessage(pageData.solution.solutionTitle_3.toLowerCase())}
+                    page={contactPage}
+                    cta="solucao-3"
                     aria-label={`${pageData.solution.solutionctatext_3} (abre WhatsApp em nova aba)`}
                     className="text-blue-400 hover:text-blue-300 font-semibold inline-block relative group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
                   >
                     {pageData.solution.solutionctatext_3}
                     <span className="absolute left-0 right-0 bottom-0 h-0.5 bg-blue-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-                  </a>
+                  </WhatsAppLink>
                 </div>
               </div>
             </div>
@@ -239,15 +240,15 @@ export default function DynamicLandingPage() {
         <section id="contato" className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">{pageData.cta.ctaText}</h2>
-            <a
-              href={contactUrl('uma solução para meu negócio')}
-              target="_blank"
-              rel="noopener noreferrer"
+            <WhatsAppLink
+              message={contactMessage('uma solução para meu negócio')}
+              page={contactPage}
+              cta="final"
               aria-label={`${pageData.cta.ctaButton} (abre WhatsApp em nova aba)`}
               className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg text-lg transition duration-300 inline-block focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400"
             >
               {pageData.cta.ctaButton}
-            </a>
+            </WhatsAppLink>
           </div>
         </section>
       </main>

@@ -10,8 +10,8 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T003 | P1 | Correção mínima de afirmações e CTAs dos 3 posts antigos | Codex/editorial | T001/T019; direção da oferta recebida em D023 | S | Concluída; publicação pelo usuário verificada em 23/10/2026, 12fafc5a |
 | T004 | P1 | Receber e revisar copy externa de S01–S04 | Usuário/GPT + Codex/editorial + produto | Copy e fatos por artigo | M | S01 aceita; S02–S04 aguardam copy |
 | T005 | P1 | Integrar S01–S04 por artigo aceito, com capas e metadados | Codex/implementação + QA | T001/T002; T003 no conteúdo alterado; T004 por artigo | M | S01 publicada (1/4); S02–S04 pendentes |
-| T006 | P1 | Metadados, canonical, BlogPosting e sitemap | Implementação | T001; modelo consistente | M | Concluída localmente em 24/10/2026; build e SEO aprovados; sem publicação |
-| T007 | P1 | Definir destino comercial, eventos e confirmação de lead | Aquisição + fundador + implementação | Destino e ferramenta definidos | M | Planejada |
+| T006 | P1 | Metadados, canonical, BlogPosting e sitemap | Implementação | T001; modelo consistente | M | Concluída; publicada e verificada em 25/10/2026 |
+| T007 | P1 | Definir destino comercial, atribuição e confirmação de lead | Aquisição + fundador + implementação | WhatsApp + planilha definidos em 25/10/2026 | M | Concluída localmente; publicação e planilha privada pendentes |
 | T008 | P1 | Atualizar Next/runtime com plano de regressão; lucide já atualizado | Implementação + QA | Fonte reconciliada; inventário | L | Planejada |
 | T009 | P2 | Arquivar rotas legadas e fluxo de chat sem envio | Implementação | Histórico de uso/decisão de destino | M | Planejada |
 | T010 | P2 | Redesenhar home: demonstração, implantação e limites | UX + produto + implementação | Oferta atual; T002 | L | Planejada |

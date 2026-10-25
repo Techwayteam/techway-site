@@ -39,12 +39,14 @@ Entrega posterior local: [T002 — blog, landing e contato](evidence/2026-10-10-
 ## SEO e medição
 
 - T006 (23/10/2026): `npm.cmd run build` agora gera sitemap/robots no postbuild e executa a verificação de SEO do export; `npm.cmd run verify-seo` permite conferi-lo novamente. Executar em build isolado enquanto `out`/.next forem versionados ou usados pela prévia. [Evidência](evidence/2026-10-23-T006-seo.md).
+- T007 (25/10/2026): o mesmo pós-build executa `scripts/verify-contact-attribution.cjs`; `npm.cmd run verify-contacts` permite repetir a guarda no export. Ela confere 30 CTAs em nove páginas, incluindo todos os slugs públicos lidos de `data/blogPosts.json`. [Evidência](evidence/2026-10-25-T007-medicao-contatos.md).
 - URLs usam `https://techway.one` e convenção de barra consistente; investigar 404 atual em `/blog/`.
 - Article/BlogPosting descreve conteúdo visível; datas e autoria são verdadeiras; validação estrutural não garante rich result.
 - Sitemap contém somente URLs publicáveis; robots não bloqueia conteúdo pretendido.
 - Não usar robots.txt para fingir que uma rota deixou de existir ou que foi removida do índice.
 - Eventos de contato têm origem e posição; nenhum dado pessoal ou mensagem livre em analytics.
 - Clique não é contabilizado como lead recebido; teste de entrega de formulário depende de endpoint real.
+- No fluxo atual, uma linha só entra na planilha privada após a conversa chegar ao WhatsApp. Marcador ausente/editado vira origem desconhecida; não inferir recebimento a partir do HTML.
 
 ## Regressão e publicação
 

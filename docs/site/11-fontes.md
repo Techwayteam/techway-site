@@ -39,6 +39,13 @@ Registrar futuras evidências com data, origem, método e conclusão. Não guard
 - [Google — canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls): coerência entre canonical e sitemap; não significa URL selecionada pelo Google.
 - [Publicação pelo usuário](evidence/2026-10-23-publicacao-posts.md), [implementação T006](evidence/2026-10-23-T006-seo.md) e [publicação verificada de T006](evidence/2026-10-25-T006-publicacao.md), com export, guardas, workflow e URLs públicas conferidos. Sem acesso ao Search Console.
 
+## Medição de contatos — 25/10/2026
+
+- [Google Analytics — medição de cliques de saída](https://support.google.com/analytics/answer/13566436): GA4 pode medir cliques externos, mas clique não comprova conversa enviada ou recebida.
+- [Google — Consent Mode](https://developers.google.com/tag-platform/security/concepts/consent-mode): referência para uma eventual adoção futura de tags/consentimento; nenhuma tag foi instalada em T007.
+- [Google Analytics — dados pessoais](https://support.google.com/analytics/answer/6366371): dados pessoais e texto livre não devem ser enviados para o Analytics; T007 não envia eventos nem mensagem do visitante.
+- [Evidência T007](evidence/2026-10-25-T007-medicao-contatos.md): implementação local, 30 CTAs/nove páginas, QA móvel e limites de WhatsApp/planilha.
+
 ## Fontes da série — 11/10/2026
 
 - Proposta editorial, copy de S01 e diretrizes visuais: anexos do usuário nesta sessão; copy atribuída ao outro GPT como origem da redação, responsabilidade editorial pública confirmada como Leonardo Reis - Founder Techway. Usuário confirmou presença física no evento.
