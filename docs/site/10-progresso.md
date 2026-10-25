@@ -1,6 +1,6 @@
 # Progresso
 
-Atualização: **16/10/2026 — America/Sao_Paulo**.
+Atualização: **24/10/2026 — America/Sao_Paulo**.
 
 ## Entregue
 
@@ -12,7 +12,7 @@ Atualização: **16/10/2026 — America/Sao_Paulo**.
 - Baseline técnico: type-check e build aprovados; riscos de HTML e alertas registrados.
 - Artefatos gerados pela auditoria limpos/restaurados; alterações locais da home e imagens preservadas.
 - Sincronização solicitada pelo usuário: fetch e fast-forward de 49f27f5 para 78362aa, com 19 commits incorporados; main/origin sem divergência.
-- Último deploy público identificado em 78362aa, status success; T001 confirmou igualdade integral dos três posts com o online antes dos ajustes locais de T002.
+- Na verificação histórica de T001, deploy em 78362aa com status success; três posts iguais ao online antes dos ajustes locais de T002. Não representa o deploy atual.
 - Backup de 45 arquivos locais verificado; variante de Early Access reaplicada com CTA novo, sem seção duplicada. Cinco WebP já rastreados na origem; cinco PNG preservados.
 - Reanálise corrigida para considerar botão flutuante global, carrossel móvel melhorado, lucide 0.526.0 e layout flex do blog.
 - Instalação sem legacy-peer-deps, type-check e build pós-sync aprovados; export com 11 páginas e três artigos.
@@ -26,15 +26,17 @@ Atualização: **16/10/2026 — America/Sao_Paulo**.
 
 ## Estado atual
 
-**T012 — recorte de layout entregue localmente em 16/10/2026:** usuário mostrou texto preso a meia coluna e imagem centralizada verticalmente. Template dos quatro posts agora tem título/metadados antes da capa, parágrafos justificados em telas maiores e texto contornando as imagens de seção no desktop, com largura inteira abaixo delas. Em celular, imagens/texto empilhados; proporções reais, hierarquia e espaçamentos ajustados. Conteúdo de T003/S01 integralmente preservado. Type-check/build isolado e 16 cenários Chrome em 360/390/768/1280 px aprovados; screenshots inspecionadas. [Evidência](evidence/2026-10-16-T012-layout.md). Origem reconsultada em abb2fc0f, igual ao HEAD; sem nova publicação. Restante de T012 (listagem/sumário/relacionados) pendente.
+**Publicação feita pelo usuário conferida em 23/10/2026:** árvore inicialmente limpa, HEAD/origem `12fafc5af7e7da2861434bdfccb0c645cffc6b94`, workflow [40023391516](https://github.com/Techwayteam/techway-site/actions/runs/40023391516) success. Home/blog/landing/legais e quatro artigos HTTP 200; dados dos quatro posts públicos iguais à fonte e novo CSS disponível. **T003 e o recorte de layout T012 estão publicados.** `/blog/` segue 404; a rota usada é `/blog`. O commit do usuário também versionou `out` de desenvolvimento; preservado, com higiene em T014. [Evidência](evidence/2026-10-23-publicacao-posts.md).
 
-**T003 concluída na entrega local em 12/10/2026:** após planejamento e respostas D022/D023, usuário solicitou executar a correção mínima. Quatorze campos de texto/CTA dos três antigos revisados; percentuais 40%/50% retirados, absolutos suavizados, oferta personalizada mantida e Early Access incluído no fechamento do dilema. Slugs, títulos, estrutura, datas, autores, assets, destinos e S01 preservados. Type-check/build isolado aprovados; quatro artigos exportados e seis cenários de navegação/teclado em Chrome (390/1280 px) passaram, sem overflow/exceções. [Evidência e antes/depois](evidence/2026-10-11-T003-editorial.md). Origem reconsultada em abb2fc0f, igual ao HEAD; produção não revalidada. Nenhum commit, push ou deploy desta revisão.
+**T006 concluída localmente em 24/10/2026:** domínio centralizado, metadados sociais/canonical do blog, BlogPosting dos quatro artigos e sitemap/robots gerados a cada build. Canonical da home/landing/legais e URLs sociais das legais alinhados, noindex preservado. Type-check/build isolado aprovados; nove páginas, quatro JSON-LD, sete URLs, conteúdo/CTAs/assets e guardas de publicação verificados. Sem mudança em texto, datas, slugs, layout ou lockfile. **Sem commit/push/deploy de T006.** [Plano](plans/003-T006-seo.md), [evidência e limites](evidence/2026-10-23-T006-seo.md).
 
-T000, **T001, T002, T018 e T019 concluídas**; **T003 concluída localmente, sem nova publicação**. T001/T018 mantêm evidências históricas; T019 verificou commit, push, workflow e produção anteriores à revisão T003. **T004/T005: S01 aceita e publicada (1/4); S02–S04 aguardam copy**. T006 tem metadados dos artigos adiantados; sitemap/dados estruturados e aceite completo pendentes. Demais tarefas seguem no backlog. A fonte da aplicação agora contém as correções locais de T003; versão pública não foi alterada nesta execução. Sem envio de mensagens/campanhas a terceiros.
+Histórico preservado: T003 teve quatorze campos corrigidos, com afirmações sem fonte retiradas/condicionadas, datas/autores/slugs preservados e QA local em 12/10. T012 corrigiu fluxo de imagens/cabeçalho/tipografia, com 16 cenários Chrome em 16/10. [Evidência editorial](evidence/2026-10-11-T003-editorial.md) e [layout](evidence/2026-10-16-T012-layout.md). Restante de T012 (listagem/sumário/relacionados) pendente.
+
+T000/T001/T002/T003/T018/T019 concluídas; T006 concluída na entrega local. T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. T007 e demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-Conferir os layouts atualizados na prévia local dos quatro artigos. T003 e o recorte de layout T012 estão prontos localmente para publicação quando solicitada, com nova conferência de origem/diff e verificação do pipeline/URLs. Receber S02 continua como próximo conteúdo editorial, independente da revisão dos antigos; nenhuma matriz de capacidades é requisito geral para T003.
+Publicar T006 quando solicitado, após reconciliar origem/diff e verificar pipeline, HTML dos artigos, `/sitemap.xml` e `/robots.txt` públicos. A entrega técnica local está validada; indexação/resultado enriquecido não foram comprovados. Próxima implementação do plano: T007, definindo ferramenta/destino comercial e distinguindo clique de conversa recebida. Nada de analytics ou coleta foi configurado em T006.
 
 Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
 
@@ -46,6 +48,6 @@ Oferta geral esclarecida em D023: solução disponível, implantação personali
 
 ## Limites
 
-Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. QA local de T002/S01 incluiu Chrome e screenshots; T019 acrescentou CI remoto success e verificação de HTML/dados/arquivos públicos. Não houve novo browser QA remoto, teste em dispositivo real ou auditoria completa de acessibilidade. As consultas de T001 e as evidências anteriores à publicação continuam históricas.
+Sem acesso a métricas de busca/CRM e sem teste de envio/recebimento no WhatsApp. QA local anterior incluiu Chrome/screenshots; verificações de publicação usaram CI e HTTP/HTML/JSON/CSS. T006 incluiu type-check, export e validação estrutural/negativa; sem novo browser QA, Rich Results Test remoto, Search Console, dispositivo físico ou auditoria completa de acessibilidade. Consultas anteriores permanecem históricas.
 
 Build de S01 em cópia isolada para preservar `out` da prévia ativa; nenhum build executado sobre esses artefatos. Persistem avisos antigos de Browserslist e download de fonte. Imagens são fictícias e não prova comercial. QA local não comprova indexação, entrega de WhatsApp ou disponibilidade das integrações ilustradas.

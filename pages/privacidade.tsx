@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Shield, Database, Eye, Lock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { absoluteUrl } from '../lib/seo'
 
 const PoliticaDePrivacidade: React.FC = (): JSX.Element => {
   return (
@@ -12,11 +13,12 @@ const PoliticaDePrivacidade: React.FC = (): JSX.Element => {
         <meta name="keywords" content="Política de Privacidade, Proteção de Dados, TECHWAY, Segurança da Informação, LGPD" />
         <meta name="author" content="TECHWAY" />
         <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href={absoluteUrl('/privacidade')} />
         
         <meta property="og:title" content="TECHWAY - Política de Privacidade" />
         <meta property="og:description" content="Saiba como a TECHWAY protege seus dados pessoais e garante sua privacidade." />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
-        <meta property="og:url" content="https://techway.one/politica-de-privacidade" />
+        <meta property="og:url" content={absoluteUrl('/privacidade')} />
         <meta property="og:type" content="website" />
         
         <link rel="icon" href="/techway_favicon.ico" />

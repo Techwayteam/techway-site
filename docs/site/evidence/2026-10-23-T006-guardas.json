@@ -1,0 +1,38 @@
+{
+  "result": "passed",
+  "checks": [
+    {
+      "case": "duplicate slug",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "draft in public source",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "future article",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "invalid calendar date",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "missing canonical",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "noindex in sitemap",
+      "result": "rejected as expected"
+    },
+    {
+      "case": "independent XML parser",
+      "result": "valid namespace and 7 URLs"
+    },
+    {
+      "case": "missing exported article description",
+      "result": "rejected as expected"
+    }
+  ],
+  "fixturesRestored": true
+}

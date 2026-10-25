@@ -4,6 +4,7 @@ import dynamic from "next/dynamic"
 import { ArrowRight, Check } from "lucide-react"
 import Header from "../components/Header"
 import Footer from "../components/Footer"
+import { absoluteUrl } from "../lib/seo"
 
 const DynamicTestimonials = dynamic(() => import("../components/Testimonials"), {
   loading: () => <p>Carregando depoimentos...</p>,
@@ -19,6 +20,7 @@ const LandingConversao: React.FC = () => {
       <Head>
         <title>Funcionário Digital com IA | TECHWAY</title>
         <meta name="description" content={SITE_DESCRIPTION} />
+        <link rel="canonical" href={absoluteUrl('/')} />
         <link rel="icon" href="/techway_favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
@@ -29,7 +31,7 @@ const LandingConversao: React.FC = () => {
         <meta property="og:title" content="Funcionário Digital com IA | TECHWAY" />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
-        <meta property="og:url" content="https://techway.one" />
+        <meta property="og:url" content={absoluteUrl('/')} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Funcionário Digital com IA | TECHWAY" />

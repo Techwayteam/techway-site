@@ -1,6 +1,6 @@
 # T012 — leitura e composição dos artigos
 
-Estado: **parcial — recorte de layout dos quatro posts entregue e validado localmente em 16/10/2026; sem publicação**. Responsável: Codex/UX e implementação. Público: pequenos negócios que atendem pelo WhatsApp. Listagem, sumário e evolução de relacionados continuam pendentes. Plano: etapa de leitura do roadmap, mantendo o conteúdo e a jornada definidos no plano 001.
+Estado: **parcial — layout dos quatro posts validado em 16/10/2026 e publicação pelo usuário verificada em 23/10/2026, commit 12fafc5a**. Responsável: Codex/UX e implementação. Público: pequenos negócios que atendem pelo WhatsApp. Listagem, sumário e evolução de relacionados continuam pendentes. Plano: etapa de leitura do roadmap, mantendo o conteúdo e a jornada definidos no plano 001. [Publicação verificada](../evidence/2026-10-23-publicacao-posts.md).
 
 ## Problema e entrega
 

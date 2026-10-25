@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/generate-seo-files.cjs",
+    "verify-seo": "node scripts/verify-seo.cjs",
     "start": "next start",
     "type-check": "tsc --noEmit"
   },

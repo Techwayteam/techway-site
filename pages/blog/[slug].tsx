@@ -7,6 +7,8 @@ import Footer from '../../components/Footer';
 import blogPosts from '../../data/blogPosts.json';
 import ArticleContent, { ContentBlock } from '../../components/blog/ArticleContent';
 import styles from '../../styles/BlogArticle.module.css';
+import Seo from '../../components/Seo';
+import { articleStructuredData } from '../../lib/seo';
 
 type Section = {
   title: string;
@@ -59,18 +61,18 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+      <Seo
+        title={post.seoTitle || `${post.title} | Blog TECHWAY`}
+        description={post.metaDescription || post.subtitle}
+        path={`/blog/${post.slug}`}
+        image={post.featuredImage}
+        imageAlt={post.featuredImageAlt || post.title}
+        imageWidth={post.featuredImageWidth || coverSize?.width}
+        imageHeight={post.featuredImageHeight || coverSize?.height}
+        publishedTime={post.date}
+        structuredData={articleStructuredData(post)}
+      />
       <Head>
-        <title>{post.seoTitle || `${post.title} | Blog TECHWAY`}</title>
-        <meta name="description" content={post.metaDescription || post.subtitle} />
-        <link rel="canonical" href={`https://techway.one/blog/${post.slug}`} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={post.seoTitle || post.title} />
-        <meta property="og:description" content={post.metaDescription || post.subtitle} />
-        <meta property="og:url" content={`https://techway.one/blog/${post.slug}`} />
-        <meta property="og:image" content={`https://techway.one${post.featuredImage}`} />
-        <meta property="og:image:alt" content={post.featuredImageAlt || post.title} />
-        {post.featuredImageWidth && <meta property="og:image:width" content={String(post.featuredImageWidth)} />}
-        {post.featuredImageHeight && <meta property="og:image:height" content={String(post.featuredImageHeight)} />}
         <meta name="keywords" content={`tecnologia, produtividade, blog, ${post.tags.join(', ')}`} />
         <link rel="icon" href="/techway_favicon.ico" />
       </Head>

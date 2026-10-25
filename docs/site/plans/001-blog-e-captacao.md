@@ -1,12 +1,12 @@
 # Plano 001 — blog útil e caminho de contato
 
-Estado: **em execução, etapas 0 e 1A concluídas; 1B concluída localmente em 12/10/2026; S01 publicada via T019**. Replanejamento editorial em **11/10/2026**: série S01–S04 prioritária; copy pelo GPT externo via usuário, coordenação/revisão/integração pelo Codex. T001 e entrega técnica de T002 concluídas em 10/10/2026; publicação de T002/S01 verificada em 11/10/2026. Público: pequenos negócios que atendem pelo WhatsApp.
+Estado: **em execução, etapas 0, 1A e 1B concluídas/publicadas; S01 publicada via T019; T006 concluída localmente em 24/10/2026, sem nova publicação**. Replanejamento editorial em **11/10/2026**: série S01–S04 prioritária; copy pelo GPT externo via usuário, coordenação/revisão/integração pelo Codex. Público: pequenos negócios que atendem pelo WhatsApp. [Publicação de T003/layout T012 pelo usuário verificada em 23/10](../evidence/2026-10-23-publicacao-posts.md), [plano T006](003-T006-seo.md).
 
 Entrega posterior nesta sessão: **S01 aceita, publicada e verificada**, com duas fotos geradas, comparativo HTML, autoria confirmada e metadados. Fonte principal e blog público com quatro artigos; commit/push e deploy success em T019. S02–S04 aguardam copy. [Evidência](../evidence/2026-10-11-T019-publicacao.md).
 
 ## Problema e entrega
 
-T001 reconciliou os três posts em 78362aa em 10/10/2026. T002 corrigiu CTAs e renderização da landing default. Em 11/10/2026, fonte e diff foram reconciliados novamente, e T019 publicou/verificou S01, T002 e a home preservada no conteúdo 8d158f76. T003 concluiu a correção mínima dos antigos localmente em 12/10/2026, ainda sem nova publicação. A primeira frente segue com S02–S04, integrados conforme ficarem prontos.
+T001 reconciliou os três posts em 78362aa em 10/10/2026. T002 corrigiu CTAs e renderização da landing default. Em 11/10/2026, T019 publicou/verificou S01, T002 e a home preservada em 8d158f76. T003 foi entregue em 12/10 e o layout T012 em 16/10; a publicação dessas correções pelo usuário em 12fafc5a foi verificada em 23/10/2026. T006 está pronta localmente. A primeira frente segue com S02–S04 conforme ficarem prontos.
 
 Entregável: diff revisável, inventário reconciliado, conteúdo revisado, novos artigos integrados, navegação verificada e evidências do export. Publicação será executada se estiver no pedido da implementação; este plano não autoriza push por si só.
 
@@ -16,10 +16,10 @@ Entregável: diff revisável, inventário reconciliado, conteúdo revisado, novo
 | --- | --- | --- |
 | 0 — concluída | T001 | Origem sincronizada, terceiro post recuperado, último deploy identificado; variante local da home preservada |
 | 1A — concluída e publicada | T002/T019 | Blog → landing default → contato; Link válido, HTML inicial, navegação e URLs públicas verificados |
-| 1B — concluída localmente | T003 | Três existentes com correção mínima de afirmações/CTAs, estrutura e continuidade do dilema → S01 preservadas; [entrega e decisões](002-T003-revisao-editorial.md), ainda sem nova publicação |
+| 1B — concluída e publicada | T003 | Três existentes com correção mínima; estrutura e continuidade do dilema → S01 preservadas; publicação do usuário verificada em 23/10/2026 |
 | 1C | T004 | Receber copy externa de S01–S04 e revisar por artigo, começando por S01 |
 | 2 | T005 | Integrar cada artigo revisado com capa, links válidos e metadados; não esperar o lote inteiro |
-| 3 | T006/T007, quando seus requisitos estiverem claros | Completar SEO e medir contato sem confundir clique com lead |
+| 3 | T006/T007 | T006 concluída localmente em 24/10, sem deploy; T007 segue planejada para medir contato sem confundir clique com lead |
 
 Etapas 1A/1B/1C podem progredir independentemente depois de confirmar interfaces. Papéis podem ser cumpridos sequencialmente. Se delegação for solicitada, dar arquivos distintos; `data/blogPosts.json` tem dono único na integração.
 

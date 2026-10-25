@@ -32,6 +32,13 @@ Consulta: **10/10/2026**. Usar fontes primárias e reler as que mudam antes de i
 
 Registrar futuras evidências com data, origem, método e conclusão. Não guardar credenciais, conversas de clientes ou dados pessoais nos documentos.
 
+## SEO — 23/10/2026
+
+- [Google — Article](https://developers.google.com/search/docs/appearance/structured-data/article): BlogPosting, autor Person/Organization e nome separado do cargo; não inventar URL de perfil. Marcação não garante rich result.
+- [Google — sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap): URLs absolutas/canônicas; lastmod somente confiável, omitido nesta entrega.
+- [Google — canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls): coerência entre canonical e sitemap; não significa URL selecionada pelo Google.
+- [Publicação pelo usuário](evidence/2026-10-23-publicacao-posts.md) e [implementação T006](evidence/2026-10-23-T006-seo.md), com export e guardas verificados localmente. Sem acesso ao Search Console.
+
 ## Fontes da série — 11/10/2026
 
 - Proposta editorial, copy de S01 e diretrizes visuais: anexos do usuário nesta sessão; copy atribuída ao outro GPT como origem da redação, responsabilidade editorial pública confirmada como Leonardo Reis - Founder Techway. Usuário confirmou presença física no evento.

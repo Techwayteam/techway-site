@@ -1,6 +1,6 @@
 # Plano 002 — T003: revisão dos três artigos existentes
 
-Criado em **11/10/2026**, atualizado em **12/10/2026 — America/Sao_Paulo**. Estado: **executado e concluído na entrega local; sem nova publicação pública**. Subplano da etapa 1B do [plano 001](001-blog-e-captacao.md). Depois de definir escopo/oferta, o usuário solicitou começar a revisão. [Resultado e aceites](../evidence/2026-10-11-T003-editorial.md).
+Criado em **11/10/2026**, atualizado em **23/10/2026 — America/Sao_Paulo**. Estado: **concluído localmente em 12/10 e publicação pelo usuário verificada em 23/10, commit 12fafc5a**. Subplano da etapa 1B do [plano 001](001-blog-e-captacao.md). Depois de definir escopo/oferta, o usuário solicitou começar a revisão. [Resultado e aceites](../evidence/2026-10-11-T003-editorial.md), [publicação](../evidence/2026-10-23-publicacao-posts.md). As seções de execução abaixo preservam o histórico local.
 
 Responsáveis: **Codex** pelo inventário, propostas de revisão, pesquisa factual, integração e verificação; **fundador** pelas informações da oferta e escolhas de produto. A atribuição de copy externa para S01–S04 permanece; ela não transfere automaticamente T003 ao outro GPT. Trabalho sequencial, sem subagentes.
 

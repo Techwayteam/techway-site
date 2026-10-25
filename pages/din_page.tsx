@@ -8,6 +8,7 @@ import Footer from '../components/Footer'
 import Testimonials from '../components/Testimonials'
 import { landingPages } from '../data/landingPages'
 import { getWhatsAppUrl } from '../data/contact'
+import { absoluteUrl } from '../lib/seo'
 
 const iconComponents = {
   CheckCircle,
@@ -47,6 +48,7 @@ export default function DynamicLandingPage() {
       <Head>
         <title>{pageData.seo.pageTitle}</title>
         <meta name="description" content={pageData.seo.pageDescription} />
+        <link rel="canonical" href={absoluteUrl('/din_page')} />
         <meta name="keywords" content={pageData.seo.pageKeywords} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/techway_favicon.ico" />

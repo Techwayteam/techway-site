@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { Book, Shield, Scale, Clock } from 'lucide-react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import { absoluteUrl } from '../lib/seo'
 
 const TermosDeUso: React.FC = (): JSX.Element => {
   return (
@@ -12,11 +13,12 @@ const TermosDeUso: React.FC = (): JSX.Element => {
         <meta name="keywords" content="Termos de Uso, Política de Privacidade, TECHWAY, Condições de Uso, Regras do Serviço" />
         <meta name="author" content="TECHWAY" />
         <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href={absoluteUrl('/termos')} />
         
         <meta property="og:title" content="TECHWAY - Termos de Uso" />
         <meta property="og:description" content="Saiba mais sobre os Termos de Uso da TECHWAY e nossos compromissos com você." />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
-        <meta property="og:url" content="https://www.techway.com/termos-de-uso" />
+        <meta property="og:url" content={absoluteUrl('/termos')} />
         <meta property="og:type" content="website" />
         
         <link rel="icon" href="/techway_favicon.ico" />

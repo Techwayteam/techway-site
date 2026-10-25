@@ -11,7 +11,7 @@
 
 ## Regras da operação
 
-- Pedido atual: análise e estrutura de implementação, com prioridade ao blog. Redesign e deploy não foram executados nesta entrega.
+- Escopo atual: publicação de T003/layout T012 feita pelo usuário e verificada em 23/10/2026; T006 implementada e validada localmente a pedido, sem nova publicação. Redesign da home e T007 seguem separados.
 - A autorização do usuário vale ao longo da sessão. Não criar aprovação extra para escolhas rotineiras de uma implementação autorizada.
 - Usar fatos verificados, hipóteses identificadas e fontes datadas. Não inventar números, capacidades, clientes ou status de publicação.
 - Preservar slugs publicados e mudanças do usuário. Resolver divergência entre produção e fonte antes de enviar uma nova versão.
@@ -28,4 +28,4 @@
 
 ## Escopo da primeira execução
 
-T001 registra a reconciliação histórica em 78362aa. T002 e S01 foram publicadas/verificadas por T019 em 11/10/2026, conteúdo 8d158f76, mantendo home/Early Access e os três artigos antigos. Verificar origem/deploy novamente em retomadas futuras. Próximo artigo: S02, aguardando copy do GPT externo via usuário. T003 concluiu a correção mínima dos antigos localmente em 12/10/2026, com type-check/build/Chrome aprovados; nova publicação ainda não executada. T005 integra por artigo aceito, sem esperar as quatro copies. Ordem em [plano 001](plans/001-blog-e-captacao.md). Não transformar modernização da stack em pré-condição para preparar artigos, salvo falha concreta.
+T001 registra a reconciliação histórica em 78362aa. T019 publicou T002/S01 em 11/10/2026. Em 23/10, HEAD/origem `12fafc5a` e publicação feita pelo usuário de T003/layout T012 foram verificados por workflow e HTML/CSS públicos. T006 está concluída localmente, com build/SEO aprovados; publicação depende do escopo autorizado na retomada. Próximo artigo: S02, aguardando copy externa. T005 integra por artigo aceito, sem esperar o lote. Verificar origem/deploy novamente antes de publicar. Planos [001](plans/001-blog-e-captacao.md) e [003 — T006](plans/003-T006-seo.md). Não transformar modernização da stack em pré-condição para preparar artigos, salvo falha concreta.

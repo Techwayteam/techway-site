@@ -1,6 +1,6 @@
 # T003 — revisar os três artigos atuais
 
-Estado: **concluída na entrega local em 12/10/2026 — três artigos corrigidos, integrados e validados; sem nova publicação pública**. Prioridade: P1. Responsável: Codex/editorial e implementação. Baseline T001/T019 e direção da oferta recebida; sem inventário adicional obrigatório. [Plano detalhado e decisões P01–P04](../plans/002-T003-revisao-editorial.md).
+Estado: **concluída — entrega local em 12/10/2026 e publicação pelo usuário verificada em 23/10/2026, commit 12fafc5a**. Prioridade: P1. Responsável: Codex/editorial e implementação. Baseline T001/T019 e direção da oferta recebida; sem inventário adicional obrigatório. [Plano detalhado e decisões P01–P04](../plans/002-T003-revisao-editorial.md), [publicação verificada](../evidence/2026-10-23-publicacao-posts.md).
 
 ## Resultado
 

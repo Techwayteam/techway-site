@@ -5,6 +5,8 @@ import { GetStaticProps } from 'next';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import blogPosts from '../../data/blogPosts.json';
+import Seo from '../../components/Seo';
+import site from '../../data/site.json';
 
 type Post = {
   slug: string;
@@ -24,12 +26,8 @@ interface BlogProps {
 const BlogHome: React.FC<BlogProps> = ({ posts }) => {
   return (
     <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+      <Seo title={site.blogTitle} description={site.blogDescription} path="/blog" />
       <Head>
-        <title>Blog TECHWAY - Insights e Soluções</title>
-        <meta
-          name="description"
-          content="Descubra insights valiosos e soluções tecnológicas que podem transformar sua rotina e sua empresa. Explore nosso blog!"
-        />
         <meta name="keywords" content="tecnologia, produtividade, soluções empresariais, blog" />
         <link rel="icon" href="/techway_favicon.ico" />
       </Head>

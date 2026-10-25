@@ -1,0 +1,66 @@
+{
+  "result": "passed",
+  "pages": [
+    {
+      "route": "/",
+      "canonical": "ok",
+      "metadata": "ok"
+    },
+    {
+      "route": "/din_page",
+      "canonical": "ok",
+      "metadata": "ok"
+    },
+    {
+      "route": "/termos",
+      "canonical": "ok",
+      "metadata": "ok"
+    },
+    {
+      "route": "/privacidade",
+      "canonical": "ok",
+      "metadata": "ok"
+    },
+    {
+      "route": "/blog",
+      "metadata": "ok",
+      "structuredData": "not-applicable",
+      "content": "preserved"
+    },
+    {
+      "route": "/blog/como-melhorar-sua-produtividade",
+      "metadata": "ok",
+      "structuredData": "ok",
+      "content": "preserved"
+    },
+    {
+      "route": "/blog/automacao-de-tarefas-repetitivas",
+      "metadata": "ok",
+      "structuredData": "ok",
+      "content": "preserved"
+    },
+    {
+      "route": "/blog/cuidar-do-cliente-ou-do-negocio",
+      "metadata": "ok",
+      "structuredData": "ok",
+      "content": "preserved"
+    },
+    {
+      "route": "/blog/atendimento-ia-alem-respostas-automaticas",
+      "metadata": "ok",
+      "structuredData": "ok",
+      "content": "preserved"
+    }
+  ],
+  "sitemap": [
+    "https://techway.one/",
+    "https://techway.one/blog",
+    "https://techway.one/din_page",
+    "https://techway.one/blog/como-melhorar-sua-produtividade",
+    "https://techway.one/blog/automacao-de-tarefas-repetitivas",
+    "https://techway.one/blog/cuidar-do-cliente-ou-do-negocio",
+    "https://techway.one/blog/atendimento-ia-alem-respostas-automaticas"
+  ],
+  "robots": "passed",
+  "unknownRouteFallback": "404.html exists; browser not tested"
+}

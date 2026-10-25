@@ -2,6 +2,8 @@
 
 Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público confirmado pelo fundador: **pequenos negócios que atendem pelo WhatsApp**. Primeira frente: blog.
 
+**Estado em 24/10/2026:** publicação pelo usuário das correções T003 e do layout T012 conferida em `12fafc5a`: workflow success, quatro artigos públicos iguais à fonte e CSS disponível. [Verificação](evidence/2026-10-23-publicacao-posts.md). **T006 concluída localmente**, com metadados, BlogPosting e sitemap/robots gerados e validados no build; sem push/deploy desta nova etapa. [Plano e aceite](plans/003-T006-seo.md), [evidência](evidence/2026-10-23-T006-seo.md).
+
 **S01 publicada em 11/10/2026**, com duas fotos geradas, comparativo HTML, metadados e autoria confirmada como Leonardo Reis - Founder Techway. Conteúdo enviado no commit `8d158f76`; workflow e deploy de Pages success, quatro artigos e imagens públicas conferidos. T002 e a variante local de Early Access também publicadas, com preservação das rotas atuais. [Artigo público](https://techway.one/blog/atendimento-ia-alem-respostas-automaticas) e [evidência da publicação](evidence/2026-10-11-T019-publicacao.md). O plano segue com S02–S04 aguardando copy do GPT externo via usuário. T001 em 78362aa registra a reconciliação histórica anterior, não a versão atual de produção.
 
 ## Comece por aqui
@@ -12,8 +14,9 @@ Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público c
 4. [Estratégia editorial](editorial/estrategia-e-calendario.md): quatro pautas prioritárias, 12 pautas de apoio e cadência dependente de copy/revisão.
 5. [Próximas publicações](editorial/serie-funcionarios-digitais.md): briefs de S01–S04, links, imagens e contrato de copy. [Briefs anteriores](editorial/primeiro-lote.md) preservados como apoio.
 6. [Backlog](06-backlog.md), [tarefas](tasks/README.md) e [progresso](10-progresso.md).
-7. [T003 — plano e entrega local](plans/002-T003-revisao-editorial.md): correção mínima dos três antigos concluída localmente em 12/10/2026; conteúdo integrado, type-check/build/Chrome aprovados; sem nova publicação pública.
-8. [T012 — leitura dos artigos](tasks/T012-leitura-artigos.md): layout dos quatro posts melhorado e validado localmente em 16/10/2026, com texto ao redor de imagens no desktop e empilhamento em celular; demais recortes de T012 pendentes.
+7. [T003 — plano e entrega](plans/002-T003-revisao-editorial.md): correção mínima concluída localmente em 12/10/2026 e publicação verificada em 23/10/2026.
+8. [T012 — leitura dos artigos](tasks/T012-leitura-artigos.md): layout validado em 16/10/2026 e publicação verificada em 23/10; demais recortes pendentes.
+9. [T006 — SEO técnico](tasks/T006-seo-blog.md): concluída localmente em 24/10/2026; próxima publicação ainda pendente.
 
 ## Estrutura
 
