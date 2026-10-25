@@ -1,12 +1,12 @@
 # Plano 001 — blog útil e caminho de contato
 
-Estado: **em execução, etapas 0, 1A e 1B concluídas/publicadas; S01 publicada via T019; T006 concluída localmente em 24/10/2026, sem nova publicação**. Replanejamento editorial em **11/10/2026**: série S01–S04 prioritária; copy pelo GPT externo via usuário, coordenação/revisão/integração pelo Codex. Público: pequenos negócios que atendem pelo WhatsApp. [Publicação de T003/layout T012 pelo usuário verificada em 23/10](../evidence/2026-10-23-publicacao-posts.md), [plano T006](003-T006-seo.md).
+Estado: **em execução, etapas 0, 1A e 1B concluídas/publicadas; S01 publicada via T019; T006 publicada e verificada em 25/10/2026**. Replanejamento editorial em **11/10/2026**: série S01–S04 prioritária; copy pelo GPT externo via usuário, coordenação/revisão/integração pelo Codex. Público: pequenos negócios que atendem pelo WhatsApp. [Publicação de T006](../evidence/2026-10-25-T006-publicacao.md), [plano T006](003-T006-seo.md).
 
 Entrega posterior nesta sessão: **S01 aceita, publicada e verificada**, com duas fotos geradas, comparativo HTML, autoria confirmada e metadados. Fonte principal e blog público com quatro artigos; commit/push e deploy success em T019. S02–S04 aguardam copy. [Evidência](../evidence/2026-10-11-T019-publicacao.md).
 
 ## Problema e entrega
 
-T001 reconciliou os três posts em 78362aa em 10/10/2026. T002 corrigiu CTAs e renderização da landing default. Em 11/10/2026, T019 publicou/verificou S01, T002 e a home preservada em 8d158f76. T003 foi entregue em 12/10 e o layout T012 em 16/10; a publicação dessas correções pelo usuário em 12fafc5a foi verificada em 23/10/2026. T006 está pronta localmente. A primeira frente segue com S02–S04 conforme ficarem prontos.
+T001 reconciliou os três posts em 78362aa em 10/10/2026. T002 corrigiu CTAs e renderização da landing default. Em 11/10/2026, T019 publicou/verificou S01, T002 e a home preservada em 8d158f76. T003 foi entregue em 12/10 e o layout T012 em 16/10; a publicação dessas correções pelo usuário em 12fafc5a foi verificada em 23/10/2026. T006 foi publicada e verificada em `5c9cbe8f`. A primeira frente segue com S02–S04 conforme ficarem prontos.
 
 Entregável: diff revisável, inventário reconciliado, conteúdo revisado, novos artigos integrados, navegação verificada e evidências do export. Publicação será executada se estiver no pedido da implementação; este plano não autoriza push por si só.
 
@@ -19,7 +19,7 @@ Entregável: diff revisável, inventário reconciliado, conteúdo revisado, novo
 | 1B — concluída e publicada | T003 | Três existentes com correção mínima; estrutura e continuidade do dilema → S01 preservadas; publicação do usuário verificada em 23/10/2026 |
 | 1C | T004 | Receber copy externa de S01–S04 e revisar por artigo, começando por S01 |
 | 2 | T005 | Integrar cada artigo revisado com capa, links válidos e metadados; não esperar o lote inteiro |
-| 3 | T006/T007 | T006 concluída localmente em 24/10, sem deploy; T007 segue planejada para medir contato sem confundir clique com lead |
+| 3 | T006/T007 | T006 publicada/verificada em 25/10; T007 é o próximo passo para medir contato sem confundir clique com lead |
 
 Etapas 1A/1B/1C podem progredir independentemente depois de confirmar interfaces. Papéis podem ser cumpridos sequencialmente. Se delegação for solicitada, dar arquivos distintos; `data/blogPosts.json` tem dono único na integração.
 

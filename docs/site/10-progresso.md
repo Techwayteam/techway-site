@@ -1,6 +1,6 @@
 # Progresso
 
-Atualização: **24/10/2026 — America/Sao_Paulo**.
+Atualização: **25/10/2026 — America/Sao_Paulo**.
 
 ## Entregue
 
@@ -28,15 +28,15 @@ Atualização: **24/10/2026 — America/Sao_Paulo**.
 
 **Publicação feita pelo usuário conferida em 23/10/2026:** árvore inicialmente limpa, HEAD/origem `12fafc5af7e7da2861434bdfccb0c645cffc6b94`, workflow [40023391516](https://github.com/Techwayteam/techway-site/actions/runs/40023391516) success. Home/blog/landing/legais e quatro artigos HTTP 200; dados dos quatro posts públicos iguais à fonte e novo CSS disponível. **T003 e o recorte de layout T012 estão publicados.** `/blog/` segue 404; a rota usada é `/blog`. O commit do usuário também versionou `out` de desenvolvimento; preservado, com higiene em T014. [Evidência](evidence/2026-10-23-publicacao-posts.md).
 
-**T006 concluída localmente em 24/10/2026:** domínio centralizado, metadados sociais/canonical do blog, BlogPosting dos quatro artigos e sitemap/robots gerados a cada build. Canonical da home/landing/legais e URLs sociais das legais alinhados, noindex preservado. Type-check/build isolado aprovados; nove páginas, quatro JSON-LD, sete URLs, conteúdo/CTAs/assets e guardas de publicação verificados. Sem mudança em texto, datas, slugs, layout ou lockfile. **Sem commit/push/deploy de T006.** [Plano](plans/003-T006-seo.md), [evidência e limites](evidence/2026-10-23-T006-seo.md).
+**T006 publicada e verificada em 25/10/2026:** commit `5c9cbe8f`, workflow [40205213139](https://github.com/Techwayteam/techway-site/actions/runs/40205213139) success. Nove páginas HTTP 200 com canonical/descrição únicos; blog com metadados sociais; quatro BlogPosting coerentes com os dados públicos; quatro capas WebP disponíveis; sitemap exato com sete URLs e robots anunciando-o. Type-check/build isolado também foram repetidos antes do envio. Sem mudança em texto, datas, slugs, layout ou lockfile. [Publicação](evidence/2026-10-25-T006-publicacao.md), [plano](plans/003-T006-seo.md), [evidência local](evidence/2026-10-23-T006-seo.md).
 
 Histórico preservado: T003 teve quatorze campos corrigidos, com afirmações sem fonte retiradas/condicionadas, datas/autores/slugs preservados e QA local em 12/10. T012 corrigiu fluxo de imagens/cabeçalho/tipografia, com 16 cenários Chrome em 16/10. [Evidência editorial](evidence/2026-10-11-T003-editorial.md) e [layout](evidence/2026-10-16-T012-layout.md). Restante de T012 (listagem/sumário/relacionados) pendente.
 
-T000/T001/T002/T003/T018/T019 concluídas; T006 concluída na entrega local. T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. T007 e demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
+T000/T001/T002/T003/T006/T018/T019 concluídas e, quando aplicável, publicadas/verificadas. T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. T007 e demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-Publicar T006 quando solicitado, após reconciliar origem/diff e verificar pipeline, HTML dos artigos, `/sitemap.xml` e `/robots.txt` públicos. A entrega técnica local está validada; indexação/resultado enriquecido não foram comprovados. Próxima implementação do plano: T007, definindo ferramenta/destino comercial e distinguindo clique de conversa recebida. Nada de analytics ou coleta foi configurado em T006.
+Executar T007, começando pela definição do destino comercial, da ferramenta de medição e do critério que separa clique de conversa efetivamente recebida. Nada de analytics ou coleta foi configurado em T006. Indexação e resultado enriquecido continuam não comprovados e não bloqueiam T007.
 
 Receber **copy de S02** do usuário/GPT e seguir revisão/integração por artigo. S01 está publicada, com data real de 11/10/2026. Novas publicações exigem reconciliação atual de fonte/diff e verificação do pipeline, respeitando a autorização da sessão.
 

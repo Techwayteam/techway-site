@@ -2,7 +2,7 @@
 
 Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público confirmado pelo fundador: **pequenos negócios que atendem pelo WhatsApp**. Primeira frente: blog.
 
-**Estado em 24/10/2026:** publicação pelo usuário das correções T003 e do layout T012 conferida em `12fafc5a`: workflow success, quatro artigos públicos iguais à fonte e CSS disponível. [Verificação](evidence/2026-10-23-publicacao-posts.md). **T006 concluída localmente**, com metadados, BlogPosting e sitemap/robots gerados e validados no build; sem push/deploy desta nova etapa. [Plano e aceite](plans/003-T006-seo.md), [evidência](evidence/2026-10-23-T006-seo.md).
+**Estado em 25/10/2026:** **T006 publicada e verificada** no commit `5c9cbe8f`: workflow success, nove páginas públicas com canonical/metadados coerentes, quatro BlogPosting, sitemap com sete URLs e robots disponíveis. [Publicação e conferência](evidence/2026-10-25-T006-publicacao.md). A publicação anterior das correções T003 e do layout T012 permanece registrada em `12fafc5a`. [Plano e aceite local](plans/003-T006-seo.md), [evidência local](evidence/2026-10-23-T006-seo.md).
 
 **S01 publicada em 11/10/2026**, com duas fotos geradas, comparativo HTML, metadados e autoria confirmada como Leonardo Reis - Founder Techway. Conteúdo enviado no commit `8d158f76`; workflow e deploy de Pages success, quatro artigos e imagens públicas conferidos. T002 e a variante local de Early Access também publicadas, com preservação das rotas atuais. [Artigo público](https://techway.one/blog/atendimento-ia-alem-respostas-automaticas) e [evidência da publicação](evidence/2026-10-11-T019-publicacao.md). O plano segue com S02–S04 aguardando copy do GPT externo via usuário. T001 em 78362aa registra a reconciliação histórica anterior, não a versão atual de produção.
 
@@ -16,7 +16,7 @@ Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público c
 6. [Backlog](06-backlog.md), [tarefas](tasks/README.md) e [progresso](10-progresso.md).
 7. [T003 — plano e entrega](plans/002-T003-revisao-editorial.md): correção mínima concluída localmente em 12/10/2026 e publicação verificada em 23/10/2026.
 8. [T012 — leitura dos artigos](tasks/T012-leitura-artigos.md): layout validado em 16/10/2026 e publicação verificada em 23/10; demais recortes pendentes.
-9. [T006 — SEO técnico](tasks/T006-seo-blog.md): concluída localmente em 24/10/2026; próxima publicação ainda pendente.
+9. [T006 — SEO técnico](tasks/T006-seo-blog.md): publicada e verificada em 25/10/2026; próximo passo técnico é T007.
 
 ## Estrutura
 

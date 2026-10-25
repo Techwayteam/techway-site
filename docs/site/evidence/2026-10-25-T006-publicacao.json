@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-10-25T12:07:00-03:00",
+  "timezone": "America/Sao_Paulo",
+  "commit": "5c9cbe8f6a340309c4d3b1d7d49ccfd68a878453",
+  "workflow": {
+    "id": 40205213139,
+    "number": 340,
+    "url": "https://github.com/Techwayteam/techway-site/actions/runs/40205213139",
+    "conclusion": "success",
+    "duration": "1m03s"
+  },
+  "local": {
+    "typeCheck": "passed",
+    "isolatedBuild": "passed",
+    "staticPages": 12,
+    "blogPostings": 4,
+    "sitemapUrls": 7
+  },
+  "public": {
+    "pagesChecked": 9,
+    "allHttp200": true,
+    "singleCanonicalAndDescription": true,
+    "blogSocialMetadata": true,
+    "blogPostingCount": 4,
+    "blogPostingMatchesPublicPostData": true,
+    "articleImagesHttp200": true,
+    "sitemapHttp200": true,
+    "sitemapExact": true,
+    "robotsHttp200": true,
+    "robotsAllowsCrawling": true,
+    "robotsAnnouncesSitemap": true
+  },
+  "sitemap": [
+    "https://techway.one/",
+    "https://techway.one/blog",
+    "https://techway.one/din_page",
+    "https://techway.one/blog/como-melhorar-sua-produtividade",
+    "https://techway.one/blog/automacao-de-tarefas-repetitivas",
+    "https://techway.one/blog/cuidar-do-cliente-ou-do-negocio",
+    "https://techway.one/blog/atendimento-ia-alem-respostas-automaticas"
+  ],
+  "limits": [
+    "Sem acesso ao Google Search Console",
+    "Sem comprovação de indexação ou resultado enriquecido",
+    "Sem analytics ou medição comercial nesta tarefa"
+  ]
+}

@@ -37,7 +37,7 @@ Registrar futuras evidências com data, origem, método e conclusão. Não guard
 - [Google — Article](https://developers.google.com/search/docs/appearance/structured-data/article): BlogPosting, autor Person/Organization e nome separado do cargo; não inventar URL de perfil. Marcação não garante rich result.
 - [Google — sitemap](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap): URLs absolutas/canônicas; lastmod somente confiável, omitido nesta entrega.
 - [Google — canonical](https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls): coerência entre canonical e sitemap; não significa URL selecionada pelo Google.
-- [Publicação pelo usuário](evidence/2026-10-23-publicacao-posts.md) e [implementação T006](evidence/2026-10-23-T006-seo.md), com export e guardas verificados localmente. Sem acesso ao Search Console.
+- [Publicação pelo usuário](evidence/2026-10-23-publicacao-posts.md), [implementação T006](evidence/2026-10-23-T006-seo.md) e [publicação verificada de T006](evidence/2026-10-25-T006-publicacao.md), com export, guardas, workflow e URLs públicas conferidos. Sem acesso ao Search Console.
 
 ## Fontes da série — 11/10/2026
 
