@@ -56,26 +56,28 @@ alterada. [Preparação](evidence/2026-10-27-T020-oferta-minima.md) e [aceite](e
 
 **T006 publicada e verificada em 25/10/2026:** commit `5c9cbe8f`, workflow [40205213139](https://github.com/Techwayteam/techway-site/actions/runs/40205213139) success. Nove páginas HTTP 200 com canonical/descrição únicos; blog com metadados sociais; quatro BlogPosting coerentes com os dados públicos; quatro capas WebP disponíveis; sitemap exato com sete URLs e robots anunciando-o. Type-check/build isolado também foram repetidos antes do envio. Sem mudança em texto, datas, slugs, layout ou lockfile. [Publicação](evidence/2026-10-25-T006-publicacao.md), [plano](plans/003-T006-seo.md), [evidência local](evidence/2026-10-23-T006-seo.md).
 
-**T007 concluída localmente em 25/10/2026, ainda sem publicação:** decisão WhatsApp + planilha privada, sem GA4. Trinta CTAs em nove páginas recebem origem/posição na mensagem; clique continua separado de conversa recebida. Type-check, build isolado, guardas de SEO/contato e QA móvel de home, landing `improvisation` e artigo passaram. O QA encontrou e corrigiu a origem incorreta dos componentes compartilhados após hidratação da query. Template CSV entregue sem dados reais; nenhuma mensagem foi enviada e nenhuma planilha externa foi criada. [Plano](plans/004-T007-medicao-contatos.md) e [evidência](evidence/2026-10-25-T007-medicao-contatos.md).
+**T007 publicada e verificada em 31/10/2026:** decisão WhatsApp + planilha privada, sem GA4. Trinta e um CTAs em nove páginas recebem origem/posição na mensagem; clique continua separado de conversa recebida. Type-check, build isolado, guardas de SEO/contato e QA móvel de home, landing `improvisation` e artigo passaram. Na publicação conjunta com T010, sete CTAs da home e oito da variante `improvisation` foram reconferidos; o componente compartilhado preservou a origem. Template CSV entregue sem dados reais; nenhuma mensagem foi enviada e a planilha privada ainda precisa ser importada. [Plano](plans/004-T007-medicao-contatos.md) e [evidência](evidence/2026-10-25-T007-medicao-contatos.md).
 
-**T010 concluída localmente em 31/10/2026, ainda sem publicação:** a home agora
+**T010 publicada e verificada em 31/10/2026:** a home agora
 explica atendimento com IA no WhatsApp, mostra tarefas e limites, exemplo fictício em
 HTML, implantação, prova autorizada, Early Access conforme D031, FAQ e CTA atribuível.
 Agendamento aparece como em desenvolvimento; follow-up fica fora da oferta. Foram
 retirados números sem método, disponibilidade 24h, escassez e prova fictícia. Type-check,
 build isolado com 12 páginas, SEO, 31 CTAs em 9 páginas e QA no Chromium em 360, 390,
 768 e 1280 px passaram. O QA encontrou e corrigiu a atribuição do componente de
-depoimentos em `/din_page`. Não houve envio, push ou deploy. [Ficha](tasks/T010-home-conversao.md)
-e [evidência](evidence/2026-10-31-T010-home-conversao.md).
+depoimentos em `/din_page`. O commit `dcc1ab5a` e o workflow 41164599336 foram
+verificados, assim como a home pública, rotas preservadas e atribuição; nenhum
+WhatsApp foi acionado. [Ficha](tasks/T010-home-conversao.md) e
+[evidência](evidence/2026-10-31-T010-home-conversao.md).
 
 Histórico preservado: T003 teve quatorze campos corrigidos, com afirmações sem fonte retiradas/condicionadas, datas/autores/slugs preservados e QA local em 12/10. T012 corrigiu fluxo de imagens/cabeçalho/tipografia, com 16 cenários Chrome em 16/10. [Evidência editorial](evidence/2026-10-11-T003-editorial.md) e [layout](evidence/2026-10-16-T012-layout.md). Restante de T012 (listagem/sumário/relacionados) pendente.
 
-T000/T001/T002/T003/T006/T007/T010/T018/T019/T020 concluídas localmente e, quando aplicável, publicadas/verificadas. T007 e T010 aguardam publicação; T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. Demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
+T000/T001/T002/T003/T006/T007/T010/T018/T019/T020 concluídas localmente e, quando aplicável, publicadas/verificadas. T004/T005: S01 aceita/publicada (1/4), S02–S04 aguardam copy. Demais tarefas seguem no backlog. Sem mensagens/campanhas a terceiros.
 
 ## Próximo passo concreto
 
-1. Reconciliar/publicar T007 quando autorizado; verificar os marcadores públicos e
-   importar `templates/T007-registro-leads.csv` em planilha privada.
+1. Importar `templates/T007-registro-leads.csv` em planilha privada e operar somente
+   conversas efetivamente recebidas como contato/lead.
 2. Alinhar os quatro CTAs do blog em T021 à home T010 e preservar origem/posição.
 3. Validar a prévia coerente conforme T022; somente
    depois operar T023 com canal e envio

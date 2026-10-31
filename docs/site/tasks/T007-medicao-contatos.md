@@ -1,6 +1,6 @@
 # T007 — atribuir contatos e confirmar leads recebidos
 
-Estado: **concluída localmente em 25/10/2026; publicação pendente**. Prioridade: P0 após replanejamento comercial de 26/10/2026. Responsáveis: Codex/implementação e QA; fundador/comercial pela operação da planilha. [Plano](../plans/004-T007-medicao-contatos.md) e [evidência](../evidence/2026-10-25-T007-medicao-contatos.md).
+Estado: **publicada e verificada em 31/10/2026; operação da planilha pendente**. Prioridade: P0 após replanejamento comercial de 26/10/2026. Responsáveis: Codex/implementação e QA; fundador/comercial pela operação da planilha. [Plano](../plans/004-T007-medicao-contatos.md) e [evidência](../evidence/2026-10-25-T007-medicao-contatos.md).
 
 ## Entrega
 

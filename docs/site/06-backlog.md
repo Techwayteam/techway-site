@@ -11,10 +11,10 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T004 | P2 | Receber e revisar copy externa de S01–S04 | Usuário/GPT + Codex/editorial + produto | Copy e fatos por artigo; objeção/intenção observada para subir na fila | M | S01 aceita; S02–S04 aguardam copy, sem bloquear conversão |
 | T005 | P2 | Integrar S01–S04 por artigo aceito, com capas e metadados | Codex/implementação + QA | T004 por artigo; base de conversão para CTA | M | S01 publicada (1/4); S02–S04 preservadas e repriorizadas |
 | T006 | P1 | Metadados, canonical, BlogPosting e sitemap | Implementação | T001; modelo consistente | M | Concluída; publicada e verificada em 25/10/2026 |
-| T007 | P0 | Publicar atribuição e operar confirmação de lead | Aquisição + fundador + implementação | Implementação local validada; autorização de publicação e planilha privada | S | Concluída localmente; publicação e importação pendentes |
+| T007 | P0 | Publicar atribuição e operar confirmação de lead | Aquisição + fundador + implementação | Implementação validada; planilha privada | S | Publicada e verificada em 31/10/2026; importação/operação pendentes |
 | T008 | P2 | Atualizar Next/runtime com plano de regressão; lucide já atualizado | Implementação + QA | Fonte reconciliada; subir somente por aplicabilidade de segurança/falha concreta | L | Planejada |
 | T009 | P2 | Arquivar rotas legadas e fluxo de chat sem envio | Implementação | Histórico de uso/decisão de destino | M | Planejada |
-| T010 | P0 | Entregar home de conversão v1: oferta, exemplo, prova e CTA | UX + produto + implementação | T020; T007; DN002–DN003 | M | Concluída localmente em 31/10/2026; publicação pendente |
+| T010 | P0 | Entregar home de conversão v1: oferta, exemplo, prova e CTA | UX + produto + implementação | T020; T007; DN002–DN003 | M | Publicada e verificada em 31/10/2026 |
 | T011 | P1 | Documentar um caso e prova social autorizada | Produto + redação | Consentimento e dados verificáveis | M | Planejada |
 | T012 | P2 | Melhorar leitura, relacionados, sumário e listagem | UX + implementação | Conteúdo inicial integrado | M | Parcial — layout publicado em 12fafc5a e verificado em 23/10; listagem/sumário/relacionados pendentes |
 | T013 | P2 | Otimizar imagens/fontes e validar movimento/QA móvel, preservando melhorias já recebidas | Implementação + QA | Template/home escolhidos | M | Planejada |

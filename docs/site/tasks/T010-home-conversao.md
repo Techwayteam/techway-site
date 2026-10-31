@@ -1,6 +1,6 @@
 # T010 — entregar a home de conversão v1
 
-Estado: **concluída localmente em 31/10/2026; publicação pendente**. Prioridade: P0. Responsável: UX + implementação. Revisores:
+Estado: **publicada e verificada em 31/10/2026**. Prioridade: P0. Responsável: UX + implementação. Revisores:
 produto/comercial e QA. Plano: `../plans/005-primeiro-lead-e-cliente.md`.
 Dependências: T020 para as afirmações publicáveis; T007 para atribuição; DN002–DN003
 para depoimentos e Early Access.
@@ -59,5 +59,6 @@ resolvidas pelo fundador em 29/10/2026 (D031). Fonte de aceite:
 `../evidence/2026-10-29-T020-aceite-fundador.md`. Implementação, build isolado,
 guardas de SEO/contato e QA responsivo concluídos em 31/10/2026; o primeiro build
 encontrou e permitiu corrigir a atribuição do depoimento compartilhado em
-`/din_page`. Evidência: `../evidence/2026-10-31-T010-home-conversao.md`. Publicação
-continua fora da autorização desta ficha; compreensão comercial será validada em T022.
+`/din_page`. Publicação do commit `dcc1ab5a` verificada no workflow 41164599336 e em
+`https://techway.one/`. Evidência: `../evidence/2026-10-31-T010-home-conversao.md`.
+Compreensão comercial será validada em T022.

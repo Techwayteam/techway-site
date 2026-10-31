@@ -1,7 +1,7 @@
 # Evidência — T010 home de conversão v1
 
-Data: **31/10/2026 — America/Sao_Paulo**. Estado: **concluída localmente;
-publicação pendente de autorização**. Ficha: `../tasks/T010-home-conversao.md`.
+Data: **31/10/2026 — America/Sao_Paulo**. Estado: **publicada e verificada**.
+Ficha: `../tasks/T010-home-conversao.md`.
 
 ## Entrega e escopo
 
@@ -67,4 +67,21 @@ de download da fonte do Google durante o build isolado.
 
 O próximo trabalho local independente é T021: alinhar os quatro artigos à mesma oferta
 e preservar a origem do contato. T022 fará a validação de compreensão; convites a
-participantes e publicação continuam dependentes de autorização explícita.
+participantes e novas publicações continuam dependentes de autorização explícita.
+
+## Publicação verificada
+
+O commit `dcc1ab5a` foi enviado para `main` junto do commit T007 `849cc2b8`. O
+[workflow 41164599336](https://github.com/Techwayteam/techway-site/actions/runs/41164599336)
+terminou em `success`: build em 46 s, deploy em 11 s e duração total de 1 min 6 s.
+
+Na URL pública `https://techway.one/` foram confirmados título, descrição, canonical,
+`lang="pt-BR"`, um H1, ausência de overflow em 390 e 1280 px e sete CTAs da home com
+origem/posição. Home, blog, S01, landing, termos, privacidade, sitemap e robots
+responderam HTTP 200. A variante `/din_page?variant=improvisation` preservou oito
+CTAs como `landing-improvisation`, incluindo o componente compartilhado de
+depoimentos. Nenhum link de WhatsApp foi acionado.
+
+As Actions registraram avisos de manutenção do runner sobre Node.js 20 forçado para
+Node.js 24 e futura migração de `ubuntu-latest`; não houve falha de aplicação. Esses
+avisos permanecem para T014.
