@@ -1,4 +1,4 @@
-# PRD — site como canal de aquisição
+# PRD — site como canal de aquisição e primeira venda
 
 ## Problema e público
 
@@ -7,6 +7,21 @@ A Techway precisa explicar melhor seus agentes de IA, atrair empresários com do
 ## Resultado desejado
 
 Um visitante chega por uma dúvida útil, entende uma aplicação concreta de IA, reconhece os limites da solução e consegue falar com a Techway. A equipe identifica a origem e acompanha o contato até qualificação e possível contratação.
+
+O objetivo da iniciativa é conquistar o **primeiro lead comercial confirmado** e o
+**primeiro cliente**, orgânico ou por aquisição manual autorizada. O site não garante
+esses eventos; ele deve remover as fricções controláveis e conectar aquisição,
+compreensão, confiança, contato e acompanhamento.
+
+## Marcos do funil
+
+| Marco | Definição operacional |
+| --- | --- |
+| Contato iniciado | Primeira mensagem comercial efetivamente recebida pela Techway; clique não conta |
+| Lead qualificado | Decisor de negócio identificável, com necessidade recorrente dentro do escopo e próximo passo possível |
+| Demonstração | Conversa/demonstração efetivamente realizada, não apenas solicitada |
+| Proposta | Escopo e valor enviados a um lead qualificado |
+| Primeiro cliente | Critério final em DN004; default recomendado: proposta aceita e primeiro pagamento confirmado |
 
 ## Jornadas
 
@@ -28,13 +43,36 @@ Um visitante chega por uma dúvida útil, entende uma aplicação concreta de IA
 - Links internos válidos, imagens existentes e apresentação legível no celular.
 - Distinguir draft, revisado e publicado; nada com data futura deve sair no export por engano.
 
+## Requisitos da frente de conversão
+
+- Categoria, tarefa e WhatsApp explícitos antes da rolagem; CTA ligado à dor do
+  atendimento.
+- Exemplo estático e acessível que diferencia resposta informativa, ação e
+  participação humana.
+- Somente capacidades, resultados, depoimentos e condições com fonte/aceite; cenário
+  hipotético identificado e visão futura separada da oferta atual.
+- Blog, home e WhatsApp contam a mesma história; origem editorial não se perde por
+  atravessar uma página intermediária.
+- Implantação, limites, atualização das informações, passagem para uma pessoa e
+  formação da proposta explicados sem inventar SLA ou preço.
+- Atribuição de contato publicada e planilha privada operável; dados pessoais fora de
+  analytics e do repositório.
+- Compreensão testada qualitativamente; objeções e motivos de perda alimentam a
+  próxima mudança.
+
 ## Requisitos seguintes
 
-Sitemap, BlogPosting/BreadcrumbList, relacionados e sumário quando úteis; homepage com artigos recentes e demonstração; eventos de interesse; procedimento de registro de leads; casos reais e páginas de soluções/segmentos quando a oferta estiver definida.
+Caso autorizado, FAQ/legais coerentes, página específica da solução quando a oferta
+estabilizar, conteúdo ligado a objeções reais e um canal de aquisição inicial
+autorizado. Relacionados/sumário e manutenção técnica continuam pertinentes, mas não
+antecedem a base de conversão sem falha concreta.
 
-## Fora da primeira entrega
+## Fora da próxima entrega
 
-CMS, backend, banco de leads, campanha paga, disparos de WhatsApp/e-mail, crawler de concorrentes, redes sociais automáticas e migração de hospedagem. Não são necessários para iniciar uma rotina editorial consistente.
+CMS, backend, banco de leads, chatbot funcional na home, calculadora de ROI,
+campanhas/disparos automáticos, páginas para todos os módulos e migração de
+hospedagem. Uma rodada manual de aquisição pode ser planejada, mas nenhum contato a
+terceiros é autorizado por este PRD.
 
 ## Métricas e metas
 
@@ -47,4 +85,7 @@ CMS, backend, banco de leads, campanha paga, disparos de WhatsApp/e-mail, crawle
 | Conversão comercial | Vendas / leads qualificados, por período/coorte | Sem dados iniciais |
 | Aquisição orgânica | Cliques e consultas por página no Search Console | Acesso não disponível |
 
-Meta controlável inicial: **nenhum CTA editorial quebrado e primeiro lote revisado**. Não há meta numérica de tráfego ou vendas sem baseline. Comparar leituras de 30, 60 e 90 dias a partir da medição, sem prometer resultados ou agenda automática.
+Meta controlável da próxima frente: **base de conversão publicada, compreendida e
+operável**, com 4/4 jornadas editoriais coerentes e todos os contatos reais do período
+registrados. Marcos de negócio: primeiro contato, primeiro lead qualificado, primeira
+proposta e primeiro cliente. Não há meta percentual ou promessa de prazo sem baseline.

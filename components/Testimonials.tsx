@@ -1,203 +1,79 @@
-"use client"
+import Image from "next/image"
+import useContactPage from "../hooks/useContactPage"
+import WhatsAppLink from "./WhatsAppLink"
 
-import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-import useContactPage from '../hooks/useContactPage'
-import WhatsAppLink from './WhatsAppLink'
-
-type Testimonial = {
-  id: number,
-  name: string,
-  position: string,
-  company: string,
-  image: string,
-  text: string,
-  impact: string,
-};
-
-const testimonials: Testimonial[] = [
+const testimonials = [
   {
-    id: 1,
     name: "Luciene Galdino",
     position: "Cabeleireira",
     company: "Salão Lu Galdino",
     image: "/logo_salao.jpeg",
-    text: "A techway criou uma atendente que é a cara do nosso salão. Ela fica conversando com todas as clientes, enquanto faço os atendimentos. Agora, só perco tempo no whatsapp com quem realmente precisa falar comigo.",
-    impact: "Redução de 80% de tempo nos atendimentos."
+    text: "A Techway criou uma atendente que é a cara do nosso salão. Ela fica conversando com todas as clientes enquanto faço os atendimentos. Agora, só perco tempo no WhatsApp com quem realmente precisa falar comigo.",
+    context: "Na percepção da cliente, o tempo dedicado ao atendimento caiu cerca de 80%.",
   },
   {
-    id: 2,
     name: "Amanda Oliveira",
-    position: "Arquiteta Fundadora",
+    position: "Arquiteta fundadora",
     company: "Studio Criativo Móvi",
     image: "/logo_movi.png",
-    text: "Entre meu MEI, meu CLT e meu filho, não sobrava tempo para nada. Agora tenho o atendimento dos clientes do MEI sob controle, mesmo enquanto estou trabalhando no CLT, garantindo até follow-up sobre propostas enviadas.",
-    impact: "Total controle do processo comercial"
+    text: "Entre meu MEI, meu CLT e meu filho, não sobrava tempo para nada. Agora tenho o atendimento dos clientes do MEI sob controle, mesmo enquanto estou trabalhando no CLT.",
+    context: "Relato sobre mais controle do atendimento durante a rotina de trabalho.",
   },
-  {
-    id: 3,
-    name: "Aqui pode ser você!",
-    position: "CEO",
-    company: "sua própria empresa",
-    image: "/logo_placeholder.png",
-    text: "Já imaginou ter mais tempo, menos estresse e clientes sendo atendidos até quando você tá dormindo? A automação certa transforma o jogo — e você só precisa dar o primeiro passo.",
-    impact: "Essa decisão vai potencializar o seu negócio!"
-  }
-];
+]
 
 export default function Testimonials() {
   const contactPage = useContactPage()
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
-  const timerRef = useRef<NodeJS.Timeout | null>(null)
-  const touchStartX = useRef<number | null>(null)
-
-  const startRotation = () => {
-    if (timerRef.current) clearInterval(timerRef.current)
-    timerRef.current = setInterval(() => {
-      if (!isPaused) {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-      }
-    }, 15000)
-  }
-
-  useEffect(() => {
-    startRotation()
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current)
-    }
-  }, [isPaused])
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
-    startRotation()
-  }
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-    startRotation()
-  }
-
-  const getTestimonialIndex = (offset: number) => {
-    return (currentIndex + offset + testimonials.length) % testimonials.length
-  }
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    setIsPaused(true)
-    touchStartX.current = e.touches[0].clientX
-  }
-
-  const handleTouchEnd = (e: React.TouchEvent) => {
-    const startX = touchStartX.current
-    if (startX !== null) {
-      const diff = e.changedTouches[0].clientX - startX
-      if (diff > 50) {
-        goToPrevious()
-      } else if (diff < -50) {
-        goToNext()
-      }
-    }
-    setIsPaused(false)
-    touchStartX.current = null
-  }
-
-  const handleDotClick = (index: number) => {
-    setCurrentIndex(index)
-    startRotation()
-  }
 
   return (
-    <section id="depoimentos" className="bg-gray-900 text-white py-20">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-          Pessoas que otimizaram seus processos
-        </h2>
-        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
-          Conheça alguns dos nossos clientes que desenvolveram soluções conosco e transformaram suas operações. Suas histórias de sucesso são nossa maior recompensa.
-        </p>
-        <div
-          className="relative w-full mx-auto px-0 overflow-hidden"
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
+    <section id="depoimentos" className="scroll-mt-24 bg-gray-950 py-20 text-white md:py-24">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="max-w-3xl">
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-300">Relatos autorizados</p>
+          <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+            Atendimento que acompanha a rotina real.
+          </h2>
+          <p className="mt-5 text-lg leading-relaxed text-gray-300">
+            Experiências pessoais de clientes da Techway. Resultados dependem do contexto e da implantação de cada empresa.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {testimonials.map((testimonial) => (
+            <figure key={testimonial.name} className="flex h-full flex-col rounded-2xl border border-gray-700 bg-gray-900 p-7">
+              <div className="flex items-center gap-4">
+                <Image
+                  src={testimonial.image}
+                  alt={`Logo da ${testimonial.company}`}
+                  width={64}
+                  height={64}
+                  className="h-16 w-16 rounded-full object-cover"
+                />
+                <figcaption>
+                  <p className="font-bold text-white">{testimonial.name}</p>
+                  <p className="text-sm text-gray-300">
+                    {testimonial.position} · {testimonial.company}
+                  </p>
+                </figcaption>
+              </div>
+              <blockquote className="mt-6 flex-grow text-lg leading-relaxed text-gray-100">
+                “{testimonial.text}”
+              </blockquote>
+              <p className="mt-6 border-t border-gray-700 pt-4 text-sm leading-relaxed text-blue-200">
+                {testimonial.context}
+              </p>
+            </figure>
+          ))}
+        </div>
+
+        <WhatsAppLink
+          message="Olá! Quero entender como a Techway pode ajudar no atendimento da minha empresa."
+          page={contactPage}
+          cta="depoimentos"
+          className="mt-10 inline-flex items-center rounded-lg bg-blue-500 px-6 py-4 font-bold text-white transition hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
         >
-          <div className="flex items-center justify-center gap-4">
-            <div className="hidden md:block w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -ml-10">
-              <TestimonialCard testimonial={testimonials[getTestimonialIndex(-1)]} />
-            </div>
-            <div
-              className="w-full md:w-[40%] z-10 transition-all duration-300 ease-in-out"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-            >
-              <TestimonialCard testimonial={testimonials[currentIndex]} showImpact />
-            </div>
-            <div className="hidden md:block w-[30%] transform scale-75 opacity-30 transition-all duration-300 ease-in-out -mr-10">
-              <TestimonialCard testimonial={testimonials[getTestimonialIndex(1)]} />
-            </div>
-          </div>
-          <button
-            onClick={goToPrevious}
-            className="hidden md:block absolute left-4 md:left-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
-
-            aria-label="Depoimento anterior"
-          >
-            <ChevronLeft className="w-6 h-6 text-white" />
-          </button>
-          <button
-            onClick={goToNext}
-            className="hidden md:block absolute right-4 md:right-[25%] top-1/2 transform -translate-y-1/2 bg-blue-500 rounded-full p-2 shadow-md hover:bg-blue-600 transition-colors duration-200 z-20"
-
-            aria-label="Próximo depoimento"
-          >
-            <ChevronRight className="w-6 h-6 text-white" />
-          </button>
-          <div className="flex justify-center mt-4 gap-2 md:hidden">
-            {testimonials.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => handleDotClick(index)}
-                className={`w-2 h-2 rounded-full ${index === currentIndex ? 'bg-blue-500' : 'bg-gray-500'}`}
-                aria-label={`Ir para depoimento ${index + 1}`}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="text-center mt-12">
-          <WhatsAppLink
-            message="Olá! Vi o site de vocês e quero resultados como esses."
-            page={contactPage}
-            cta="depoimentos"
-            className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300"
-          >
-            Quero resultados como esses
-          </WhatsAppLink>
-        </div>
+          Conversar sobre meu cenário
+        </WhatsAppLink>
       </div>
     </section>
-  )
-}
-
-function TestimonialCard({ testimonial, showImpact = false }: { testimonial: Testimonial, showImpact?: boolean }) {
-  return (
-    <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-      <div className="flex items-center mb-4">
-        <Image
-          src={testimonial.image}
-          alt={`Logo da ${testimonial.company}`}
-          width={60}
-          height={60}
-          className="rounded-full mr-4"
-        />
-        <div>
-          <h3 className="font-bold text-lg">{testimonial.name}</h3>
-          <p className="text-gray-300">{testimonial.position} em {testimonial.company}</p>
-        </div>
-      </div>
-      <p className="text-gray-100 mb-4 text-center md:text-left">{testimonial.text}</p>
-      {showImpact && (
-          <p className="font-bold text-blue-500">Impacto: {testimonial.impact}</p>
-      )}
-    </div>
   )
 }

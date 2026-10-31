@@ -14,10 +14,11 @@ export default function Header(): JSX.Element {
   const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
   const menuItems: MenuItem[] = [
-    { href: "/#sobre", label: "Sobre" },
-    { href: "/#solucoes", label: "Soluções" },
+    { href: "/#solucoes", label: "O que faz" },
+    { href: "/#exemplo", label: "Exemplo" },
+    { href: "/#como-funciona", label: "Como funciona" },
     { href: "/#depoimentos", label: "Depoimentos" },
-    { href: "/#contato", label: "Contato" },
+    { href: "/#faq", label: "Dúvidas" },
     { href: "/blog", label: "Blog" },
   ];
 
@@ -33,11 +34,11 @@ export default function Header(): JSX.Element {
             className="h-8 w-auto"
           />
         </Link>
-        <nav className="hidden md:block">
-          <ul className="flex space-x-4">
+        <nav className="hidden lg:block" aria-label="Navegação principal">
+          <ul className="flex items-center space-x-4">
             {menuItems.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:text-blue-400 transition-colors duration-300">
+                <Link href={item.href} className="rounded hover:text-blue-400 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-400">
                   {item.label}
                 </Link>
               </li>
@@ -45,22 +46,23 @@ export default function Header(): JSX.Element {
           </ul>
         </nav>
         <button
-          className="md:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-300"
+          className="lg:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-300"
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
-          aria-label="Toggle menu"
+          aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+          aria-controls="menu-mobile"
         >
           <Menu className="w-6 h-6" />
         </button>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-gray-800 py-2">
+        <nav id="menu-mobile" className="lg:hidden bg-gray-800 py-2" aria-label="Navegação móvel">
           <ul className="flex flex-col items-center space-y-2">
             {menuItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="hover:text-blue-400 transition-colors duration-300"
+                  className="block rounded px-4 py-2 hover:text-blue-400 transition-colors duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-400"
                   onClick={toggleMenu}
                 >
                   {item.label}
@@ -68,7 +70,7 @@ export default function Header(): JSX.Element {
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
       )}
     </header>
   );

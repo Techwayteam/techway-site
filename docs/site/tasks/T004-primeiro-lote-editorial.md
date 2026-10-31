@@ -1,6 +1,6 @@
 # T004 — receber e revisar a copy da série prioritária
 
-Estado: **em execução — S01 revisada e publicada; S02–S04 aguardam copy**. Prioridade: P1. Copy: GPT externo via usuário. Responsável pela execução: Codex/revisão editorial; validação de oferta: fundador/produto. Dependência: copy de cada artigo e fatos necessários. Plano: `../plans/001-blog-e-captacao.md`.
+Estado: **em execução — S01 revisada e publicada; S02–S04 aguardam copy**. Prioridade: P2 após replanejamento comercial de 26/10/2026. Copy: GPT externo via usuário. Responsável pela execução: Codex/revisão editorial; validação de oferta: fundador/produto. Dependência: copy de cada artigo, fatos necessários e objeção/intenção que justifique subir o artigo na fila. Plano: `../plans/001-blog-e-captacao.md`.
 
 ## Preparação disponível
 

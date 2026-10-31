@@ -1,6 +1,6 @@
 # T005 — integrar a série S01–S04 por artigo
 
-Estado: **em execução — S01 publicada e verificada, 1/4; S02–S04 pendentes**. Prioridade: P1. Responsável: Codex/implementação; revisor: técnico/editorial. Dependências: fonte reconciliada (T001), jornada T002, revisão T003 para os textos existentes alterados e aceite T004 do artigo a integrar. Não exige conclusão do lote inteiro de T004.
+Estado: **em execução — S01 publicada e verificada, 1/4; S02–S04 pendentes**. Prioridade: P2 após replanejamento comercial de 26/10/2026. Responsável: Codex/implementação; revisor: técnico/editorial. Dependências: fonte reconciliada (T001), jornada comercial T021 para novos CTAs, revisão T003 para os textos existentes alterados e aceite T004 do artigo a integrar. Não exige conclusão do lote inteiro de T004.
 
 ## Resultado
 

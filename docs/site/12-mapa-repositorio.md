@@ -1,6 +1,6 @@
 # Mapa do repositório
 
-Atualizado em **25/10/2026** após T007 local. Publicação verificada mais recente: `34b8d0d1`, documentação da publicação de T006; T007 ainda sem deploy.
+Atualizado em **26/10/2026** após o replanejamento comercial. Publicação verificada mais recente: `34b8d0d1`, documentação da publicação de T006; T007 ainda sem deploy.
 
 | Caminho | Função atual | Atenção para implementação |
 | --- | --- | --- |
@@ -33,6 +33,8 @@ Atualizado em **25/10/2026** após T007 local. Publicação verificada mais rece
 | .next/ | Cache/artefatos de desenvolvimento rastreados | 917 arquivos versionados; tarefa de higiene necessária |
 | out/ | Export/build e artefatos de desenvolvimento | Passou a ser versionado em 12fafc5a; preservar até T014. T006 validada em cópia isolada |
 | docs/site/ | Base operacional desta entrega | Verdade sobre planos, progresso e evidência |
+| docs/site/13-definicoes-necessarias.md | Perguntas que dependem do fundador | Defaults seguros permitem trabalho independente; respostas viram decisões |
+| docs/site/plans/005-primeiro-lead-e-cliente.md | Coordenação da frente de conversão e aquisição | Não autoriza push, entrevistas ou contato externo por si só |
 | docs/site/templates/T007-registro-leads.csv | Cabeçalhos para planilha privada | Nunca adicionar conversas ou dados pessoais ao arquivo versionado |
 | AGENTS.md | Instruções de colaboração futuras | Abrir no início das sessões |
 | .local-backups/ | Backups e auxiliares locais ignorados | Backup original preservado; T002 acrescenta baseline e verificador temporário do export/Chrome |

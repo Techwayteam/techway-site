@@ -1,321 +1,386 @@
 import type React from "react"
 import Head from "next/head"
-import dynamic from "next/dynamic"
-import { ArrowRight, Check } from "lucide-react"
-import Header from "../components/Header"
+import { ArrowRight, CalendarClock, Check, MessageCircle, UserRound } from "lucide-react"
 import Footer from "../components/Footer"
+import Header from "../components/Header"
+import Testimonials from "../components/Testimonials"
 import WhatsAppLink from "../components/WhatsAppLink"
 import { absoluteUrl } from "../lib/seo"
 
-const DynamicTestimonials = dynamic(() => import("../components/Testimonials"), {
-  loading: () => <p>Carregando depoimentos...</p>,
-})
-
-const SITE_NAME = "TECHWAY"
 const SITE_DESCRIPTION =
-  "Transforme IA em força de trabalho. Funcionários digitais inteligentes, treináveis e prontos para ajudar no WhatsApp."
+  "Atendimento com IA no WhatsApp para pequenos negócios responderem dúvidas, organizarem pedidos iniciais e continuarem cada conversa com contexto."
 
 const LandingConversao: React.FC = () => {
   return (
-    <div className="flex flex-col min-h-screen bg-white text-gray-900">
+    <div className="flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
-        <title>Funcionário Digital com IA | TECHWAY</title>
+        <title>Atendimento com IA no WhatsApp | TECHWAY</title>
         <meta name="description" content={SITE_DESCRIPTION} />
-        <link rel="canonical" href={absoluteUrl('/')} />
+        <link rel="canonical" href={absoluteUrl("/")} />
         <link rel="icon" href="/techway_favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="keywords"
-          content="funcionário digital, inteligência artificial, automação, WhatsApp, atendimento automatizado, IA"
+          content="atendimento com IA, WhatsApp para empresas, funcionário digital, automação de atendimento"
         />
         <meta name="author" content="Techway Team" />
-        <meta property="og:title" content="Funcionário Digital com IA | TECHWAY" />
+        <meta property="og:title" content="Atendimento com IA no WhatsApp | TECHWAY" />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
-        <meta property="og:url" content={absoluteUrl('/')} />
+        <meta property="og:url" content={absoluteUrl("/")} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Funcionário Digital com IA | TECHWAY" />
+        <meta name="twitter:title" content="Atendimento com IA no WhatsApp | TECHWAY" />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content="https://techway.one/og-techway.jpg" />
         <meta name="robots" content="index, follow" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
       </Head>
 
       <Header />
 
       <main className="flex-grow pt-16">
-        {/* Hero Section */}
-        <section id="hero" className="py-20 bg-gray-200">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-              Tá difícil tocar o <br />negócio <span className="text-blue-600">sozinho?</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-600 mb-1 max-w-3xl mx-auto leading-relaxed">
-              Queria contratar alguém, mas o custo é alto demais?
-            </p>
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Se sente travado porque não consegue dar conta de tudo?
-            </p>
-            <p className="text-xl md:text-2xl text-gray-600 mb-4 text-center">
-              Conheça seu primeiro funcionário digital:
-            </p>
-            <div className="flex flex-wrap justify-center gap-3 text-center text-blue-600 font-semibold mb-10">
-              <span className="px-4 py-2 border border-blue-600 rounded-2xl">
-                Não falta
-              </span>
-              <span className="px-4 py-2 border border-blue-600 rounded-2xl">
-                Não reclama
-              </span>
-              <span className="px-4 py-2 border border-blue-600 rounded-2xl">
-                Custa bem menos que um salário
-              </span>
-              <span className="px-4 py-2 border border-blue-600 rounded-2xl">
-                Aprende com você
-              </span>
-            </div>
-            <WhatsAppLink
-              message="Olá! Vi o site de vocês e quero saber mais."
-              page="home"
-              cta="hero"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
-            >
-              Quero saber mais
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </WhatsAppLink>
-          </div>
-        </section>
-
-        {/* Problema Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 leading-tight">
-              Você não tá só sobrecarregado,<br />
-              <span className="text-blue-600">você tá travado...</span>
-            </h2>
-            <div className="space-y-8 text-lg md:text-xl mb-12 text-gray-600 leading-relaxed">
-              <p>
-                Você atende, vende, organiza, resolve pepino, <br />apaga incêndio, tenta divulgar, tenta crescer… <br />
-                <strong className="text-gray-900">Faz de tudo, o tempo todo!</strong>
+        <section id="hero" className="bg-gray-950 text-white">
+          <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-12 px-4 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
+            <div>
+              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-blue-300">
+                Atendimento com IA no WhatsApp
               </p>
-              <p>
-                E por mais que você tente, parece que nunca é o suficiente...
+              <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
+                Seus clientes recebem resposta. Você mantém o controle.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
+                A Techway configura um funcionário digital para responder dúvidas,
+                coletar as primeiras informações e manter o contexto da conversa no
+                WhatsApp do seu negócio.
               </p>
-              <p className="text-xl md:text-2xl font-bold text-blue-600 underline underline-offset-4">
-                TÁ NA HORA DE MUDAR ISSO!
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Solução Section */}
-        <section id="sobre" className="py-20 bg-gray-200">
-          <div className="max-w-3xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center leading-tight">
-              Funcionários digitais com
-              <br />
-              <span className="text-blue-600">inteligência artificial</span>
-            </h2>
-            <div className="space-y-8 text-lg md:text-xl text-gray-600 text-center leading-relaxed">
-              <p>
-                A Techway cria funcionários digitais treinados com o seu jeito, os seus serviços e a sua rotina. Eles
-                assumem tarefas reais do dia a dia — e trabalham direto no WhatsApp da sua empresa.
-              </p>
-              <p className="text-xl md:text-2xl font-semibold text-blue-600 text-center py-8">
-                Nada de aplicativo. Nada de curva de aprendizado.
-                <br />
-                Mais tempo pra você, mais organização e mais profissionalismo.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Funcionalidades Section */}
-        <section id="solucoes" className="py-20 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center leading-tight">
-              O que seu funcionário digital
-              <br />
-              <span className="text-blue-600">pode fazer por você?</span>
-            </h2>
-            <div className="space-y-16">
-              <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Atendimento automático com toque humano</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Seu assistente responde os clientes com agilidade, educação e inteligência. Sabe o que você oferece,
-                  como funciona, e até faz triagem de atendimento. Tudo com uma IA treinada para parecer humana — do
-                  jeitinho que seu negócio pede.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Respostas inteligentes, personalizadas</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Cada resposta é pensada com base no seu serviço, seu jeito de falar e suas condições. Sem texto
-                  genérico. É como se fosse você, mas sem sobrecarga.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Conhecimento sobre o cliente, sem esforço</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Seu funcionário digital guarda o histórico das conversas, entende quem é quem e lembra dos detalhes.
-                  É como se fosse uma memória viva do seu atendimento — sem precisar anotar nada.
-                </p>
-              </div>
-
-              <div className="border-l-4 border-blue-600 pl-8">
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">Follow-up automático e inteligente</h3>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  Lembra o cliente, retoma conversas paradas, reforça um agendamento, ou sugere o próximo passo. Tudo
-                  com base no histórico — de forma natural e eficiente.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        {/* Prova Social Section */}
-        <section className="py-20 bg-gray-200">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-12 leading-tight">
-              Tem vários negócios pequenos <br /> 
-              parecendo <span className="text-blue-600">empresa grande.</span>
-            </h2>
-            <div className="space-y-8 text-lg md:text-xl text-gray-600 leading-relaxed">
-              <p>
-                Com atendimento automático, histórico organizado e respostas inteligentes, 
-                essas empresas estão profissionalizando a operação <strong className="text-gray-900">sem precisar contratar ninguém</strong>.
-              </p>
-              <p>
-                <strong className="text-blue-600">Usando automações com IA, o céu é o limite.</strong>
-              </p>
-              <p className="text-xl md:text-2xl font-semibold text-gray-900">
-                A próxima empresa de sucesso pode ser a sua.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-8 mt-10 text-center">
-              <div className="border-2 border-blue-600 rounded-xl py-10 px-5">
-                <div className="text-3xl font-bold text-blue-600 mb-2">Até 5h</div>
-                <p className="text-gray-600">economizadas por dia</p>
-              </div>
-              <div className="border-2 border-blue-600 rounded-xl py-10 px-5">
-                <div className="text-3xl font-bold text-blue-600 mb-2">24h</div>
-                <p className="text-gray-600">de trabalho</p>
-              </div>
-              <div className="border-2 border-blue-600 rounded-xl py-10 px-5">
-                <div className="text-3xl font-bold text-blue-600 mb-2">Até 2x</div>
-                <p className="text-gray-600">mais conversão</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-
-        <DynamicTestimonials />
-        {/* Early Access Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-4xl mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 leading-tight">
-                A Techway tá só começando. Mas quem entra agora,{" "}
-                <span className="text-blue-600">entra pra fazer história.</span>
-              </h2>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-                Estamos lançando os primeiros módulos dos nossos funcionários digitais — e queremos fazer isso junto com
-                empresas que também são mão na massa, que resolvem, testam, opinam e crescem.
-              </p>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto mt-6">
-                Por isso, criamos o programa <strong className="text-blue-600">Early Access</strong>: uma fase de acesso
-                antecipado com vantagens exclusivas pra quem topar construir o futuro com a gente.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg p-8 md:p-12 shadow-sm border border-gray-200">
-              <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">Quem entra agora, leva:</h3>
-              <div className="space-y-6 mb-12">
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Acesso antecipado</strong> aos nossos funcionários digitais;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Condições especiais de contratação</strong> (que não se repetem);
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Canal direto com o time da Techway</strong> pra dar ideias e feedbacks;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Chance de moldar o produto</strong> com a sua realidade;
-                  </p>
-                </div>
-                <div className="flex items-start">
-                  <div className="w-2 h-2 bg-blue-600 rounded-full mt-3 mr-4 flex-shrink-0"></div>
-                  <p className="text-lg text-gray-700">
-                    <strong>Reconhecimento como empresa parceira fundadora.</strong>
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <p className="text-lg md:text-xl text-gray-600 mb-8 leading-relaxed">
-                  Se a sua empresa gosta de testar, ajustar e transformar com tecnologia de verdade —{" "}
-                  <strong className="text-blue-600">bora conversar.</strong>
-                </p>
+              <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <WhatsAppLink
-                  message="Olá! Vi o site de vocês e quero fazer parte do Early Access."
+                  message="Olá! Quero conversar sobre o atendimento no WhatsApp da minha empresa."
                   page="home"
-                  cta="early-access"
-                  className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded transition duration-300 inline-flex items-center text-lg"
+                  cta="hero"
+                  className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-6 py-4 text-base font-bold text-white transition hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
                 >
-                  Quero fazer parte do Early Access
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  Conversar sobre meu atendimento
+                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </WhatsAppLink>
+                <a
+                  href="#exemplo"
+                  className="inline-flex items-center justify-center rounded-lg border border-gray-600 px-6 py-4 font-semibold text-white transition hover:border-blue-300 hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
+                >
+                  Ver um exemplo
+                </a>
+              </div>
+              <p className="mt-5 text-sm leading-relaxed text-gray-400">
+                A conversa abre no WhatsApp. Nenhuma mensagem é enviada sem você confirmar.
+              </p>
+            </div>
+
+            <div className="rounded-2xl border border-gray-700 bg-gray-900 p-6 shadow-2xl md:p-8">
+              <p className="text-sm font-bold uppercase tracking-wider text-blue-300">
+                Para negócios que atendem pelo WhatsApp
+              </p>
+              <ul className="mt-6 space-y-5" aria-label="Capacidades disponíveis">
+                {[
+                  "Responde dúvidas com as informações aprovadas pela sua empresa",
+                  "Coleta os dados iniciais para entender o pedido",
+                  "Mantém o contexto ao longo da conversa",
+                  "Passa o atendimento para uma pessoa quando necessário",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-gray-200">
+                    <Check className="mt-1 h-5 w-5 flex-none text-blue-400" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="solucoes" className="scroll-mt-24 bg-gray-50 py-20 md:py-24">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+                O que muda no dia a dia
+              </p>
+              <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+                Menos interrupção para você. Mais continuidade para o cliente.
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                A primeira implantação começa por tarefas delimitadas. A Techway configura
+                as informações, os limites e a participação humana de acordo com a realidade
+                da empresa.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-2">
+              {[
+                {
+                  title: "Dúvidas frequentes",
+                  text: "O cliente pergunta sobre serviços, funcionamento e orientações. O atendimento usa somente o conteúdo aprovado pela empresa.",
+                },
+                {
+                  title: "Pedido inicial organizado",
+                  text: "O funcionário digital coleta as informações combinadas para que o pedido chegue mais claro à próxima etapa.",
+                },
+                {
+                  title: "Conversa com contexto",
+                  text: "Perguntas relacionadas continuam dentro do assunto já informado, sem obrigar o cliente a recomeçar a conversa.",
+                },
+                {
+                  title: "Continuidade humana",
+                  text: "Quando o assunto sair do escopo ou precisar de decisão, uma pessoa pode assumir pelo procedimento definido na implantação.",
+                },
+              ].map((item) => (
+                <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm">
+                  <h3 className="text-xl font-bold text-gray-950">{item.title}</h3>
+                  <p className="mt-3 leading-relaxed text-gray-600">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="exemplo"
+          tabIndex={-1}
+          aria-labelledby="exemplo-titulo"
+          className="scroll-mt-24 bg-white py-20 outline-none md:py-24"
+        >
+          <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-[0.9fr_1.1fr] md:items-center">
+            <div>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+                Exemplo fictício
+              </p>
+              <h2 id="exemplo-titulo" className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+                Uma dúvida simples não precisa esperar você parar tudo.
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                Neste exemplo ilustrativo, as respostas foram configuradas com informações
+                fornecidas pelo próprio negócio. Não há agendamento confirmado nem ação
+                externa simulada.
+              </p>
+              <WhatsAppLink
+                message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
+                page="home"
+                cta="exemplo"
+                className="mt-8 inline-flex items-center rounded-lg bg-gray-950 px-6 py-4 font-bold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
+              >
+                Quero ver isso no meu negócio
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </WhatsAppLink>
+            </div>
+
+            <div className="rounded-3xl border border-gray-200 bg-gray-100 p-4 shadow-xl sm:p-7">
+              <div className="mb-5 flex items-center gap-3 border-b border-gray-200 pb-4">
+                <div className="rounded-full bg-blue-600 p-2 text-white">
+                  <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                </div>
+                <div>
+                  <p className="font-bold text-gray-950">Atendimento do Salão Exemplo</p>
+                  <p className="text-sm text-gray-500">Conversa ilustrativa</p>
+                </div>
+              </div>
+              <ol className="space-y-4" aria-label="Exemplo fictício de conversa no WhatsApp">
+                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
+                  Oi! Vocês fazem hidratação para cabelo cacheado?
+                </li>
+                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
+                  Fazemos, sim. O salão oferece hidratação e reconstrução para diferentes
+                  tipos de curvatura. Você quer conhecer as opções ou já sabe qual tratamento procura?
+                </li>
+                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
+                  Ainda não sei. Meu cabelo está bem ressecado.
+                </li>
+                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
+                  Posso anotar essa informação para a equipe orientar você. Prefere continuar
+                  por aqui com uma pessoa?
+                </li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <section id="como-funciona" className="scroll-mt-24 bg-gray-950 py-20 text-white md:py-24">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-300">
+                Implantação em conjunto
+              </p>
+              <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+                Começamos pequeno, testamos e evoluímos com o negócio.
+              </h2>
+            </div>
+
+            <ol className="mt-12 grid gap-6 md:grid-cols-3">
+              {[
+                {
+                  number: "1",
+                  title: "Entender",
+                  text: "Escolhemos a primeira tarefa, as informações necessárias e quando uma pessoa deve assumir.",
+                },
+                {
+                  number: "2",
+                  title: "Configurar e testar",
+                  text: "Ajustamos respostas, tom, coleta inicial, contexto e limites com exemplos reais da operação.",
+                },
+                {
+                  number: "3",
+                  title: "Colocar em uso e evoluir",
+                  text: "Escopo, valor e possíveis integrações ficam claros na proposta. Depois, a consultoria acompanha a evolução.",
+                },
+              ].map((step) => (
+                <li key={step.number} className="rounded-2xl border border-gray-700 bg-gray-900 p-7">
+                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-500 font-bold">
+                    {step.number}
+                  </span>
+                  <h3 className="mt-5 text-xl font-bold">{step.title}</h3>
+                  <p className="mt-3 leading-relaxed text-gray-300">{step.text}</p>
+                </li>
+              ))}
+            </ol>
+          </div>
+        </section>
+
+        <section id="limites" className="scroll-mt-24 bg-white py-20 md:py-24">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="max-w-3xl">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+                Limites claros
+              </p>
+              <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
+                O atendimento sabe o que fazer — e quando precisa de alguém.
+              </h2>
+              <p className="mt-5 text-lg leading-relaxed text-gray-600">
+                Não vendemos uma automação genérica que promete fazer tudo. Cada implantação
+                define fontes, tarefas, exceções e responsáveis.
+              </p>
+            </div>
+
+            <div className="mt-12 grid gap-6 md:grid-cols-3">
+              <div className="rounded-2xl border border-green-200 bg-green-50 p-7">
+                <MessageCircle className="h-7 w-7 text-green-700" aria-hidden="true" />
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Disponível agora</h3>
+                <p className="mt-3 leading-relaxed text-gray-700">
+                  Dúvidas, coleta inicial, contexto da conversa e continuidade com uma pessoa.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-amber-200 bg-amber-50 p-7">
+                <CalendarClock className="h-7 w-7 text-amber-700" aria-hidden="true" />
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Em desenvolvimento</h3>
+                <p className="mt-3 leading-relaxed text-gray-700">
+                  Agendamentos pelo WhatsApp, sujeitos ao fluxo e à integração de cada empresa.
+                </p>
+              </div>
+              <div className="rounded-2xl border border-gray-300 bg-gray-50 p-7">
+                <UserRound className="h-7 w-7 text-gray-700" aria-hidden="true" />
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Fora da oferta atual</h3>
+                <p className="mt-3 leading-relaxed text-gray-700">
+                  Follow-up automático. Lembretes, CRM e outras integrações são avaliados por caso.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
+        <Testimonials />
 
-        {/* CTA Final Section */}
-        <section id="contato" className="py-20 bg-blue-600 text-white">
-          <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-4xl md:text-6xl font-bold mb-12 leading-tight">
-              Conheça seu primeiro
-              <br />
-              <span className="text-blue-200">funcionário digital</span>
-            </h2>
+        <section id="early-access" className="scroll-mt-24 bg-gray-50 py-20 md:py-24">
+          <div className="mx-auto max-w-5xl px-4">
+            <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-sm md:p-12">
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Early Access</p>
+              <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight md:text-5xl">
+                Tecnologia próxima de quem vive a operação.
+              </h2>
+              <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-600">
+                O Early Access é para empresas que querem construir a solução junto com a
+                Techway e evoluir o atendimento conforme aprendemos com o uso real.
+              </p>
 
-            <div className="space-y-6 text-lg md:text-xl text-gray-300 leading-relaxed mb-12">
-              <p>
-                Você já entendeu como funciona.
-                <br />
-                Agora é só decidir se sua empresa vai continuar igual, < br/>
-                <strong className="text-white"> ou vai dar o próximo passo.</strong>
+              <ul className="mt-9 grid gap-4 md:grid-cols-2" aria-label="Benefícios do Early Access">
+                {[
+                  "Contato próximo com o desenvolvedor",
+                  "Participação nas prioridades do roadmap",
+                  "Avaliação de funcionalidades para a realidade da empresa",
+                  "Isenção da taxa de implantação",
+                  "Consultoria mensal para evolução do negócio",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3 rounded-xl bg-gray-50 p-4 text-gray-700">
+                    <Check className="mt-0.5 h-5 w-5 flex-none text-blue-600" aria-hidden="true" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-7 text-sm leading-relaxed text-gray-500">
+                Funcionalidades, integrações, valor mensal e prazos são definidos na proposta de cada empresa.
               </p>
-              <p className="text-xl md:text-2xl font-bold text-white">
-                A mudança começa com um clique.
-              </p>
+              <WhatsAppLink
+                message="Olá! Quero entender se o Early Access faz sentido para minha empresa."
+                page="home"
+                cta="early-access"
+                className="mt-8 inline-flex items-center rounded-lg bg-blue-600 px-6 py-4 font-bold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
+              >
+                Conversar sobre o Early Access
+                <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              </WhatsAppLink>
             </div>
+          </div>
+        </section>
 
+        <section id="faq" className="scroll-mt-24 bg-white py-20 md:py-24">
+          <div className="mx-auto max-w-4xl px-4">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Perguntas frequentes</p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">Antes de começar</h2>
+            <div className="mt-10 divide-y divide-gray-200 border-y border-gray-200">
+              {[
+                {
+                  question: "O atendimento substitui totalmente uma pessoa?",
+                  answer: "Não. Ele cuida das tarefas definidas na implantação e permite que uma pessoa continue a conversa quando houver exceção, decisão ou assunto fora do escopo.",
+                },
+                {
+                  question: "Como o atendimento aprende sobre minha empresa?",
+                  answer: "A configuração usa informações, regras e exemplos aprovados pela sua empresa. Mudanças nessas informações precisam ser atualizadas e testadas.",
+                },
+                {
+                  question: "Já faz agendamentos e follow-up?",
+                  answer: "Agendamentos estão em desenvolvimento e dependem do fluxo e da integração de cada empresa. Follow-up automático não faz parte da oferta atual.",
+                },
+                {
+                  question: "Quanto custa?",
+                  answer: "A proposta é definida depois de entendermos a primeira tarefa, os limites, a implantação e possíveis integrações. No Early Access, a taxa de implantação é isenta e há uma consultoria mensal.",
+                },
+              ].map((item) => (
+                <details key={item.question} className="group py-5">
+                  <summary className="cursor-pointer list-none pr-8 text-lg font-bold text-gray-950 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700">
+                    {item.question}
+                  </summary>
+                  <p className="mt-3 max-w-3xl leading-relaxed text-gray-600">{item.answer}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="contato" className="scroll-mt-24 bg-blue-700 py-20 text-white md:py-24">
+          <div className="mx-auto max-w-4xl px-4 text-center">
+            <h2 className="text-3xl font-bold leading-tight md:text-5xl">
+              Vamos escolher a primeira tarefa do seu atendimento?
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-blue-100">
+              Conte como sua empresa atende hoje. A conversa serve para entender o cenário,
+              os limites e se a Techway faz sentido para o seu negócio.
+            </p>
             <WhatsAppLink
-              message="Olá! Vi o site de vocês e quero meu novo funcionário digital."
+              message="Olá! Quero conversar sobre a primeira tarefa do atendimento da minha empresa."
               page="home"
               cta="final"
-              className="bg-white hover:bg-gray-100 text-gray-900 font-semibold py-6 px-12 rounded transition duration-300 inline-flex items-center text-xl"
+              className="mt-9 inline-flex items-center rounded-lg bg-white px-7 py-4 font-bold text-blue-800 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
-              Quero meu funcionário digital
+              Conversar sobre meu atendimento
+              <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
             </WhatsAppLink>
           </div>
         </section>

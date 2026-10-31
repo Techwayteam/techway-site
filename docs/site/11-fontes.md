@@ -46,6 +46,18 @@ Registrar futuras evidências com data, origem, método e conclusão. Não guard
 - [Google Analytics — dados pessoais](https://support.google.com/analytics/answer/6366371): dados pessoais e texto livre não devem ser enviados para o Analytics; T007 não envia eventos nem mensagem do visitante.
 - [Evidência T007](evidence/2026-10-25-T007-medicao-contatos.md): implementação local, 30 CTAs/nove páginas, QA móvel e limites de WhatsApp/planilha.
 
+## Dossiê comercial — 25–26/10/2026
+
+- `Auditoria_Comercial_Techway.docx`, recebida do usuário, datada de 25/10/2026:
+  auditoria pública de posicionamento, confiança, jornada, benchmark e copy proposta.
+- `Plano_Implementacao_Techway.md`, recebido do usuário, datado de 25/10/2026:
+  matriz de prioridades e fichas F0–F7. É proposta; não autoriza publicação ou envio.
+- [Reconciliação com a fonte](evidence/2026-10-26-dossie-conversao.md): achados
+  confirmados, diferenças do snapshot e limites. O dossiê não teve acesso ao produto,
+  analytics, contratos ou dados de clientes.
+- [Plano 005](plans/005-primeiro-lead-e-cliente.md): adaptação ao contrato atual de
+  planos/fichas, sem copiar o relatório como fonte operacional paralela.
+
 ## Fontes da série — 11/10/2026
 
 - Proposta editorial, copy de S01 e diretrizes visuais: anexos do usuário nesta sessão; copy atribuída ao outro GPT como origem da redação, responsabilidade editorial pública confirmada como Leonardo Reis - Founder Techway. Usuário confirmou presença física no evento.
