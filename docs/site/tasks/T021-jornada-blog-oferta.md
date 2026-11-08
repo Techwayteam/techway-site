@@ -1,6 +1,6 @@
 # T021 — alinhar blog, oferta e origem comercial
 
-Estado: **planejada**. Prioridade: P0. Responsável: aquisição + implementação.
+Estado: **em_execucao** (implementação em `feat/t021-blog-oferta-origem`, sem publicação; validação de build e navegador pendente). Prioridade: P0. Responsável: aquisição + implementação.
 Revisores: editorial/comercial e QA. Plano:
 `../plans/005-primeiro-lead-e-cliente.md`. Dependências: destino da home T010;
 preservação de T006/T007; DN005 para o futuro da landing antiga.

@@ -1,6 +1,12 @@
 # Progresso
 
-Atualização: **31/10/2026 — America/Sao_Paulo**.
+Atualização: **08/11/2026 — America/Sao_Paulo**.
+
+## T021 — implementação em revisão (08/11/2026)
+
+Em branch isolada `feat/t021-blog-oferta-origem` foram preparados os CTAs dos quatro artigos para conduzir à home atual (`#solucoes` ou `#exemplo`), com `origem` restrita aos quatro slugs publicados. A home, o menu, o rodapé e o CTA flutuante mantêm a origem editorial no marcador da mensagem WhatsApp; acessos diretos continuam identificados como `home`. A verificação estática de contatos foi ampliada para conferir destino e origem de cada CTA editorial.
+
+**Status:** implementação em branch, ainda sem type-check/build/browser verificados nesta sessão, sem merge e sem publicação. T021 não está concluída. Próxima verificação: executar `npm run type-check`, `npm run build`, inspecionar quatro jornadas no navegador e revisar o diff antes de publicar.
 
 ## Entregue
 
