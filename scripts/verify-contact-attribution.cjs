@@ -71,7 +71,7 @@ for (const post of blogPosts) {
   );
 
   const exported = fs.readFileSync(path.join(output, `blog/${post.slug}.html`), 'utf8');
-  const links = [...exported.matchAll(/<a\\b[^>]*>/g)].map(match => attributes(match[0]));
+  const links = [...exported.matchAll(/<a\b[^>]*>/g)].map(match => attributes(match[0]));
   assert(
     links.some(link => link.href && new URL(link.href, 'https://techway.one').href === destination.href),
     `CTA editorial não encontrado no HTML de ${post.slug}`,
