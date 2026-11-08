@@ -1,0 +1,38 @@
+name: Validate T021 on feature branch
+
+on:
+  push:
+    branches:
+      - feat/t021-blog-oferta-origem
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Setup Git LFS
+        run: |
+          git lfs install
+          git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install exactly locked dependencies
+        run: npm ci
+      - name: Type-check
+        run: npm run type-check
+      - name: Build, SEO, and contact attribution checks
+        run: npm run build
+      - name: Verify SEO independently
+        run: npm run verify-seo
+      - name: Verify contacts independently
+        run: npm run verify-contacts
