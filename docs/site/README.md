@@ -2,7 +2,9 @@
 
 Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público confirmado pelo fundador: **pequenos negócios que atendem pelo WhatsApp**. O blog abriu a primeira frente; em **26/10/2026**, o roadmap foi repriorizado para clareza da oferta, primeiro lead e primeiro cliente.
 
-**Estado em 25/10/2026:** **T006 publicada e verificada** no commit `5c9cbe8f`: workflow success, nove páginas públicas com canonical/metadados coerentes, quatro BlogPosting, sitemap com sete URLs e robots disponíveis. **T007 está concluída localmente e ainda não publicada:** WhatsApp com origem/CTA em 30 contatos exportados, processo de planilha privada e nenhum GA4/cookie. [Publicação T006](evidence/2026-10-25-T006-publicacao.md), [plano T007](plans/004-T007-medicao-contatos.md) e [evidência T007](evidence/2026-10-25-T007-medicao-contatos.md).
+**Estado atual (12/11/2026):** **T021 integrada e publicada** ([PR #19](https://github.com/Techwayteam/techway-site/pull/19), [CI Pages](https://github.com/Techwayteam/techway-site/actions/runs/43209562718)). A próxima frente P0 é [T022 — plano 006](plans/006-T022-validacao-compreensao-e-funil.md): testes de compreensão com empresários e operação privada do funil. Nenhuma entrevista/convite foi realizada no planejamento. [Evidência T021](evidence/2026-11-12-T021-validacao-merge-deploy.md).
+
+**Histórico em 25/10/2026:** **T006 publicada e verificada** no commit `5c9cbe8f`: workflow success, nove páginas públicas com canonical/metadados coerentes, quatro BlogPosting, sitemap com sete URLs e robots disponíveis. **naquele momento T007 estava concluída localmente e ainda não publicada:** WhatsApp com origem/CTA em 30 contatos exportados, processo de planilha privada e nenhum GA4/cookie. [Publicação T006](evidence/2026-10-25-T006-publicacao.md), [plano T007](plans/004-T007-medicao-contatos.md) e [evidência T007](evidence/2026-10-25-T007-medicao-contatos.md).
 
 **S01 publicada em 11/10/2026**, com duas fotos geradas, comparativo HTML, metadados e autoria confirmada como Leonardo Reis - Founder Techway. Conteúdo enviado no commit `8d158f76`; workflow e deploy de Pages success, quatro artigos e imagens públicas conferidos. T002 e a variante local de Early Access também publicadas, com preservação das rotas atuais. [Artigo público](https://techway.one/blog/atendimento-ia-alem-respostas-automaticas) e [evidência da publicação](evidence/2026-10-11-T019-publicacao.md). S02–S04 continuam preservadas, aguardando copy do GPT externo via usuário, agora em P2. T001 em 78362aa registra a reconciliação histórica anterior, não a versão atual de produção.
 
@@ -17,7 +19,7 @@ sem bloquear trabalho independente. [Reconciliação do diagnóstico](evidence/2
 
 1. [Análise do site](00-analise-site.md): diagnóstico, evidências, prioridades e limites da auditoria.
 2. [Guia de condução](00-guia-de-conducao.md): como retomar uma sessão e executar uma tarefa.
-3. [Plano de primeiro lead e cliente](plans/005-primeiro-lead-e-cliente.md): oferta, home, jornada, validação e aquisição inicial.
+3. [Plano de primeiro lead e cliente](plans/005-primeiro-lead-e-cliente.md): oferta, home, jornada, validação e aquisição inicial. [Plano 006 — T022](plans/006-T022-validacao-compreensao-e-funil.md).
 4. [Plano editorial](plans/001-blog-e-captacao.md): preservar e evoluir o blog conforme objeções/intenção observadas.
 5. [Estratégia editorial](editorial/estrategia-e-calendario.md): quatro pautas prioritárias, 12 pautas de apoio e cadência dependente de copy/revisão.
 6. [Próximas publicações](editorial/serie-funcionarios-digitais.md): briefs de S01–S04, links, imagens e contrato de copy. [Briefs anteriores](editorial/primeiro-lote.md) preservados como apoio.
@@ -25,7 +27,9 @@ sem bloquear trabalho independente. [Reconciliação do diagnóstico](evidence/2
 8. [T003 — plano e entrega](plans/002-T003-revisao-editorial.md): correção mínima concluída localmente em 12/10/2026 e publicação verificada em 23/10/2026.
 9. [T012 — leitura dos artigos](tasks/T012-leitura-artigos.md): layout validado em 16/10/2026 e publicação verificada em 23/10; demais recortes pendentes.
 10. [T006 — SEO técnico](tasks/T006-seo-blog.md): publicada e verificada em 25/10/2026.
-11. [T007 — atribuição de contatos](tasks/T007-medicao-contatos.md): concluída localmente em 25/10/2026; publicação e importação da planilha privada pendentes.
+11. [T007 — atribuição de contatos](tasks/T007-medicao-contatos.md): publicada em 31/10; importação da planilha privada pendente.
+12. [T021 — jornada blog/oferta](tasks/T021-jornada-blog-oferta.md): publicada em 12/11/2026.
+13. [T022 — compreensão e funil](tasks/T022-validar-compreensao-e-funil.md): planejada, ainda sem entrevistas ou leads.
 
 ## Estrutura
 
