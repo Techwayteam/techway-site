@@ -1,6 +1,6 @@
 # Plano 005 — da clareza da oferta ao primeiro cliente
 
-Estado: **T007 e T010 publicadas; T021 é o próximo recorte da onda 1**. Fichas: T007, T010,
+Estado: **T007/T010/T021 publicadas; T022 é a próxima frente P0 (plano 006)**. Fichas: T007, T010,
 T011, T015, T020–T023. Decisões pertinentes: D001, D009, D023, D027, D029, D030 e D031.
 
 Fonte do estado: `../10-progresso.md`. Definições do fundador:
@@ -46,8 +46,8 @@ reconhece cada etapa real.
 | Onda | Fichas | Entrega demonstrável | Estado/próximo passo |
 | --- | --- | --- | --- |
 | 0 — medir o que chega | T007 | Atribuição publicada, planilha privada importada e processo pronto para conversa real | Atribuição publicada e verificada; importar a planilha privada e operar contatos reais |
-| 1 — esclarecer e converter | T020, T010, T021 | Oferta mínima registrada; hero, exemplo, prova limpa e quatro jornadas editoriais coerentes | T020 concluída e T010 publicada; alinhar e validar T021 antes da próxima publicação |
-| 2 — testar entendimento | T022 | QA técnico + 5–8 avaliações qualitativas; ambiguidades corrigidas; funil operado | Começa com prévia estável; convite a participantes depende do fundador |
+| 1 — esclarecer e converter | T020, T010, T021 | Oferta mínima registrada; hero, exemplo, prova limpa e quatro jornadas editoriais coerentes | Concluída: T021 validada e publicada em 12/11; [evidência](../evidence/2026-11-12-T021-validacao-merge-deploy.md) |
+| 2 — testar entendimento | T022 | 5–8 avaliações qualitativas; ambiguidades priorizadas; funil operado | [Plano 006](006-T022-validacao-compreensao-e-funil.md) preparado; entrevistas/planilha ainda pendentes; convites exigem autorização |
 | 3 — gerar demanda e confiança | T011, T023 | Um caso autorizado e uma rodada pequena de aquisição rastreável | Depende de consentimento, base publicada e DN007; sem envio automático |
 | 4 — aprofundar após evidência | T015 e futura página de solução | FAQ/legal coerentes; página própria somente se oferta e objeções estabilizarem | P1/P2; não bloqueia a primeira versão |
 
