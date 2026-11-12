@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   validate:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     env:
       NEXT_TELEMETRY_DISABLED: 1
@@ -38,8 +38,8 @@ jobs:
         run: npm run verify-contacts
       - name: Install isolated browser test dependencies
         run: |
-          npm install --no-save --package-lock=false playwright@1.56.1
-          npx playwright install --with-deps chromium
+          npm install --prefix /tmp/techway-t021-browser --no-save --package-lock=false playwright@1.56.1
+          /tmp/techway-t021-browser/node_modules/.bin/playwright install --with-deps chromium
       - name: Browser QA - local server only, no deployment
         shell: bash
         run: |
@@ -54,4 +54,4 @@ jobs:
             sleep 2
           done
           curl -fsS http://127.0.0.1:4173/ > /dev/null
-          node scripts/verify-browser-attribution.cjs
+          NODE_PATH=/tmp/techway-t021-browser/node_modules node scripts/verify-browser-attribution.cjs
