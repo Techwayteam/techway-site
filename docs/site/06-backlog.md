@@ -25,8 +25,8 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T018 | P1 | Replanejar próximas publicações com série S01–S04 e copy externa | Codex/coordenação | Proposta fornecida pelo usuário | S | Concluída; 42 referências locais válidas |
 | T019 | P1 | Publicar S01 e melhorias locais validadas; verificar Pages e URLs | Codex/implementação + QA | Publicação solicitada; T001/T002 e S01 aceitas | M | Concluída; workflow/deploy success e onze URLs conferidas |
 | T020 | P0 | Definir oferta mínima verificável e afirmações publicáveis | Fundador/produto + comercial | DN001–DN003 | S | Concluída em 29/10/2026; aceite do fundador em D031 |
-| T021 | P0 | Alinhar os 4 CTAs do blog à oferta e preservar origem | Aquisição + implementação | T010; T006/T007; DN005 para destino definitivo da landing | S | Planejada; ficha criada |
-| T022 | P0 | Validar compreensão e operar o primeiro lead | Fundador/comercial + UX | Prévia T010/T021; T007; autorização para participantes | M | Planejada |
+| T021 | P0 | Alinhar os 4 CTAs do blog à oferta e preservar origem | Aquisição + implementação | T010; T006/T007; DN005 para destino definitivo da landing | S | Concluída: QA navegador e deploy success em 12/11/2026; DN005 aberta |
+| T022 | P0 | Validar compreensão e operar o primeiro lead | Fundador/comercial + UX | T010/T021 publicadas; planilha T007; participantes autorizados; DN004 para ganho | M | Plano 006 preparado; entrevistas/planilha ainda não executadas |
 | T023 | P1 | Ativar um canal inicial de aquisição rastreável | Fundador/comercial | Base publicada; T007; DN007 e autorização de envio | M | Planejada; nenhum envio autorizado |
 
 ## Política de prioridade
