@@ -7,6 +7,14 @@ export type ContactAttribution = {
   cta: string
 }
 
+// Somente artigos publicados podem se declarar como origem editorial em links da home.
+const ALLOWED_BLOG_ORIGINS = new Set([
+  'blog/como-melhorar-sua-produtividade',
+  'blog/automacao-de-tarefas-repetitivas',
+  'blog/cuidar-do-cliente-ou-do-negocio',
+  'blog/atendimento-ia-alem-respostas-automaticas',
+])
+
 const normalizeContactCode = (value: string): string =>
   value
     .normalize('NFD')
@@ -21,7 +29,10 @@ export const getContactPage = (asPath: string): string => {
   const url = new URL(asPath || '/', 'https://techway.one')
   const path = url.pathname.replace(/\/+$/, '') || '/'
 
-  if (path === '/') return 'home'
+  if (path === '/') {
+    const origem = url.searchParams.get('origem')
+    return origem && ALLOWED_BLOG_ORIGINS.has(origem) ? origem : 'home'
+  }
   if (path === '/din_page') {
     return url.searchParams.get('variant') === 'improvisation'
       ? 'landing-improvisation'

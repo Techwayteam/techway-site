@@ -56,4 +56,28 @@ for (const page of pages) {
   }
 }
 
+// A jornada editorial deve levar à oferta atual e preservar a origem até a home.
+for (const post of blogPosts) {
+  const expectedOrigin = `blog/${post.slug}`;
+  const destination = new URL(post.cta.link, 'https://techway.one');
+  assert.equal(destination.origin, 'https://techway.one', `Destino externo em ${post.slug}`);
+  assert.equal(destination.pathname, '/', `CTA fora da home em ${post.slug}`);
+  assert.equal(destination.searchParams.get('origem'), expectedOrigin, `Origem perdida em ${post.slug}`);
+  assert.equal(destination.searchParams.size, 1, `Parâmetros extras no CTA de ${post.slug}`);
+  assert.equal(
+    destination.hash,
+    post.slug === 'atendimento-ia-alem-respostas-automaticas' ? '#exemplo' : '#solucoes',
+    `Âncora divergente em ${post.slug}`,
+  );
+
+  const exported = fs.readFileSync(path.join(output, `blog/${post.slug}.html`), 'utf8');
+  const links = [...exported.matchAll(/<a\b[^>]*>/g)].map(match => attributes(match[0]));
+  assert(
+    links.some(link => link.href && new URL(link.href, 'https://techway.one').href === destination.href),
+    `CTA editorial não encontrado no HTML de ${post.slug}`,
+  );
+}
+
+console.log(`Jornada editorial aprovada: ${blogPosts.length} artigos direcionam à oferta com origem preservada.`);
+
 console.log(`Contatos aprovados: ${linkCount} CTAs atribuídos em ${pages.length} páginas; nenhum clique tratado como lead.`);

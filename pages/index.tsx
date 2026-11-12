@@ -5,12 +5,15 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Testimonials from "../components/Testimonials"
 import WhatsAppLink from "../components/WhatsAppLink"
+import useContactPage from "../hooks/useContactPage"
 import { absoluteUrl } from "../lib/seo"
 
 const SITE_DESCRIPTION =
   "Atendimento com IA no WhatsApp para pequenos negócios responderem dúvidas, organizarem pedidos iniciais e continuarem cada conversa com contexto."
 
 const LandingConversao: React.FC = () => {
+  const contactPage = useContactPage()
+
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
@@ -60,7 +63,7 @@ const LandingConversao: React.FC = () => {
               <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <WhatsAppLink
                   message="Olá! Quero conversar sobre o atendimento no WhatsApp da minha empresa."
-                  page="home"
+                  page={contactPage}
                   cta="hero"
                   className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-6 py-4 text-base font-bold text-white transition hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
                 >
@@ -165,7 +168,7 @@ const LandingConversao: React.FC = () => {
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
-                page="home"
+                page={contactPage}
                 cta="exemplo"
                 className="mt-8 inline-flex items-center rounded-lg bg-gray-950 px-6 py-4 font-bold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
               >
@@ -319,7 +322,7 @@ const LandingConversao: React.FC = () => {
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender se o Early Access faz sentido para minha empresa."
-                page="home"
+                page={contactPage}
                 cta="early-access"
                 className="mt-8 inline-flex items-center rounded-lg bg-blue-600 px-6 py-4 font-bold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
               >
@@ -375,7 +378,7 @@ const LandingConversao: React.FC = () => {
             </p>
             <WhatsAppLink
               message="Olá! Quero conversar sobre a primeira tarefa do atendimento da minha empresa."
-              page="home"
+              page={contactPage}
               cta="final"
               className="mt-9 inline-flex items-center rounded-lg bg-white px-7 py-4 font-bold text-blue-800 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >

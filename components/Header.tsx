@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Menu } from 'lucide-react';
+import useContactPage from '../hooks/useContactPage';
 
 interface MenuItem {
   href: string;
@@ -10,22 +11,26 @@ interface MenuItem {
 
 export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const contactPage = useContactPage();
+  const homePath = contactPage.startsWith('blog/')
+    ? `/?origem=${encodeURIComponent(contactPage)}`
+    : '/';
 
   const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
   const menuItems: MenuItem[] = [
-    { href: "/#solucoes", label: "O que faz" },
-    { href: "/#exemplo", label: "Exemplo" },
-    { href: "/#como-funciona", label: "Como funciona" },
-    { href: "/#depoimentos", label: "Depoimentos" },
-    { href: "/#faq", label: "Dúvidas" },
+    { href: `${homePath}#solucoes`, label: "O que faz" },
+    { href: `${homePath}#exemplo`, label: "Exemplo" },
+    { href: `${homePath}#como-funciona`, label: "Como funciona" },
+    { href: `${homePath}#depoimentos`, label: "Depoimentos" },
+    { href: `${homePath}#faq`, label: "Dúvidas" },
     { href: "/blog", label: "Blog" },
   ];
 
   return (
     <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href="/" className="flex items-center">
+        <Link href={homePath} className="flex items-center">
           <Image
             src="/logo_techway_semslogan_transparent.png"
             alt="Logo da TECHWAY"
