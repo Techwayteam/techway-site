@@ -1,12 +1,14 @@
 # Progresso
 
-Atualização: **08/11/2026 — America/Sao_Paulo**.
+Atualização: **12/11/2026 — America/Sao_Paulo**.
 
-## T021 — implementação em revisão (08/11/2026)
+## T021 — concluída e publicada (12/11/2026)
 
-Em branch isolada `feat/t021-blog-oferta-origem` foram preparados os CTAs dos quatro artigos para conduzir à home atual (`#solucoes` ou `#exemplo`), com `origem` restrita aos quatro slugs publicados. A home, o menu, o rodapé e o CTA flutuante mantêm a origem editorial no marcador da mensagem WhatsApp; acessos diretos continuam identificados como `home`. A verificação estática de contatos foi ampliada para conferir destino e origem de cada CTA editorial.
+[PR #19](https://github.com/Techwayteam/techway-site/pull/19) integrada por squash à `main` no commit `42be79e669a661d1fdab3c45988f8a93bc96f1a0`. [CI completa](https://github.com/Techwayteam/techway-site/actions/runs/43208758718) aprovou type-check, build, SEO, 31 CTAs, 4/4 jornadas no navegador, 28 links principais, 4 popups simulados e 3 cenários de home/origem inválida. [Deploy GitHub Pages](https://github.com/Techwayteam/techway-site/actions/runs/43209562718) aprovou jobs build/deploy. Não houve envio real ou verificação HTTP pública independente. [Evidência T021](evidence/2026-11-12-T021-validacao-merge-deploy.md).
 
-**Status:** implementação em branch, ainda sem type-check/build/browser verificados nesta sessão, sem merge e sem publicação. T021 não está concluída. Próxima verificação: executar `npm run type-check`, `npm run build`, inspecionar quatro jornadas no navegador e revisar o diff antes de publicar.
+## T022 — planejamento preparado (12/11/2026)
+
+[Plano 006](plans/006-T022-validacao-compreensao-e-funil.md), [ficha anônima](templates/T022-ficha-avaliacao-anonima.md) e critérios de aceite definidos: 5–8 avaliações de compreensão e operação da planilha privada T007 com conversas reais. **Sem entrevistas, convites, criação de planilha, leads, mudanças de código ou deploy nesta documentação.** A execução depende de participantes autorizados e do responsável comercial. DN004 continua pendente para marcar primeiro cliente ganho; DN007 continua reservada à aquisição ativa.
 
 ## Entregue
 
@@ -82,12 +84,9 @@ T000/T001/T002/T003/T006/T007/T010/T018/T019/T020 concluídas localmente e, quan
 
 ## Próximo passo concreto
 
-1. Importar `templates/T007-registro-leads.csv` em planilha privada e operar somente
-   conversas efetivamente recebidas como contato/lead.
-2. Alinhar os quatro CTAs do blog em T021 à home T010 e preservar origem/posição.
-3. Validar a prévia coerente conforme T022; somente
-   depois operar T023 com canal e envio
-   explicitamente autorizados.
+1. Importar `templates/T007-registro-leads.csv` em planilha privada e registrar somente conversas efetivamente recebidas.
+2. Aplicar o [plano 006 de T022](plans/006-T022-validacao-compreensao-e-funil.md): avaliações qualitativas autorizadas, síntese anônima e possíveis correções pontuais de copy.
+3. Operar o funil com eventos reais, resolver DN004 antes de `customer_won` e manter T023 dependente de autorização comercial.
 
 Plano ativo: `plans/005-primeiro-lead-e-cliente.md`. Plano editorial de apoio:
 `plans/001-blog-e-captacao.md`. S02 continua aguardando copy, sem bloquear a frente
@@ -98,8 +97,8 @@ pipeline, respeitando a autorização da sessão.
 
 Oferta e prova da home esclarecidas em D031; DN001–DN003 estão resolvidas. Continuam
 pendentes o critério de cliente ganho, o destino de `/din_page`, práticas legais e o
-canal de aquisição em DN004–DN007. O trabalho independente em T021 pode continuar
-com os limites registrados; T010 já está concluída localmente.
+canal de aquisição em DN004–DN007. T021 foi encerrada; T022 ainda não tem entrevistas
+ou funil operacional comprovados.
 
 ## Limites
 
