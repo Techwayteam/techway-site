@@ -14,8 +14,8 @@
 | T018 | [Atualizar plano editorial](T018-atualizar-plano-editorial.md) | Concluída | — |
 | T019 | [Publicar S01](T019-publicar-S01.md) | Concluída — deploy e URLs verificados | — |
 | T020 | [Oferta mínima verificável](T020-oferta-minima-verificavel.md) | Concluída em 29/10/2026; aceite em D031 | Fundador/produto + comercial |
-| T021 | [Jornada blog → oferta](T021-jornada-blog-oferta.md) | Planejada | Aquisição + implementação |
-| T022 | [Compreensão e primeiro lead](T022-validar-compreensao-e-funil.md) | P0; planejada, participantes exigem autorização | Fundador/comercial + UX |
+| T021 | [Jornada blog → oferta](T021-jornada-blog-oferta.md) | Concluída e publicada em 12/11/2026 | — |
+| T022 | [Compreensão e primeiro lead](T022-validar-compreensao-e-funil.md) | P0; [plano 006](../plans/006-T022-validacao-compreensao-e-funil.md) preparado; pesquisa e operação pendentes | Fundador/comercial + UX |
 | T023 | [Ativação de aquisição inicial](T023-ativacao-aquisicao-inicial.md) | Planejada; nenhum envio autorizado | Fundador/comercial |
 
 Backlog completo: `../06-backlog.md`. Plano ativo de negócio:
