@@ -1,6 +1,6 @@
 # T021 — alinhar blog, oferta e origem comercial
 
-Estado: **em_execucao** (implementação em `feat/t021-blog-oferta-origem`, sem publicação; validação de build e navegador pendente). Prioridade: P0. Responsável: aquisição + implementação.
+Estado: **concluída — merge, testes e deploy confirmados em 12/11/2026**. Prioridade: P0. Responsável: aquisição + implementação.
 Revisores: editorial/comercial e QA. Plano:
 `../plans/005-primeiro-lead-e-cliente.md`. Dependências: destino da home T010;
 preservação de T006/T007; DN005 para o futuro da landing antiga.
@@ -47,3 +47,7 @@ relacionados e `/din_page`; não redirecionar nem apagar a landing nesta ficha.
 T002/T003 permanecem concluídas no contexto histórico. Esta ficha registra a nova
 direção comercial; não reclassifica link funcional como 404. A decisão arquitetural
 definitiva da landing continua em DN005.
+
+## Encerramento em 12/11/2026
+
+Quatro CTAs editoriais alinhados à home; origem do artigo preservada até WhatsApp, com allowlist e fallback para `home`. Testes Chromium e guardas aprovados, PR #19 integrada ao commit `42be79e`, deploy GitHub Pages em `success`. Detalhes e limites: [evidência T021](../evidence/2026-11-12-T021-validacao-merge-deploy.md). T022 assume a validação comercial; DN005 permanece aberta.
