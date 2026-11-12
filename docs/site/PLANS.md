@@ -13,8 +13,9 @@ ficam em `01-prd.md` e `06-backlog.md`. O plano referencia essas fontes, sem cop
 | [001 — blog e captação](plans/001-blog-e-captacao.md) | Preservar a frente editorial e integrar S01–S04 por artigo, conforme copy e demanda | Em execução como apoio ao plano 005; S01 publicada (1/4), S02–S04 aguardam copy em P2 |
 | [002 — revisão editorial T003](plans/002-T003-revisao-editorial.md) | Correção mínima de afirmações e CTAs dos três antigos; subplano da etapa 1B | Concluído; publicação pelo usuário verificada em 23/10/2026 |
 | [003 — SEO do blog T006](plans/003-T006-seo.md) | Metadados, BlogPosting, sitemap e robots no export estático | Publicado e verificado em 25/10/2026; workflow e URLs públicas aprovados |
-| [004 — medição de contatos T007](plans/004-T007-medicao-contatos.md) | Atribuir conversas recebidas no WhatsApp e operá-las em planilha privada | Concluído localmente em 25/10/2026; publicação e importação da planilha pendentes |
-| [005 — primeiro lead e cliente](plans/005-primeiro-lead-e-cliente.md) | Tornar oferta, home, jornada, aprendizado e aquisição coerentes até o funil comercial | Em execução; T020 e DN001–DN003 concluídas em 29/10/2026, T010 pronta para implementação local |
+| [004 — medição de contatos T007](plans/004-T007-medicao-contatos.md) | Atribuir conversas recebidas no WhatsApp e operá-las em planilha privada | Publicado em 31/10/2026; importação da planilha privada pendente |
+| [005 — primeiro lead e cliente](plans/005-primeiro-lead-e-cliente.md) | Tornar oferta, home, jornada, aprendizado e aquisição coerentes até o funil comercial | Em execução; T020/T010/T021 publicadas, T022 em preparação |
+| [006 — T022 compreensão e funil](plans/006-T022-validacao-compreensao-e-funil.md) | Testar clareza com 5–8 empresários e operar o registro privado de conversas | Planejado em 12/11/2026; entrevistas e operação pendentes |
 
 ## Contrato de um plano
 
