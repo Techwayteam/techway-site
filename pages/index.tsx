@@ -9,7 +9,7 @@ import useContactPage from "../hooks/useContactPage"
 import { absoluteUrl } from "../lib/seo"
 
 const SITE_DESCRIPTION =
-  "Atendimento com IA no WhatsApp para pequenos negócios responderem dúvidas, organizarem pedidos iniciais e continuarem cada conversa com contexto."
+  "Seu primeiro funcionário digital no WhatsApp: atendimento com IA para responder dúvidas, organizar o primeiro contato e liberar tempo para cuidar do negócio."
 
 const LandingConversao: React.FC = () => {
   const contactPage = useContactPage()
@@ -17,7 +17,7 @@ const LandingConversao: React.FC = () => {
   return (
     <div className="flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
-        <title>Atendimento com IA no WhatsApp | TECHWAY</title>
+        <title>Funcionário digital para atender no WhatsApp | TECHWAY</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="canonical" href={absoluteUrl("/")} />
         <link rel="icon" href="/techway_favicon.ico" />
@@ -27,13 +27,13 @@ const LandingConversao: React.FC = () => {
           content="atendimento com IA, WhatsApp para empresas, funcionário digital, automação de atendimento"
         />
         <meta name="author" content="Techway Team" />
-        <meta property="og:title" content="Atendimento com IA no WhatsApp | TECHWAY" />
+        <meta property="og:title" content="Funcionário digital para atender no WhatsApp | TECHWAY" />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content={absoluteUrl("/")} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Atendimento com IA no WhatsApp | TECHWAY" />
+        <meta name="twitter:title" content="Funcionário digital para atender no WhatsApp | TECHWAY" />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content="https://techway.one/og-techway.jpg" />
         <meta name="robots" content="index, follow" />
@@ -50,24 +50,24 @@ const LandingConversao: React.FC = () => {
           <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-12 px-4 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
             <div>
               <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-blue-300">
-                Atendimento com IA no WhatsApp
+                Seu primeiro funcionário digital, no WhatsApp
               </p>
               <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-                Seus clientes recebem resposta. Você mantém o controle.
+                Você cuida do seu negócio. A Techway ajuda a cuidar do seu atendimento.
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
-                A Techway configura um funcionário digital para responder dúvidas,
-                coletar as primeiras informações e manter o contexto da conversa no
-                WhatsApp do seu negócio.
+                Enquanto você trabalha, um funcionário digital no WhatsApp responde
+                dúvidas frequentes, organiza as primeiras informações dos clientes
+                e mantém o contexto da conversa. Quando precisar, uma pessoa assume.
               </p>
               <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
                 <WhatsAppLink
-                  message="Olá! Quero conversar sobre o atendimento no WhatsApp da minha empresa."
+                  message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
                   page={contactPage}
                   cta="hero"
                   className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-6 py-4 text-base font-bold text-white transition hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
                 >
-                  Conversar sobre meu atendimento
+                  Quero melhorar meu atendimento
                   <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
                 </WhatsAppLink>
                 <a
@@ -84,14 +84,14 @@ const LandingConversao: React.FC = () => {
 
             <div className="rounded-2xl border border-gray-700 bg-gray-900 p-6 shadow-2xl md:p-8">
               <p className="text-sm font-bold uppercase tracking-wider text-blue-300">
-                Para negócios que atendem pelo WhatsApp
+                O que seu funcionário digital já pode fazer
               </p>
               <ul className="mt-6 space-y-5" aria-label="Capacidades disponíveis">
                 {[
-                  "Responde dúvidas com as informações aprovadas pela sua empresa",
-                  "Coleta os dados iniciais para entender o pedido",
-                  "Mantém o contexto ao longo da conversa",
-                  "Passa o atendimento para uma pessoa quando necessário",
+                  "Responde às dúvidas mais comuns usando as informações da sua empresa",
+                  "Organiza as primeiras informações de cada pedido",
+                  "Mantém o assunto da conversa, sem fazer o cliente começar de novo",
+                  "Encaminha para uma pessoa quando o caso precisar de atenção humana",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3 text-gray-200">
                     <Check className="mt-1 h-5 w-5 flex-none text-blue-400" aria-hidden="true" />
@@ -110,32 +110,32 @@ const LandingConversao: React.FC = () => {
                 O que muda no dia a dia
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Menos interrupção para você. Mais continuidade para o cliente.
+                Seu WhatsApp chama. Você nem sempre pode parar para responder.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                A primeira implantação começa por tarefas delimitadas. A Techway configura
-                as informações, os limites e a participação humana de acordo com a realidade
-                da empresa.
+                Enquanto você atende um cliente, resolve um problema ou cuida da operação,
+                outras mensagens continuam chegando. Seu funcionário digital ajuda
+                nas conversas mais repetitivas, para você estar presente onde mais importa.
               </p>
             </div>
 
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {[
                 {
-                  title: "Dúvidas frequentes",
-                  text: "O cliente pergunta sobre serviços, funcionamento e orientações. O atendimento usa somente o conteúdo aprovado pela empresa.",
+                  title: "Perguntas que se repetem",
+                  text: "Horário, endereço e informações sobre serviços não precisam interromper sua rotina toda vez que alguém pergunta.",
                 },
                 {
-                  title: "Pedido inicial organizado",
-                  text: "O funcionário digital coleta as informações combinadas para que o pedido chegue mais claro à próxima etapa.",
+                  title: "Pedidos que chegam mais claros",
+                  text: "O funcionário digital pede os dados iniciais combinados e ajuda sua equipe a entender o que cada cliente precisa.",
                 },
                 {
-                  title: "Conversa com contexto",
-                  text: "Perguntas relacionadas continuam dentro do assunto já informado, sem obrigar o cliente a recomeçar a conversa.",
+                  title: "Menos perguntas repetidas",
+                  text: "O cliente pode continuar o assunto que já começou, sem ter de explicar tudo novamente na mesma conversa.",
                 },
                 {
-                  title: "Continuidade humana",
-                  text: "Quando o assunto sair do escopo ou precisar de decisão, uma pessoa pode assumir pelo procedimento definido na implantação.",
+                  title: "Você entra quando faz diferença",
+                  text: "Quando surge uma exceção ou decisão importante, o atendimento segue para uma pessoa conforme o processo da sua empresa.",
                 },
               ].map((item) => (
                 <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm">
@@ -159,12 +159,12 @@ const LandingConversao: React.FC = () => {
                 Exemplo fictício
               </p>
               <h2 id="exemplo-titulo" className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Uma dúvida simples não precisa esperar você parar tudo.
+                Imagine seu salão atendendo mensagens enquanto você atende uma cliente.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Neste exemplo ilustrativo, as respostas foram configuradas com informações
-                fornecidas pelo próprio negócio. Não há agendamento confirmado nem ação
-                externa simulada.
+                Veja como um funcionário digital pode conversar com uma cliente usando
+                informações do salão e chamar uma pessoa quando precisar.
+                A conversa abaixo é fictícia e não representa um agendamento realizado.
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
@@ -214,7 +214,7 @@ const LandingConversao: React.FC = () => {
                 Implantação em conjunto
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Começamos pequeno, testamos e evoluímos com o negócio.
+                Começamos pelo atendimento que mais toma o seu tempo.
               </h2>
             </div>
 
@@ -222,18 +222,18 @@ const LandingConversao: React.FC = () => {
               {[
                 {
                   number: "1",
-                  title: "Entender",
-                  text: "Escolhemos a primeira tarefa, as informações necessárias e quando uma pessoa deve assumir.",
+                  title: "Entender sua rotina",
+                  text: "Você nos mostra as perguntas e situações que mais se repetem no WhatsApp da empresa.",
                 },
                 {
                   number: "2",
-                  title: "Configurar e testar",
-                  text: "Ajustamos respostas, tom, coleta inicial, contexto e limites com exemplos reais da operação.",
+                  title: "Preparar seu funcionário digital",
+                  text: "Configuramos as respostas, o jeito de conversar e os limites com informações aprovadas por você.",
                 },
                 {
                   number: "3",
-                  title: "Colocar em uso e evoluir",
-                  text: "Escopo, valor e possíveis integrações ficam claros na proposta. Depois, a consultoria acompanha a evolução.",
+                  title: "Começar e acompanhar",
+                  text: "Definimos o escopo e as condições na proposta, colocamos em uso e acompanhamos os ajustes necessários.",
                 },
               ].map((step) => (
                 <li key={step.number} className="rounded-2xl border border-gray-700 bg-gray-900 p-7">
@@ -255,11 +255,12 @@ const LandingConversao: React.FC = () => {
                 Limites claros
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                O atendimento sabe o que fazer — e quando precisa de alguém.
+                Seu funcionário digital ajuda. As decisões importantes continuam com você.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Não vendemos uma automação genérica que promete fazer tudo. Cada implantação
-                define fontes, tarefas, exceções e responsáveis.
+                Cada negócio tem sua rotina. Por isso, o atendimento começa com tarefas
+                combinadas e informações da sua empresa. Também deixamos claro
+                o que já está disponível e o que ainda depende de desenvolvimento.
               </p>
             </div>
 
@@ -296,11 +297,12 @@ const LandingConversao: React.FC = () => {
             <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-sm md:p-12">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Early Access</p>
               <h2 className="mt-4 max-w-3xl text-3xl font-bold leading-tight md:text-5xl">
-                Tecnologia próxima de quem vive a operação.
+                Comece pelo atendimento. Evolua com a Techway.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-600">
-                O Early Access é para empresas que querem construir a solução junto com a
-                Techway e evoluir o atendimento conforme aprendemos com o uso real.
+                O Early Access é para quem quer colocar o primeiro funcionário digital
+                em ação no WhatsApp e aperfeiçoar o atendimento com acompanhamento
+                próximo da nossa equipe.
               </p>
 
               <ul className="mt-9 grid gap-4 md:grid-cols-2" aria-label="Benefícios do Early Access">
@@ -367,22 +369,40 @@ const LandingConversao: React.FC = () => {
           </div>
         </section>
 
+        <section id="visao" className="scroll-mt-24 bg-gray-50 py-16 md:py-20">
+          <div className="mx-auto max-w-5xl px-4">
+            <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
+              Nossa visão
+            </p>
+            <h2 className="mt-4 text-3xl font-bold leading-tight text-gray-950 md:text-5xl">
+              O atendimento é só o começo.
+            </h2>
+            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">
+              A Techway quer ajudar pequenos negócios a ganhar tempo e capacidade
+              com uma equipe de funcionários digitais especializados.
+              Hoje, começamos pelo atendimento no WhatsApp. Outros funcionários
+              digitais fazem parte da nossa visão de futuro — não desta oferta atual.
+            </p>
+          </div>
+        </section>
+
         <section id="contato" className="scroll-mt-24 bg-blue-700 py-20 text-white md:py-24">
           <div className="mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              Vamos escolher a primeira tarefa do seu atendimento?
+              E se seu WhatsApp deixasse de depender de você para cada resposta?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-blue-100">
-              Conte como sua empresa atende hoje. A conversa serve para entender o cenário,
-              os limites e se a Techway faz sentido para o seu negócio.
+              Conte como funciona seu atendimento hoje. Vamos identificar quais
+              tarefas repetitivas um funcionário digital pode assumir
+              e o que faz sentido para o seu negócio.
             </p>
             <WhatsAppLink
-              message="Olá! Quero conversar sobre a primeira tarefa do atendimento da minha empresa."
+              message="Olá! Quero entender como começar com um funcionário digital no atendimento da minha empresa."
               page={contactPage}
               cta="final"
               className="mt-9 inline-flex items-center rounded-lg bg-white px-7 py-4 font-bold text-blue-800 transition hover:bg-blue-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
             >
-              Conversar sobre meu atendimento
+              Quero conversar sobre minha empresa
               <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
             </WhatsAppLink>
           </div>
