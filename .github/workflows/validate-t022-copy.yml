@@ -1,0 +1,59 @@
+name: Validate T022 home copy (no deploy)
+
+on:
+  push:
+    branches:
+      - feat/t022-copy-home-dor-atendimento
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      NEXT_TELEMETRY_DISABLED: 1
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Setup Git LFS
+        run: |
+          git lfs install
+          git lfs pull
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - name: Install locked dependencies
+        run: npm ci
+      - name: Type check
+        run: npm run type-check
+      - name: Build and export
+        run: npm run build
+      - name: Verify SEO and contact attribution
+        run: |
+          npm run verify-seo
+          npm run verify-contacts
+      - name: Verify T022 copy and business limits in export
+        run: node scripts/verify-home-copy.cjs
+      - name: Install isolated browser test runner
+        run: |
+          npm install --prefix /tmp/techway-t022-browser --no-save --package-lock=false playwright@1.56.1
+          /tmp/techway-t022-browser/node_modules/.bin/playwright install --with-deps chromium
+      - name: Test editorial journey to WhatsApp locally (no deploy or send)
+        shell: bash
+        run: |
+          set -euo pipefail
+          npm run dev -- --hostname 127.0.0.1 --port 4173 > /tmp/techway-t022-next.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true; tail -n 70 /tmp/techway-t022-next.log' EXIT
+          for i in $(seq 1 90); do
+            if curl -fsS http://127.0.0.1:4173/ > /dev/null 2>&1; then
+              break
+            fi
+            sleep 2
+          done
+          curl -fsS http://127.0.0.1:4173/ > /dev/null
+          NODE_PATH=/tmp/techway-t022-browser/node_modules node scripts/verify-browser-attribution.cjs
