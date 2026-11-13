@@ -15,7 +15,7 @@ const LandingConversao: React.FC = () => {
   const contactPage = useContactPage()
 
   return (
-    <div className="flex min-h-screen flex-col bg-white text-gray-900">
+    <div className="tw-revamp flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
         <title>Funcionário digital para atender no WhatsApp | TECHWAY</title>
         <meta name="description" content={SITE_DESCRIPTION} />
@@ -46,64 +46,58 @@ const LandingConversao: React.FC = () => {
       <Header />
 
       <main className="flex-grow pt-16">
-        <section id="hero" className="bg-gray-950 text-white">
-          <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-12 px-4 py-16 lg:grid-cols-[1.15fr_0.85fr] lg:py-24">
-            <div>
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.18em] text-blue-300">
-                Seu primeiro funcionário digital, no WhatsApp
-              </p>
-              <h1 className="max-w-4xl text-4xl font-bold leading-tight sm:text-5xl md:text-6xl">
-                Você cuida do seu negócio. A Techway ajuda a cuidar do seu atendimento.
+        <section id="hero" className="tw-hero">
+          <div className="tw-hero-glow" aria-hidden="true" />
+          <div className="tw-hero-inner mx-auto grid max-w-6xl items-center gap-10 px-4 lg:grid-cols-2">
+            <div className="tw-hero-copy">
+              <p className="tw-kicker-pill"><span aria-hidden="true">✦</span> Seu primeiro funcionário digital, no WhatsApp</p>
+              <h1>
+                Você cuida do seu negócio.
+                <span> A Techway ajuda a cuidar do seu atendimento.</span>
               </h1>
-              <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-300 md:text-xl">
-                Enquanto você trabalha, um funcionário digital no WhatsApp responde
-                dúvidas frequentes, organiza as primeiras informações dos clientes
-                e mantém o contexto da conversa. Quando precisar, uma pessoa assume.
+              <p className="tw-hero-description">
+                Enquanto você trabalha, um funcionário digital no WhatsApp responde dúvidas frequentes,
+                organiza as primeiras informações dos clientes e mantém o contexto da conversa.
+                Quando precisar, uma pessoa assume.
               </p>
-              <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-                <WhatsAppLink
-                  message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
-                  page={contactPage}
-                  cta="hero"
-                  className="inline-flex items-center justify-center rounded-lg bg-blue-500 px-6 py-4 text-base font-bold text-white transition hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
-                >
-                  Quero melhorar meu atendimento
-                  <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
+              <div className="tw-hero-actions">
+                <WhatsAppLink message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
+                  page={contactPage} cta="hero" className="tw-btn tw-btn-primary">
+                  Quero melhorar meu atendimento <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </WhatsAppLink>
-                <a
-                  href="#exemplo"
-                  className="inline-flex items-center justify-center rounded-lg border border-gray-600 px-6 py-4 font-semibold text-white transition hover:border-blue-300 hover:text-blue-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-300"
-                >
-                  Ver um exemplo
+                <a href="#exemplo" className="tw-btn tw-btn-outline">
+                  <span className="tw-play" aria-hidden="true">▶</span> Ver um exemplo
                 </a>
               </div>
-              <p className="mt-5 text-sm leading-relaxed text-gray-400">
-                A conversa abre no WhatsApp. Nenhuma mensagem é enviada sem você confirmar.
-              </p>
+              <p className="tw-hero-note">A conversa abre no WhatsApp. Você decide quando enviar.</p>
+              <div className="tw-trust-points" aria-label="Benefícios">
+                <span><b aria-hidden="true">✓</b> Feito para pequenos negócios</span>
+                <span><b aria-hidden="true">✓</b> Adaptado à sua rotina</span>
+              </div>
             </div>
-
-            <div className="rounded-2xl border border-gray-700 bg-gray-900 p-6 shadow-2xl md:p-8">
-              <p className="text-sm font-bold uppercase tracking-wider text-blue-300">
-                O que seu funcionário digital já pode fazer
-              </p>
-              <ul className="mt-6 space-y-5" aria-label="Capacidades disponíveis">
-                {[
-                  "Responde às dúvidas mais comuns usando as informações da sua empresa",
-                  "Organiza as primeiras informações de cada pedido",
-                  "Mantém o assunto da conversa, sem fazer o cliente começar de novo",
-                  "Encaminha para uma pessoa quando o caso precisar de atenção humana",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-200">
-                    <Check className="mt-1 h-5 w-5 flex-none text-blue-400" aria-hidden="true" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+            <div className="tw-hero-art" aria-label="Ilustração de uma empreendedora e um funcionário digital">
+              <div className="tw-art-orb" aria-hidden="true" />
+              <div className="tw-art-ring" aria-hidden="true" />
+              <img src="/illustrations/techway-empreendedora.webp" alt="Empreendedora ilustrada em 3D usando um celular" className="tw-human" width={380} height={520} />
+              <img src="/illustrations/techway-assistente.webp" alt="Mascote ilustrado em 3D representando a assistente digital" className="tw-bot" width={150} height={154} />
+              <div className="tw-chat tw-chat-question" aria-hidden="true">
+                <span className="tw-chat-bubble-icon">✦</span> Oi! Vocês oferecem esse serviço?
+              </div>
+              <div className="tw-chat tw-chat-answer" aria-hidden="true">
+                <span className="tw-chat-bubble-icon">✦</span>
+                <span>Sim! Posso explicar as opções e anotar o que você precisa. <small>✓✓</small></span>
+              </div>
+              <p className="tw-art-note"><span aria-hidden="true" /> Seu atendimento em boas mãos</p>
             </div>
+          </div>
+          <div className="tw-hero-foot mx-auto max-w-6xl px-4">
+            <span aria-hidden="true">✧</span> Mais tempo para o que importa.
+            <i aria-hidden="true" />
+            <span>O atendimento continua enquanto você trabalha.</span>
           </div>
         </section>
 
-        <section id="solucoes" className="scroll-mt-24 bg-gray-50 py-20 md:py-24">
+        <section id="solucoes" className="tw-solutions scroll-mt-24 bg-gray-50 py-20 md:py-24">
           <div className="mx-auto max-w-6xl px-4">
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
@@ -151,7 +145,7 @@ const LandingConversao: React.FC = () => {
           id="exemplo"
           tabIndex={-1}
           aria-labelledby="exemplo-titulo"
-          className="scroll-mt-24 bg-white py-20 outline-none md:py-24"
+          className="tw-demo scroll-mt-24 bg-white py-20 outline-none md:py-24"
         >
           <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div>
@@ -207,7 +201,7 @@ const LandingConversao: React.FC = () => {
           </div>
         </section>
 
-        <section id="como-funciona" className="scroll-mt-24 bg-gray-950 py-20 text-white md:py-24">
+        <section id="como-funciona" className="tw-process scroll-mt-24 bg-gray-950 py-20 text-white md:py-24">
           <div className="mx-auto max-w-6xl px-4">
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-300">
@@ -248,7 +242,7 @@ const LandingConversao: React.FC = () => {
           </div>
         </section>
 
-        <section id="limites" className="scroll-mt-24 bg-white py-20 md:py-24">
+        <section id="limites" className="tw-limits scroll-mt-24 bg-white py-20 md:py-24">
           <div className="mx-auto max-w-6xl px-4">
             <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
@@ -292,7 +286,7 @@ const LandingConversao: React.FC = () => {
 
         <Testimonials />
 
-        <section id="early-access" className="scroll-mt-24 bg-gray-50 py-20 md:py-24">
+        <section id="early-access" className="tw-early scroll-mt-24 bg-gray-50 py-20 md:py-24">
           <div className="mx-auto max-w-5xl px-4">
             <div className="rounded-3xl border border-gray-200 bg-white p-7 shadow-sm md:p-12">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Early Access</p>
@@ -335,7 +329,7 @@ const LandingConversao: React.FC = () => {
           </div>
         </section>
 
-        <section id="faq" className="scroll-mt-24 bg-white py-20 md:py-24">
+        <section id="faq" className="tw-faq scroll-mt-24 bg-white py-20 md:py-24">
           <div className="mx-auto max-w-4xl px-4">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">Perguntas frequentes</p>
             <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">Antes de começar</h2>
@@ -369,24 +363,36 @@ const LandingConversao: React.FC = () => {
           </div>
         </section>
 
-        <section id="visao" className="scroll-mt-24 bg-gray-50 py-16 md:py-20">
-          <div className="mx-auto max-w-5xl px-4">
-            <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
-              Nossa visão
-            </p>
-            <h2 className="mt-4 text-3xl font-bold leading-tight text-gray-950 md:text-5xl">
-              O atendimento é só o começo.
-            </h2>
-            <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-700">
-              A Techway quer ajudar pequenos negócios a ganhar tempo e capacidade
-              com uma equipe de funcionários digitais especializados.
-              Hoje, começamos pelo atendimento no WhatsApp. Outros funcionários
-              digitais fazem parte da nossa visão de futuro — não desta oferta atual.
-            </p>
+        <section id="visao" className="tw-vision">
+          <div className="tw-vision-inner mx-auto max-w-6xl px-4">
+            <div>
+              <p className="tw-label">NOSSA VISÃO</p>
+              <h2>O atendimento é <span>só o começo.</span></h2>
+              <p className="tw-vision-description">
+                A Techway quer ajudar pequenos negócios a ganhar tempo e capacidade
+                com uma equipe de funcionários digitais especializados.
+                Hoje, começamos pelo atendimento no WhatsApp.
+                Outros funcionários digitais fazem parte da nossa visão de futuro — não desta oferta atual.
+              </p>
+            </div>
+            <div className="tw-vision-grid" aria-label="Presente e visão futura">
+              {[
+                { name: "Atendimento", icon: "✦", state: "Disponível agora", active: true },
+                { name: "Financeiro", icon: "▤", state: "Visão futura", active: false },
+                { name: "Marketing", icon: "◈", state: "Visão futura", active: false },
+                { name: "Operações", icon: "▣", state: "Visão futura", active: false },
+              ].map((module) => (
+                <div key={module.name} className={`tw-module ${module.active ? "tw-module-now" : ""}`}>
+                  <span className="tw-module-icon" aria-hidden="true">{module.icon}</span>
+                  <strong>{module.name}</strong>
+                  <small>{module.state}</small>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
-        <section id="contato" className="scroll-mt-24 bg-blue-700 py-20 text-white md:py-24">
+        <section id="contato" className="tw-contact scroll-mt-24 bg-blue-700 py-20 text-white md:py-24">
           <div className="mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
               E se seu WhatsApp deixasse de depender de você para cada resposta?
