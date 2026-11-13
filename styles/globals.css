@@ -41,8 +41,11 @@ body {
 .tw-revamp header>div:first-child{max-width:1210px;width:calc(100% - 36px);height:100%;padding:0;gap:20px}
 .tw-revamp header nav a{color:#263d66!important;font-weight:600;font-size:13px}
 .tw-revamp header nav a:hover{color:var(--tw-blue)!important}
-.tw-revamp header .tw-brand{display:flex;align-items:center;gap:9px;font-size:24px;letter-spacing:-1.1px;font-weight:800;white-space:nowrap}
-.tw-revamp .tw-brand-mark{display:grid;place-items:center;color:#fff;font-size:16px;width:29px;height:30px;line-height:1;font-weight:800;border-radius:8px;background:linear-gradient(135deg,#79adff,#1457f5);box-shadow:0 7px 14px rgba(20,87,245,.11)}
+/* A marca é o arquivo oficial: não redesenhar símbolo, letras ou proporções.
+   A superfície escura oferece contraste para a versão original transparente sobre o header claro. */
+.tw-revamp header .tw-brand-frame{display:inline-flex;align-items:center;justify-content:center;flex:none;min-width:142px;min-height:48px;padding:8px 11px;border-radius:13px;background:linear-gradient(130deg,#102047,#183c77);border:1px solid rgba(91,149,245,.22);box-shadow:0 5px 16px rgba(17,48,112,.08)}
+.tw-revamp header .tw-brand-frame:hover{box-shadow:0 8px 20px rgba(17,48,112,.13)}
+.tw-revamp header .tw-brand-frame img{display:block;max-width:120px;object-fit:contain}
 .tw-revamp .tw-header-cta{display:inline-flex;align-items:center;gap:8px;border-radius:12px;padding:12px 16px;background:var(--tw-blue);color:white;font-size:12px;font-weight:700;box-shadow:0 9px 20px rgba(20,87,245,.13)}
 .tw-revamp .tw-header-cta:hover{background:#0647dc;color:white;transform:translateY(-1px)}
 .tw-revamp header button{color:var(--tw-navy)}
@@ -151,7 +154,7 @@ body {
 @keyframes twFloatBot{0%,100%{transform:translateY(0) rotate(-4deg)}50%{transform:translateY(-11px) rotate(4deg)}}
 @media(max-width:1100px){.tw-hero-copy h1{font-size:clamp(37px,4.7vw,52px)}.tw-human{left:0;max-width:85%}.tw-chat{right:0}.tw-revamp header .tw-header-cta{font-size:11px;padding:10px 12px}}
 @media(max-width:900px){
-  .tw-revamp header{height:68px}.tw-revamp header .tw-brand{font-size:21px}
+  .tw-revamp header{height:68px}.tw-revamp header .tw-brand-frame{min-height:43px;min-width:130px;padding:6px 9px;border-radius:11px}.tw-revamp header .tw-brand-frame img{height:29px;width:auto}
   .tw-revamp header .tw-header-cta{margin-left:auto}
   .tw-hero-inner{grid-template-columns:1fr!important;gap:0;min-height:auto}
   .tw-hero-copy{padding:45px 0 0}
@@ -162,7 +165,7 @@ body {
   .tw-vision-inner{grid-template-columns:1fr;gap:28px}
 }
 @media(max-width:600px){
-  .tw-revamp header{height:64px}.tw-revamp header .tw-brand{font-size:20px}
+  .tw-revamp header{height:64px}.tw-revamp header .tw-brand-frame{min-height:43px;min-width:130px;padding:6px 9px;border-radius:11px}.tw-revamp header .tw-brand-frame img{height:29px;width:auto}
   .tw-revamp header .tw-header-cta{font-size:0;padding:11px;width:39px;height:39px;justify-content:center;border-radius:50%}
   .tw-revamp header .tw-header-cta svg{width:19px;height:19px}
   .tw-hero-copy{padding-top:34px}
