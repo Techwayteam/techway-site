@@ -13,7 +13,7 @@ const readable = main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ' ')
 const required = [
   'Você cuida do seu negócio. A Techway ajuda a cuidar do seu atendimento.',
   'Seu WhatsApp chama. Você nem sempre pode parar para responder.',
-  'O que seu funcionário digital já pode fazer',
+  'Feito para pequenos negócios',
   'Começamos pelo atendimento que mais toma o seu tempo.',
   'O atendimento é só o começo.',
   'Hoje, começamos pelo atendimento no WhatsApp.',
@@ -30,4 +30,11 @@ for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'ea
 }
 assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('E se seu WhatsApp deixasse de depender'),
   'A visão deve anteceder o convite comercial final');
+for (const name of ['techway-empreendedora.avif', 'techway-assistente.avif']) {
+  const file = path.resolve(__dirname, '../out/illustrations', name);
+  assert(fs.existsSync(file), 'Imagem 3D ausente no export: ' + name);
+  const bytes = fs.readFileSync(file);
+  assert(bytes.length > 1000 && bytes.toString('ascii', 4, 12).includes('ftypavif'),
+    'Imagem 3D ausente ou corrompida: ' + name);
+}
 console.log('Copy T022 aprovada no export: dor, oferta atual, limites, visão de futuro, CTA e âncoras.');
