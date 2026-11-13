@@ -57,3 +57,12 @@ jobs:
           done
           curl -fsS http://127.0.0.1:4173/ > /dev/null
           NODE_PATH=/tmp/techway-t022-browser/node_modules node scripts/verify-browser-attribution.cjs
+          NODE_PATH=/tmp/techway-t022-browser/node_modules node scripts/capture-t022-screenshots.cjs
+      - name: Save browser screenshots for visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: techway-t022-visual-desktop-tablet-mobile
+          path: artifacts/t022/
+          if-no-files-found: warn
+          retention-days: 14
