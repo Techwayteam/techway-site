@@ -62,3 +62,11 @@ Implementado nesta mesma PR:
 ## Limites de aceite
 
 **Ainda pendente:** revisão estética e comercial final pelo fundador, eventual ajuste fino de contraste, hierarquia e qualidade de recorte da ilustração em dispositivo físico. Não houve merge, deploy, mensagem real, proposta comercial nem entrevista. O plano formal antigo da T022 no PR #20 permanece à espera de reconciliação com a simplificação acordada. A PR #21 é a implementação visual/copy atual.
+
+## Correção de identidade visual — 13/11/2026
+
+Após revisão do fundador, o ícone “T” e a palavra “Techway” reproduzidos em texto no cabeçalho da home foram **retirados**. A marca oficial, incluindo desenho, símbolo, lettering e proporções, deve ser preservada.
+
+A home usa novamente o arquivo já existente `public/logo_techway_semslogan_transparent.png`, **sem edição da imagem**. A adaptação à estética clara consiste somente numa pequena superfície azul-escura de contraste por trás da logo original, mantendo o restante do cabeçalho branco.
+
+Regra de produto/design: **nunca substituir a logo corporativa por marca reconstruída com texto ou ícones**, nem modificar formas ou lettering sem aprovação expressa. O teste das capturas desktop/tablet/mobile agora exige o carregamento da imagem oficial e a ausência do ícone textual substituto. Permanece sem merge e sem publicação.
