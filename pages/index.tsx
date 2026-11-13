@@ -78,8 +78,8 @@ const LandingConversao: React.FC = () => {
             <div className="tw-hero-art" aria-label="Ilustração de uma empreendedora e um funcionário digital">
               <div className="tw-art-orb" aria-hidden="true" />
               <div className="tw-art-ring" aria-hidden="true" />
-              <img src="/illustrations/techway-empreendedora.webp" alt="Empreendedora ilustrada em 3D usando um celular" className="tw-human" width={380} height={520} />
-              <img src="/illustrations/techway-assistente.webp" alt="Mascote ilustrado em 3D representando a assistente digital" className="tw-bot" width={150} height={154} />
+              <img src="/illustrations/techway-empreendedora.avif" alt="Empreendedora ilustrada em 3D usando um celular" className="tw-human" width={380} height={520} />
+              <img src="/illustrations/techway-assistente.avif" alt="Mascote ilustrado em 3D representando a assistente digital" className="tw-bot" width={150} height={154} />
               <div className="tw-chat tw-chat-question" aria-hidden="true">
                 <span className="tw-chat-bubble-icon">✦</span> Oi! Vocês oferecem esse serviço?
               </div>
