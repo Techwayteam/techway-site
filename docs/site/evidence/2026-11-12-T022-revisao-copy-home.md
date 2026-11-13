@@ -36,3 +36,29 @@ Branch: `feat/t022-copy-home-dor-atendimento`.
 - [ ] PR revisado. Merge/deploy somente após solicitação explícita do fundador.
 
 **Sem mensagens enviadas, leads criados, entrevistas conduzidas, merge ou deploy nesta implementação.**
+
+## Evolução gráfica aprovada para implementação — 13/11/2026
+
+Após o debate visual e as prévias 3D, a direção foi definida como **minimalista, predominantemente azul Techway, humana sem fotografias e sem nicho dominante**. Preserva a oferta atual e não apresenta outros módulos como produtos disponíveis.
+
+Implementado nesta mesma PR:
+- Header claro e CTA contextual no WhatsApp; marca azul e título escuro na home.
+- Hero com superfície branca/azul suave, personagem humano 3D e assistente 3D (assets AVIF locais, leves), duas mensagens demonstrativas como texto HTML e movimento sutil; `prefers-reduced-motion` desliga as animações.
+- Seções de solução, exemplo, implantação, transparência, depoimentos, Early Access e contato com superfícies claras, contornos suaves e contraste consistente.
+- Visão de evolução da Techway em módulos, distinguindo o atendimento disponível de áreas apresentadas **somente como visão futura**.
+- Demonstração textual genérica (Empresa Exemplo), evitando a associação obrigatória a salão.
+- Origem de contatos T007/T021 preservada; único CTA novo `cabecalho` usa os mesmos marcadores de origem.
+- Ilustrações extraídas de material 3D de referência gerado para a Techway; não representam pessoas reais. A interface e as mensagens ficam no HTML, não embutidas na imagem.
+
+## Evidência técnica — 13/11/2026
+
+[CI da PR #21 — run 43361884168](https://github.com/Techwayteam/techway-site/actions/runs/43361884168) em **success**, sem deploy:
+- `npm ci`, type-check, build/export, SEO e script de copy/limites aprovados.
+- Export de 9 páginas, 4 BlogPosting, 7 URLs no sitemap e **32 CTAs com origem/posição**.
+- Jornada browser Chromium: 4 artigos, menu, 4 aberturas simuladas do WhatsApp (sem mensagens), 3 acessos diretos/origem inválida e 32 links principais verificados.
+- Screenshots reais do Next.js em Chromium a **1440×900, 768×900 e 390×844**, sem overflow horizontal, 2 imagens 3D carregadas e H1 único: [artefato do workflow](https://github.com/Techwayteam/techway-site/actions/runs/43361884168/artifacts/14008452056) (retido por 14 dias).
+- Avisos anteriores de dependências (11 reportados pelo npm) continuam para análise separada em T008/T014.
+
+## Limites de aceite
+
+**Ainda pendente:** revisão estética e comercial final pelo fundador, eventual ajuste fino de contraste, hierarquia e qualidade de recorte da ilustração em dispositivo físico. Não houve merge, deploy, mensagem real, proposta comercial nem entrevista. O plano formal antigo da T022 no PR #20 permanece à espera de reconciliação com a simplificação acordada. A PR #21 é a implementação visual/copy atual.
