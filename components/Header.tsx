@@ -34,18 +34,19 @@ export default function Header(): JSX.Element {
   return (
     <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href={homePath} className="flex items-center" aria-label="Techway — página inicial">
-          {isHome ? (
-            <span className="tw-brand"><span className="tw-brand-mark" aria-hidden="true">T</span>Techway</span>
-          ) : (
-            <Image
-              src="/logo_techway_semslogan_transparent.png"
-              alt="Logo da TECHWAY"
-              width={120}
-              height={40}
-              className="h-8 w-auto"
-            />
-          )}
+        <Link
+          href={homePath}
+          className={isHome ? "tw-brand-frame flex items-center" : "flex items-center"}
+          aria-label="Techway — página inicial"
+        >
+          <Image
+            src="/logo_techway_semslogan_transparent.png"
+            alt="Logo oficial da Techway"
+            width={120}
+            height={40}
+            priority={isHome}
+            className="h-8 w-auto"
+          />
         </Link>
         <nav className="hidden lg:block" aria-label="Navegação principal">
           <ul className="flex items-center space-x-4">
