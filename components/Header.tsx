@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Menu } from 'lucide-react';
+import { Menu, MessageCircle } from 'lucide-react';
+import { useRouter } from 'next/router';
+import WhatsAppLink from './WhatsAppLink';
 import useContactPage from '../hooks/useContactPage';
 
 interface MenuItem {
@@ -12,6 +14,7 @@ interface MenuItem {
 export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const contactPage = useContactPage();
+  const isHome = useRouter().pathname === '/';
   const homePath = contactPage.startsWith('blog/')
     ? `/?origem=${encodeURIComponent(contactPage)}`
     : '/';
@@ -19,10 +22,11 @@ export default function Header(): JSX.Element {
   const toggleMenu = (): void => setIsMenuOpen(!isMenuOpen);
 
   const menuItems: MenuItem[] = [
-    { href: `${homePath}#solucoes`, label: "O que faz" },
-    { href: `${homePath}#exemplo`, label: "Exemplo" },
+    { href: `${homePath}#solucoes`, label: "Solução" },
+    { href: `${homePath}#exemplo`, label: "Na prática" },
     { href: `${homePath}#como-funciona`, label: "Como funciona" },
-    { href: `${homePath}#depoimentos`, label: "Depoimentos" },
+    { href: `${homePath}#depoimentos`, label: "Clientes" },
+    { href: `${homePath}#visao`, label: "Nossa visão" },
     { href: `${homePath}#faq`, label: "Dúvidas" },
     { href: "/blog", label: "Blog" },
   ];
@@ -30,14 +34,18 @@ export default function Header(): JSX.Element {
   return (
     <header className="bg-gray-900 text-white py-4 fixed w-full z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link href={homePath} className="flex items-center">
-          <Image
-            src="/logo_techway_semslogan_transparent.png"
-            alt="Logo da TECHWAY"
-            width={120}
-            height={40}
-            className="h-8 w-auto"
-          />
+        <Link href={homePath} className="flex items-center" aria-label="Techway — página inicial">
+          {isHome ? (
+            <span className="tw-brand"><span className="tw-brand-mark" aria-hidden="true">T</span>Techway</span>
+          ) : (
+            <Image
+              src="/logo_techway_semslogan_transparent.png"
+              alt="Logo da TECHWAY"
+              width={120}
+              height={40}
+              className="h-8 w-auto"
+            />
+          )}
         </Link>
         <nav className="hidden lg:block" aria-label="Navegação principal">
           <ul className="flex items-center space-x-4">
@@ -50,6 +58,17 @@ export default function Header(): JSX.Element {
             ))}
           </ul>
         </nav>
+        {isHome && (
+          <WhatsAppLink
+            message="Olá! Gostaria de conhecer o funcionário digital de atendimento da Techway."
+            page={contactPage}
+            cta="cabecalho"
+            className="tw-header-cta"
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            Vamos conversar
+          </WhatsAppLink>
+        )}
         <button
           className="lg:hidden p-2 rounded-md hover:bg-gray-800 transition-colors duration-300"
           onClick={toggleMenu}
