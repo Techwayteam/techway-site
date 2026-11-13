@@ -153,12 +153,12 @@ const LandingConversao: React.FC = () => {
                 Exemplo fictício
               </p>
               <h2 id="exemplo-titulo" className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Imagine seu salão atendendo mensagens enquanto você atende uma cliente.
+                Uma dúvida atendida. Um respiro na sua rotina.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Veja como um funcionário digital pode conversar com uma cliente usando
-                informações do salão e chamar uma pessoa quando precisar.
-                A conversa abaixo é fictícia e não representa um agendamento realizado.
+                Veja um exemplo ilustrativo de como um funcionário digital esclarece dúvidas,
+                organiza informações e chama sua equipe quando necessário.
+                A conversa é fictícia e não representa um agendamento realizado.
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
@@ -177,24 +177,24 @@ const LandingConversao: React.FC = () => {
                   <MessageCircle className="h-5 w-5" aria-hidden="true" />
                 </div>
                 <div>
-                  <p className="font-bold text-gray-950">Atendimento do Salão Exemplo</p>
+                  <p className="font-bold text-gray-950">Atendimento da Empresa Exemplo</p>
                   <p className="text-sm text-gray-500">Conversa ilustrativa</p>
                 </div>
               </div>
               <ol className="space-y-4" aria-label="Exemplo fictício de conversa no WhatsApp">
                 <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Oi! Vocês fazem hidratação para cabelo cacheado?
+                  Oi! Queria saber mais sobre os serviços de vocês.
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Fazemos, sim. O salão oferece hidratação e reconstrução para diferentes
-                  tipos de curvatura. Você quer conhecer as opções ou já sabe qual tratamento procura?
+                  Olá! Posso explicar as opções e anotar algumas informações para orientar
+                  você. Está procurando algum serviço específico?
                 </li>
                 <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Ainda não sei. Meu cabelo está bem ressecado.
+                  Ainda não sei. Queria entender melhor.
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Posso anotar essa informação para a equipe orientar você. Prefere continuar
-                  por aqui com uma pessoa?
+                  Posso registrar sua dúvida para que nossa equipe oriente você.
+                  Prefere continuar com uma pessoa?
                 </li>
               </ol>
             </div>
