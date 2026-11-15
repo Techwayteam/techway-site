@@ -25,7 +25,7 @@ interface BlogProps {
 
 const BlogHome: React.FC<BlogProps> = ({ posts }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+    <div className="tw-revamp tw-blog flex flex-col min-h-screen bg-white text-gray-900">
       <Seo title={site.blogTitle} description={site.blogDescription} path="/blog" />
       <Head>
         <meta name="keywords" content="tecnologia, produtividade, soluções empresariais, blog" />
@@ -34,46 +34,57 @@ const BlogHome: React.FC<BlogProps> = ({ posts }) => {
 
       <Header />
 
-      <main className="flex-grow pt-16 pb-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-8">Blog TECHWAY</h1>
-          <p className="text-xl text-gray-600 mb-12">
-            Explore nossos artigos e descubra como nossas soluções podem transformar sua rotina e sua empresa.
-          </p>
+      <main className="tw-blog-index flex-grow">
+        <section className="tw-blog-hero">
+          <div className="mx-auto max-w-6xl px-4">
+            <p className="tw-kicker-pill"><span aria-hidden="true">✦</span> CONTEÚDO TECHWAY</p>
+            <h1>Ideias para seu negócio <span>render mais.</span></h1>
+            <p className="tw-blog-lead">
+              Atendimento, automação e inteligência artificial sem complicação.
+              Leituras práticas para quem empreende e faz de tudo um pouco.
+            </p>
+          </div>
+        </section>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {posts.map((post) => (
-              <Link
-                href={`/blog/${post.slug}`}
-                key={post.slug}
-                className="bg-white rounded-lg shadow-md overflow-hidden transition duration-300 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600"
-              >
-                  <div className="relative h-48">
+        <section className="tw-blog-listing" aria-labelledby="tw-blog-posts-heading">
+          <div className="mx-auto max-w-6xl px-4">
+            <div className="tw-blog-section-label">
+              <div>
+                <p className="tw-blog-eyebrow">EXPLORE O BLOG</p>
+                <h2 id="tw-blog-posts-heading">Para aprender e colocar em prática.</h2>
+              </div>
+              <span>{posts.length} artigos</span>
+            </div>
+            <div className="tw-blog-cards">
+              {posts.map((post) => (
+                <Link href={`/blog/${post.slug}`} key={post.slug} className="tw-blog-card group">
+                  <div className="tw-blog-card-media">
                     <Image
                       src={post.featuredImage}
                       alt={post.featuredImageAlt || post.title}
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      sizes="(max-width: 720px) calc(100vw - 32px), (max-width: 1100px) 50vw, 360px"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-6">
-                    <h2 className="text-2xl font-semibold text-gray-900 mb-2">{post.title}</h2>
-                    <p className="text-gray-600 mb-4">{post.subtitle}</p>
-                    <p className="text-sm text-gray-500">
-                      Por {post.author} • {new Date(`${post.date}T12:00:00Z`).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}
+                  <div className="tw-blog-card-content">
+                    <p className="tw-blog-card-meta">
+                      <time dateTime={post.date}>{new Date(`${post.date}T12:00:00Z`).toLocaleDateString('pt-BR', { timeZone: 'UTC' })}</time>
+                      <span aria-hidden="true">·</span>
+                      <span>Leitura Techway</span>
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {post.tags.map((tag) => (
-                        <span key={tag} className="bg-blue-100 text-blue-800 text-xs font-semibold px-2.5 py-0.5 rounded">
-                          {tag}
-                        </span>
-                      ))}
+                    <h3>{post.title}</h3>
+                    <p className="tw-blog-card-summary">{post.subtitle}</p>
+                    <div className="tw-blog-tags">
+                      {post.tags.slice(0, 3).map(tag => <span key={tag}>{tag}</span>)}
                     </div>
+                    <span className="tw-blog-card-action">Ler artigo <span aria-hidden="true">→</span></span>
                   </div>
-              </Link>
-            ))}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
       </main>
 
       <Footer />
