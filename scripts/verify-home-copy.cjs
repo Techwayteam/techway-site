@@ -30,11 +30,11 @@ for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'ea
 }
 assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('E se seu WhatsApp deixasse de depender'),
   'A visão deve anteceder o convite comercial final');
-for (const name of ['techway-empreendedora.avif', 'techway-assistente.avif']) {
+for (const name of ['techway-empreendedora-hq.webp', 'techway-assistente-hq.webp']) {
   const file = path.resolve(__dirname, '../out/illustrations', name);
   assert(fs.existsSync(file), 'Imagem 3D ausente no export: ' + name);
   const bytes = fs.readFileSync(file);
-  assert(bytes.length > 1000 && bytes.toString('ascii', 4, 12).includes('ftypavif'),
+  assert(bytes.length > 1000 && bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP',
     'Imagem 3D ausente ou corrompida: ' + name);
 }
 console.log('Copy T022 aprovada no export: dor, oferta atual, limites, visão de futuro, CTA e âncoras.');
