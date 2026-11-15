@@ -30,4 +30,5 @@ jobs:
           git add public/illustrations/techway-empreendedora-hq.webp public/illustrations/techway-assistente-hq.webp
           git diff --cached --exit-code && exit 0 || true
           git commit -m "assets(site): substituir hero comprimida por versões 2x WebP"
+          git pull --rebase origin fix/hero-resolucao-blog-visual
           git push origin HEAD:fix/hero-resolucao-blog-visual
