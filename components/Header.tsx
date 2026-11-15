@@ -14,7 +14,9 @@ interface MenuItem {
 export default function Header(): JSX.Element {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const contactPage = useContactPage();
-  const isHome = useRouter().pathname === '/';
+  const currentPath = useRouter().pathname;
+  const isHome = currentPath === '/';
+  const useLightHeader = isHome || currentPath.startsWith('/blog');
   const homePath = contactPage.startsWith('blog/')
     ? `/?origem=${encodeURIComponent(contactPage)}`
     : '/';
@@ -36,7 +38,7 @@ export default function Header(): JSX.Element {
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link
           href={homePath}
-          className={isHome ? "tw-brand-frame flex items-center" : "flex items-center"}
+          className={useLightHeader ? "tw-brand-frame flex items-center" : "flex items-center"}
           aria-label="Techway — página inicial"
         >
           <Image
