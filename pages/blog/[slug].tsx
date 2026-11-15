@@ -60,7 +60,7 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
   const coverSize = coverSizes[post.featuredImage];
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50 text-gray-900">
+    <div className="tw-revamp tw-blog flex flex-col min-h-screen bg-white text-gray-900">
       <Seo
         title={post.seoTitle || `${post.title} | Blog TECHWAY`}
         description={post.metaDescription || post.subtitle}
@@ -79,10 +79,11 @@ const PostPage: React.FC<PostPageProps> = ({ post }) => {
 
       <Header />
 
-      <main className={styles.main}>
+      <main className={`${styles.main} tw-blog-article`}>
         <article className={styles.article} lang="pt-BR">
-          <header className={styles.header}>
-            <Link href="/blog" className={styles.backLink}>← Todos os artigos</Link>
+          <header className={`${styles.header} tw-blog-article-header`}>
+            <Link href="/blog" className={styles.backLink}>← Voltar ao blog</Link>
+            <p className="tw-blog-eyebrow">BLOG TECHWAY</p>
             <h1 className={styles.title}>{post.title}</h1>
             <p className={styles.subtitle}>{post.subtitle}</p>
             <p className={styles.byline}>
