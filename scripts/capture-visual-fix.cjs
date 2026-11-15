@@ -22,7 +22,7 @@ async function main(){
     }
     const metrics=await page.evaluate(()=>{
       const a=document.querySelector('article > header');
-      const h=document.querySelector('body > div > header');
+      const h=document.querySelector('.tw-revamp > header');
       return {overflow:document.documentElement.scrollWidth-window.innerWidth,
         logo:h?.querySelector('img')?.getAttribute('src')||'',
         articleHeaderPosition:a?getComputedStyle(a).position:null,
