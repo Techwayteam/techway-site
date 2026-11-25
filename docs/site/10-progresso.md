@@ -1,5 +1,16 @@
 # Progresso
 
+## Estado atual — 25/11/2026 (produção)
+
+**Promoção comercial/SEO/GEO autorizada e executada:** [PR #23](https://github.com/Techwayteam/techway-site/pull/23) integrado integralmente à `main` por squash, commit `dbc3152ab2aa6c2c7ce8d652e1749bdbcdb26a99`. A comparação pré-merge registrou 0 commits atrás e todos os arquivos da branch incluídos. O [workflow Pages #45715909146](https://github.com/Techwayteam/techway-site/actions/runs/45715909146) terminou **success** para jobs `build` e `deploy` em 25/11/2026. Isso comprova promoção e entrega pelo provedor, **não** indexação Google/Bing/ChatGPT.
+
+**Smoke remoto ainda pendente nesta revisão:** a ferramenta web textual retorna home antiga em cache e não abre a rota nova/arquivos .xml ou .txt, impedindo atestar HTTP público por esse canal. Para resolver de forma determinística, o ajuste `fix/site-live-smoke-20261125` acrescenta `scripts/verify-live-site.cjs` e job `smoke` dependente do sucesso de `deploy` no workflow Pages: faz GET 200 na home, URL nova, sitemap, robots, blog e logo; confere conteúdo novo, schemas, oito URLs e teste de User-Agent OAI-SearchBot. O job deve aparecer como **success** em execução de produção antes de registrar HTTP externo como validado. Não executa escrita em ferramentas externas.
+
+**Indexação/citações:** Supermetrics está instalado, mas a fonte Google Search Console (`GW`) foi consultada e consta **NOT_AUTHENTICATED** para esta conexão, portanto não temos autorização para ler o índice/inspeção de URL. Bing Webmaster e relatórios de citações também não foram acessados por conta autenticada. Permissão em `robots.txt`, resposta HTTP ao User-Agent e publicação no GitHub Pages **não demonstram** indexação efetiva ou citação em resposta de IA. Após a fonte ser conectada, inspecionar domínio/URL e verificar Search Console/Bing separadamente.
+
+**Escopo:** site `techway-site` apenas, sem alterações no repositório do bot, Supabase, atendimento real, flags ou banco; não houve migração ou alteração de roteamento legado. Histórico de decisões T024/T025 está preservado abaixo; menções a PR #23 "em revisão" em checkpoints de 24/11 são históricas e não refletem o estado atual.
+
+
 ## Checkpoint atual — 24/11/2026
 
 **GEO — etapa em revisão (D037/T025, PR #23):** em resposta ao pedido do fundador, preparada a página canônica `/atendimento-agendamentos-whatsapp` com conteúdo público completo: o que o funcionário digital faz, processo de agendamento, requisitos de implantação, continuidade com equipe, limites e perguntas respondidas. O texto e as respostas existem no **HTML exportado**; a animação da home permanece conscientemente ilustrativa. Incluído JSON-LD `Service` com `provider` referenciando o `Organization` da home, sem preço ou cobertura territorial inventada. Home e rodapé agora conduzem à página; sitemap passa de 7 para **8 URLs**; o marcador do WhatsApp preserva a origem `atendimento-agendamentos-whatsapp`. Foram ampliados os testes de metadata/canonical, página SSR sem JavaScript, schema, CTA, navegação e mobile. [Auditoria e fontes oficiais](evidence/2026-11-24-GEO.md).
