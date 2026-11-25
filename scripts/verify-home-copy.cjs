@@ -26,12 +26,16 @@ const required = [
   'Funcionário digital em ação',
   'Simulação visual com dados fictícios.',
   'Empresa Exemplo',
-  'Agendamento ilustrativo',
   'Os horários e a reserva mostrados são apenas exemplos',
 ];
 for (const phrase of required) {
   assert(readable.includes(phrase), 'Trecho ausente na home exportada: ' + phrase);
 }
+// As mensagens aparecem por estado do React, portanto não constam no HTML inicial.
+const demoSource = fs.readFileSync(path.resolve(__dirname, '../components/WhatsAppDemo.tsx'), 'utf8');
+assert(demoSource.includes('Agendamento ilustrativo'), 'A confirmação animada deve ser identificada como exemplo');
+assert(demoSource.includes('data-from={message.from}'), 'A demo precisa diferenciar os lados da conversa');
+assert(demoSource.includes('prefers-reduced-motion: reduce'), 'A demo deve respeitar acessibilidade de movimento');
 assert(!readable.includes('Agendamentos estão em desenvolvimento'), 'Oferta antiga da agenda não pode voltar');
 assert(!readable.includes('O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão'), 'Oferta aprovada não pode ser descrita como indisponível');
 assert(!readable.includes('Já faz agendamentos e follow-up?'), 'FAQ antiga não pode voltar');
