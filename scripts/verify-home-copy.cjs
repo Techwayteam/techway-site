@@ -11,19 +11,22 @@ const readable = main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ' ')
   .replace(/\s+/g, ' ').trim();
 
 const required = [
-  'Você cuida do seu negócio. A Techway ajuda a cuidar do seu atendimento.',
+  'Seu primeiro funcionário digital atende clientes pelo WhatsApp.',
   'Seu WhatsApp chama. Você nem sempre pode parar para responder.',
   'Feito para pequenos negócios',
   'Começamos pelo atendimento que mais toma o seu tempo.',
   'O atendimento é só o começo.',
   'Hoje, começamos pelo atendimento no WhatsApp.',
   'Outros funcionários digitais fazem parte da nossa visão de futuro',
-  'Em desenvolvimento',
-  'Fora da oferta atual',
+  'Gestão de agenda já em uso',
+  'O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão.',
+  'Fora da oferta padrão',
 ];
 for (const phrase of required) {
   assert(readable.includes(phrase), 'Trecho ausente na home exportada: ' + phrase);
 }
+assert(!readable.includes('Agendamentos estão em desenvolvimento'), 'Oferta antiga da agenda não pode voltar');
+assert(!readable.includes('Já faz agendamentos e follow-up?'), 'FAQ antiga não pode voltar');
 assert.equal((main.match(/<h1\b/g) || []).length, 1, 'A home precisa de um único H1');
 for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'early-access', 'faq', 'visao', 'contato']) {
   assert(html.includes('id="' + id + '"'), 'Âncora ausente: #' + id);
