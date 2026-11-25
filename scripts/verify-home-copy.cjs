@@ -11,24 +11,44 @@ const readable = main.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ' ')
   .replace(/\s+/g, ' ').trim();
 
 const required = [
-  'Você cuida do seu negócio. A Techway ajuda a cuidar do seu atendimento.',
+  'Seu funcionário digital atende e agenda pelo WhatsApp.',
   'Seu WhatsApp chama. Você nem sempre pode parar para responder.',
   'Feito para pequenos negócios',
   'Começamos pelo atendimento que mais toma o seu tempo.',
   'O atendimento é só o começo.',
-  'Hoje, começamos pelo atendimento no WhatsApp.',
-  'Outros funcionários digitais fazem parte da nossa visão de futuro',
-  'Em desenvolvimento',
-  'Fora da oferta atual',
+  'Hoje, começamos pelo atendimento e pela agenda no WhatsApp.',
+  'A próxima funcionalidade da Techway pode até nascer',
+  'Se o seu negócio cresce, a Techway cresce junto.',
+  'Avaliamos juntos',
+  'Agendamentos disponíveis',
+  'Atendimento e agendamentos pelo WhatsApp já podem ser contratados.',
+  'Da primeira mensagem ao horário marcado.',
+  'Funcionário digital em ação',
+  'Simulação visual com dados fictícios.',
+  'Empresa Exemplo',
+  'Entenda como funcionam o atendimento e os agendamentos',
+  'Os horários e a reserva mostrados são apenas exemplos',
 ];
 for (const phrase of required) {
   assert(readable.includes(phrase), 'Trecho ausente na home exportada: ' + phrase);
 }
+// As mensagens aparecem por estado do React, portanto não constam no HTML inicial.
+const demoSource = fs.readFileSync(path.resolve(__dirname, '../components/WhatsAppDemo.tsx'), 'utf8');
+assert(demoSource.includes('Agendamento ilustrativo'), 'A confirmação animada deve ser identificada como exemplo');
+assert(demoSource.includes('data-from={message.from}'), 'A demo precisa diferenciar os lados da conversa');
+assert(demoSource.includes('prefers-reduced-motion: reduce'), 'A demo deve respeitar acessibilidade de movimento');
+assert(!readable.includes('Agendamentos estão em desenvolvimento'), 'Oferta antiga da agenda não pode voltar');
+assert(!readable.includes('O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão'), 'Oferta aprovada não pode ser descrita como indisponível');
+assert(!readable.includes('Já faz agendamentos e follow-up?'), 'FAQ antiga não pode voltar');
+assert(!readable.includes('Atendimento da Empresa Exemplo'), 'Card antigo de chat estático não pode voltar');
+assert(!readable.includes('Outros funcionários digitais fazem parte da nossa visão de futuro'), 'Promessa genérica de módulos futuros não pode voltar');
+assert(readable.includes('Ideias e sugestões não são promessas de desenvolvimento.'), 'Evolução não deve prometer funcionalidades sem avaliação');
 assert.equal((main.match(/<h1\b/g) || []).length, 1, 'A home precisa de um único H1');
+assert(html.includes('href="/atendimento-agendamentos-whatsapp"'), "Link contextual da oferta ausente");
 for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'early-access', 'faq', 'visao', 'contato']) {
   assert(html.includes('id="' + id + '"'), 'Âncora ausente: #' + id);
 }
-assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('E se seu WhatsApp deixasse de depender'),
+assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('Seu negócio tem planos. Vamos abrir espaço para eles?'),
   'A visão deve anteceder o convite comercial final');
 for (const name of ['techway-empreendedora-hq.webp', 'techway-assistente-hq.webp']) {
   const file = path.resolve(__dirname, '../out/illustrations', name);
@@ -37,4 +57,4 @@ for (const name of ['techway-empreendedora-hq.webp', 'techway-assistente-hq.webp
   assert(bytes.length > 1000 && bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP',
     'Imagem 3D ausente ou corrompida: ' + name);
 }
-console.log('Copy T022 aprovada no export: dor, oferta atual, limites, visão de futuro, CTA e âncoras.');
+console.log('Copy comercial aprovada: atendimento/agendamento, demo animada ilustrativa, crescimento conjunto, CTA e âncoras.');

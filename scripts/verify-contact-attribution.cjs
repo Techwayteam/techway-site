@@ -7,6 +7,7 @@ const blogPosts = require('../data/blogPosts.json');
 const output = path.resolve(__dirname, '..', 'out');
 const pages = [
   { route: '/', source: 'home', minimumLinks: 6 },
+  { route: '/atendimento-agendamentos-whatsapp', source: 'atendimento-agendamentos-whatsapp', minimumLinks: 4 },
   { route: '/blog', source: 'blog', minimumLinks: 2 },
   { route: '/din_page', source: 'landing-default', minimumLinks: 8 },
   { route: '/termos', source: 'termos', minimumLinks: 3 },

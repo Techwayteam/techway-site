@@ -21,7 +21,7 @@ for (const post of posts) {
   assert(post.date <= today, `Post futuro no JSON público: ${post.slug}`);
 }
 
-const routes = ['/', '/blog', '/din_page', ...posts.map(post => `/blog/${post.slug}`)];
+const routes = ['/', '/atendimento-agendamentos-whatsapp', '/blog', '/din_page', ...posts.map(post => `/blog/${post.slug}`)];
 const urls = routes.map(route => {
   const file = path.join(output, route === '/' ? 'index.html' : `${route.slice(1)}.html`);
   assert(fs.existsSync(file), `Rota não exportada: ${route}`);

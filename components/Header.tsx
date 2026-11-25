@@ -16,7 +16,7 @@ export default function Header(): JSX.Element {
   const contactPage = useContactPage();
   const currentPath = useRouter().pathname;
   const isHome = currentPath === '/';
-  const useLightHeader = isHome || currentPath.startsWith('/blog');
+  const useLightHeader = isHome || currentPath.startsWith('/blog') || currentPath === '/atendimento-agendamentos-whatsapp';
   const homePath = contactPage.startsWith('blog/')
     ? `/?origem=${encodeURIComponent(contactPage)}`
     : '/';

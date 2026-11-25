@@ -4,23 +4,28 @@
 
 **Agente de IA:** componente configurado para executar tarefas delimitadas com informações autorizadas, ferramentas e regras. **Funcionário digital:** expressão comercial usada pela Techway; explicá-la com exemplos e supervisão humana. **Lead:** contato realmente recebido e registrado. **Clique:** sinal de intenção, não contato garantido. **Caso:** relato de cliente verificável, com autorização de uso. **Integração:** capacidade dependente de sistema externo e configuração.
 
-## Oferta mínima verificável — T020
+## Oferta mínima verificável — T020, atualizada em 24/11/2026
 
-Definição aceita pelo fundador em 29/10/2026 (D031). A oferta inicial é configurar e
-evoluir, junto de cada empresa, um atendimento no WhatsApp que responde dúvidas,
-coleta informações iniciais, mantém o contexto da conversa e permite continuar com
-uma pessoa. Follow-up não está disponível. Agendamentos estão em desenvolvimento e
-só podem ser apresentados com esse estado, sem confirmação automática ou prazo.
+A definição de 29/10/2026 (D031) estabeleceu a oferta inicial de atendimento, coleta de informações,
+contexto e continuidade humana. **D033 (24/11) superou a classificação de agendamento em desenvolvimento:**
+atendimento e agendamentos pelo WhatsApp podem ser **comercializados agora**, em implantação personalizada.
+A agenda precisa de serviços, horários, permissões e canal configurados, seguidos de habilitação
+operacional e validação do fluxo de cada empresa. A última verificação do bot (22/11)
+indicava agenda administrativa em PROD ativa e fluxo privado desativado;
+isso **não** é sinal de indisponibilidade comercial, mas também não comprova
+atendimento autônomo já ativo para todos os clientes. Follow-up automático continua fora da oferta.
+A Techway acompanha a evolução do negócio: novas ideias podem influenciar a próxima
+funcionalidade, sempre sujeitas a avaliação, escopo e viabilidade (D034).
 
 ### Matriz de afirmações
 
-| Tarefa | Afirmação publicável | Demonstração mínima | Informação necessária | Limite e continuidade humana | Atualização | Estado em 29/10/2026 |
+| Tarefa | Afirmação publicável | Demonstração mínima | Informação necessária | Limite e continuidade humana | Atualização | Estado comercial atual |
 | --- | --- | --- | --- | --- | --- | --- |
 | Responder sobre serviços e dúvidas recorrentes | O atendimento responde dúvidas usando informações aprovadas pela empresa | Perguntar por um serviço, como funciona e uma orientação previamente fornecida | Lista de serviços, descrições, regras e respostas aprovadas | Não inventar informação; quando a fonte não responder, declarar o limite e seguir o procedimento humano combinado | A empresa informa mudanças; conteúdo alterado precisa ser revisto e testado | **Disponível** |
 | Coletar informações iniciais | O atendimento coleta os dados iniciais definidos para entender o pedido antes da continuidade | Informar interesse, serviço desejado e dúvida principal; conferir o resumo | Campos mínimos e finalidade definidos com a empresa | Coleta não equivale a cadastro ou execução de ação externa; a pessoa assume conforme o procedimento acordado | Campos e regras são definidos na implantação | **Disponível** |
 | Manter contexto | O atendimento mantém o contexto da conversa para lidar com perguntas relacionadas | Fazer uma pergunta complementar sobre o serviço já citado | Regras de contexto e tratamento de dados confirmadas na implantação | Não ampliar a afirmação para histórico permanente, memória ilimitada ou retomada futura sem validação própria | Mudanças técnicas e de fonte exigem novo teste | **Disponível para o contexto da conversa** |
 | Continuar com uma pessoa | O atendimento permite passar a conversa para uma pessoa quando necessário | Fazer uma pergunta fora do escopo e verificar a continuidade humana | Canal, horário, responsável e procedimento escolhidos pela empresa | Não prometer resposta humana imediata nem um mecanismo idêntico para todas as empresas | Responsável comercial mantém o procedimento atualizado | **Disponível** |
-| Agendamentos | Agendamentos pelo WhatsApp estão em desenvolvimento | Demonstrar somente em ambiente e fluxo validados antes de qualquer promessa de confirmação | Agenda, regras, disponibilidade, permissões e tratamento de falhas | Não afirmar que está pronto, não confirmar horário sem integração efetiva e não prometer prazo de entrega | Definida por integração e escopo contratado | **Em desenvolvimento** |
+| Agendamentos | A Techway comercializa agendamentos pelo WhatsApp, configurados por empresa | Testar consulta real da disponibilidade e gravação efetiva em ambiente controlado antes de afirmar execução ao vivo | Catálogo, agenda, recursos, disponibilidade, regras e permissões da empresa | Não confirmar horário sem a operação retornar sucesso; deixar claro se o fluxo demonstrado é ilustrativo, piloto ou habilitado | Configuração/habilitação e aceite operacional na implantação | **Disponível para contratação** (D033) |
 | Follow-up | Não entra na oferta atual | Nenhuma demonstração comercial | — | Não anunciar retomada automática de conversas | — | **Não disponível** |
 | Lembretes, CRM e outras ações externas | Avaliados por caso depois de validar sistema, permissão e comportamento | Nenhuma demonstração incluída na oferta mínima | Integração, autorização, regras e testes próprios | Não afirmar que estão prontos nem simular execução | Definida por integração, se contratada | **Fora da oferta mínima** |
 

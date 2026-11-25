@@ -1,6 +1,10 @@
 # Plano 005 — da clareza da oferta ao primeiro cliente
 
-Estado: **T007 e T010 publicadas; T021 é o próximo recorte da onda 1**. Fichas: T007, T010,
+**Prioridade atual (24/11/2026, D032–D034):** 1) comunicar de modo claro **atendimento e agendamentos disponíveis para contratação**, 2) demonstrar o trabalho do funcionário digital, 3) só depois retomar instrumentação, prospecção e demais otimizações. O fundador confirmou agendamentos como produto comercializável e posicionou a Techway como parceira de evolução do negócio: uma função nova pode nascer de uma necessidade do cliente, sem promessa de entrega. O registro abaixo de ondas 0–4 é histórico e fica subordinado a esta prioridade.
+
+**Ampliação GEO autorizada (24/11/2026):** antes do deploy, acrescentar uma página única de serviço `/atendimento-agendamentos-whatsapp` para explicar o produto com profundidade e limites verificáveis, conectada à home/rodapé e ao sitemap. Preservar a demo animada, deixar o HTML estático compreensível mesmo sem JavaScript, utilizar schema `Service` alinhado à marca e validar no CI. Não fabricar reviews, FAQ rich results, LocalBusiness, preços ou presença em respostas de IA. Ver T025/D037 e evidência `2026-11-24-GEO.md`. Disponibilidade para comercializar agendamentos não implica ativação em todos os clientes. Ainda sem deploy.\n\n**Em revisão no PR #23 (`feat/oferta-real-primeiro-demo-20261124`):** home com atendimento + agendamento e crescimento conjunto; seção de demo substitui o chat estático por uma **conversa animada, visualmente inspirada no WhatsApp**. Cliente: balões brancos à esquerda; funcionário digital: verdes à direita. Com indicadores de digitação, rolagem, relógio, confirmação ilustrativa, replay/pausa, layout desktop/mobile e movimento reduzido. **Roteiro e agenda são fictícios**; a animação não usa dados reais, executa tool nem grava reservas. Validar CI, browser e capturas visuais antes do merge; ainda sem publicação. Demonstração com reserva realmente executada pode ser trabalhada depois em ambiente controlado. A flag do fluxo privado permanecia desativada no estado documental PROD de 22/11, distinta da decisão comercial de vender agendamento. Não instalar analytics/CRM nem enviar mensagens nesta revisão.
+
+Histórico da onda 1 (08/11): **T007 e T010 publicadas; T021 aparecia como próximo recorte**, estado superado pelas prioridades atuais T024/T025 no PR #23. Fichas: T007, T010,
 T011, T015, T020–T023. Decisões pertinentes: D001, D009, D023, D027, D029, D030 e D031.
 
 Fonte do estado: `../10-progresso.md`. Definições do fundador:
@@ -25,9 +29,10 @@ reconhece cada etapa real.
 
 ## Dependências, riscos e limites
 
-- DN001–DN003 foram resolvidas em D031. A implementação deve preservar os estados
-  confirmados: follow-up indisponível, agendamento em desenvolvimento e impacto de
-  80% tratado como percepção.
+- DN001–DN003 foram resolvidas historicamente em D031; D033 atualiza a posição comercial:
+  **agendamentos estão disponíveis para contratação**, com configuração/habilitação por empresa.
+  Follow-up automático segue indisponível; impacto de 80% continua relato subjetivo da cliente,
+  não medida de resultado.
 - Push em `main` publica. Cada onda precisa reconciliar `origin/main`, o commit local
   T007 e os artefatos versionados antes de enviar.
 - Preservar slugs, canonical, sitemap, BlogPosting, assets e a rota `/din_page` até

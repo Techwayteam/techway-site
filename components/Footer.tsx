@@ -16,7 +16,12 @@ const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         {/* Identidade */}
         <div>
           <h3 className="text-lg font-bold text-white mb-2">Techway</h3>
-          <p>Transformando negócios com tecnologia eficiente e personalizada.</p>
+          <p>Funcionários digitais para atendimento e agendamentos pelo WhatsApp, criados para acompanhar a evolução do seu negócio.</p>
+          <p className="mt-3">
+            <Link href="/atendimento-agendamentos-whatsapp" className="font-semibold text-white underline underline-offset-4 hover:text-blue-200">
+              Saiba como funciona nosso atendimento com IA e agenda
+            </Link>
+          </p>
         </div>
 
         {/* Contato */}
