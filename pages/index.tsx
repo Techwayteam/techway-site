@@ -195,14 +195,14 @@ const LandingConversao: React.FC = () => {
                   De manhã. Tem às 10h?
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Nesse exemplo, temos 10h disponível. Pode me confirmar seu nome e o serviço?
+                  Tenho 10h disponível! Pode me confirmar seu nome e qual serviço você procura?
                 </li>
                 <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
                   Ana, para uma avaliação.
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Combinado, Ana! Agendamento ilustrativo confirmado para sábado, às 10h.
-                  Sua equipe teria o registro para acompanhar.
+                  Prontinho, Ana! Sua avaliação está marcada para sábado, às 10h.
+                  Se precisar alterar, é só chamar por aqui.
                 </li>
               </ol>
             </div>
