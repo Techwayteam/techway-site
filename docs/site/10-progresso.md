@@ -10,7 +10,11 @@
 
 **Limite operacional:** o último estado documentado da Luluzinha (22/11) registrava fluxo privado de agendamento OFF e admin ON em produção. A decisão de comercializar o recurso não equivale a sua ativação em qualquer cliente. Configuração e aceite operacional são específicos por implantação.
 
-**Próximo passo:** corrigir eventuais achados no CI/navegador, revisar visual e ritmo da animação em desktop/mobile, submeter ao aceite comercial do fundador e só então deliberar sobre publicação do PR #23. Gravação demonstrativa baseada em execução real de tools pode substituir futuramente o roteiro fictício, em ambiente autorizado e sem dados de clientes. Nenhuma mensagem ou agendamento foi criado por esta entrega.
+**QA visual realizado (24/11, PR #23):** a execução [45529727434](https://github.com/Techwayteam/techway-site/actions/runs/45529727434) terminou **success**: instalação, TypeScript, build/export, SEO, origem de contatos e guardas da copy; Playwright desktop 1440×900/mobile 390×844 com seis mensagens, lados e cores corretos, confirmação apenas ilustrativa e `prefers-reduced-motion`. Autoplay ao entrar na tela, pausa e replay passaram. Capturas reais de `#exemplo`, celular e estado intermediário foram revisadas; a primeira versão ocultava a primeira pergunta e aproximava o controle do CTA móvel, problemas corrigidos com altura/proporção do telefone, copy mais curta e área segura nos controles. O segundo comparativo validou que o roteiro integral agora está visível em desktop e mobile. O wallpaper é SVG original e não foi alterado o logo oficial.
+
+**Registro de movimento:** o QA gravou a animação mobile em `artifacts/visual-fix/recordings/`; uma correção não funcional posterior alterou apenas o momento de cópia do WebM para o nome amigável (após fechar o contexto do Playwright). Nova execução de CI é necessária para esse último commit. Vídeo e roteiro continuam fictícios; não houve tool de agendamento, envio, migração, merge ou publicação.
+
+**Próximo passo:** confirmar CI do commit final, submeter o resultado visual ao fundador e só então deliberar sobre merge e deploy do PR #23. Uma futura demonstração com tools reais depende de ambiente autorizado e dados fictícios.
 
 ---
 
