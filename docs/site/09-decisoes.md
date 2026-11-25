@@ -41,4 +41,6 @@
 
 | D035 | 24/11/2026 | Demo visual animada e fiel à linguagem do WhatsApp como primeira experiência no site | Fundador escolheu uma sequência de mensagens em tela de celular, não chat interativo. Reproduzir cliente à esquerda em branco e atendente à direita em verde, com progressão, digitação, rolagem, replay/pausa e versão para movimento reduzido. Os horários e a confirmação são ilustrativos até existir um roteiro validado com execução de tool; não manipular agenda ou dados reais nesta etapa. |
 
+| D036 | 24/11/2026 | Aplicar auditoria SEO/AEO proporcional ao site antes do deploy da demo | Checklist externo de dez itens foi confrontado com o código e as evidências: sitemap/robots, canonical, metadados, HTML exportado, hierarquia, WebP/ALT, BlogPosting e teste de noindex já existem. Atualizar título comercial e adicionar Organization/WebSite JSON-LD na home com marca/logo/Instagram verificados; não fabricar LocalBusiness/NAP, FAQPage rich results, endereços ou redirects inexistentes. Avaliação de indexação, sitemap no Search Console, bot/WAF e aliases 301 depende de acesso operacional/hosting pós-publicação; preservar /din_page até decisão DN005. |
+
 Ao mudar uma decisão, registrar motivo, evidência e impacto nas tarefas. Não apagar histórico nem transformar sugestão operacional em decisão do usuário.
