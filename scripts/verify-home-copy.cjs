@@ -35,7 +35,7 @@ assert.equal((main.match(/<h1\b/g) || []).length, 1, 'A home precisa de um únic
 for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'early-access', 'faq', 'visao', 'contato']) {
   assert(html.includes('id="' + id + '"'), 'Âncora ausente: #' + id);
 }
-assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('E se seu WhatsApp deixasse de depender'),
+assert(readable.indexOf('O atendimento é só o começo.') < readable.indexOf('Seu negócio tem planos. Vamos abrir espaço para eles?'),
   'A visão deve anteceder o convite comercial final');
 for (const name of ['techway-empreendedora-hq.webp', 'techway-assistente-hq.webp']) {
   const file = path.resolve(__dirname, '../out/illustrations', name);
