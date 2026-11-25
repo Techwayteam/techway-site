@@ -1,4 +1,5 @@
 import type React from "react"
+import Link from "next/link"
 import Head from "next/head"
 import { ArrowRight, CalendarClock, Check, MessageCircle, UserRound } from "lucide-react"
 import Footer from "../components/Footer"
@@ -168,6 +169,13 @@ const LandingConversao: React.FC = () => {
                 </article>
               ))}
             </div>
+            <Link
+              href="/atendimento-agendamentos-whatsapp"
+              className="mt-8 inline-flex items-center gap-2 rounded-xl border border-blue-200 bg-white px-5 py-3 font-bold text-blue-800 transition hover:border-blue-400 hover:bg-blue-50"
+            >
+              Entenda como funcionam o atendimento e os agendamentos
+              <ArrowRight className="h-4 w-4 flex-none" aria-hidden="true" />
+            </Link>
           </div>
         </section>
 
@@ -301,7 +309,7 @@ const LandingConversao: React.FC = () => {
                 Comece pelo atendimento. Evolua com a Techway.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-600">
-                Começamos com o funcionário digital de atendimento que já existe.
+                Começamos com atendimento e agendamentos, soluções já disponíveis.
                 Depois, seguimos perto para entender o que ajuda sua empresa a trabalhar
                 melhor e crescer. A próxima funcionalidade da Techway pode até nascer
                 de um desafio seu!
@@ -388,7 +396,7 @@ const LandingConversao: React.FC = () => {
               <p className="tw-vision-description">
                 A gente não quer só tirar mensagens da sua frente. Queremos ajudar
                 você a cuidar melhor dos clientes, ganhar tempo e fazer o negócio evoluir.
-                Hoje, começamos pelo atendimento no WhatsApp. Amanhã, o próximo passo
+                Hoje, começamos pelo atendimento e pela agenda no WhatsApp. Amanhã, o próximo passo
                 pode nascer de uma necessidade sua. Se o seu negócio cresce, a Techway
                 cresce junto.
               </p>
