@@ -22,7 +22,11 @@ const required = [
   'Avaliamos juntos',
   'Agendamentos disponíveis',
   'Atendimento e agendamentos pelo WhatsApp já podem ser contratados.',
-  'Da primeira pergunta ao agendamento.',
+  'Da primeira mensagem ao horário marcado.',
+  'Funcionário digital em ação',
+  'Simulação visual com dados fictícios.',
+  'Empresa Exemplo',
+  'Agendamento ilustrativo',
   'Os horários e a reserva mostrados são apenas exemplos',
 ];
 for (const phrase of required) {
@@ -31,6 +35,7 @@ for (const phrase of required) {
 assert(!readable.includes('Agendamentos estão em desenvolvimento'), 'Oferta antiga da agenda não pode voltar');
 assert(!readable.includes('O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão'), 'Oferta aprovada não pode ser descrita como indisponível');
 assert(!readable.includes('Já faz agendamentos e follow-up?'), 'FAQ antiga não pode voltar');
+assert(!readable.includes('Atendimento da Empresa Exemplo'), 'Card antigo de chat estático não pode voltar');
 assert(!readable.includes('Outros funcionários digitais fazem parte da nossa visão de futuro'), 'Promessa genérica de módulos futuros não pode voltar');
 assert(readable.includes('Ideias e sugestões não são promessas de desenvolvimento.'), 'Evolução não deve prometer funcionalidades sem avaliação');
 assert.equal((main.match(/<h1\b/g) || []).length, 1, 'A home precisa de um único H1');
@@ -46,4 +51,4 @@ for (const name of ['techway-empreendedora-hq.webp', 'techway-assistente-hq.webp
   assert(bytes.length > 1000 && bytes.toString('ascii', 0, 4) === 'RIFF' && bytes.toString('ascii', 8, 12) === 'WEBP',
     'Imagem 3D ausente ou corrompida: ' + name);
 }
-console.log('Copy comercial aprovada no export: atendimento + agendamento disponíveis, crescimento conjunto, demo fictícia, CTA e âncoras.');
+console.log('Copy comercial aprovada: atendimento/agendamento, demo animada ilustrativa, crescimento conjunto, CTA e âncoras.');
