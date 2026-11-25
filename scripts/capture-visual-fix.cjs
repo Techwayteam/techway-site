@@ -37,6 +37,10 @@ async function main(){
       assert(content.includes('Como funciona um agendamento pelo WhatsApp?'), 'Conteúdo comercial ausente');
       assert(content.includes('O que é o funcionário digital da Techway?'), 'Perguntas comerciais ausentes');
       assert.equal(await page.locator('main h1').count(),1, 'H1 duplicado na página comercial');
+      const brand=page.locator('header .tw-brand-frame');
+      assert.equal(await brand.count(),1, 'Logo oficial precisa de superfície de contraste na página de solução');
+      const brandSurface=await brand.evaluate(node=>getComputedStyle(node).backgroundImage);
+      assert.notEqual(brandSurface,'none','Logo branca sem contraste no header claro');
       const serviceSchema=await page.locator('script[type="application/ld+json"]').textContent();
       assert.equal(JSON.parse(serviceSchema)['@type'],'Service','Schema Service não publicado');
       assert(await page.locator('a[href="/#exemplo"]').count()>0, 'Demo da home não está ligada ao serviço');
