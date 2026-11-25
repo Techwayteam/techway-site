@@ -12,7 +12,7 @@ async function main(){
   for(const viewport of [{id:'desktop',width:1440,height:900},{id:'mobile',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:viewport.width,height:viewport.height},deviceScaleFactor:1});
    await page.emulateMedia({reducedMotion:'reduce'});
-   for(const item of [{url:'/',name:'home'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}]){
+   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}]){
     await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
     await page.evaluate(()=>document.fonts.ready);
     if(item.name==='home'){
@@ -32,6 +32,17 @@ async function main(){
     assert.equal(metrics.h1,1,'Esperado um H1 em '+item.name);
     assert(metrics.logo.includes('logo_techway_semslogan_transparent.png'),'Logo oficial não carregada');
     if(item.name==='artigo') assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
+    if(item.name==='solucao') {
+      const content=await page.locator('main').innerText();
+      assert(content.includes('Como funciona um agendamento pelo WhatsApp?'), 'Conteúdo comercial ausente');
+      assert(content.includes('O que é o funcionário digital da Techway?'), 'Perguntas comerciais ausentes');
+      assert.equal(await page.locator('main h1').count(),1, 'H1 duplicado na página comercial');
+      const serviceSchema=await page.locator('script[type="application/ld+json"]').textContent();
+      assert.equal(JSON.parse(serviceSchema)['@type'],'Service','Schema Service não publicado');
+      assert(await page.locator('a[href="/#exemplo"]').count()>0, 'Demo da home não está ligada ao serviço');
+      assert(await page.locator('a[href="/"]').count()>0, 'Caminho da home ausente na página de serviço');
+      console.log('PASS página GEO ('+viewport.id+'): conteúdo, serviço, canonical, navegação e H1');
+    }
     await page.screenshot({path:path.join(dir,item.name+'-'+viewport.id+'.png'),fullPage:item.name!=='home'});
     // Extra: captura integral da home desktop para revisão comercial; não substitui o print do viewport.
     if(item.name==='home') {
@@ -64,6 +75,17 @@ async function main(){
    }
    await page.close();
   }
+  // O texto de referência continua acessível mesmo em navegador sem JavaScript.
+  const noJsContext=await browser.newContext({viewport:{width:390,height:844},javaScriptEnabled:false});
+  const noJs=await noJsContext.newPage();
+  await noJs.goto(base+'/atendimento-agendamentos-whatsapp',{waitUntil:'domcontentloaded'});
+  const textOnly=await noJs.locator('main').innerText();
+  assert(textOnly.includes('Atendimento com IA e agendamentos pelo WhatsApp'),'Conteúdo principal depende de JS');
+  assert(textOnly.includes('Follow-up automático não integra a oferta atual.'),'Limites precisam ser legíveis sem JS');
+  assert.equal(await noJs.locator('main h1').count(),1);
+  await noJsContext.close();
+  console.log('PASS GEO: resposta comercial e limites visíveis sem JavaScript');
+
   // Teste da animação real (sem reduced-motion): autoplay na área visível,
   // pausa funcional e reinício. Nenhuma chamada de rede do chat é feita.
   const animated=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
