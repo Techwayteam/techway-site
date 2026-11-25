@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import Testimonials from "../components/Testimonials"
 import WhatsAppLink from "../components/WhatsAppLink"
+import WhatsAppDemo from "../components/WhatsAppDemo"
 import useContactPage from "../hooks/useContactPage"
 import { absoluteUrl } from "../lib/seo"
 
@@ -152,15 +153,16 @@ const LandingConversao: React.FC = () => {
           <div className="mx-auto grid max-w-6xl gap-12 px-4 md:grid-cols-[0.9fr_1.1fr] md:items-center">
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-blue-700">
-                Exemplo fictício
+                Funcionário digital em ação
               </p>
               <h2 id="exemplo-titulo" className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Da primeira pergunta ao agendamento.
+                Da primeira mensagem ao horário marcado.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Veja uma conversa fictícia que ilustra atendimento e agendamento pelo WhatsApp.
-                Os horários e a reserva mostrados são apenas exemplos, não uma consulta
-                ou agendamento executado em uma agenda real.
+                Acompanhe uma conversa animada, inspirada na experiência do WhatsApp.
+                Veja como o funcionário digital atende, entende o pedido e conduz
+                o agendamento. Os horários e a reserva mostrados são apenas exemplos:
+                esta simulação não consulta nem altera uma agenda real.
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
@@ -168,44 +170,12 @@ const LandingConversao: React.FC = () => {
                 cta="exemplo"
                 className="mt-8 inline-flex items-center rounded-lg bg-gray-950 px-6 py-4 font-bold text-white transition hover:bg-blue-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-700"
               >
-                Quero ver isso no meu negócio
+                Quero isso no meu negócio
                 <ArrowRight className="ml-2 h-5 w-5" aria-hidden="true" />
               </WhatsAppLink>
             </div>
 
-            <div className="rounded-3xl border border-gray-200 bg-gray-100 p-4 shadow-xl sm:p-7">
-              <div className="mb-5 flex items-center gap-3 border-b border-gray-200 pb-4">
-                <div className="rounded-full bg-blue-600 p-2 text-white">
-                  <MessageCircle className="h-5 w-5" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="font-bold text-gray-950">Atendimento da Empresa Exemplo</p>
-                  <p className="text-sm text-gray-500">Conversa ilustrativa</p>
-                </div>
-              </div>
-              <ol className="space-y-4" aria-label="Exemplo fictício de conversa no WhatsApp">
-                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Oi! Vocês atendem aos sábados? Queria agendar.
-                </li>
-                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Atendemos, sim! Posso conferir os horários para você.
-                  Prefere de manhã ou à tarde?
-                </li>
-                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  De manhã. Tem às 10h?
-                </li>
-                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Tenho 10h disponível! Pode me confirmar seu nome e qual serviço você procura?
-                </li>
-                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Ana, para uma avaliação.
-                </li>
-                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Prontinho, Ana! Sua avaliação está marcada para sábado, às 10h.
-                  Se precisar alterar, é só chamar por aqui.
-                </li>
-              </ol>
-            </div>
+            <WhatsAppDemo />
           </div>
         </section>
 
