@@ -1,5 +1,20 @@
 # Progresso
 
+## Checkpoint atual — 24/11/2026
+
+**Direção comercial redefinida (D032–D034):** primeiro explicar atendimento **e agendamentos** como soluções já comercializáveis; depois demonstrar claramente sua execução real. O cliente deve entender que a Techway quer ajudá-lo a evoluir e crescer, acolhendo novas ideias sem prometer desenvolvê-las. Medição adicional e prospecção ficam atrás dessas duas prioridades.
+
+**Site público:** últimas mudanças visuais em `main` no commit `f14b1264`, com workflow Pages `43675227146` concluído com sucesso em 15/11. A jornada editorial T021 foi incorporada antes disso no commit `42be79e6`, e os quatro CTAs de artigos preservam `origem` até a home. A listagem de T021 como não publicada nas notas de 08/11 abaixo é **histórica, superada**.
+
+**Entrega em revisão:** branch `feat/oferta-real-primeiro-demo-20261124` modifica `pages/index.tsx`, guarda de copy e docs para mostrar atendimento, agenda e parceria de crescimento; ajusta o exemplo de conversa como **fictício**, sem reserva realmente gravada. Não há aprovação de CI, merge ou deploy desta branch neste checkpoint; os resultados serão anexados ao PR. A última documentação operacional da Luluzinha (22/11) registrava o fluxo privado de agendamento **OFF** e admin **ON** em produção. Isso não contradiz a decisão comercial de vender a solução, mas não permite afirmar que o agendamento autônomo já foi ativado no canal produtivo. A ativação permanece condicionada à implantação/homologação da empresa.
+
+**Próximo passo:** revisar a copy e validar tecnicamente; em seguida construir uma demonstração de **ação realmente executada** num ambiente controlado, com ferramentas de agenda e dados fictícios. Não transformar a simulação HTML desta primeira entrega em evidência de registro real. Nenhuma mensagem foi enviada e nenhuma configuração operacional foi alterada.
+
+---
+
+### Histórico anterior (conservado)
+
+
 Atualização: **08/11/2026 — America/Sao_Paulo**.
 
 ## T021 — implementação em revisão (08/11/2026)
