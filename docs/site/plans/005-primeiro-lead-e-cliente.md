@@ -1,5 +1,9 @@
 # Plano 005 — da clareza da oferta ao primeiro cliente
 
+**Prioridade atual (24/11/2026, D032–D034):** 1) comunicar de modo claro **atendimento e agendamentos disponíveis para contratação**, 2) demonstrar o trabalho do funcionário digital, 3) só depois retomar instrumentação, prospecção e demais otimizações. O fundador confirmou agendamentos como produto comercializável e posicionou a Techway como parceira de evolução do negócio: uma função nova pode nascer de uma necessidade do cliente, sem promessa de entrega. O registro abaixo de ondas 0–4 é histórico e fica subordinado a esta prioridade.
+
+**Em implementação na branch `feat/oferta-real-primeiro-demo-20261124`:** home atualizada com atendimento + agendamento e crescimento conjunto; exemplo textual explicitamente fictício. Ainda requer CI e revisão comercial. Demonstração com execução real em ambiente controlado é a próxima entrega, **não** foi realizada por esta revisão. Flag do fluxo privado desligada em produção na última verificação operacional (22/11); habilitação por empresa continua sendo parte da implantação, distinta de disponibilidade para comercialização. Não instalar analytics/CRM nem enviar mensagens como parte desta revisão.
+
 Estado: **T007 e T010 publicadas; T021 é o próximo recorte da onda 1**. Fichas: T007, T010,
 T011, T015, T020–T023. Decisões pertinentes: D001, D009, D023, D027, D029, D030 e D031.
 
@@ -25,9 +29,10 @@ reconhece cada etapa real.
 
 ## Dependências, riscos e limites
 
-- DN001–DN003 foram resolvidas em D031. A implementação deve preservar os estados
-  confirmados: follow-up indisponível, agendamento em desenvolvimento e impacto de
-  80% tratado como percepção.
+- DN001–DN003 foram resolvidas historicamente em D031; D033 atualiza a posição comercial:
+  **agendamentos estão disponíveis para contratação**, com configuração/habilitação por empresa.
+  Follow-up automático segue indisponível; impacto de 80% continua relato subjetivo da cliente,
+  não medida de resultado.
 - Push em `main` publica. Cada onda precisa reconciliar `origin/main`, o commit local
   T007 e os artefatos versionados antes de enviar.
 - Preservar slugs, canonical, sitemap, BlogPosting, assets e a rota `/din_page` até
