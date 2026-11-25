@@ -56,9 +56,10 @@ const LandingConversao: React.FC = () => {
                 <span> atende clientes pelo WhatsApp.</span>
               </h1>
               <p className="tw-hero-description">
-                A Techway desenvolve funcionários digitais especializados para pequenas empresas.
-                O primeiro cuida do atendimento: conversa usando as informações do seu negócio,
-                responde dúvidas, organiza pedidos e mantém o contexto. Quando precisa, sua equipe assume.
+                A Techway cria funcionários digitais para ajudar pequenos negócios a ganhar tempo
+                e espaço para crescer. Começamos pelo atendimento no WhatsApp: seu funcionário
+                responde dúvidas com as informações da empresa, organiza pedidos e mantém o
+                contexto. Sua equipe assume quando precisa — e a gente segue perto para evoluir junto.
               </p>
               <div className="tw-hero-actions">
                 <WhatsAppLink message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
@@ -72,7 +73,7 @@ const LandingConversao: React.FC = () => {
               <p className="tw-hero-note">A conversa abre no WhatsApp. Você decide quando enviar.</p>
               <div className="tw-trust-points" aria-label="Benefícios">
                 <span><b aria-hidden="true">✓</b> Feito para pequenos negócios</span>
-                <span><b aria-hidden="true">✓</b> Adaptado à sua rotina</span>
+                <span><b aria-hidden="true">✓</b> Evolui junto com seu negócio</span>
               </div>
             </div>
             <div className="tw-hero-art" aria-label="Ilustração de uma empreendedora e um funcionário digital">
@@ -226,8 +227,8 @@ const LandingConversao: React.FC = () => {
                 },
                 {
                   number: "3",
-                  title: "Começar e acompanhar",
-                  text: "Definimos o escopo e as condições na proposta, colocamos em uso e acompanhamos os ajustes necessários.",
+                  title: "Acompanhar e evoluir",
+                  text: "Depois da implantação, acompanhamos o uso, ouvimos suas ideias e avaliamos melhorias conforme suas prioridades e a viabilidade de cada mudança.",
                 },
               ].map((step) => (
                 <li key={step.number} className="rounded-2xl border border-gray-700 bg-gray-900 p-7">
@@ -296,16 +297,17 @@ const LandingConversao: React.FC = () => {
                 Comece pelo atendimento. Evolua com a Techway.
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-relaxed text-gray-600">
-                O Early Access é para quem quer colocar o primeiro funcionário digital
-                em ação no WhatsApp e aperfeiçoar o atendimento com acompanhamento
-                próximo da nossa equipe.
+                Começamos com o funcionário digital de atendimento que já existe.
+                Depois, seguimos perto para entender o que ajuda sua empresa a trabalhar
+                melhor e crescer. A próxima funcionalidade da Techway pode até nascer
+                de um desafio seu!
               </p>
 
               <ul className="mt-9 grid gap-4 md:grid-cols-2" aria-label="Benefícios do Early Access">
                 {[
                   "Contato próximo com o desenvolvedor",
-                  "Participação nas prioridades do roadmap",
-                  "Avaliação de funcionalidades para a realidade da empresa",
+                  "Sua rotina ajuda a orientar nossas prioridades",
+                  "Novas ideias avaliadas com você, caso a caso",
                   "Isenção da taxa de implantação",
                   "Consultoria mensal para evolução do negócio",
                 ].map((item) => (
@@ -316,7 +318,8 @@ const LandingConversao: React.FC = () => {
                 ))}
               </ul>
               <p className="mt-7 text-sm leading-relaxed text-gray-500">
-                Funcionalidades, integrações, valor mensal e prazos são definidos na proposta de cada empresa.
+                Ideias e sugestões não são promessas de desenvolvimento. Escopo, viabilidade,
+                integrações, valores e prazos são avaliados e definidos em cada proposta.
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender se o Early Access faz sentido para minha empresa."
@@ -354,6 +357,10 @@ const LandingConversao: React.FC = () => {
                   answer: "Ainda não. Follow-up automático não integra a oferta atual. Novas funções são avaliadas com cada empresa, sem promessa prévia de prazo.",
                 },
                 {
+                  question: "E se minha empresa precisar de uma função que ainda não existe?",
+                  answer: "Queremos entender o que ajudaria seu negócio a evoluir. Sua necessidade pode inspirar uma próxima funcionalidade da Techway, mas cada ideia passa por avaliação de viabilidade, prioridades e condições antes de virar uma entrega.",
+                },
+                {
                   question: "Quanto custa?",
                   answer: "A proposta é definida depois de entendermos a primeira tarefa, os limites, a implantação e possíveis integrações. No Early Access, a taxa de implantação é isenta e há uma consultoria mensal.",
                 },
@@ -375,18 +382,19 @@ const LandingConversao: React.FC = () => {
               <p className="tw-label">NOSSA VISÃO</p>
               <h2>O atendimento é <span>só o começo.</span></h2>
               <p className="tw-vision-description">
-                A Techway quer ajudar pequenos negócios a ganhar tempo e capacidade
-                com uma equipe de funcionários digitais especializados.
-                Hoje, começamos pelo atendimento no WhatsApp.
-                Outros funcionários digitais fazem parte da nossa visão de futuro — não desta oferta atual.
+                A gente não quer só tirar mensagens da sua frente. Queremos ajudar
+                você a cuidar melhor dos clientes, ganhar tempo e fazer o negócio evoluir.
+                Hoje, começamos pelo atendimento no WhatsApp. Amanhã, o próximo passo
+                pode nascer de uma necessidade sua. Se o seu negócio cresce, a Techway
+                cresce junto.
               </p>
             </div>
-            <div className="tw-vision-grid" aria-label="Presente e visão futura">
+            <div className="tw-vision-grid" aria-label="Como a Techway evolui com o seu negócio">
               {[
-                { name: "Atendimento", icon: "✦", state: "Disponível agora", active: true },
-                { name: "Financeiro", icon: "▤", state: "Visão futura", active: false },
-                { name: "Marketing", icon: "◈", state: "Visão futura", active: false },
-                { name: "Operações", icon: "▣", state: "Visão futura", active: false },
+                { name: "Atendimento", icon: "✦", state: "Já em uso", active: true },
+                { name: "Sua rotina", icon: "▤", state: "A gente escuta", active: false },
+                { name: "Novas ideias", icon: "◈", state: "Avaliamos juntos", active: false },
+                { name: "Evolução", icon: "▣", state: "Com propósito", active: false },
               ].map((module) => (
                 <div key={module.name} className={`tw-module ${module.active ? "tw-module-now" : ""}`}>
                   <span className="tw-module-icon" aria-hidden="true">{module.icon}</span>
@@ -401,12 +409,12 @@ const LandingConversao: React.FC = () => {
         <section id="contato" className="tw-contact scroll-mt-24 bg-blue-700 py-20 text-white md:py-24">
           <div className="mx-auto max-w-4xl px-4 text-center">
             <h2 className="text-3xl font-bold leading-tight md:text-5xl">
-              E se seu WhatsApp deixasse de depender de você para cada resposta?
+              Seu negócio tem planos. Vamos abrir espaço para eles?
             </h2>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-blue-100">
-              Conte como funciona seu atendimento hoje. Vamos identificar quais
-              tarefas repetitivas um funcionário digital pode assumir
-              e o que faz sentido para o seu negócio.
+              Começamos pelo atendimento que já funciona no WhatsApp.
+              Conte como é sua rotina, onde o tempo fica apertado e o que
+              você gostaria de fazer melhor. Vamos pensar juntos no próximo passo.
             </p>
             <WhatsAppLink
               message="Olá! Quero entender como começar com um funcionário digital no atendimento da minha empresa."
