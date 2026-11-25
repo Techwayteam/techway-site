@@ -44,6 +44,27 @@ for (const route of ['/', '/din_page', '/termos', '/privacidade']) {
   results.push({ route, canonical: 'ok', metadata: 'ok' });
 }
 
+const homepage = inspect('/');
+assert.equal(homepage.title, 'Atendimento e agendamentos pelo WhatsApp | Techway');
+assert.equal(homepage.meta('robots'), 'index, follow');
+const homepageJsonLd = [...homepage.head.matchAll(/<script\\b[^>]*type="application\\/ld\\+json"[^>]*>(.*?)<\\/script>/gs)];
+assert.equal(homepageJsonLd.length, 1, 'A home deve expor um único JSON-LD de marca/site');
+const homepageGraph = JSON.parse(homepageJsonLd[0][1]);
+assert.equal(homepageGraph['@context'], 'https://schema.org');
+assert(Array.isArray(homepageGraph['@graph']), 'A home deve publicar Organization e WebSite');
+const organization = homepageGraph['@graph'].find(entry => entry['@type'] === 'Organization');
+const website = homepageGraph['@graph'].find(entry => entry['@type'] === 'WebSite');
+assert(organization && website, 'Dados estruturados da marca/site ausentes');
+assert.equal(organization.name, site.name);
+assert.equal(organization.url, absolute('/'));
+assert.equal(organization.logo, absolute('/logo_techway_semslogan_transparent.png'));
+assert(fs.existsSync(path.join(__dirname, '..', 'public', 'logo_techway_semslogan_transparent.png')), 'Logo oficial ausente');
+assert(organization.sameAs.includes('https://www.instagram.com/techway.one/'));
+assert.equal(website.url, absolute('/'));
+assert.equal(website.publisher['@id'], organization['@id']);
+assert(!homepageGraph['@graph'].some(entry => entry['@type'] === 'LocalBusiness'), 'Não inventar negócio com loja física');
+results[0].structuredData = 'Organization+WebSite';
+
 const blog = inspect('/blog');
 assert.equal(blog.title, site.blogTitle);
 assert.equal(blog.meta('description'), site.blogDescription);
