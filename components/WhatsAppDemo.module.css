@@ -104,8 +104,8 @@
   padding: 15px 10px 22px;
   scrollbar-width: none;
   background-color: #e9e3da;
-  background-image: radial-gradient(circle at 18px 24px, rgba(131, 128, 111, .095) 1px, transparent 1.7px), radial-gradient(circle at 70px 58px, rgba(131, 128, 111, .08) 1.2px, transparent 1.8px), linear-gradient(118deg, rgba(250,249,244,.22), rgba(226,223,212,.14));
-  background-size: 80px 90px, 95px 75px, 100% 100%;
+  background-image: url("/illustrations/chat-pattern.svg"), linear-gradient(118deg, rgba(250,249,244,.20), rgba(226,223,212,.10));
+  background-size: 240px 240px, 100% 100%;
 }
 .chatWallpaper::-webkit-scrollbar { display: none; }
 .dateChip {
