@@ -95,7 +95,7 @@ export default function AtendimentoEAgendamentos() {
                     cta="solucao-hero"
                     className="inline-flex min-h-[50px] items-center justify-center gap-2 rounded-xl bg-blue-700 px-6 py-3 font-bold text-white hover:bg-blue-800"
                   >
-                    Conversar sobre minha empresa <ArrowRight className="h-5 w-5" aria-hidden="true" />
+                    Conversar com a Techway <ArrowRight className="h-5 w-5" aria-hidden="true" />
                   </WhatsAppLink>
                   <Link href="/#exemplo" className="inline-flex min-h-[50px] items-center gap-2 rounded-xl border border-blue-200 bg-white px-5 py-3 font-semibold text-blue-800 hover:bg-blue-50">
                     Ver a conversa ilustrativa
