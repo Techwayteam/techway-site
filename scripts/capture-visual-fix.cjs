@@ -82,6 +82,24 @@ async function main(){
   await animated.locator('#exemplo').screenshot({path:path.join(dir,'demo-in-motion-desktop.png')});
   await animated.close();
   console.log('PASS WhatsApp demo: início ao visualizar, pausa, replay e progressão');
+
+  // Registro visual de QA: reprodução mobile verdadeira, sem API e sem dados de terceiros.
+  // Esse arquivo serve para inspecionar timing/transições antes de publicar.
+  const recordingContext = await browser.newContext({
+    viewport: {width:390,height:844}, deviceScaleFactor:1,
+    recordVideo: {dir:path.join(dir,'recordings'), size:{width:390,height:844}},
+  });
+  const recordingPage = await recordingContext.newPage();
+  await recordingPage.emulateMedia({reducedMotion:'no-preference'});
+  await recordingPage.goto(base+'/',{waitUntil:'domcontentloaded'});
+  await recordingPage.locator('[data-demo="whatsapp"]').scrollIntoViewIfNeeded();
+  await recordingPage.waitForTimeout(18000);
+  assert.equal(await recordingPage.locator('[data-message]').count(),6,'A gravação deve alcançar o fim da demo');
+  await recordingPage.close();
+  const recorded=await recordingPage.video().path();
+  fs.copyFileSync(recorded,path.join(dir,'demo-animada-mobile.webm'));
+  await recordingContext.close();
+  console.log('PASS gravação QA: animação completa do celular em 390x844');
  } finally{await browser.close();}
 }
 main().catch(e=>{console.error(e);process.exitCode=1});
