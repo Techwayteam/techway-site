@@ -27,7 +27,10 @@ Estimativas relativas: S = mudança pequena; M = múltiplos arquivos/uma revisã
 | T020 | P0 | Definir oferta mínima verificável e afirmações publicáveis | Fundador/produto + comercial | DN001–DN003 | S | Concluída em 29/10/2026; aceite do fundador em D031 |
 | T021 | P0 | Alinhar os 4 CTAs do blog à oferta e preservar origem | Aquisição + implementação | T010; T006/T007; DN005 para destino definitivo da landing | S | Planejada; ficha criada |
 | T022 | P0 | Validar compreensão e operar o primeiro lead | Fundador/comercial + UX | Prévia T010/T021; T007; autorização para participantes | M | Planejada |
+| T024 | P0 | Esclarecer atendimento + agendamento comercializáveis e parceria de evolução; depois demonstrar ação real | Produto + UX + implementação | Decisões D032–D034; dados e execução demonstrativa autorizados | M | Em revisão de copy em branch isolada; exemplo HTML fictício; demonstração real pendente; sem deploy |
 | T023 | P1 | Ativar um canal inicial de aquisição rastreável | Fundador/comercial | Base publicada; T007; DN007 e autorização de envio | M | Planejada; nenhum envio autorizado |
+
+**Prioridade atual (24/11/2026):** T024 antecede T007/T022/T023. Oferta e demonstração antes de nova medição ou prospecção; etapas anteriores preservadas como histórico.
 
 ## Política de prioridade
 
