@@ -35,7 +35,7 @@ function inspect(route) {
   return { html, head, meta, title: decode(titles[0][1]) };
 }
 
-for (const route of ['/', '/din_page', '/termos', '/privacidade']) {
+for (const route of ['/', '/atendimento-agendamentos-whatsapp', '/din_page', '/termos', '/privacidade']) {
   const page = inspect(route);
   if (route === '/termos' || route === '/privacidade') {
     assert.equal(page.meta('og:url'), absolute(route));
@@ -64,6 +64,46 @@ assert.equal(website.url, absolute('/'));
 assert.equal(website.publisher['@id'], organization['@id']);
 assert(!homepageGraph['@graph'].some(entry => entry['@type'] === 'LocalBusiness'), 'Não inventar negócio com loja física');
 results[0].structuredData = 'Organization+WebSite';
+
+// A página de solução é um conteúdo comercial completo em HTML (inclusive sem JS).
+// GEO não autoriza inventar provas, métricas ou recursos e não exige FAQPage.
+const service = inspect('/atendimento-agendamentos-whatsapp');
+assert.equal(service.title, 'Atendimento com IA e agendamentos pelo WhatsApp | Techway');
+assert.equal(service.meta('og:title'), service.title);
+assert.equal(service.meta('og:url'), absolute('/atendimento-agendamentos-whatsapp'));
+assert(!/<meta[^>]+name="robots"[^>]+noindex/i.test(service.head), 'Serviço não pode ter noindex');
+assert.equal((service.html.match(/<h1\b/g) || []).length, 1, 'Serviço precisa de um H1');
+const serviceMain = service.html.split('<main')[1]?.split('</main>')[0] || '';
+assert(serviceMain, 'Conteúdo comercial não está no HTML pré-renderizado');
+const serviceText = decode(serviceMain.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, ' ')
+  .replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim());
+for (const phrase of [
+  'Atendimento com IA e agendamentos pelo WhatsApp',
+  'Como funciona um agendamento pelo WhatsApp?',
+  'O que é o funcionário digital da Techway?',
+  'A Techway já oferece agendamentos pelo WhatsApp?',
+  'O registro precisa acontecer no sistema.',
+  'Follow-up automático não integra a oferta atual.',
+  'Simulação',
+]) {
+  if (phrase === 'Simulação') continue; // texto da demo está na home, não duplicar aqui
+  assert(serviceText.toLowerCase().includes(phrase.toLowerCase()), 'Conteúdo GEO não visível: '+phrase);
+}
+const serviceJsonLd = [...service.head.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)];
+assert.equal(serviceJsonLd.length, 1, 'Serviço deve ter um JSON-LD');
+const serviceData = JSON.parse(serviceJsonLd[0][1]);
+assert.equal(serviceData['@context'], 'https://schema.org');
+assert.equal(serviceData['@type'], 'Service');
+assert.equal(serviceData.url, absolute('/atendimento-agendamentos-whatsapp'));
+assert.equal(serviceData.provider['@id'], organization['@id']);
+assert.equal(serviceData.name, 'Atendimento com IA e agendamentos pelo WhatsApp');
+assert(!('aggregateRating' in serviceData), 'Não inventar ratings');
+assert(!('offers' in serviceData), 'Não inventar preço fixo');
+assert(!('areaServed' in serviceData), 'Não supor abrangência territorial');
+assert(!service.head.includes('FAQPage'), 'Não criar FAQPage para forçar rich result');
+assert(homepage.html.includes('href="/atendimento-agendamentos-whatsapp"'), 'Serviço precisa de link interno na home');
+results[1].structuredData = 'Service';
+results[1].content = 'SSR';
 
 const blog = inspect('/blog');
 assert.equal(blog.title, site.blogTitle);
@@ -126,7 +166,7 @@ for (const [route, post] of [['/blog', null], ...posts.map(post => [`/blog/${pos
 
 const sitemap = fs.readFileSync(path.join(output, 'sitemap.xml'), 'utf8');
 const urls = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => decode(match[1]));
-const expected = ['/', '/blog', '/din_page', ...posts.map(post => `/blog/${post.slug}`)].map(absolute);
+const expected = ['/', '/atendimento-agendamentos-whatsapp', '/blog', '/din_page', ...posts.map(post => `/blog/${post.slug}`)].map(absolute);
 assert.deepEqual(urls, expected);
 assert.equal(new Set(urls).size, urls.length);
 assert(!sitemap.includes('<lastmod>'), 'Sem data de revisão confiável, omitir lastmod');
