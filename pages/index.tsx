@@ -9,7 +9,7 @@ import useContactPage from "../hooks/useContactPage"
 import { absoluteUrl } from "../lib/seo"
 
 const SITE_DESCRIPTION =
-  "Funcionários digitais para pequenos negócios. Comece pelo atendimento no WhatsApp: respostas com informações da empresa, organização de pedidos e passagem para sua equipe."
+  "Funcionários digitais para pequenos negócios: atendimento e agendamentos pelo WhatsApp, adaptados à rotina da sua empresa para você ganhar tempo e crescer."
 
 const LandingConversao: React.FC = () => {
   const contactPage = useContactPage()
@@ -52,14 +52,15 @@ const LandingConversao: React.FC = () => {
             <div className="tw-hero-copy">
               <p className="tw-kicker-pill"><span aria-hidden="true">✦</span> Seu primeiro funcionário digital, no WhatsApp</p>
               <h1>
-                Seu primeiro funcionário digital
-                <span> atende clientes pelo WhatsApp.</span>
+                Seu funcionário digital
+                <span> atende e agenda pelo WhatsApp.</span>
               </h1>
               <p className="tw-hero-description">
                 A Techway cria funcionários digitais para ajudar pequenos negócios a ganhar tempo
-                e espaço para crescer. Começamos pelo atendimento no WhatsApp: seu funcionário
-                responde dúvidas com as informações da empresa, organiza pedidos e mantém o
-                contexto. Sua equipe assume quando precisa — e a gente segue perto para evoluir junto.
+                e espaço para crescer. Começamos pelo atendimento e pelos agendamentos no WhatsApp:
+                seu funcionário responde dúvidas, organiza pedidos e ajuda a marcar horários
+                conforme as regras da sua empresa. Sua equipe assume quando precisa — e seguimos
+                juntos para evoluir o negócio.
               </p>
               <div className="tw-hero-actions">
                 <WhatsAppLink message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
@@ -82,11 +83,11 @@ const LandingConversao: React.FC = () => {
               <img src="/illustrations/techway-empreendedora-hq.webp" alt="Empreendedora ilustrada em 3D usando um celular" className="tw-human" width={910} height={1236} loading="eager" decoding="async" />
               <img src="/illustrations/techway-assistente-hq.webp" alt="Mascote ilustrado em 3D representando a assistente digital" className="tw-bot" width={430} height={440} loading="eager" decoding="async" />
               <div className="tw-chat tw-chat-question" aria-hidden="true">
-                <span className="tw-chat-bubble-icon">✦</span> Oi! Vocês oferecem esse serviço?
+                <span className="tw-chat-bubble-icon">✦</span> Oi! Posso agendar um horário?
               </div>
               <div className="tw-chat tw-chat-answer" aria-hidden="true">
                 <span className="tw-chat-bubble-icon">✦</span>
-                <span>Sim! Posso explicar as opções e anotar o que você precisa. <small>✓✓</small></span>
+                <span>Claro! Vamos ver um horário que funcione para você. <small>✓✓</small></span>
               </div>
               <p className="tw-art-note"><span aria-hidden="true" /> Seu atendimento em boas mãos</p>
             </div>
@@ -125,8 +126,8 @@ const LandingConversao: React.FC = () => {
                   text: "O funcionário digital coleta as primeiras informações e mantém o contexto para que a conversa não recomece do zero.",
                 },
                 {
-                  title: "Agenda para a equipe, quando habilitada",
-                  text: "Em uma operação real, a equipe já consulta, cria, remarca e cancela agendamentos pelo WhatsApp, com registro no sistema.",
+                  title: "Agendamentos pelo WhatsApp",
+                  text: "Além de responder clientes, seu funcionário digital pode organizar agendamentos conforme os horários, serviços e regras configurados para a empresa.",
                 },
                 {
                   title: "Você assume quando precisa",
@@ -154,12 +155,12 @@ const LandingConversao: React.FC = () => {
                 Exemplo fictício
               </p>
               <h2 id="exemplo-titulo" className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Uma dúvida atendida. Um respiro na sua rotina.
+                Da primeira pergunta ao agendamento.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Veja um exemplo ilustrativo de como um funcionário digital esclarece dúvidas,
-                organiza informações e chama sua equipe quando necessário.
-                A conversa é fictícia e não representa um agendamento realizado.
+                Veja uma conversa fictícia que ilustra atendimento e agendamento pelo WhatsApp.
+                Os horários e a reserva mostrados são apenas exemplos, não uma consulta
+                ou agendamento executado em uma agenda real.
               </p>
               <WhatsAppLink
                 message="Olá! Quero entender como um atendimento assim funcionaria na minha empresa."
@@ -184,18 +185,24 @@ const LandingConversao: React.FC = () => {
               </div>
               <ol className="space-y-4" aria-label="Exemplo fictício de conversa no WhatsApp">
                 <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Oi! Queria saber mais sobre os serviços de vocês.
+                  Oi! Vocês atendem aos sábados? Queria agendar.
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Olá! Posso explicar as opções e anotar algumas informações para orientar
-                  você. Está procurando algum serviço específico?
+                  Atendemos, sim! Posso conferir os horários para você.
+                  Prefere de manhã ou à tarde?
                 </li>
                 <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
-                  Ainda não sei. Queria entender melhor.
+                  De manhã. Tem às 10h?
                 </li>
                 <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
-                  Posso registrar sua dúvida para que nossa equipe oriente você.
-                  Prefere continuar com uma pessoa?
+                  Nesse exemplo, temos 10h disponível. Pode me confirmar seu nome e o serviço?
+                </li>
+                <li className="ml-auto max-w-[85%] rounded-2xl rounded-br-sm bg-blue-600 px-4 py-3 text-white">
+                  Ana, para uma avaliação.
+                </li>
+                <li className="max-w-[90%] rounded-2xl rounded-bl-sm bg-white px-4 py-3 text-gray-800 shadow-sm">
+                  Combinado, Ana! Agendamento ilustrativo confirmado para sábado, às 10h.
+                  Sua equipe teria o registro para acompanhar.
                 </li>
               </ol>
             </div>
@@ -253,9 +260,9 @@ const LandingConversao: React.FC = () => {
                 O que seu funcionário digital já faz — e como colocá-lo em ação.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                O atendimento já funciona em empresas reais. A gestão de agendamentos
-                para a equipe também está em uso, mas a ativação depende do cenário
-                de cada negócio. Não prometemos recursos que ainda não foram liberados.
+                Atendimento e agendamentos já fazem parte das soluções que você pode
+                contratar. Configuramos cada funcionário digital com os serviços,
+                horários e regras da sua empresa antes de colocar o fluxo em operação.
               </p>
             </div>
 
@@ -269,18 +276,18 @@ const LandingConversao: React.FC = () => {
               </div>
               <div className="rounded-2xl border border-amber-200 bg-amber-50 p-7">
                 <CalendarClock className="h-7 w-7 text-amber-700" aria-hidden="true" />
-                <h3 className="mt-4 text-xl font-bold text-gray-950">Gestão de agenda já em uso</h3>
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Agendamentos disponíveis</h3>
                 <p className="mt-3 leading-relaxed text-gray-700">
-                  A equipe autorizada de uma operação real já consulta, cria, remarca e cancela agendamentos no WhatsApp.
-                  O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão.
+                  Agendamento pelo WhatsApp faz parte da oferta. A solução contempla a agenda
+                  e os fluxos de marcação e alteração, configurados e habilitados na implantação.
                 </p>
               </div>
               <div className="rounded-2xl border border-gray-300 bg-gray-50 p-7">
                 <UserRound className="h-7 w-7 text-gray-700" aria-hidden="true" />
-                <h3 className="mt-4 text-xl font-bold text-gray-950">Fora da oferta padrão</h3>
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Crescer com você</h3>
                 <p className="mt-3 leading-relaxed text-gray-700">
-                  Follow-up automático não está disponível no atendimento inicial.
-                  Lembretes, CRM e integrações adicionais dependem de avaliação específica.
+                  Nossa parceria não termina na implantação. Ouvimos o que seu negócio precisa
+                  e avaliamos melhorias, sempre com escopo e condições combinados.
                 </p>
               </div>
             </div>
@@ -350,7 +357,7 @@ const LandingConversao: React.FC = () => {
                 },
                 {
                   question: "A Techway já trabalha com agendamentos?",
-                  answer: "Sim. A gestão de agenda para uma equipe autorizada já funciona em uma operação real: consultar, criar, remarcar e cancelar pelo WhatsApp. A ativação em outra empresa depende da implantação. Agendamento autônomo por clientes ainda não faz parte da oferta padrão.",
+                  answer: "Sim. Atendimento e agendamentos pelo WhatsApp já podem ser contratados. Configuramos serviços, horários, regras e permissões de cada empresa na implantação; a operação é habilitada após essa preparação. A solução já inclui gestão de reservas pela equipe.",
                 },
                 {
                   question: "Faz follow-up automático?",
