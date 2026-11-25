@@ -6,7 +6,7 @@ transferir decisões rotineiras de implementação ao usuário.
 
 | ID | Definição necessária | Resposta ou recomendação segura | Afeta | Estado |
 | --- | --- | --- | --- | --- |
-| DN001 | Quais capacidades podem ser demonstradas hoje a uma nova empresa: respostas sobre serviços/FAQ, coleta inicial, continuidade humana, contexto, follow-up e agendamento? | Respostas, coleta inicial, contexto da conversa e passagem para pessoa estão disponíveis. Follow-up não está. Agendamento está em desenvolvimento e só pode aparecer com esse rótulo. Histórico permanente, lembretes, CRM e outras ações externas exigem validação própria | T020, T010 | **Resolvida em 29/10/2026 — D031** |
+| DN001 | Quais capacidades podem ser demonstradas hoje a uma nova empresa: respostas sobre serviços/FAQ, coleta inicial, continuidade humana, contexto, follow-up e agendamento? | Respostas, coleta inicial, contexto da conversa e passagem para pessoa estão disponíveis. Follow-up não está. Agendamento passou a ser comercializável em 24/11/2026 (D033), mediante configuração/habilitação por empresa; a descrição de 29/10 está superada. Histórico permanente, lembretes, CRM e outras ações externas exigem validação própria | T020, T010, T024 | **Atualizada em 24/11/2026 — D033** |
 | DN002 | A autorização dos dois clientes para nome, logo e relato continua válida? Como tratar o “80%”? | Fundador confirmou a autorização. “80%” é percepção da cliente e deve ser apresentado como relato subjetivo, sem aparência de métrica auditada ou resultado garantido | T010, T011 | **Resolvida em 29/10/2026 — D031** |
 | DN003 | O que o Early Access oferece hoje, quais condições podem ser explicadas e como se forma a proposta comercial? | Proximidade com o desenvolvedor, influência no roadmap, funcionalidades avaliadas para a empresa, isenção da implantação e consultoria mensal. Valor e escopo entram na proposta; não prometer qualquer funcionalidade ou prazo | T020, T010 | **Resolvida em 29/10/2026 — D031** |
 | DN004 | Qual evento define o primeiro cliente: aceite da proposta, assinatura ou primeiro pagamento? | Usar **proposta aceita e primeiro pagamento confirmado** para `customer_won`, registrando assinatura separadamente quando existir | T022, T023 | Aguardando fundador/comercial |
@@ -23,7 +23,10 @@ transferir decisões rotineiras de implementação ao usuário.
   D029).
 - WhatsApp + planilha privada é a medição inicial; GA4 permanece adiado (D029).
 - Oferta mínima, relatos autorizados e benefícios do Early Access confirmados em
-  D031; agendamento permanece em desenvolvimento e follow-up não está disponível.
+  D031; **agendamentos comercializáveis** por decisão D033 (24/11), com ativação por empresa;
+  follow-up automático ainda não está disponível.
+- Posicionamento de parceria e evolução definido em D034; novas funcionalidades podem nascer
+  de necessidades dos clientes, sem promessa antecipada de desenvolvimento.
 
 Ao responder uma linha, registrar a decisão em `09-decisoes.md`, atualizar as fichas
 afetadas e manter aqui somente a referência e o estado resolvido.
