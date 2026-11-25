@@ -1,5 +1,13 @@
 # Techway — evolução do site e geração de leads
 
+## Estado atual — 25/11/2026
+
+O site de produção em [techway.one](https://techway.one/) foi atualizado: **atendimento e agendamentos já comercializáveis**, demonstração visual animada de conversa, posicionamento de crescimento conjunto e página [atendimento e agendamentos pelo WhatsApp](https://techway.one/atendimento-agendamentos-whatsapp).
+
+**Publicação validada:** [PR #23](https://github.com/Techwayteam/techway-site/pull/23) integrado por squash (`dbc3152a`), e [PR #24](https://github.com/Techwayteam/techway-site/pull/24) com smoke externo (`a92a5da`). [Workflow #45716788778](https://github.com/Techwayteam/techway-site/actions/runs/45716788778) passou nos jobs de build, deploy e smoke HTTP em 25/11: conteúdo público, URL de serviço, sitemap com 8 URLs, robots, logo e metadados verificados. **Indexação Google/Bing e citações em ferramentas de IA ainda não foram comprovadas**; a fonte Google Search Console conectável por Supermetrics está sem autenticação. [Estado operacional](10-progresso.md) · [Evidência GEO](evidence/2026-11-24-GEO.md).
+
+### Histórico de evolução (datas abaixo são checkpoints anteriores)
+
 Base de trabalho criada em **10/10/2026**, no fuso America/Sao_Paulo. Público confirmado pelo fundador: **pequenos negócios que atendem pelo WhatsApp**. O blog abriu a primeira frente; em **26/10/2026**, o roadmap foi repriorizado para clareza da oferta, primeiro lead e primeiro cliente.
 
 **Estado em 25/10/2026:** **T006 publicada e verificada** no commit `5c9cbe8f`: workflow success, nove páginas públicas com canonical/metadados coerentes, quatro BlogPosting, sitemap com sete URLs e robots disponíveis. **T007 está concluída localmente e ainda não publicada:** WhatsApp com origem/CTA em 30 contatos exportados, processo de planilha privada e nenhum GA4/cookie. [Publicação T006](evidence/2026-10-25-T006-publicacao.md), [plano T007](plans/004-T007-medicao-contatos.md) e [evidência T007](evidence/2026-10-25-T007-medicao-contatos.md).
