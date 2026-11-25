@@ -34,13 +34,54 @@ async function main(){
     if(item.name==='artigo') assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
     await page.screenshot({path:path.join(dir,item.name+'-'+viewport.id+'.png'),fullPage:item.name!=='home'});
     // Extra: captura integral da home desktop para revisão comercial; não substitui o print do viewport.
-    if(item.name==='home' && viewport.id==='desktop') {
-      await page.screenshot({path:path.join(dir,'home-desktop-full.png'),fullPage:true});
+    if(item.name==='home') {
+      if(viewport.id==='desktop') await page.screenshot({path:path.join(dir,'home-desktop-full.png'),fullPage:true});
+      // Validar e capturar a demonstração na configuração de movimento reduzido:
+      // mostra o roteiro inteiro mesmo sem animação, sem acessar agenda ou enviar mensagens.
+      const demo=page.locator('[data-demo="whatsapp"]');
+      await demo.scrollIntoViewIfNeeded();
+      await page.waitForFunction(()=>document.querySelector('[data-demo="whatsapp"]')?.getAttribute('data-finished')==='true');
+      assert.equal(await demo.locator('[data-message]').count(),6,'A demo precisa mostrar seis mensagens no modo de movimento reduzido');
+      assert.equal(await demo.locator('[data-demo-confirmation]').count(),1,'A confirmação ilustrativa deve aparecer');
+      const bubbles=await demo.evaluate(node=>{
+        const first=node.querySelector('[data-from="customer"]');
+        const second=node.querySelector('[data-from="agent"]');
+        if(!first||!second) return null;
+        const a=first.getBoundingClientRect(),b=second.getBoundingClientRect();
+        return {firstX:a.x,secondX:b.x,fromColor:getComputedStyle(first).backgroundColor,toColor:getComputedStyle(second).backgroundColor,
+                viewportOverflow:document.documentElement.scrollWidth-window.innerWidth};
+      });
+      assert(bubbles,'Balões de entrada e saída não encontrados');
+      assert(bubbles.firstX+22<bubbles.secondX,'Cliente precisa aparecer à esquerda e agente à direita');
+      assert.equal(bubbles.fromColor,'rgb(255, 255, 255)','Mensagem do cliente deve ser branca');
+      assert.equal(bubbles.toColor,'rgb(217, 253, 211)','Mensagem do agente deve ser verde-clara');
+      assert(bubbles.viewportOverflow<=1,'A demo não pode causar overflow horizontal');
+      await page.locator('#exemplo').screenshot({path:path.join(dir,'demo-section-'+viewport.id+'.png')});
+      await demo.screenshot({path:path.join(dir,'demo-phone-'+viewport.id+'.png')});
+      console.log('PASS WhatsApp demo ('+viewport.id+'): 6 mensagens, alinhamento, cores, confirmação ilustrativa e responsividade');
     }
     console.log('PASS '+item.name+' '+viewport.id);
    }
    await page.close();
   }
+  // Teste da animação real (sem reduced-motion): autoplay na área visível,
+  // pausa funcional e reinício. Nenhuma chamada de rede do chat é feita.
+  const animated=await browser.newPage({viewport:{width:1440,height:900},deviceScaleFactor:1});
+  await animated.emulateMedia({reducedMotion:'no-preference'});
+  await animated.goto(base+'/',{waitUntil:'domcontentloaded'});
+  const demo=animated.locator('[data-demo="whatsapp"]');
+  await demo.scrollIntoViewIfNeeded();
+  await animated.waitForTimeout(1550);
+  assert.equal(await demo.locator('[data-message]').count(),1,'Primeira mensagem da demo não apareceu');
+  await animated.getByRole('button',{name:'Pausar demonstração'}).click();
+  await animated.waitForTimeout(450);
+  assert.equal(await demo.locator('[data-message]').count(),1,'A animação não pausou');
+  await animated.getByRole('button',{name:'Rever a demonstração'}).click();
+  await animated.waitForTimeout(3800);
+  assert.equal(await demo.locator('[data-message]').count(),2,'Reprodução não voltou a avançar após reiniciar');
+  await animated.locator('#exemplo').screenshot({path:path.join(dir,'demo-in-motion-desktop.png')});
+  await animated.close();
+  console.log('PASS WhatsApp demo: início ao visualizar, pausa, replay e progressão');
  } finally{await browser.close();}
 }
 main().catch(e=>{console.error(e);process.exitCode=1});
