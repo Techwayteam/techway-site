@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react"
 import {
-  ArrowLeft,
   CheckCheck,
   ChevronLeft,
   MoreVertical,
@@ -37,7 +36,7 @@ const MESSAGES: DemoMessage[] = [
   {
     id: 2,
     from: "agent",
-    text: "Oi! Atendemos sim 😊 Vou conferir os horários pra você. Prefere manhã ou tarde?",
+    text: "Oi! Atendemos sim 😊 Prefere manhã ou tarde?",
     time: "09:41",
     at: 3400,
   },
@@ -221,8 +220,8 @@ export default function WhatsAppDemo() {
           <span className={styles.controlCaption}>
             {reduceMotion ? "Conversa completa" : confirmed ? "Fim da demonstração" : "Acompanhe a conversa"}
           </span>
-          <div className={styles.buttons}>
-            {!reduceMotion && (
+          {!reduceMotion && (
+            <div className={styles.buttons}>
               <button
                 type="button"
                 className={styles.iconButton}
@@ -233,12 +232,12 @@ export default function WhatsAppDemo() {
               >
                 {playing ? <Pause size={17} /> : <Play size={17} />}
               </button>
-            )}
-            <button type="button" className={styles.replayButton} onClick={replay} aria-label="Rever a demonstração">
-              <RotateCcw size={16} />
-              Rever
-            </button>
-          </div>
+              <button type="button" className={styles.replayButton} onClick={replay} aria-label="Rever a demonstração">
+                <RotateCcw size={16} />
+                Rever
+              </button>
+            </div>
+          )}
         </div>
         <p className={styles.disclaimer}>
           Simulação visual com dados fictícios. Não consulta nem altera uma agenda real.
