@@ -33,6 +33,10 @@ async function main(){
     assert(metrics.logo.includes('logo_techway_semslogan_transparent.png'),'Logo oficial não carregada');
     if(item.name==='artigo') assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
     await page.screenshot({path:path.join(dir,item.name+'-'+viewport.id+'.png'),fullPage:item.name!=='home'});
+    // Extra: captura integral da home desktop para revisão comercial; não substitui o print do viewport.
+    if(item.name==='home' && viewport.id==='desktop') {
+      await page.screenshot({path:path.join(dir,'home-desktop-full.png'),fullPage:true});
+    }
     console.log('PASS '+item.name+' '+viewport.id);
    }
    await page.close();
