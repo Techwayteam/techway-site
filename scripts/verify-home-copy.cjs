@@ -16,7 +16,7 @@ const required = [
   'Feito para pequenos negócios',
   'Começamos pelo atendimento que mais toma o seu tempo.',
   'O atendimento é só o começo.',
-  'Hoje, começamos pelo atendimento no WhatsApp.',
+  'Hoje, começamos pelo atendimento e pela agenda no WhatsApp.',
   'A próxima funcionalidade da Techway pode até nascer',
   'Se o seu negócio cresce, a Techway cresce junto.',
   'Avaliamos juntos',
@@ -26,6 +26,7 @@ const required = [
   'Funcionário digital em ação',
   'Simulação visual com dados fictícios.',
   'Empresa Exemplo',
+  'Entenda como funcionam o atendimento e os agendamentos',
   'Os horários e a reserva mostrados são apenas exemplos',
 ];
 for (const phrase of required) {
@@ -43,6 +44,7 @@ assert(!readable.includes('Atendimento da Empresa Exemplo'), 'Card antigo de cha
 assert(!readable.includes('Outros funcionários digitais fazem parte da nossa visão de futuro'), 'Promessa genérica de módulos futuros não pode voltar');
 assert(readable.includes('Ideias e sugestões não são promessas de desenvolvimento.'), 'Evolução não deve prometer funcionalidades sem avaliação');
 assert.equal((main.match(/<h1\b/g) || []).length, 1, 'A home precisa de um único H1');
+assert(html.includes('href="/atendimento-agendamentos-whatsapp"'), "Link contextual da oferta ausente");
 for (const id of ['hero', 'solucoes', 'exemplo', 'como-funciona', 'limites', 'early-access', 'faq', 'visao', 'contato']) {
   assert(html.includes('id="' + id + '"'), 'Âncora ausente: #' + id);
 }
