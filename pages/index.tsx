@@ -7,10 +7,33 @@ import Testimonials from "../components/Testimonials"
 import WhatsAppLink from "../components/WhatsAppLink"
 import WhatsAppDemo from "../components/WhatsAppDemo"
 import useContactPage from "../hooks/useContactPage"
-import { absoluteUrl } from "../lib/seo"
+import { absoluteUrl, serializeJsonLd } from "../lib/seo"
 
 const SITE_DESCRIPTION =
   "Funcionários digitais para pequenos negócios: atendimento e agendamentos pelo WhatsApp, adaptados à rotina da sua empresa para você ganhar tempo e crescer."
+
+// Dados que identificam a marca e o site sem inventar loja física, endereço ou avaliações.
+const HOMEPAGE_STRUCTURED_DATA = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://techway.one/#organization",
+      name: "TECHWAY",
+      url: "https://techway.one/",
+      logo: "https://techway.one/logo_techway_semslogan_transparent.png",
+      sameAs: ["https://www.instagram.com/techway.one/"],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://techway.one/#website",
+      url: "https://techway.one/",
+      name: "Techway",
+      inLanguage: "pt-BR",
+      publisher: { "@id": "https://techway.one/#organization" },
+    },
+  ],
+}
 
 const LandingConversao: React.FC = () => {
   const contactPage = useContactPage()
@@ -18,7 +41,7 @@ const LandingConversao: React.FC = () => {
   return (
     <div className="tw-revamp flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
-        <title>Funcionário digital para atendimento no WhatsApp | TECHWAY</title>
+        <title>Atendimento e agendamentos pelo WhatsApp | Techway</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="canonical" href={absoluteUrl("/")} />
         <link rel="icon" href="/techway_favicon.ico" />
@@ -28,16 +51,20 @@ const LandingConversao: React.FC = () => {
           content="atendimento com IA, WhatsApp para empresas, funcionário digital, automação de atendimento"
         />
         <meta name="author" content="Techway Team" />
-        <meta property="og:title" content="Funcionário digital para atendimento no WhatsApp | TECHWAY" />
+        <meta property="og:title" content="Atendimento e agendamentos pelo WhatsApp | Techway" />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content={absoluteUrl("/")} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Funcionário digital para atendimento no WhatsApp | TECHWAY" />
+        <meta name="twitter:title" content="Atendimento e agendamentos pelo WhatsApp | Techway" />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content="https://techway.one/og-techway.jpg" />
         <meta name="robots" content="index, follow" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: serializeJsonLd(HOMEPAGE_STRUCTURED_DATA) }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
           rel="stylesheet"
