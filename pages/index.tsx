@@ -9,7 +9,7 @@ import useContactPage from "../hooks/useContactPage"
 import { absoluteUrl } from "../lib/seo"
 
 const SITE_DESCRIPTION =
-  "Seu primeiro funcionário digital no WhatsApp: atendimento com IA para responder dúvidas, organizar o primeiro contato e liberar tempo para cuidar do negócio."
+  "Funcionários digitais para pequenos negócios. Comece pelo atendimento no WhatsApp: respostas com informações da empresa, organização de pedidos e passagem para sua equipe."
 
 const LandingConversao: React.FC = () => {
   const contactPage = useContactPage()
@@ -17,7 +17,7 @@ const LandingConversao: React.FC = () => {
   return (
     <div className="tw-revamp flex min-h-screen flex-col bg-white text-gray-900">
       <Head>
-        <title>Funcionário digital para atender no WhatsApp | TECHWAY</title>
+        <title>Funcionário digital para atendimento no WhatsApp | TECHWAY</title>
         <meta name="description" content={SITE_DESCRIPTION} />
         <link rel="canonical" href={absoluteUrl("/")} />
         <link rel="icon" href="/techway_favicon.ico" />
@@ -27,13 +27,13 @@ const LandingConversao: React.FC = () => {
           content="atendimento com IA, WhatsApp para empresas, funcionário digital, automação de atendimento"
         />
         <meta name="author" content="Techway Team" />
-        <meta property="og:title" content="Funcionário digital para atender no WhatsApp | TECHWAY" />
+        <meta property="og:title" content="Funcionário digital para atendimento no WhatsApp | TECHWAY" />
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content="https://techway.one/og-techway.jpg" />
         <meta property="og:url" content={absoluteUrl("/")} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Funcionário digital para atender no WhatsApp | TECHWAY" />
+        <meta name="twitter:title" content="Funcionário digital para atendimento no WhatsApp | TECHWAY" />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
         <meta name="twitter:image" content="https://techway.one/og-techway.jpg" />
         <meta name="robots" content="index, follow" />
@@ -52,13 +52,13 @@ const LandingConversao: React.FC = () => {
             <div className="tw-hero-copy">
               <p className="tw-kicker-pill"><span aria-hidden="true">✦</span> Seu primeiro funcionário digital, no WhatsApp</p>
               <h1>
-                Você cuida do seu negócio.
-                <span> A Techway ajuda a cuidar do seu atendimento.</span>
+                Seu primeiro funcionário digital
+                <span> atende clientes pelo WhatsApp.</span>
               </h1>
               <p className="tw-hero-description">
-                Enquanto você trabalha, um funcionário digital no WhatsApp responde dúvidas frequentes,
-                organiza as primeiras informações dos clientes e mantém o contexto da conversa.
-                Quando precisar, uma pessoa assume.
+                A Techway desenvolve funcionários digitais especializados para pequenas empresas.
+                O primeiro cuida do atendimento: conversa usando as informações do seu negócio,
+                responde dúvidas, organiza pedidos e mantém o contexto. Quando precisa, sua equipe assume.
               </p>
               <div className="tw-hero-actions">
                 <WhatsAppLink message="Olá! Quero conhecer o funcionário digital para o WhatsApp da minha empresa."
@@ -116,20 +116,20 @@ const LandingConversao: React.FC = () => {
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {[
                 {
-                  title: "Perguntas que se repetem",
-                  text: "Horário, endereço e informações sobre serviços não precisam interromper sua rotina toda vez que alguém pergunta.",
+                  title: "Respostas com os dados da sua empresa",
+                  text: "Horários, endereço, serviços e dúvidas frequentes são respondidos com base nas informações aprovadas pelo seu negócio.",
                 },
                 {
-                  title: "Pedidos que chegam mais claros",
-                  text: "O funcionário digital pede os dados iniciais combinados e ajuda sua equipe a entender o que cada cliente precisa.",
+                  title: "Pedidos organizados para sua equipe",
+                  text: "O funcionário digital coleta as primeiras informações e mantém o contexto para que a conversa não recomece do zero.",
                 },
                 {
-                  title: "Menos perguntas repetidas",
-                  text: "O cliente pode continuar o assunto que já começou, sem ter de explicar tudo novamente na mesma conversa.",
+                  title: "Agenda para a equipe, quando habilitada",
+                  text: "Em uma operação real, a equipe já consulta, cria, remarca e cancela agendamentos pelo WhatsApp, com registro no sistema.",
                 },
                 {
-                  title: "Você entra quando faz diferença",
-                  text: "Quando surge uma exceção ou decisão importante, o atendimento segue para uma pessoa conforme o processo da sua empresa.",
+                  title: "Você assume quando precisa",
+                  text: "Exceções e decisões importantes seguem para uma pessoa, conforme as regras combinadas na implantação.",
                 },
               ].map((item) => (
                 <article key={item.title} className="rounded-2xl border border-gray-200 bg-white p-7 shadow-sm">
@@ -249,35 +249,37 @@ const LandingConversao: React.FC = () => {
                 Limites claros
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-tight md:text-5xl">
-                Seu funcionário digital ajuda. As decisões importantes continuam com você.
+                O que seu funcionário digital já faz — e como colocá-lo em ação.
               </h2>
               <p className="mt-5 text-lg leading-relaxed text-gray-600">
-                Cada negócio tem sua rotina. Por isso, o atendimento começa com tarefas
-                combinadas e informações da sua empresa. Também deixamos claro
-                o que já está disponível e o que ainda depende de desenvolvimento.
+                O atendimento já funciona em empresas reais. A gestão de agendamentos
+                para a equipe também está em uso, mas a ativação depende do cenário
+                de cada negócio. Não prometemos recursos que ainda não foram liberados.
               </p>
             </div>
 
             <div className="mt-12 grid gap-6 md:grid-cols-3">
               <div className="rounded-2xl border border-green-200 bg-green-50 p-7">
                 <MessageCircle className="h-7 w-7 text-green-700" aria-hidden="true" />
-                <h3 className="mt-4 text-xl font-bold text-gray-950">Disponível agora</h3>
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Atendimento disponível</h3>
                 <p className="mt-3 leading-relaxed text-gray-700">
-                  Dúvidas, coleta inicial, contexto da conversa e continuidade com uma pessoa.
+                  Respostas com informações da empresa, coleta de pedidos, contexto da conversa e passagem para a equipe.
                 </p>
               </div>
               <div className="rounded-2xl border border-amber-200 bg-amber-50 p-7">
                 <CalendarClock className="h-7 w-7 text-amber-700" aria-hidden="true" />
-                <h3 className="mt-4 text-xl font-bold text-gray-950">Em desenvolvimento</h3>
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Gestão de agenda já em uso</h3>
                 <p className="mt-3 leading-relaxed text-gray-700">
-                  Agendamentos pelo WhatsApp, sujeitos ao fluxo e à integração de cada empresa.
+                  A equipe autorizada de uma operação real já consulta, cria, remarca e cancela agendamentos no WhatsApp.
+                  O agendamento autônomo pelos clientes ainda não está liberado como oferta padrão.
                 </p>
               </div>
               <div className="rounded-2xl border border-gray-300 bg-gray-50 p-7">
                 <UserRound className="h-7 w-7 text-gray-700" aria-hidden="true" />
-                <h3 className="mt-4 text-xl font-bold text-gray-950">Fora da oferta atual</h3>
+                <h3 className="mt-4 text-xl font-bold text-gray-950">Fora da oferta padrão</h3>
                 <p className="mt-3 leading-relaxed text-gray-700">
-                  Follow-up automático. Lembretes, CRM e outras integrações são avaliados por caso.
+                  Follow-up automático não está disponível no atendimento inicial.
+                  Lembretes, CRM e integrações adicionais dependem de avaliação específica.
                 </p>
               </div>
             </div>
@@ -344,8 +346,12 @@ const LandingConversao: React.FC = () => {
                   answer: "A configuração usa informações, regras e exemplos aprovados pela sua empresa. Mudanças nessas informações precisam ser atualizadas e testadas.",
                 },
                 {
-                  question: "Já faz agendamentos e follow-up?",
-                  answer: "Agendamentos estão em desenvolvimento e dependem do fluxo e da integração de cada empresa. Follow-up automático não faz parte da oferta atual.",
+                  question: "A Techway já trabalha com agendamentos?",
+                  answer: "Sim. A gestão de agenda para uma equipe autorizada já funciona em uma operação real: consultar, criar, remarcar e cancelar pelo WhatsApp. A ativação em outra empresa depende da implantação. Agendamento autônomo por clientes ainda não faz parte da oferta padrão.",
+                },
+                {
+                  question: "Faz follow-up automático?",
+                  answer: "Ainda não. Follow-up automático não integra a oferta atual. Novas funções são avaliadas com cada empresa, sem promessa prévia de prazo.",
                 },
                 {
                   question: "Quanto custa?",
