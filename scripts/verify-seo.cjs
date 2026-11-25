@@ -47,7 +47,7 @@ for (const route of ['/', '/din_page', '/termos', '/privacidade']) {
 const homepage = inspect('/');
 assert.equal(homepage.title, 'Atendimento e agendamentos pelo WhatsApp | Techway');
 assert.equal(homepage.meta('robots'), 'index, follow');
-const homepageJsonLd = [...homepage.head.matchAll(/<script\\b[^>]*type="application\\/ld\\+json"[^>]*>(.*?)<\\/script>/gs)];
+const homepageJsonLd = [...homepage.head.matchAll(/<script\b[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)];
 assert.equal(homepageJsonLd.length, 1, 'A home deve expor um único JSON-LD de marca/site');
 const homepageGraph = JSON.parse(homepageJsonLd[0][1]);
 assert.equal(homepageGraph['@context'], 'https://schema.org');
