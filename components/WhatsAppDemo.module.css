@@ -9,7 +9,7 @@
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 688px;
+  min-height: 788px;
   isolation: isolate;
   padding: 14px 14px 25px;
 }
@@ -26,7 +26,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 651px;
+  height: 750px;
   width: min(100%, 344px);
   overflow: hidden;
   border: 8px solid #283238;
@@ -137,7 +137,7 @@
   display: flex;
   flex: 1;
   flex-direction: column;
-  gap: 11px;
+  gap: 8px;
   justify-content: flex-end;
   min-height: min-content;
   margin: 0;
@@ -327,14 +327,16 @@
 }
 @media (max-width: 600px) {
   .demo { max-width: 100%; }
-  .phoneStage { min-height: 654px; padding: 12px 0 15px; }
-  .phone { width: min(100%, 332px); height: 626px; border-width: 7px; border-radius: 38px; }
-  .controls { width: min(100%, 332px); }
+  .phoneStage { min-height: 758px; padding: 12px 0 15px; }
+  .phone { width: min(100%, 332px); height: 727px; border-width: 7px; border-radius: 38px; }
+  .controls { width: min(100%, 332px); padding-right: 60px; }
+  .controlCaption { font-size: 10px; }
+  .disclaimer { text-align: left; font-size: 9.8px; }
   .orbit { width: 100%; }
 }
 @media (max-width: 365px) {
   .phone { width: min(100%, 311px); }
-  .controls { width: min(100%, 311px); }
+  .controls { width: min(100%, 311px); padding-right: 52px; }
   .headerActions { gap: 9px; }
   .contactName { font-size: 13px; }
 }
