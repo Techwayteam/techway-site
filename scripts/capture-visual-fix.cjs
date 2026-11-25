@@ -97,8 +97,9 @@ async function main(){
   assert.equal(await recordingPage.locator('[data-message]').count(),6,'A gravação deve alcançar o fim da demo');
   await recordingPage.close();
   const recorded=await recordingPage.video().path();
-  fs.copyFileSync(recorded,path.join(dir,'demo-animada-mobile.webm'));
+  // Playwright só finaliza o contêiner de vídeo no fechamento do contexto.
   await recordingContext.close();
+  fs.copyFileSync(recorded,path.join(dir,'demo-animada-mobile.webm'));
   console.log('PASS gravação QA: animação completa do celular em 390x844');
  } finally{await browser.close();}
 }
