@@ -1,5 +1,13 @@
 # Progresso
 
+## Aquisição orgânica e lote F/O/R/T — 25/11/2026 (BRT)
+
+**Produção D/V confirmada:** [PR #27](https://github.com/Techwayteam/techway-site/pull/27), squash 6fa07a67 e árvore Git igual à branch homologada; CI #45741088754 success. [Deploy #45741882005](https://github.com/Techwayteam/techway-site/actions/runs/45741882005): build, deploy e smoke success; oito artigos HTTP 200, canonical e BlogPosting, 12 URLs no sitemap. Capas existentes, capturas automatizadas; sem inspeção humana direta.
+
+**GSC (25/11 BRT, via OpenSEO):** 8 de 12 URLs indexadas (antes 2/8): home, blog, serviço, quatro artigos originais e A. Todas as indexadas com canonical correto e fetch successful. G/D/V: Google ainda não reconhece URL; /din_page: detectada, não indexada. Fundador informou ter solicitado as quatro novas URLs. Não repetir pedidos agora; reinspecionar na janela de acompanhamento. Desempenho por página de 27/10 a 23/11 sem linhas; não inferir ausência de tráfego. Dados recentes ainda não cobertos. A e G/D/V diferem quanto ao estado do índice, não quanto à publicação.
+
+**F/O/R/T:** quatro guias completos preparados para revisão; treinamento, conflitos, custo e calculadora de retorno com cálculo local e cenários hipotéticos (sem dados de clientes nem preços publicados). Reutiliza capas existentes; autoria institucional, data candidata 25/11 BRT. Pesquisa exploratória: Infobip, Mimo Agenda, Cianci, Hernesto e Flow Makers; sem SERP formal, ver plano 007. Links com A/G/D/V/E2/E3, novos slugs autorizados em origem, verificação em navegador de cálculos e entradas inválidas. Aceite pendente: CI, revisão de capturas e publicação autorizada, smoke de 12 artigos e 16 URLs. Não solicitar indexação antes de publicar.
+
 ## Lotes editoriais A/G e D/V — 25/11/2026 (BRT)
 
 **Produção A/G confirmada:** [PR #26](https://github.com/Techwayteam/techway-site/pull/26), squash e31b8f87; árvore idêntica à branch homologada. CI #45739057782 success (seis artigos, dez URLs, 40 CTAs, navegador desktop/mobile). [Deploy #45739708531](https://github.com/Techwayteam/techway-site/actions/runs/45739708531): build, deploy e smoke success. Fundador solicitou avançar no lote D/V e pedir indexação dos quatro juntos; ainda não comprovada.
