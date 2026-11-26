@@ -8,7 +8,8 @@ export type ContentBlock =
   | { type: 'paragraph' | 'quote'; text: string }
   | { type: 'list'; items: string[] }
   | { type: 'paragraph-link'; before: string; label: string; href: string; after: string }
-  | { type: 'comparison' | 'roi-calculator' }
+  | { type: 'comparison' }
+  | { type: 'roi-calculator' }
   | { type: 'image'; src: string; alt: string; width: number; height: number; caption?: string };
 
 // Accept only the emphasis used by the editorial copy; React escapes all text.
