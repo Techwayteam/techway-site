@@ -1,5 +1,9 @@
 # Progresso
 
+## Aquisição orgânica — 25/11/2026 (planejamento em revisão)
+
+[Plano 007 — mapa temático SEO/GEO](plans/007-aquisicao-organica-seo-geo.md). Search Console acessado **via OpenSEO**, independentemente de Supermetrics: home/blog indexados; serviço, quatro artigos e /din_page desconhecidos; consulta de desempenho sem linhas. Crawl pós-deploy OpenSEO: 14 URLs HTTP 200, 0 críticos, uma órfã legada e dez observações. Pesquisa BR/pt de 25 termos (20 retornados), prioridades por intenção/aderência, matriz de 17 URLs atuais e propostas e links, lote editorial e gates. [Auditoria](https://app.openseo.so/p/607c806e-4c84-4171-aa21-c4ef70012157/audit?auditId=659ecc0c-c20a-4dde-862c-27ec814a6803). Skills [agent-skills PR #1](https://github.com/Techwayteam/agent-skills/pull/1) integradas. Sem pedidos de indexação (API disponível somente leitura), sem alterações no código, sem publicação ou novo deploy. Próximo: conferir sitemap e solicitar indexação via interface Search Console, validar SERP dos primeiros guias e implementar links/metadados no lote autorizado. O status de indexação/citações no checkpoint anterior foi atualizado pela evidência acima; citações de IA ainda não verificadas.
+
 ## Estado atual — 25/11/2026 (produção)
 
 **Promoção comercial/SEO/GEO autorizada e executada:** [PR #23](https://github.com/Techwayteam/techway-site/pull/23) integrado integralmente à `main` por squash, commit `dbc3152ab2aa6c2c7ce8d652e1749bdbcdb26a99`. A comparação pré-merge registrou 0 commits atrás e todos os arquivos da branch incluídos. O [workflow Pages #45715909146](https://github.com/Techwayteam/techway-site/actions/runs/45715909146) terminou **success** para jobs `build` e `deploy` em 25/11/2026. Isso comprova promoção e entrega pelo provedor, **não** indexação Google/Bing/ChatGPT.
