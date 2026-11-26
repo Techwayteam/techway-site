@@ -12,7 +12,7 @@ async function main(){
   for(const viewport of [{id:'desktop',width:1440,height:900},{id:'mobile',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:viewport.width,height:viewport.height},deviceScaleFactor:1});
    await page.emulateMedia({reducedMotion:'reduce'});
-   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}, ...posts.filter(p=>['como-automatizar-atendimento-whatsapp','agendamento-automatico-whatsapp','chatbot-ou-agente-de-ia-whatsapp','agenda-para-salao-de-beleza'].includes(p.slug)).map(p=>({url:'/blog/'+p.slug,name:'artigo-'+p.slug}))]){
+   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}, ...posts.filter(p=>['como-automatizar-atendimento-whatsapp','agendamento-automatico-whatsapp','chatbot-ou-agente-de-ia-whatsapp','agenda-para-salao-de-beleza','como-treinar-ia-atendimento-empresa','como-evitar-conflitos-agendamento','quanto-custa-automatizar-atendimento','calculadora-retorno-automacao'].includes(p.slug)).map(p=>({url:'/blog/'+p.slug,name:'artigo-'+p.slug}))]){
     await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
     await page.evaluate(()=>document.fonts.ready);
     if(item.name==='home'){
@@ -32,6 +32,23 @@ async function main(){
     assert.equal(metrics.h1,1,'Esperado um H1 em '+item.name);
     assert(metrics.logo.includes('logo_techway_semslogan_transparent.png'),'Logo oficial não carregada');
     if(item.name.startsWith('artigo')) assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
+    if(item.url==='/blog/calculadora-retorno-automacao') {
+      assert.equal(await page.getByTestId('roi-hours').innerText(),'12,0 h');
+      assert.equal(await page.getByTestId('roi-balance').innerText(),'R$ 150,00');
+      assert.equal(await page.getByTestId('roi-year').innerText(),'R$ 1.500,00');
+      assert.equal(await page.getByTestId('roi-payback').innerText(),'2,0 meses');
+      assert.equal(await page.getByTestId('roi-percent').innerText(),'71,4%');
+      await page.getByLabel('Custo mensal total (R$)').fill('400');
+      assert.equal(await page.getByTestId('roi-payback').innerText(),'Sem recuperação estimada');
+      await page.getByLabel('Custo mensal total (R$)').fill('');
+      assert.equal(await page.getByTestId('roi-invalid').count(),1);
+      await page.getByLabel('Custo mensal total (R$)').fill('0');
+      await page.getByLabel('Implantação (R$)').fill('0');
+      assert.equal(await page.getByTestId('roi-percent').innerText(),'Não aplicável');
+      await page.getByRole('button',{name:'Restaurar exemplo'}).click();
+      assert.equal(await page.getByTestId('roi-year').innerText(),'R$ 1.500,00');
+      console.log('PASS calculadora ROI: exemplo, edição, saldo negativo, campo vazio, custo zero e restauração '+viewport.id);
+    }
     if(item.name==='solucao') {
       const content=await page.locator('main').innerText();
       assert(content.includes('Como funciona um agendamento pelo WhatsApp?'), 'Conteúdo comercial ausente');
