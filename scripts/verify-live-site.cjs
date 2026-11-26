@@ -52,7 +52,7 @@ async function verifyPublicSite() {
   const expectedPaths = ['/', '/atendimento-agendamentos-whatsapp', '/blog', '/din_page', ...posts.map(p => '/blog/' + p.slug)];
   const locs = [...sitemap.data.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
   const expectedLocs = expectedPaths.map(p => new URL(p, origin + '/').href);
-  assert.deepEqual(locs, expectedLocs, 'Sitemap difere das oito URLs comerciais/editoriais previstas');
+  assert.deepEqual(locs, expectedLocs, 'Sitemap difere das URLs comerciais/editoriais previstas');
 
   assert(robots.data.includes('User-agent: *\nAllow: /'), 'Robots não libera crawler genérico');
   assert(robots.data.includes('Sitemap: ' + origin + '/sitemap.xml'), 'Robots sem sitemap correto');
@@ -61,13 +61,18 @@ async function verifyPublicSite() {
     'Logo oficial não servida como imagem');
 
   // Teste limitado à resposta HTTP ao User-Agent. Não testa IPs reais de crawlers.
+  const articles = await Promise.all(posts.map(p => read('/blog/' + p.slug)));
+  for (const [i, article] of articles.entries()) {
+    assert(article.data.includes('rel="canonical" href="' + origin + '/blog/' + posts[i].slug + '"'), 'Canonical de artigo divergente');
+    assert(article.data.includes('"@type":"BlogPosting"'), 'BlogPosting ausente: ' + posts[i].slug);
+  }
   const bot = await read('/atendimento-agendamentos-whatsapp', 'OAI-SearchBot/1.0 (+https://openai.com/searchbot)');
   assert(bot.data.includes('Como funciona um agendamento pelo WhatsApp?'),
     'User-Agent OAI-SearchBot não recebe a página comercial');
 
   console.log(JSON.stringify({
     status: 'passed', origin,
-    checked: [home.url, service.url, sitemap.url, robots.url, blog.url, logo.url],
+    checked: [home.url, service.url, sitemap.url, robots.url, blog.url, logo.url, ...articles.map(a => a.url)],
     sitemapUrls: locs.length,
     publicOffer: 'atendimento + agendamentos',
     structuredData: ['Organization', 'WebSite', 'Service'],
