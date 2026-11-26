@@ -1,6 +1,6 @@
 # Aquisição orgânica — mapa temático e baseline (25/11/2026 BRT)
 
-Status: planejamento e primeiro lote A/G em branch de revisão, sem merge/deploy. Fundador informou concluir solicitações de indexação de URLs anteriores; status de índice ainda não revalidado. Responsável pela pesquisa e integração: agente Techway; fundador aprova provas comerciais e publicação. Base main inicial 993ac55bef81bde1e523195ade7f9372eccb2ff2. Skills de operação: [agent-skills/SKILLS.md](https://github.com/Techwayteam/agent-skills/blob/main/SKILLS.md), PR #1 integrado em ea886f3ad334dc2d6f2777f5944b7da2738893c7.
+Status: A/G publicados e smoke aprovado (PR #26, workflow 45739708531); D/V preparados em branch para publicação autorizada. Fundador pretende solicitar indexação dos quatro após confirmação pública. Fundador informou concluir solicitações de indexação de URLs anteriores; status de índice ainda não revalidado. Responsável pela pesquisa e integração: agente Techway; fundador aprova provas comerciais e publicação. Base main inicial 993ac55bef81bde1e523195ade7f9372eccb2ff2. Skills de operação: [agent-skills/SKILLS.md](https://github.com/Techwayteam/agent-skills/blob/main/SKILLS.md), PR #1 integrado em ea886f3ad334dc2d6f2777f5944b7da2738893c7.
 
 ## Objetivo e recorte
 Encontrar pequenos negócios no Brasil que precisam atender clientes e organizar horários pelo WhatsApp, converter visitas em conversas qualificadas. Marca: funcionários digitais, não exclusivamente salão; atendimento e agenda comercializáveis. Não criar páginas para funcionalidades futuras, nem prometer resultados. Preservar slugs e site estático. A página comercial /atendimento-agendamentos-whatsapp é o destino central, home marca, /blog hub editorial.
@@ -52,10 +52,10 @@ IDs são referências internas; links bidirecionais com pilar onde relevantes. N
 | E2 | /blog/automacao-de-tarefas-repetitivas | tarefas repetitivas e produtividade | A, R, S | P2 atualizar; desconhecida |
 | E3 | /blog/como-melhorar-sua-produtividade | produtividade do pequeno gestor; distinguir de E2 | R, E2 | P2 atualizar; desconhecida |
 | E4 | /blog/cuidar-do-cliente-ou-do-negocio | sobrecarga e perda de oportunidades; dilema do empreendedor | A, E1, R, S | P1 atualizar; desconhecida |
-| A | /blog/como-automatizar-atendimento-whatsapp | guia pilar informacional / automação whatsapp, atendimento automático; passos de implantação | S, D, E1, E4, F, G, R | P1 preparado em branch |
-| G | /blog/agendamento-automatico-whatsapp | guia pilar / agendamento whatsapp, agenda inteligente contextual; consulta, confirmação, alteração e conflitos | S, A, V, O, C | P1 preparado em branch |
-| D | /blog/chatbot-ou-agente-de-ia-whatsapp | comparação / chatbot whatsapp com IA, agente de IA whatsapp; regras vs execução e limites | A, E1, S | P1 proposta |
-| V | /blog/agenda-para-salao-de-beleza | guia B2B vertical; duração, profissionais, serviços, encaixes | G, S, O, C | P1 proposta |
+| A | /blog/como-automatizar-atendimento-whatsapp | guia pilar informacional / automação whatsapp, atendimento automático; passos de implantação | S, D, E1, E4, F, G, R | P1 publicado; indexação pendente |
+| G | /blog/agendamento-automatico-whatsapp | guia pilar / agendamento whatsapp, agenda inteligente contextual; consulta, confirmação, alteração e conflitos | S, A, V, O, C | P1 publicado; indexação pendente |
+| D | /blog/chatbot-ou-agente-de-ia-whatsapp | comparação / chatbot whatsapp com IA, agente de IA whatsapp; regras vs execução e limites | A, E1, S | P1 preparado D/V |
+| V | /blog/agenda-para-salao-de-beleza | guia B2B vertical; duração, profissionais, serviços, encaixes | G, S, O, C | P1 preparado D/V |
 | F | /blog/como-treinar-ia-atendimento-empresa | implantação / dados de empresa, erros e transferência; checklist sem PII | A, D, S | P1 proposta |
 | O | /blog/como-evitar-conflitos-agendamento | operacional / horários, serviços e remarcação; exemplos hipotéticos rotulados | G, V, S | P1 proposta |
 | R | /blog/quanto-custa-automatizar-atendimento | comercial-investigação / custo, retorno; metodologia e premissas sem preço inventado | A, D, S, E2 | P2 proposta |

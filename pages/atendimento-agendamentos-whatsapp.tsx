@@ -259,6 +259,8 @@ export default function AtendimentoEAgendamentos() {
             <p className="mt-4 leading-relaxed text-slate-700">Antes de escolher uma solução, veja como preparar as informações e testar os processos do seu negócio.</p>
             <p className="mt-4 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/como-automatizar-atendimento-whatsapp">Como automatizar o atendimento pelo WhatsApp</Link> — escolha as tarefas e os limites da IA.</p>
             <p className="mt-3 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/agendamento-automatico-whatsapp">Agendamento automático pelo WhatsApp</Link> — organize duração, disponibilidade e confirmação.</p>
+            <p className="mt-3 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/chatbot-ou-agente-de-ia-whatsapp">Chatbot ou agente de IA no WhatsApp?</Link> — compare soluções e testes de contratação.</p>
+            <p className="mt-3 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/agenda-para-salao-de-beleza">Agenda para salão de beleza</Link> — organize serviços, combos e capacidade.</p>
           </div>
         </section>
 
