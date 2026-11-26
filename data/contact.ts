@@ -15,6 +15,8 @@ const ALLOWED_BLOG_ORIGINS = new Set([
   'blog/atendimento-ia-alem-respostas-automaticas',
   'blog/como-automatizar-atendimento-whatsapp',
   'blog/agendamento-automatico-whatsapp',
+  'blog/chatbot-ou-agente-de-ia-whatsapp',
+  'blog/agenda-para-salao-de-beleza',
 ])
 
 const normalizeContactCode = (value: string): string =>
