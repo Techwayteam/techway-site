@@ -1,5 +1,9 @@
 # Techway — evolução do site e geração de leads
 
+## Aquisição orgânica — 25/11/2026
+
+[Plano 007 — SEO/GEO e mapa temático](plans/007-aquisicao-organica-seo-geo.md): diagnóstico OpenSEO/Search Console, pesquisa de termos BR, matriz de URLs e prioridades. Home/blog indexados; quatro artigos e serviço ainda desconhecidos do Google. Planejamento em revisão, sem novo deploy.
+
 ## Estado atual — 25/11/2026
 
 O site de produção em [techway.one](https://techway.one/) foi atualizado: **atendimento e agendamentos já comercializáveis**, demonstração visual animada de conversa, posicionamento de crescimento conjunto e página [atendimento e agendamentos pelo WhatsApp](https://techway.one/atendimento-agendamentos-whatsapp).
