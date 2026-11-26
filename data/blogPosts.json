@@ -1,470 +1,987 @@
 [
   {
-  "slug": "como-melhorar-sua-produtividade",
-  "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
-  "subtitle": "Descubra estratégias eficazes para otimizar seu trabalho e aumentar seus resultados",
-  "author": "Equipe TECHWAY",
-  "date": "2024-12-01",
-  "featuredImage": "/produtividade_capa.webp",
-  "content": {
-    "introduction": "A produtividade é o motor do sucesso. No entanto, muitas vezes nos vemos presos em rotinas ineficientes e tarefas repetitivas. Imagine se houvesse uma forma de fazer mais com menos esforço, liberando seu tempo para focar no que realmente importa. Neste artigo, exploramos soluções práticas que podem transformar sua rotina e maximizar seus resultados.",
-    "sections": [
-      {
-        "title": "Identificando os Principais Gargalos de Produtividade",
-        "text": "Antes de implementar qualquer solução, é fundamental mapear os desafios que mais consomem seu tempo. Isso pode incluir tarefas repetitivas, processos demorados de aprovação e a falta de integração entre ferramentas, que frequentemente resultam em atrasos e retrabalho. Um passo inicial eficaz é observar sua rotina por uma semana, registrando todas as atividades realizadas. A partir dessa análise, identifique padrões, como tarefas que exigem múltiplas etapas manuais, atividades com pouca margem de personalização ou ações que poderiam ser delegadas a ferramentas tecnológicas. Por exemplo, relatórios manuais que consomem horas ou aprovações que dependem de trocas intermináveis de e-mails são fortes candidatos à automação. Além disso, avalie os impactos desses gargalos: quanto tempo você perde diariamente? Qual o custo disso para a sua produtividade e bem-estar? Com essas respostas em mãos, você terá um panorama claro dos pontos que demandam melhorias e poderá direcionar suas ações para soluções mais estratégicas.",
-        "image": "/produtividade_gargalo.webp"
-      },
-      {
-        "title": "Automatize Suas Tarefas Mais Repetitivas",
-        "text": "A automação pode ser uma aliada nas tarefas mais repetitivas. Ferramentas de automação podem cuidar de tarefas como agendamento de reuniões, envio de e-mails periódicos e geração de relatórios, conforme as informações e os sistemas conectados. Na TECHWAY, essas possibilidades podem ser desenvolvidas e configuradas de maneira personalizada para as necessidades do seu negócio."
-      },
-      {
-        "title": "Como Fortalecer a Colaboração com Ferramentas Digitais",
-        "text": "Trabalhar em equipe é essencial para o sucesso de qualquer organização, mas os desafios de comunicação e coordenação podem comprometer a produtividade. Ferramentas de colaboração em nuvem, como plataformas de gerenciamento de projetos, podem tornar o trabalho conjunto mais eficiente, permitindo que equipes distribuídas ou locais acompanhem prazos, tarefas e objetivos em tempo real. Isso pode reduzir a necessidade de longas reuniões para alinhar informações ou múltiplas versões de um mesmo documento, centralizando informações em um único ambiente digital. Além disso, aplicativos de comunicação em tempo real, como chats integrados e videoconferências, ajudam a reduzir barreiras, promovendo uma interação fluida entre os membros da equipe, independentemente de onde estejam. Imagine ter acesso às atualizações do projeto, poder discutir ideias em tempo real e acompanhar o progresso com mais clareza. Com uma rotina de uso bem definida, essas ferramentas podem apoiar a produtividade, a conexão e o engajamento da equipe.",
-        "image": "/produtividade_colaboracao_tecnologia.webp"
-      }
-    ],
-    "conclusion": "Adotar ferramentas tecnológicas pode parecer desafiador no início. Imagine ter mais tempo para se concentrar no que realmente importa, com apoio nas tarefas repetitivas. A TECHWAY pode desenvolver soluções personalizadas para essa rotina. Comece pelo gargalo que você identificou e converse com a gente sobre o que pode ser implementado no seu negócio."
+    "slug": "como-melhorar-sua-produtividade",
+    "title": "Como Melhorar sua Produtividade com Ferramentas Tecnológicas",
+    "subtitle": "Descubra estratégias eficazes para otimizar seu trabalho e aumentar seus resultados",
+    "author": "Equipe TECHWAY",
+    "date": "2024-12-01",
+    "featuredImage": "/produtividade_capa.webp",
+    "content": {
+      "introduction": "A produtividade é o motor do sucesso. No entanto, muitas vezes nos vemos presos em rotinas ineficientes e tarefas repetitivas. Imagine se houvesse uma forma de fazer mais com menos esforço, liberando seu tempo para focar no que realmente importa. Neste artigo, exploramos soluções práticas que podem transformar sua rotina e maximizar seus resultados.",
+      "sections": [
+        {
+          "title": "Identificando os Principais Gargalos de Produtividade",
+          "text": "Antes de implementar qualquer solução, é fundamental mapear os desafios que mais consomem seu tempo. Isso pode incluir tarefas repetitivas, processos demorados de aprovação e a falta de integração entre ferramentas, que frequentemente resultam em atrasos e retrabalho. Um passo inicial eficaz é observar sua rotina por uma semana, registrando todas as atividades realizadas. A partir dessa análise, identifique padrões, como tarefas que exigem múltiplas etapas manuais, atividades com pouca margem de personalização ou ações que poderiam ser delegadas a ferramentas tecnológicas. Por exemplo, relatórios manuais que consomem horas ou aprovações que dependem de trocas intermináveis de e-mails são fortes candidatos à automação. Além disso, avalie os impactos desses gargalos: quanto tempo você perde diariamente? Qual o custo disso para a sua produtividade e bem-estar? Com essas respostas em mãos, você terá um panorama claro dos pontos que demandam melhorias e poderá direcionar suas ações para soluções mais estratégicas.",
+          "image": "/produtividade_gargalo.webp"
+        },
+        {
+          "title": "Automatize Suas Tarefas Mais Repetitivas",
+          "text": "A automação pode ser uma aliada nas tarefas mais repetitivas. Ferramentas de automação podem cuidar de tarefas como agendamento de reuniões, envio de e-mails periódicos e geração de relatórios, conforme as informações e os sistemas conectados. Na TECHWAY, essas possibilidades podem ser desenvolvidas e configuradas de maneira personalizada para as necessidades do seu negócio."
+        },
+        {
+          "title": "Como Fortalecer a Colaboração com Ferramentas Digitais",
+          "text": "Trabalhar em equipe é essencial para o sucesso de qualquer organização, mas os desafios de comunicação e coordenação podem comprometer a produtividade. Ferramentas de colaboração em nuvem, como plataformas de gerenciamento de projetos, podem tornar o trabalho conjunto mais eficiente, permitindo que equipes distribuídas ou locais acompanhem prazos, tarefas e objetivos em tempo real. Isso pode reduzir a necessidade de longas reuniões para alinhar informações ou múltiplas versões de um mesmo documento, centralizando informações em um único ambiente digital. Além disso, aplicativos de comunicação em tempo real, como chats integrados e videoconferências, ajudam a reduzir barreiras, promovendo uma interação fluida entre os membros da equipe, independentemente de onde estejam. Imagine ter acesso às atualizações do projeto, poder discutir ideias em tempo real e acompanhar o progresso com mais clareza. Com uma rotina de uso bem definida, essas ferramentas podem apoiar a produtividade, a conexão e o engajamento da equipe.",
+          "image": "/produtividade_colaboracao_tecnologia.webp"
+        }
+      ],
+      "conclusion": "Adotar ferramentas tecnológicas pode parecer desafiador no início. Imagine ter mais tempo para se concentrar no que realmente importa, com apoio nas tarefas repetitivas. A TECHWAY pode desenvolver soluções personalizadas para essa rotina. Comece pelo gargalo que você identificou e converse com a gente sobre o que pode ser implementado no seu negócio."
+    },
+    "cta": {
+      "text": "Veja como a IA no WhatsApp pode aliviar sua rotina",
+      "link": "/?origem=blog%2Fcomo-melhorar-sua-produtividade#solucoes"
+    },
+    "tags": [
+      "produtividade",
+      "tecnologia",
+      "automação"
+    ]
   },
-  "cta": {
-    "text": "Veja como a IA no WhatsApp pode aliviar sua rotina",
-    "link": "/?origem=blog%2Fcomo-melhorar-sua-produtividade#solucoes"
-  },
-  "tags": ["produtividade", "tecnologia", "automação"]
-},
   {
-  "slug": "automacao-de-tarefas-repetitivas",
-  "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
-  "subtitle": "Saiba como a automação de processos pode transformar a maneira como você trabalha",
-  "author": "Equipe TECHWAY",
-  "date": "2024-12-08",
-  "featuredImage": "/automacao_capa.webp",
-  "content": {
-    "introduction": "Tarefas repetitivas consomem tempo valioso e drenam energia que poderia ser usada em atividades mais estratégicas. Imagine se você pudesse automatizar processos como entrada de dados, envio de relatórios e gestão de inventário. Neste artigo, mostramos como a automação pode revolucionar sua rotina e otimizar seus resultados.",
-    "sections": [
-      {
-        "title": "O Impacto das Tarefas Repetitivas no Seu Desempenho",
-        "text": "Atividades manuais, como entrada de dados e envio de e-mails, consomem tempo e podem envolver erros de preenchimento ou retrabalho. Automatizar etapas bem definidas pode ajudar a reduzir esse esforço, conforme o processo e a configuração adotados. Pergunte a si mesmo: quais tarefas no meu dia a dia poderiam ser automatizadas?",
-        "image": "/automacao_comparacao.webp"
-      },
-      {
-        "title": "As Soluções da TECHWAY para Automação",
-        "text": "As soluções da TECHWAY podem ser desenvolvidas e configuradas conforme o seu fluxo de trabalho. Imagine reduzir o esforço com relatórios manuais ou aprovações demoradas. Essas tarefas podem fazer parte de uma implantação personalizada, de acordo com os processos e sistemas do seu negócio, buscando reduzir retrabalho e melhorar a precisão das informações."
-      }
-    ],
-    "conclusion": "Automatizar tarefas repetitivas pode ajudar a aproveitar melhor seu tempo e seus recursos. O resultado depende da tarefa escolhida e de como a solução é implementada na sua rotina. Conte à TECHWAY o que você precisa automatizar para avaliarmos uma solução personalizada para o seu negócio."
+    "slug": "automacao-de-tarefas-repetitivas",
+    "title": "Automação de Tarefas Repetitivas: Economize Tempo e Dinheiro",
+    "subtitle": "Saiba como a automação de processos pode transformar a maneira como você trabalha",
+    "author": "Equipe TECHWAY",
+    "date": "2024-12-08",
+    "featuredImage": "/automacao_capa.webp",
+    "content": {
+      "introduction": "Tarefas repetitivas consomem tempo valioso e drenam energia que poderia ser usada em atividades mais estratégicas. Imagine se você pudesse automatizar processos como entrada de dados, envio de relatórios e gestão de inventário. Neste artigo, mostramos como a automação pode revolucionar sua rotina e otimizar seus resultados.",
+      "sections": [
+        {
+          "title": "O Impacto das Tarefas Repetitivas no Seu Desempenho",
+          "text": "Atividades manuais, como entrada de dados e envio de e-mails, consomem tempo e podem envolver erros de preenchimento ou retrabalho. Automatizar etapas bem definidas pode ajudar a reduzir esse esforço, conforme o processo e a configuração adotados. Pergunte a si mesmo: quais tarefas no meu dia a dia poderiam ser automatizadas?",
+          "image": "/automacao_comparacao.webp"
+        },
+        {
+          "title": "As Soluções da TECHWAY para Automação",
+          "text": "As soluções da TECHWAY podem ser desenvolvidas e configuradas conforme o seu fluxo de trabalho. Imagine reduzir o esforço com relatórios manuais ou aprovações demoradas. Essas tarefas podem fazer parte de uma implantação personalizada, de acordo com os processos e sistemas do seu negócio, buscando reduzir retrabalho e melhorar a precisão das informações."
+        }
+      ],
+      "conclusion": "Automatizar tarefas repetitivas pode ajudar a aproveitar melhor seu tempo e seus recursos. O resultado depende da tarefa escolhida e de como a solução é implementada na sua rotina. Conte à TECHWAY o que você precisa automatizar para avaliarmos uma solução personalizada para o seu negócio."
+    },
+    "cta": {
+      "text": "Veja o que um funcionário digital pode fazer no WhatsApp",
+      "link": "/?origem=blog%2Fautomacao-de-tarefas-repetitivas#solucoes"
+    },
+    "tags": [
+      "automação",
+      "eficiência",
+      "produtividade"
+    ]
   },
-  "cta": {
-    "text": "Veja o que um funcionário digital pode fazer no WhatsApp",
-    "link": "/?origem=blog%2Fautomacao-de-tarefas-repetitivas#solucoes"
-  },
-  "tags": ["automação", "eficiência", "produtividade"]
-}
-,
   {
-  "slug": "cuidar-do-cliente-ou-do-negocio",
-  "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
-  "subtitle": "Você precisa vender, atender, organizar, divulgar e ainda dar conta da empresa. Como resolver esse caos diário?",
-  "author": "Leonardo Reis - CEO Techway",
-  "date": "2025-07-27",
-  "featuredImage": "/empreendedor_dilema_capa.webp",
-  "content": {
-    "introduction": "Muitos pequenos empreendedores vivem esse dilema: quando você para pra atender bem o cliente, outras tarefas do negócio ficam pra depois. E quando tenta organizar as finanças ou divulgar, corre o risco de deixar atendimentos e oportunidades de venda esperando. A sobrecarga é tanta que parece que o negócio trava junto com você. Se esse é o seu caso, este artigo é pra você.",
-    "sections": [
+    "slug": "cuidar-do-cliente-ou-do-negocio",
+    "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+    "subtitle": "Você precisa vender, atender, organizar, divulgar e ainda dar conta da empresa. Como resolver esse caos diário?",
+    "author": "Leonardo Reis - CEO Techway",
+    "date": "2025-07-27",
+    "featuredImage": "/empreendedor_dilema_capa.webp",
+    "content": {
+      "introduction": "Muitos pequenos empreendedores vivem esse dilema: quando você para pra atender bem o cliente, outras tarefas do negócio ficam pra depois. E quando tenta organizar as finanças ou divulgar, corre o risco de deixar atendimentos e oportunidades de venda esperando. A sobrecarga é tanta que parece que o negócio trava junto com você. Se esse é o seu caso, este artigo é pra você.",
+      "sections": [
+        {
+          "title": "O caos invisível de quem faz tudo",
+          "text": "Vender, atender no WhatsApp, organizar planilha, responder no Instagram, emitir boleto, tentar divulgar, lembrar de cobrar, tentar inovar… Tudo ao mesmo tempo. Quem toca o negócio sozinho acaba sendo 5 profissionais em 1, e isso tem um custo: estresse, perda de tempo e falta de foco no que realmente importa.",
+          "image": "/empreendedor_sobrecarregado.webp"
+        },
+        {
+          "title": "Quando atender o cliente atrasa a empresa (e vice-versa)",
+          "text": "Talvez você já tenha sentido isso: enquanto está conversando com um cliente no WhatsApp, o financeiro está atrasado. Quando para pra organizar as contas, as mensagens acumulam. Esse vai e volta constante pode dificultar o crescimento, a melhoria dos processos ou até o descanso. No fundo, a sobrecarga pode deixar você com a sensação de estar travado.",
+          "image": "/whatsapp_versus_gestao.webp"
+        },
+        {
+          "title": "Existe solução sem contratar alguém?",
+          "text": "Contratar ajuda pode ser caro. Mas e se existisse uma forma de ter um ‘funcionário digital’ que faz parte desse trabalho por você? Com a inteligência artificial, é possível configurar atendentes digitais com o tom e as informações do seu negócio, para apoiar tarefas recorrentes. A Techway desenvolve assistentes digitais para atuar no WhatsApp conforme a demanda da sua empresa, com tarefas, recursos de memória e personalização definidos para a sua operação.",
+          "image": "/funcionario_digital_explicacao.webp"
+        },
+        {
+          "title": "Você não precisa dar conta de tudo sozinho",
+          "text": "Automatizar partes do seu negócio pode liberar tempo pra focar no que importa, pra crescer, pra respirar. Para manter o controle, vale definir o que o apoio digital pode fazer e quais situações ficam com uma pessoa. O primeiro passo pode ser simples: escolher uma tarefa recorrente do atendimento e avaliar como ela pode ser automatizada.",
+          "image": "/liberdade_empresario.webp"
+        }
+      ],
+      "conclusion": "Se você sente que sua empresa depende de você pra tudo, talvez esteja na hora de mudar. Na Techway, você pode conversar sobre atendimento automático, follow-up e outras tarefas que deseja implementar no WhatsApp da sua empresa, com uma solução personalizada. O Early Access é uma oportunidade de construir essa solução junto com a gente. Bora destravar seu negócio?"
+    },
+    "cta": {
+      "text": "Conheça o atendimento com IA para o seu negócio",
+      "link": "/?origem=blog%2Fcuidar-do-cliente-ou-do-negocio#solucoes"
+    },
+    "related": [
       {
-        "title": "O caos invisível de quem faz tudo",
-        "text": "Vender, atender no WhatsApp, organizar planilha, responder no Instagram, emitir boleto, tentar divulgar, lembrar de cobrar, tentar inovar… Tudo ao mesmo tempo. Quem toca o negócio sozinho acaba sendo 5 profissionais em 1, e isso tem um custo: estresse, perda de tempo e falta de foco no que realmente importa.",
-        "image": "/empreendedor_sobrecarregado.webp"
+        "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+        "slug": "atendimento-ia-alem-respostas-automaticas"
       },
       {
-        "title": "Quando atender o cliente atrasa a empresa (e vice-versa)",
-        "text": "Talvez você já tenha sentido isso: enquanto está conversando com um cliente no WhatsApp, o financeiro está atrasado. Quando para pra organizar as contas, as mensagens acumulam. Esse vai e volta constante pode dificultar o crescimento, a melhoria dos processos ou até o descanso. No fundo, a sobrecarga pode deixar você com a sensação de estar travado.",
-        "image": "/whatsapp_versus_gestao.webp"
-      },
-      {
-        "title": "Existe solução sem contratar alguém?",
-        "text": "Contratar ajuda pode ser caro. Mas e se existisse uma forma de ter um ‘funcionário digital’ que faz parte desse trabalho por você? Com a inteligência artificial, é possível configurar atendentes digitais com o tom e as informações do seu negócio, para apoiar tarefas recorrentes. A Techway desenvolve assistentes digitais para atuar no WhatsApp conforme a demanda da sua empresa, com tarefas, recursos de memória e personalização definidos para a sua operação.",
-        "image": "/funcionario_digital_explicacao.webp"
-      },
-      {
-        "title": "Você não precisa dar conta de tudo sozinho",
-        "text": "Automatizar partes do seu negócio pode liberar tempo pra focar no que importa, pra crescer, pra respirar. Para manter o controle, vale definir o que o apoio digital pode fazer e quais situações ficam com uma pessoa. O primeiro passo pode ser simples: escolher uma tarefa recorrente do atendimento e avaliar como ela pode ser automatizada.",
-        "image": "/liberdade_empresario.webp"
+        "slug": "como-automatizar-atendimento-whatsapp",
+        "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios"
       }
     ],
-    "conclusion": "Se você sente que sua empresa depende de você pra tudo, talvez esteja na hora de mudar. Na Techway, você pode conversar sobre atendimento automático, follow-up e outras tarefas que deseja implementar no WhatsApp da sua empresa, com uma solução personalizada. O Early Access é uma oportunidade de construir essa solução junto com a gente. Bora destravar seu negócio?"
+    "tags": [
+      "atendimento",
+      "automação",
+      "rotina de empreendedores",
+      "funcionário digital"
+    ]
   },
-  "cta": {
-    "text": "Conheça o atendimento com IA para o seu negócio",
-    "link": "/?origem=blog%2Fcuidar-do-cliente-ou-do-negocio#solucoes"
-  },
-  "related": [{ "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.", "slug": "atendimento-ia-alem-respostas-automaticas" }],
-  "tags": ["atendimento", "automação", "rotina de empreendedores", "funcionário digital"]
-  },
-{
-  "slug": "atendimento-ia-alem-respostas-automaticas",
-  "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
-  "subtitle": "O que os avanços da inteligência artificial no atendimento podem ensinar aos pequenos negócios.",
-  "seoTitle": "Atendimento com IA: além das respostas automáticas | Techway",
-  "metaDescription": "Descubra como a inteligência artificial pode ir além das respostas automáticas e ajudar pequenos negócios a resolver pedidos pelo WhatsApp.",
-  "author": "Leonardo Reis - Founder Techway",
-  "date": "2026-10-11",
-  "layout": "editorial",
-  "featuredImage": "/atendimento-ia-capa.webp",
-  "featuredImageAlt": "Empreendedora consultando mensagens no celular após o expediente em seu salão.",
-  "featuredImageWidth": 1600,
-  "featuredImageHeight": 900,
-  "content": {
-    "introduction": "",
-    "introductionBlocks": [
+  {
+    "slug": "atendimento-ia-alem-respostas-automaticas",
+    "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema.",
+    "subtitle": "O que os avanços da inteligência artificial no atendimento podem ensinar aos pequenos negócios.",
+    "seoTitle": "Atendimento com IA: além das respostas automáticas | Techway",
+    "metaDescription": "Descubra como a inteligência artificial pode ir além das respostas automáticas e ajudar pequenos negócios a resolver pedidos pelo WhatsApp.",
+    "author": "Leonardo Reis - Founder Techway",
+    "date": "2026-10-11",
+    "layout": "editorial",
+    "featuredImage": "/atendimento-ia-capa.webp",
+    "featuredImageAlt": "Empreendedora consultando mensagens no celular após o expediente em seu salão.",
+    "featuredImageWidth": 1600,
+    "featuredImageHeight": 900,
+    "content": {
+      "introduction": "",
+      "introductionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Imagine a seguinte situação."
+        },
+        {
+          "type": "paragraph",
+          "text": "São quase oito da noite. Você finalmente encerrou seu expediente e está aproveitando um momento com a família."
+        },
+        {
+          "type": "paragraph",
+          "text": "De repente, chega uma mensagem no WhatsApp da empresa:"
+        },
+        {
+          "type": "quote",
+          "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Se você não responder, corre o risco de perder o cliente. Se responder, terá que abrir a agenda, conferir os horários, oferecer algumas opções, esperar o retorno e confirmar o agendamento."
+        },
+        {
+          "type": "paragraph",
+          "text": "Talvez sejam apenas cinco minutos. Mas quantas vezes isso acontece durante a semana?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Agora imagine que sua empresa tenha uma resposta automática:"
+        },
+        {
+          "type": "quote",
+          "text": "Olá! Nosso horário de atendimento é de segunda a sexta, das 9h às 18h. Retornaremos assim que possível."
+        },
+        {
+          "type": "paragraph",
+          "text": "A mensagem foi respondida. Mas o cliente continua sem saber se pode agendar para amanhã."
+        },
+        {
+          "type": "paragraph",
+          "text": "**O atendimento aconteceu. O problema não foi resolvido.**"
+        },
+        {
+          "type": "paragraph",
+          "text": "E é justamente essa diferença que está mudando a maneira como empresas enxergam a inteligência artificial."
+        }
+      ],
+      "sections": [
+        {
+          "title": "Responder rápido já não é suficiente",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Durante muito tempo, automatizar o atendimento significava criar mensagens de boas-vindas, menus de opções e respostas para perguntas frequentes."
+            },
+            {
+              "type": "paragraph",
+              "text": "Esses recursos continuam sendo úteis. Afinal, informar o horário de funcionamento ou compartilhar um endereço não precisa ocupar o tempo de alguém da equipe."
+            },
+            {
+              "type": "paragraph",
+              "text": "Mas pense no que acontece quando o cliente precisa de algo além de uma informação."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ele quer agendar um serviço, remarcar um compromisso, consultar o andamento de um pedido ou descobrir se determinado produto está disponível."
+            },
+            {
+              "type": "paragraph",
+              "text": "Nessas situações, uma resposta automática pode até iniciar a conversa. Mas, se alguém precisar assumir todas as etapas seguintes, boa parte do trabalho continuará acontecendo manualmente."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Existe uma diferença enorme entre automatizar uma mensagem e automatizar a solução de um problema.**"
+            },
+            {
+              "type": "comparison"
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Para transformar essa ideia em uma rotina, veja ",
+              "label": "como automatizar o atendimento pelo WhatsApp",
+              "href": "/blog/como-automatizar-atendimento-whatsapp",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "title": "O que as empresas estão aprendendo sobre atendimento",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Esse foi um dos aprendizados que mais nos chamou a atenção durante a FEBRABAN Tech 2026."
+            },
+            {
+              "type": "paragraph",
+              "text": "Entre tantas discussões sobre inteligência artificial, uma mudança de perspectiva ficou evidente: as empresas estão buscando maneiras de fazer com que a tecnologia vá além de conversar com o cliente."
+            },
+            {
+              "type": "paragraph",
+              "text": "Em vez de simplesmente fornecer informações, sistemas inteligentes podem consultar dados, interpretar solicitações e executar tarefas."
+            },
+            {
+              "type": "paragraph",
+              "text": "Pense, por exemplo, em alguém que entra em contato com uma empresa para acompanhar um pedido."
+            },
+            {
+              "type": "paragraph",
+              "text": "O que essa pessoa realmente deseja?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Receber uma lista de instruções sobre como resolver o problema? Ou sair daquela conversa com a solicitação encaminhada ou resolvida?"
+            },
+            {
+              "type": "paragraph",
+              "text": "A resposta parece óbvia."
+            },
+            {
+              "type": "paragraph",
+              "text": "E embora as grandes empresas tenham operações muito diferentes das de um salão de beleza, uma oficina ou uma pequena loja, o princípio por trás dessa evolução é o mesmo:"
+            },
+            {
+              "type": "paragraph",
+              "text": "**Quanto menos esforço o cliente precisar fazer para resolver o que deseja, melhor será sua experiência.**"
+            },
+            {
+              "type": "paragraph",
+              "text": "A boa notícia é que essa lógica não precisa ficar restrita às grandes empresas."
+            }
+          ]
+        },
+        {
+          "title": "E se o WhatsApp da sua empresa também pudesse resolver tarefas?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Vamos voltar à mensagem do início deste artigo."
+            },
+            {
+              "type": "quote",
+              "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Agora imagine uma experiência diferente."
+            },
+            {
+              "type": "paragraph",
+              "text": "Um atendente digital recebe a mensagem, entende o que o cliente deseja e consulta os horários disponíveis na agenda da empresa."
+            },
+            {
+              "type": "paragraph",
+              "text": "Em seguida, oferece duas ou três opções."
+            },
+            {
+              "type": "paragraph",
+              "text": "O cliente escolhe a melhor, e o agendamento é registrado automaticamente. Tudo acontece no próprio WhatsApp, sem precisar acessar outro aplicativo ou esperar que alguém da equipe esteja disponível."
+            },
+            {
+              "type": "paragraph",
+              "text": "O cliente conseguiu o que queria. A agenda está atualizada. E você não precisou interromper seu momento de descanso."
+            },
+            {
+              "type": "paragraph",
+              "text": "Esse mesmo princípio pode ser aplicado a diferentes situações:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Em um salão de beleza:** consultar horários, agendar serviços e confirmar compromissos.",
+                "**Em uma assistência técnica:** informar o andamento de um reparo e registrar solicitações.",
+                "**Em uma loja:** verificar a disponibilidade de produtos e responder dúvidas sobre pedidos.",
+                "**Em um consultório:** organizar solicitações de agendamento e enviar lembretes."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Para que isso funcione, a inteligência artificial precisa estar conectada às informações e aos sistemas necessários, com regras claras sobre o que pode ou não fazer."
+            },
+            {
+              "type": "paragraph",
+              "text": "Não se trata de responder qualquer coisa, mas de executar tarefas específicas com segurança."
+            },
+            {
+              "type": "paragraph",
+              "text": "E talvez o mais interessante seja perceber que não estamos falando necessariamente de tecnologias futuristas ou inacessíveis."
+            },
+            {
+              "type": "paragraph",
+              "text": "Estamos falando de usar ferramentas que já fazem parte do dia a dia dos pequenos negócios de uma maneira mais inteligente."
+            }
+          ]
+        },
+        {
+          "title": "Mas isso significa deixar o atendimento humano de lado?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Não. E essa talvez seja uma das reflexões mais importantes."
+            },
+            {
+              "type": "paragraph",
+              "text": "Pense em quantas mensagens sua empresa recebe que exigem praticamente a mesma ação."
+            },
+            {
+              "type": "paragraph",
+              "text": "Consultar um horário. Confirmar um agendamento. Informar um preço. Verificar um pedido."
+            },
+            {
+              "type": "image",
+              "src": "/atendimento-humano-techway.webp",
+              "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente.",
+              "width": 1200,
+              "height": 800,
+              "caption": "Automatizar tarefas também pode significar ter mais tempo para as pessoas. Imagem ilustrativa gerada com IA."
+            },
+            {
+              "type": "paragraph",
+              "text": "Agora pense nas situações que realmente precisam da sua experiência, sensibilidade ou capacidade de decisão."
+            },
+            {
+              "type": "paragraph",
+              "text": "Um cliente insatisfeito. Uma negociação especial. Um atendimento delicado. Uma oportunidade importante de relacionamento."
+            },
+            {
+              "type": "paragraph",
+              "text": "Faz sentido dedicar o mesmo tempo e esforço aos dois tipos de situação?"
+            },
+            {
+              "type": "paragraph",
+              "text": "A inteligência artificial pode assumir parte do trabalho repetitivo, enquanto as pessoas se concentram naquilo em que realmente fazem diferença."
+            },
+            {
+              "type": "paragraph",
+              "text": "E, quando uma situação exigir atendimento humano, a tecnologia precisa reconhecer esse limite e facilitar a continuidade da conversa, de preferência sem obrigar o cliente a explicar tudo novamente."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Humanizar o atendimento não significa que uma pessoa precise executar cada tarefa. Significa fazer o cliente se sentir compreendido e bem atendido.**"
+            },
+            {
+              "type": "paragraph",
+              "text": "Às vezes, isso acontece com uma conversa acolhedora. Em outras, com uma solução simples e rápida."
+            }
+          ]
+        },
+        {
+          "title": "Por onde começar no seu negócio?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Antes de pensar em ferramentas ou investimentos, vale fazer um exercício."
+            },
+            {
+              "type": "paragraph",
+              "text": "Abra o WhatsApp da sua empresa e observe as conversas dos últimos dias."
+            },
+            {
+              "type": "paragraph",
+              "text": "Quais perguntas aparecem com mais frequência? Quantas mensagens exigem que alguém consulte uma informação? Quantas solicitações seguem praticamente os mesmos passos até serem concluídas?"
+            },
+            {
+              "type": "paragraph",
+              "text": "Talvez você descubra que uma parte considerável do seu tempo é dedicada a atividades previsíveis."
+            },
+            {
+              "type": "paragraph",
+              "text": "E não é preciso automatizar tudo de uma vez."
+            },
+            {
+              "type": "paragraph",
+              "text": "Começar por uma tarefa frequente, que tenha regras claras e faça diferença para o cliente, já pode ser um excelente primeiro passo."
+            },
+            {
+              "type": "paragraph",
+              "text": "O objetivo não deve ser apenas reduzir o número de mensagens que você responde pessoalmente. Deve ser melhorar a experiência do cliente e recuperar tempo para cuidar do seu negócio."
+            }
+          ]
+        },
+        {
+          "title": "A tecnologia das grandes empresas, na realidade dos pequenos negócios",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Uma das coisas mais interessantes sobre acompanhar a evolução da inteligência artificial é perceber que soluções antes associadas a grandes operações estão se tornando cada vez mais acessíveis."
+            },
+            {
+              "type": "paragraph",
+              "text": "Mas existe uma diferença importante entre levar tecnologia para um pequeno negócio e simplesmente copiar o que uma grande empresa faz."
+            },
+            {
+              "type": "paragraph",
+              "text": "O pequeno empresário não precisa de sistemas enormes, dezenas de ferramentas ou processos complicados."
+            },
+            {
+              "type": "paragraph",
+              "text": "Ele precisa de soluções que entendam sua rotina, respeitem a maneira como trabalha e ajudem a resolver problemas reais."
+            },
+            {
+              "type": "paragraph",
+              "text": "É nessa direção que acreditamos que o atendimento está evoluindo."
+            },
+            {
+              "type": "paragraph",
+              "text": "E é também o que nos inspira na **Techway**: tornar a inteligência artificial útil e acessível para pequenos negócios, por meio de funcionários digitais especializados que trabalham em canais familiares, como o WhatsApp."
+            },
+            {
+              "type": "paragraph",
+              "text": "Porque, no final das contas, o objetivo não é fazer sua empresa parecer uma grande corporação."
+            },
+            {
+              "type": "paragraph",
+              "text": "**É permitir que você ofereça uma excelente experiência ao cliente, com apoio digital que atua conforme a demanda do seu negócio.**"
+            }
+          ]
+        }
+      ],
+      "conclusion": "",
+      "conclusionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Quantas tarefas do atendimento da sua empresa poderiam acontecer sem depender diretamente de você?"
+        }
+      ]
+    },
+    "cta": {
+      "text": "Veja um exemplo de atendimento com IA no WhatsApp",
+      "link": "/?origem=blog%2Fatendimento-ia-alem-respostas-automaticas#exemplo"
+    },
+    "tags": [
+      "atendimento",
+      "inteligência artificial",
+      "WhatsApp",
+      "funcionário digital"
+    ],
+    "sources": [
       {
-        "type": "paragraph",
-        "text": "Imagine a seguinte situação."
+        "title": "FEBRABAN — balanço da edição 2026 e liderança humana",
+        "url": "https://portal.febraban.org.br/noticia/4491/pt-br/"
       },
       {
-        "type": "paragraph",
-        "text": "São quase oito da noite. Você finalmente encerrou seu expediente e está aproveitando um momento com a família."
-      },
-      {
-        "type": "paragraph",
-        "text": "De repente, chega uma mensagem no WhatsApp da empresa:"
-      },
-      {
-        "type": "quote",
-        "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Se você não responder, corre o risco de perder o cliente. Se responder, terá que abrir a agenda, conferir os horários, oferecer algumas opções, esperar o retorno e confirmar o agendamento."
-      },
-      {
-        "type": "paragraph",
-        "text": "Talvez sejam apenas cinco minutos. Mas quantas vezes isso acontece durante a semana?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Agora imagine que sua empresa tenha uma resposta automática:"
-      },
-      {
-        "type": "quote",
-        "text": "Olá! Nosso horário de atendimento é de segunda a sexta, das 9h às 18h. Retornaremos assim que possível."
-      },
-      {
-        "type": "paragraph",
-        "text": "A mensagem foi respondida. Mas o cliente continua sem saber se pode agendar para amanhã."
-      },
-      {
-        "type": "paragraph",
-        "text": "**O atendimento aconteceu. O problema não foi resolvido.**"
-      },
-      {
-        "type": "paragraph",
-        "text": "E é justamente essa diferença que está mudando a maneira como empresas enxergam a inteligência artificial."
+        "title": "FEBRABAN — pesquisa sobre aplicações de IA em 2026",
+        "url": "https://portal.febraban.org.br/noticia/4490/pt-br/"
       }
     ],
-    "sections": [
+    "related": [
       {
-        "title": "Responder rápido já não é suficiente",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Durante muito tempo, automatizar o atendimento significava criar mensagens de boas-vindas, menus de opções e respostas para perguntas frequentes."
-          },
-          {
-            "type": "paragraph",
-            "text": "Esses recursos continuam sendo úteis. Afinal, informar o horário de funcionamento ou compartilhar um endereço não precisa ocupar o tempo de alguém da equipe."
-          },
-          {
-            "type": "paragraph",
-            "text": "Mas pense no que acontece quando o cliente precisa de algo além de uma informação."
-          },
-          {
-            "type": "paragraph",
-            "text": "Ele quer agendar um serviço, remarcar um compromisso, consultar o andamento de um pedido ou descobrir se determinado produto está disponível."
-          },
-          {
-            "type": "paragraph",
-            "text": "Nessas situações, uma resposta automática pode até iniciar a conversa. Mas, se alguém precisar assumir todas as etapas seguintes, boa parte do trabalho continuará acontecendo manualmente."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Existe uma diferença enorme entre automatizar uma mensagem e automatizar a solução de um problema.**"
-          },
-          {
-            "type": "comparison"
-          }
-        ]
+        "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
+        "slug": "cuidar-do-cliente-ou-do-negocio"
       },
       {
-        "title": "O que as empresas estão aprendendo sobre atendimento",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Esse foi um dos aprendizados que mais nos chamou a atenção durante a FEBRABAN Tech 2026."
-          },
-          {
-            "type": "paragraph",
-            "text": "Entre tantas discussões sobre inteligência artificial, uma mudança de perspectiva ficou evidente: as empresas estão buscando maneiras de fazer com que a tecnologia vá além de conversar com o cliente."
-          },
-          {
-            "type": "paragraph",
-            "text": "Em vez de simplesmente fornecer informações, sistemas inteligentes podem consultar dados, interpretar solicitações e executar tarefas."
-          },
-          {
-            "type": "paragraph",
-            "text": "Pense, por exemplo, em alguém que entra em contato com uma empresa para acompanhar um pedido."
-          },
-          {
-            "type": "paragraph",
-            "text": "O que essa pessoa realmente deseja?"
-          },
-          {
-            "type": "paragraph",
-            "text": "Receber uma lista de instruções sobre como resolver o problema? Ou sair daquela conversa com a solicitação encaminhada ou resolvida?"
-          },
-          {
-            "type": "paragraph",
-            "text": "A resposta parece óbvia."
-          },
-          {
-            "type": "paragraph",
-            "text": "E embora as grandes empresas tenham operações muito diferentes das de um salão de beleza, uma oficina ou uma pequena loja, o princípio por trás dessa evolução é o mesmo:"
-          },
-          {
-            "type": "paragraph",
-            "text": "**Quanto menos esforço o cliente precisar fazer para resolver o que deseja, melhor será sua experiência.**"
-          },
-          {
-            "type": "paragraph",
-            "text": "A boa notícia é que essa lógica não precisa ficar restrita às grandes empresas."
-          }
-        ]
+        "slug": "como-automatizar-atendimento-whatsapp",
+        "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios"
       },
       {
-        "title": "E se o WhatsApp da sua empresa também pudesse resolver tarefas?",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Vamos voltar à mensagem do início deste artigo."
-          },
-          {
-            "type": "quote",
-            "text": "Boa noite! Vocês têm horário disponível amanhã à tarde?"
-          },
-          {
-            "type": "paragraph",
-            "text": "Agora imagine uma experiência diferente."
-          },
-          {
-            "type": "paragraph",
-            "text": "Um atendente digital recebe a mensagem, entende o que o cliente deseja e consulta os horários disponíveis na agenda da empresa."
-          },
-          {
-            "type": "paragraph",
-            "text": "Em seguida, oferece duas ou três opções."
-          },
-          {
-            "type": "paragraph",
-            "text": "O cliente escolhe a melhor, e o agendamento é registrado automaticamente. Tudo acontece no próprio WhatsApp, sem precisar acessar outro aplicativo ou esperar que alguém da equipe esteja disponível."
-          },
-          {
-            "type": "paragraph",
-            "text": "O cliente conseguiu o que queria. A agenda está atualizada. E você não precisou interromper seu momento de descanso."
-          },
-          {
-            "type": "paragraph",
-            "text": "Esse mesmo princípio pode ser aplicado a diferentes situações:"
-          },
-          {
-            "type": "list",
-            "items": [
-              "**Em um salão de beleza:** consultar horários, agendar serviços e confirmar compromissos.",
-              "**Em uma assistência técnica:** informar o andamento de um reparo e registrar solicitações.",
-              "**Em uma loja:** verificar a disponibilidade de produtos e responder dúvidas sobre pedidos.",
-              "**Em um consultório:** organizar solicitações de agendamento e enviar lembretes."
-            ]
-          },
-          {
-            "type": "paragraph",
-            "text": "Para que isso funcione, a inteligência artificial precisa estar conectada às informações e aos sistemas necessários, com regras claras sobre o que pode ou não fazer."
-          },
-          {
-            "type": "paragraph",
-            "text": "Não se trata de responder qualquer coisa, mas de executar tarefas específicas com segurança."
-          },
-          {
-            "type": "paragraph",
-            "text": "E talvez o mais interessante seja perceber que não estamos falando necessariamente de tecnologias futuristas ou inacessíveis."
-          },
-          {
-            "type": "paragraph",
-            "text": "Estamos falando de usar ferramentas que já fazem parte do dia a dia dos pequenos negócios de uma maneira mais inteligente."
-          }
-        ]
-      },
-      {
-        "title": "Mas isso significa deixar o atendimento humano de lado?",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Não. E essa talvez seja uma das reflexões mais importantes."
-          },
-          {
-            "type": "paragraph",
-            "text": "Pense em quantas mensagens sua empresa recebe que exigem praticamente a mesma ação."
-          },
-          {
-            "type": "paragraph",
-            "text": "Consultar um horário. Confirmar um agendamento. Informar um preço. Verificar um pedido."
-          },
-          {
-            "type": "image",
-            "src": "/atendimento-humano-techway.webp",
-            "alt": "Proprietária de pequeno negócio atendendo pessoalmente uma cliente.",
-            "width": 1200,
-            "height": 800,
-            "caption": "Automatizar tarefas também pode significar ter mais tempo para as pessoas. Imagem ilustrativa gerada com IA."
-          },
-          {
-            "type": "paragraph",
-            "text": "Agora pense nas situações que realmente precisam da sua experiência, sensibilidade ou capacidade de decisão."
-          },
-          {
-            "type": "paragraph",
-            "text": "Um cliente insatisfeito. Uma negociação especial. Um atendimento delicado. Uma oportunidade importante de relacionamento."
-          },
-          {
-            "type": "paragraph",
-            "text": "Faz sentido dedicar o mesmo tempo e esforço aos dois tipos de situação?"
-          },
-          {
-            "type": "paragraph",
-            "text": "A inteligência artificial pode assumir parte do trabalho repetitivo, enquanto as pessoas se concentram naquilo em que realmente fazem diferença."
-          },
-          {
-            "type": "paragraph",
-            "text": "E, quando uma situação exigir atendimento humano, a tecnologia precisa reconhecer esse limite e facilitar a continuidade da conversa, de preferência sem obrigar o cliente a explicar tudo novamente."
-          },
-          {
-            "type": "paragraph",
-            "text": "**Humanizar o atendimento não significa que uma pessoa precise executar cada tarefa. Significa fazer o cliente se sentir compreendido e bem atendido.**"
-          },
-          {
-            "type": "paragraph",
-            "text": "Às vezes, isso acontece com uma conversa acolhedora. Em outras, com uma solução simples e rápida."
-          }
-        ]
-      },
-      {
-        "title": "Por onde começar no seu negócio?",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Antes de pensar em ferramentas ou investimentos, vale fazer um exercício."
-          },
-          {
-            "type": "paragraph",
-            "text": "Abra o WhatsApp da sua empresa e observe as conversas dos últimos dias."
-          },
-          {
-            "type": "paragraph",
-            "text": "Quais perguntas aparecem com mais frequência? Quantas mensagens exigem que alguém consulte uma informação? Quantas solicitações seguem praticamente os mesmos passos até serem concluídas?"
-          },
-          {
-            "type": "paragraph",
-            "text": "Talvez você descubra que uma parte considerável do seu tempo é dedicada a atividades previsíveis."
-          },
-          {
-            "type": "paragraph",
-            "text": "E não é preciso automatizar tudo de uma vez."
-          },
-          {
-            "type": "paragraph",
-            "text": "Começar por uma tarefa frequente, que tenha regras claras e faça diferença para o cliente, já pode ser um excelente primeiro passo."
-          },
-          {
-            "type": "paragraph",
-            "text": "O objetivo não deve ser apenas reduzir o número de mensagens que você responde pessoalmente. Deve ser melhorar a experiência do cliente e recuperar tempo para cuidar do seu negócio."
-          }
-        ]
-      },
-      {
-        "title": "A tecnologia das grandes empresas, na realidade dos pequenos negócios",
-        "text": "",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Uma das coisas mais interessantes sobre acompanhar a evolução da inteligência artificial é perceber que soluções antes associadas a grandes operações estão se tornando cada vez mais acessíveis."
-          },
-          {
-            "type": "paragraph",
-            "text": "Mas existe uma diferença importante entre levar tecnologia para um pequeno negócio e simplesmente copiar o que uma grande empresa faz."
-          },
-          {
-            "type": "paragraph",
-            "text": "O pequeno empresário não precisa de sistemas enormes, dezenas de ferramentas ou processos complicados."
-          },
-          {
-            "type": "paragraph",
-            "text": "Ele precisa de soluções que entendam sua rotina, respeitem a maneira como trabalha e ajudem a resolver problemas reais."
-          },
-          {
-            "type": "paragraph",
-            "text": "É nessa direção que acreditamos que o atendimento está evoluindo."
-          },
-          {
-            "type": "paragraph",
-            "text": "E é também o que nos inspira na **Techway**: tornar a inteligência artificial útil e acessível para pequenos negócios, por meio de funcionários digitais especializados que trabalham em canais familiares, como o WhatsApp."
-          },
-          {
-            "type": "paragraph",
-            "text": "Porque, no final das contas, o objetivo não é fazer sua empresa parecer uma grande corporação."
-          },
-          {
-            "type": "paragraph",
-            "text": "**É permitir que você ofereça uma excelente experiência ao cliente, com apoio digital que atua conforme a demanda do seu negócio.**"
-          }
-        ]
-      }
-    ],
-    "conclusion": "",
-    "conclusionBlocks": [
-      {
-        "type": "paragraph",
-        "text": "Quantas tarefas do atendimento da sua empresa poderiam acontecer sem depender diretamente de você?"
+        "slug": "agendamento-automatico-whatsapp",
+        "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar"
       }
     ]
   },
-  "cta": {
-    "text": "Veja um exemplo de atendimento com IA no WhatsApp",
-    "link": "/?origem=blog%2Fatendimento-ia-alem-respostas-automaticas#exemplo"
-  },
-  "tags": [
-    "atendimento",
-    "inteligência artificial",
-    "WhatsApp",
-    "funcionário digital"
-  ],
-  "sources": [
-    {
-      "title": "FEBRABAN — balanço da edição 2026 e liderança humana",
-      "url": "https://portal.febraban.org.br/noticia/4491/pt-br/"
+  {
+    "slug": "como-automatizar-atendimento-whatsapp",
+    "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios",
+    "subtitle": "Descubra o que delegar, como preparar as informações da empresa e como testar um atendente automático sem perder o controle da conversa.",
+    "seoTitle": "Como automatizar atendimento no WhatsApp | Techway",
+    "metaDescription": "Aprenda a automatizar o atendimento pelo WhatsApp: recursos básicos, IA, informações da empresa, testes e passagem para atendimento humano.",
+    "author": "Equipe TECHWAY",
+    "date": "2026-11-25",
+    "layout": "editorial",
+    "featuredImage": "/atendimento-ia-capa.webp",
+    "featuredImageAlt": "Empreendedora consultando mensagens no celular após o expediente em seu salão.",
+    "featuredImageWidth": 1600,
+    "featuredImageHeight": 900,
+    "content": {
+      "introduction": "",
+      "introductionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Para automatizar o atendimento pelo WhatsApp, comece identificando as perguntas e tarefas que mais se repetem, organize as informações da empresa e escolha uma solução capaz de responder ou executar essas tarefas. Defina também o que deve continuar com uma pessoa e teste o atendimento antes de colocar a automação em uso."
+        },
+        {
+          "type": "paragraph",
+          "text": "Se você é dono de um pequeno negócio, talvez não precise começar contratando uma plataforma. Uma resposta pronta pode resolver uma dúvida simples; uma agenda integrada pode ser necessária para concluir um pedido de horário. O melhor ponto de partida é o problema que você quer tirar da sua rotina."
+        }
+      ],
+      "sections": [
+        {
+          "title": "Qual tipo de automação faz sentido para sua empresa?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Existem formas diferentes de automatizar o WhatsApp. A diferença prática está no trabalho que ainda sobra para você depois que o cliente manda uma mensagem."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Respostas rápidas:** textos preparados para a equipe enviar manualmente. São úteis para endereço, horários e informações que quase não mudam.",
+                "**Mensagens automáticas e fluxos por regras:** enviam avisos ou conduzem o cliente por opções previamente definidas. Funcionam melhor quando o caminho é previsível.",
+                "**Atendente com inteligência artificial:** interpreta perguntas em linguagem natural e usa informações autorizadas da empresa. Quando conectado a um sistema e autorizado, pode executar tarefas como consultar horários e registrar uma reserva."
+              ]
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Para começar com o que já existe no aplicativo, consulte as ",
+              "label": "respostas rápidas do WhatsApp Business",
+              "href": "https://faq.whatsapp.com/1791149784551042/?locale=pt_BR",
+              "after": ". Para tarefas mais complexas, avalie se a ferramenta consegue consultar dados atuais em vez de apenas gerar uma resposta."
+            }
+          ]
+        },
+        {
+          "title": "1. Mapeie o que ocupa o seu tempo",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Durante uma semana, anote os tipos de mensagens que chegam, sem copiar dados pessoais dos clientes. Agrupe por pedido e registre o que precisa acontecer para resolver cada um."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Qual é o horário de funcionamento? — informar horário aprovado.",
+                "Quanto custa este serviço? — consultar preço ou encaminhar orçamento personalizado.",
+                "Tem horário amanhã? — consultar disponibilidade, não adivinhar.",
+                "Quero reclamar de um atendimento. — acolher e encaminhar para a equipe."
+              ]
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Se o atendimento está competindo com o trabalho de gestão, leia também ",
+              "label": "o dilema de cuidar do cliente ou do negócio",
+              "href": "/blog/cuidar-do-cliente-ou-do-negocio",
+              "after": ". Ele ajuda a identificar onde a automação pode liberar tempo."
+            }
+          ]
+        },
+        {
+          "title": "2. Prepare as informações que o atendente precisa conhecer",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Um atendente automático não deveria decidir sozinho quais preços praticar ou inventar um horário de funcionamento. Monte uma base simples de informações e defina quem atualiza cada item."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Nome, endereço, contatos, horários e exceções de funcionamento.",
+                "Serviços oferecidos, preços divulgáveis e condições que exigem orçamento.",
+                "Regras de atendimento: quando pedir mais informações e quando encaminhar.",
+                "Dados realmente necessários para executar cada tarefa e permissões de acesso."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Separe o que é informação relativamente estável, como endereço, do que muda durante o dia, como disponibilidade da agenda. Para o segundo grupo, uma consulta ao sistema atualizado é mais confiável do que deixar horários escritos em um texto."
+            }
+          ]
+        },
+        {
+          "title": "3. Defina o que a IA pode executar e o que deve encaminhar",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Uma regra prática é distinguir três resultados: informar, executar ou encaminhar. Informar é responder com uma fonte aprovada; executar exige um sistema e autorização; encaminhar é reconhecer que a tarefa precisa de uma pessoa."
+            },
+            {
+              "type": "paragraph",
+              "text": "Exemplo hipotético: um cliente pergunta se a empresa atende no sábado. A IA consulta o horário aprovado. Se ele pede uma exceção depois do expediente, o atendente não inventa uma disponibilidade: explica o limite e encaminha o pedido para avaliação."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "A diferença entre dar uma resposta e resolver uma tarefa é detalhada no artigo ",
+              "label": "Seu cliente não quer uma resposta automática",
+              "href": "/blog/atendimento-ia-alem-respostas-automaticas",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "title": "4. Conecte a automação aos processos que precisam de dados atualizados",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Uma empresa que recebe pedidos de horário pode começar com atendimento de dúvidas e depois conectar a agenda. Nesse caso, a ferramenta precisa verificar a disponibilidade, registrar a reserva e só confirmar ao cliente quando o registro realmente acontecer."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Se esse é o seu principal gargalo, siga o ",
+              "label": "guia de agendamento automático pelo WhatsApp",
+              "href": "/blog/agendamento-automatico-whatsapp",
+              "after": ", que explica como organizar serviços, duração e horários para evitar reservas inconsistentes."
+            },
+            {
+              "type": "paragraph",
+              "text": "Para outras tarefas, verifique se a integração existe e está autorizada. Não presuma que toda ferramenta consegue acessar estoque, pagamentos ou pedidos; isso depende da implantação."
+            }
+          ]
+        },
+        {
+          "title": "5. Teste antes de automatizar conversas reais",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Prepare uma pequena bateria de conversas fictícias, com perguntas normais e situações que possam dar errado. Não avalie apenas se o texto é simpático: verifique se a resposta está correta e se a ação aconteceu."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Pergunta fácil: o horário informado corresponde ao cadastro?",
+                "Pergunta incompleta: o atendente pede apenas os dados necessários?",
+                "Pedido fora das regras: ele explica o limite sem inventar uma exceção?",
+                "Falha de sistema: ele evita afirmar que o pedido foi concluído?",
+                "Cliente quer uma pessoa: existe um caminho claro para continuar o atendimento?"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Depois da ativação, revise amostras com autorização e sem expor dados dos clientes. Corrija as informações e regras antes de ampliar o escopo."
+            }
+          ]
+        },
+        {
+          "title": "Como avaliar se a automação está valendo a pena?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Antes e depois da implantação, acompanhe quantas conversas exigem intervenção da equipe, quantos pedidos são resolvidos corretamente e quanto tempo a rotina de atendimento consome. Compare períodos semelhantes e considere o volume de mensagens."
+            },
+            {
+              "type": "paragraph",
+              "text": "Não confunda uma resposta enviada com um pedido resolvido. Uma automação que responde rapidamente, mas gera retrabalho, pode consumir mais tempo do que economiza."
+            }
+          ]
+        },
+        {
+          "title": "Perguntas frequentes sobre atendimento automático no WhatsApp",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "**É possível começar sem contratar uma ferramenta?** Sim. Respostas rápidas e outros recursos do WhatsApp Business podem ajudar em tarefas simples. Quando o objetivo é interpretar solicitações variadas ou consultar sistemas, avalie uma solução apropriada."
+            },
+            {
+              "type": "paragraph",
+              "text": "**A IA precisa substituir o atendimento humano?** Não. Ela pode cuidar de tarefas repetitivas dentro de regras claras e encaminhar exceções, negociações e situações delicadas."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Quanto custa automatizar?** Depende da ferramenta, do volume e das integrações. Compare o custo total da implantação e operação com a economia de tempo medida, sem assumir um retorno garantido."
+            }
+          ]
+        }
+      ],
+      "conclusion": "",
+      "conclusionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Comece por uma tarefa que se repete muito, valide o resultado e amplie aos poucos. A automação deve diminuir o esforço de quem atende e de quem é atendido."
+        },
+        {
+          "type": "paragraph-link",
+          "before": "A Techway configura funcionários digitais para pequenos negócios. Conheça nossa solução de ",
+          "label": "atendimento com IA e agendamentos pelo WhatsApp",
+          "href": "/atendimento-agendamentos-whatsapp",
+          "after": " e avalie quais tarefas fazem sentido delegar na sua empresa."
+        }
+      ]
     },
-    {
-      "title": "FEBRABAN — pesquisa sobre aplicações de IA em 2026",
-      "url": "https://portal.febraban.org.br/noticia/4490/pt-br/"
-    }
-  ],
-  "related": [
-    {
-      "title": "Cuidar do cliente ou do negócio? O dilema de quem empreende sozinho",
-      "slug": "cuidar-do-cliente-ou-do-negocio"
-    }
-  ]
-}
+    "sources": [
+      {
+        "title": "WhatsApp — Como usar as respostas rápidas",
+        "url": "https://faq.whatsapp.com/1791149784551042/?locale=pt_BR"
+      },
+      {
+        "title": "Sebrae RN — Automação de WhatsApp para empresas",
+        "url": "https://blog.rn.sebrae.com.br/automacao-de-whatsapp-para-empresas/"
+      }
+    ],
+    "related": [
+      {
+        "slug": "agendamento-automatico-whatsapp",
+        "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar"
+      },
+      {
+        "slug": "atendimento-ia-alem-respostas-automaticas",
+        "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema."
+      }
+    ],
+    "cta": {
+      "text": "Veja como a Techway pode automatizar seu atendimento",
+      "link": "/?origem=blog%2Fcomo-automatizar-atendimento-whatsapp#solucoes"
+    },
+    "tags": [
+      "WhatsApp",
+      "Atendimento com IA",
+      "Automação"
+    ]
+  },
+  {
+    "slug": "agendamento-automatico-whatsapp",
+    "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar",
+    "subtitle": "Organize serviços, duração, disponibilidade e regras de atendimento para que uma reserva seja confirmada de verdade, não apenas prometida em uma mensagem.",
+    "seoTitle": "Agendamento automático pelo WhatsApp | Techway",
+    "metaDescription": "Veja como automatizar agendamentos pelo WhatsApp, configurar duração e disponibilidade, evitar conflitos e confirmar reservas com segurança.",
+    "author": "Equipe TECHWAY",
+    "date": "2026-11-25",
+    "layout": "editorial",
+    "featuredImage": "/empreendedor_dilema_capa.webp",
+    "featuredImageAlt": "Imagem ilustrativa da rotina de quem empreende e atende clientes.",
+    "featuredImageWidth": 1536,
+    "featuredImageHeight": 1024,
+    "content": {
+      "introduction": "",
+      "introductionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "O agendamento automático pelo WhatsApp permite que o cliente peça um horário em uma conversa e que uma solução conectada à agenda consulte a disponibilidade, apresente opções e registre a reserva. Para funcionar bem, precisa conhecer os serviços, suas durações, os recursos disponíveis e as regras reais do negócio."
+        },
+        {
+          "type": "paragraph",
+          "text": "Não basta mandar uma mensagem dizendo que o horário está confirmado. A reserva precisa existir na agenda e respeitar o tempo necessário para realizar o serviço. É essa diferença que torna a automação útil para quem trabalha com hora marcada."
+        }
+      ],
+      "sections": [
+        {
+          "title": "Quais são as formas de agendar pelo WhatsApp?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "**Manual:** você recebe a mensagem, abre a agenda e registra o horário. É simples, mas exige disponibilidade da equipe.",
+                "**Link de agendamento:** o cliente recebe um endereço para escolher o serviço e o horário em uma página de reservas. Pode reduzir a troca de mensagens.",
+                "**Atendente conectado à agenda:** o cliente conversa pelo WhatsApp, a solução consulta o sistema e registra a reserva conforme as regras configuradas."
+              ]
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Se sua empresa ainda está organizando o atendimento de perguntas e pedidos, comece pelo ",
+              "label": "guia para automatizar o atendimento pelo WhatsApp",
+              "href": "/blog/como-automatizar-atendimento-whatsapp",
+              "after": ". Agendamento é uma das tarefas que podem ser adicionadas ao processo."
+            }
+          ]
+        },
+        {
+          "title": "1. Cadastre os serviços e o tempo de cada atendimento",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "O horário que aparece livre precisa comportar o serviço inteiro. Uma agenda que divide o dia em horários de início, sem verificar duração, pode oferecer vagas que não existem na prática."
+            },
+            {
+              "type": "paragraph",
+              "text": "Exemplo hipotético: um salão atende das 9h às 18h. Um corte dura 30 minutos e um tratamento leva 90 minutos. Se existe uma reserva às 11h, uma vaga às 10h30 pode comportar o corte, mas não o tratamento, mesmo que ambos comecem no mesmo horário."
+            },
+            {
+              "type": "paragraph",
+              "text": "Cadastre duração, preço quando divulgável, combinações permitidas e recursos necessários. Se um serviço exigir avaliação prévia, defina como encaminhar em vez de aceitar qualquer pedido."
+            }
+          ]
+        },
+        {
+          "title": "2. Organize a disponibilidade real da empresa",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Disponibilidade não é apenas o horário de abertura. É a combinação entre expediente, compromissos existentes, profissionais ou espaços necessários e exceções, como folgas e feriados."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Negócio com um profissional: use a disponibilidade desse profissional, sem exigir que o cliente escolha alguém desnecessariamente.",
+                "Negócio com vários profissionais: confira quem executa o serviço e quem está livre.",
+                "Serviços com sala ou equipamento: considere esses recursos quando fizerem parte da reserva.",
+                "Bloqueios e exceções: mantenha a agenda atualizada quando houver mudanças na rotina."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "A agenda deve ser a referência da operação. Se a equipe continua marcando por fora e não atualiza o mesmo sistema, a automação pode trabalhar com informações desatualizadas."
+            }
+          ]
+        },
+        {
+          "title": "3. Transforme a conversa em uma reserva",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Um fluxo confiável coleta o que falta, consulta opções e confirma somente depois do registro. Veja uma conversa fictícia, sem vínculo com um cliente real:"
+            },
+            {
+              "type": "quote",
+              "text": "Cliente: Tem horário para corte amanhã de tarde?"
+            },
+            {
+              "type": "quote",
+              "text": "Atendente: Para corte, tenho 14h ou 15h30. Qual fica melhor para você?"
+            },
+            {
+              "type": "quote",
+              "text": "Cliente: 15h30."
+            },
+            {
+              "type": "quote",
+              "text": "Atendente: Pronto, seu corte está agendado para amanhã às 15h30."
+            },
+            {
+              "type": "paragraph",
+              "text": "A última mensagem só pode ser enviada como confirmação depois que o sistema registrar o horário. Se a vaga foi ocupada entre a consulta e a escolha, o atendente deve consultar novamente e oferecer alternativas. Se houver falha no registro, deve informar que não conseguiu confirmar."
+            }
+          ]
+        },
+        {
+          "title": "4. Prepare remarcações, cancelamentos e situações fora do padrão",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Uma agenda automatizada precisa lidar com o que acontece depois que alguém marca um horário. O cliente pode mudar de ideia, pedir um serviço adicional ou avisar que não consegue comparecer."
+            },
+            {
+              "type": "list",
+              "items": [
+                "**Remarcação:** identificar a reserva correta e conferir o novo horário antes de alterar.",
+                "**Cancelamento:** respeitar as regras da empresa e registrar a mudança no sistema.",
+                "**Serviço adicional:** recalcular o tempo necessário; não presumir que cabe na mesma vaga.",
+                "**Exceções:** pedidos fora do expediente, negociações e casos que precisam de decisão devem chegar à equipe."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Lembretes e mensagens proativas são recursos separados. Verifique se estão disponíveis na solução contratada e quais permissões e regras se aplicam. Não presuma que automatizar a reserva inclui todas as comunicações posteriores."
+            }
+          ]
+        },
+        {
+          "title": "5. Teste a agenda com situações que podem dar errado",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Antes da ativação, faça uma bateria de testes em ambiente adequado, usando dados fictícios. Estes cenários ajudam a verificar o processo:"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Um serviço de 90 minutos não cabe em uma vaga de 30 minutos.",
+                "Dois clientes escolhem o mesmo horário quase ao mesmo tempo.",
+                "Um profissional bloqueia a tarde por um compromisso.",
+                "Um cliente pede para trocar o horário de uma reserva já existente.",
+                "O sistema não retorna uma confirmação de registro."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Confira a agenda depois de cada conversa, além da mensagem recebida pelo cliente. O resultado esperado é uma reserva válida ou uma explicação clara de por que ela não foi concluída."
+            }
+          ]
+        },
+        {
+          "title": "O que acompanhar depois da implantação?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Acompanhe o número de reservas concluídas, as solicitações que precisam da equipe, os conflitos detectados e o retrabalho. Compare com a rotina anterior usando períodos semelhantes. Cancelamentos e faltas também podem ser acompanhados, mas não atribua uma redução automaticamente à automação."
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a operação apresenta muitos pedidos fora das regras, revise o cadastro ou os critérios de encaminhamento. O objetivo é uma agenda confiável, não simplesmente o maior número de mensagens automáticas."
+            }
+          ]
+        },
+        {
+          "title": "Perguntas frequentes sobre agendamento pelo WhatsApp",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "**O cliente precisa baixar outro aplicativo?** Em soluções que funcionam diretamente na conversa, não. Sistemas que usam links de reserva podem abrir uma página externa."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Dá para usar com mais de um profissional?** Sim, desde que a solução considere as habilidades, horários e compromissos de cada recurso."
+            },
+            {
+              "type": "paragraph",
+              "text": "**A IA pode inventar um horário?** Uma solução confiável deve consultar a disponibilidade real e só confirmar o que foi registrado. Teste esse comportamento antes de contratar."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Preciso abandonar a agenda que uso hoje?** Depende da integração oferecida. Verifique se o sistema atual pode ser conectado ou se será necessário migrar os dados com segurança."
+            }
+          ]
+        }
+      ],
+      "conclusion": "",
+      "conclusionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Comece com os serviços e horários mais comuns. Organize uma fonte única de disponibilidade, teste os casos de erro e amplie a operação quando estiver confiável."
+        },
+        {
+          "type": "paragraph-link",
+          "before": "Na Techway, ",
+          "label": "atendimento e agendamentos pelo WhatsApp",
+          "href": "/atendimento-agendamentos-whatsapp",
+          "after": " já estão disponíveis para contratação, com configuração e validação das regras de cada empresa. Veja a solução e converse com nossa equipe sobre sua rotina."
+        }
+      ]
+    },
+    "related": [
+      {
+        "slug": "como-automatizar-atendimento-whatsapp",
+        "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios"
+      },
+      {
+        "slug": "atendimento-ia-alem-respostas-automaticas",
+        "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema."
+      }
+    ],
+    "cta": {
+      "text": "Conheça a solução de agendamento da Techway",
+      "link": "/?origem=blog%2Fagendamento-automatico-whatsapp#solucoes"
+    },
+    "tags": [
+      "Agendamentos",
+      "WhatsApp",
+      "Agenda inteligente"
+    ]
+  }
 ]

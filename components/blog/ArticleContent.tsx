@@ -1,10 +1,12 @@
 import { Fragment } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import ReplyComparison from './ReplyComparison';
 
 export type ContentBlock =
   | { type: 'paragraph' | 'quote'; text: string }
   | { type: 'list'; items: string[] }
+  | { type: 'paragraph-link'; before: string; label: string; href: string; after: string }
   | { type: 'comparison' }
   | { type: 'image'; src: string; alt: string; width: number; height: number; caption?: string };
 
@@ -27,6 +29,17 @@ export default function ArticleContent({ blocks }: { blocks: ContentBlock[] }) {
   return (
     <>
       {blocks.map((block, index) => {
+        if (block.type === 'paragraph-link') {
+          const internal = /^\/(?:blog\/[a-z0-9-]+|atendimento-agendamentos-whatsapp)$/.test(block.href);
+          const external = /^https:\/\/faq\.whatsapp\.com\//.test(block.href);
+          return (
+            <p key={index} className="article-paragraph mb-5">
+              <Emphasis text={block.before} />
+              {internal ? <Link href={block.href} className="text-blue-700 underline underline-offset-4">{block.label}</Link> : external ? <a href={block.href} className="text-blue-700 underline underline-offset-4">{block.label}</a> : block.label}
+              <Emphasis text={block.after} />
+            </p>
+          );
+        }
         if (block.type === 'comparison') return <ReplyComparison key={index} />;
         if (block.type === 'image') {
           return (

@@ -156,6 +156,12 @@ for (const [route, post] of [['/blog', null], ...posts.map(post => [`/blog/${pos
     for (const asset of [post.featuredImage, ...post.content.sections.map(section => section.image).filter(Boolean)]) {
       assert(fs.existsSync(path.join(__dirname, '..', 'public', asset)), `Imagem ausente: ${asset}`);
     }
+    const blocks = [...(post.content.introductionBlocks || []), ...post.content.sections.flatMap(s => s.blocks || []), ...(post.content.conclusionBlocks || [])];
+    for (const block of blocks.filter(b => b.type === 'paragraph-link')) {
+      assert(page.html.includes('href="' + block.href.replace(/&/g, '&amp;') + '"'), 'Link contextual ausente: ' + route);
+      if (block.href.startsWith('/')) assert(fs.existsSync(path.join(output, block.href.slice(1) + '.html')), 'Destino contextual ausente: ' + block.href);
+    }
+    for (const related of post.related || []) assert(posts.some(p => p.slug === related.slug), 'Relacionado inexistente: ' + related.slug);
     const cta = new URL(post.cta.link, `${site.origin}/`);
     if (cta.origin === site.origin) assert(fs.existsSync(path.join(output, cta.pathname === '/' ? 'index.html' : `${cta.pathname.slice(1)}.html`)));
   } else {

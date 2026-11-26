@@ -253,6 +253,15 @@ export default function AtendimentoEAgendamentos() {
           </div>
         </section>
 
+        <section className="border-t border-slate-100 py-12 md:py-16" aria-labelledby="guias-title">
+          <div className="mx-auto max-w-4xl px-4">
+            <h2 id="guias-title" className="text-2xl font-bold text-[#102047]">Guias para organizar sua operação</h2>
+            <p className="mt-4 leading-relaxed text-slate-700">Antes de escolher uma solução, veja como preparar as informações e testar os processos do seu negócio.</p>
+            <p className="mt-4 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/como-automatizar-atendimento-whatsapp">Como automatizar o atendimento pelo WhatsApp</Link> — escolha as tarefas e os limites da IA.</p>
+            <p className="mt-3 leading-relaxed"><Link className="font-semibold text-blue-700 underline underline-offset-4" href="/blog/agendamento-automatico-whatsapp">Agendamento automático pelo WhatsApp</Link> — organize duração, disponibilidade e confirmação.</p>
+          </div>
+        </section>
+
         <section className="bg-blue-800 py-16 text-white md:py-20" aria-labelledby="contato-solucao-title">
           <div className="mx-auto max-w-4xl px-4 text-center">
             <h2 id="contato-solucao-title" className="text-3xl font-extrabold md:text-4xl">

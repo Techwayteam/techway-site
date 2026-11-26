@@ -13,6 +13,8 @@ const ALLOWED_BLOG_ORIGINS = new Set([
   'blog/automacao-de-tarefas-repetitivas',
   'blog/cuidar-do-cliente-ou-do-negocio',
   'blog/atendimento-ia-alem-respostas-automaticas',
+  'blog/como-automatizar-atendimento-whatsapp',
+  'blog/agendamento-automatico-whatsapp',
 ])
 
 const normalizeContactCode = (value: string): string =>
