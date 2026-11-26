@@ -12,7 +12,7 @@ async function main(){
   for(const viewport of [{id:'desktop',width:1440,height:900},{id:'mobile',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:viewport.width,height:viewport.height},deviceScaleFactor:1});
    await page.emulateMedia({reducedMotion:'reduce'});
-   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}]){
+   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}, ...posts.filter(p=>['como-automatizar-atendimento-whatsapp','agendamento-automatico-whatsapp'].includes(p.slug)).map(p=>({url:'/blog/'+p.slug,name:'artigo-'+p.slug}))]){
     await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
     await page.evaluate(()=>document.fonts.ready);
     if(item.name==='home'){
@@ -31,7 +31,7 @@ async function main(){
     assert(metrics.overflow<=1,'Overflow em '+item.name+' '+viewport.id+': '+metrics.overflow);
     assert.equal(metrics.h1,1,'Esperado um H1 em '+item.name);
     assert(metrics.logo.includes('logo_techway_semslogan_transparent.png'),'Logo oficial não carregada');
-    if(item.name==='artigo') assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
+    if(item.name.startsWith('artigo')) assert.notEqual(metrics.articleHeaderPosition,'sticky','Cabeçalho do artigo não pode ser sticky');
     if(item.name==='solucao') {
       const content=await page.locator('main').innerText();
       assert(content.includes('Como funciona um agendamento pelo WhatsApp?'), 'Conteúdo comercial ausente');
