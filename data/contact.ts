@@ -17,6 +17,10 @@ const ALLOWED_BLOG_ORIGINS = new Set([
   'blog/agendamento-automatico-whatsapp',
   'blog/chatbot-ou-agente-de-ia-whatsapp',
   'blog/agenda-para-salao-de-beleza',
+  'blog/como-treinar-ia-atendimento-empresa',
+  'blog/como-evitar-conflitos-agendamento',
+  'blog/quanto-custa-automatizar-atendimento',
+  'blog/calculadora-retorno-automacao',
 ])
 
 const normalizeContactCode = (value: string): string =>

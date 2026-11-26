@@ -2,12 +2,14 @@ import { Fragment } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import ReplyComparison from './ReplyComparison';
+import AutomationRoiCalculator from './AutomationRoiCalculator';
 
 export type ContentBlock =
   | { type: 'paragraph' | 'quote'; text: string }
   | { type: 'list'; items: string[] }
   | { type: 'paragraph-link'; before: string; label: string; href: string; after: string }
   | { type: 'comparison' }
+  | { type: 'roi-calculator' }
   | { type: 'image'; src: string; alt: string; width: number; height: number; caption?: string };
 
 // Accept only the emphasis used by the editorial copy; React escapes all text.
@@ -40,6 +42,7 @@ export default function ArticleContent({ blocks }: { blocks: ContentBlock[] }) {
             </p>
           );
         }
+        if (block.type === 'roi-calculator') return <AutomationRoiCalculator key={index} />;
         if (block.type === 'comparison') return <ReplyComparison key={index} />;
         if (block.type === 'image') {
           return (
