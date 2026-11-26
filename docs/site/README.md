@@ -2,7 +2,7 @@
 
 ## Aquisição orgânica — 25/11/2026
 
-[Plano 007 — SEO/GEO e mapa temático](plans/007-aquisicao-organica-seo-geo.md): diagnóstico OpenSEO/Search Console, pesquisa de termos BR, matriz de URLs e prioridades. Home/blog indexados; quatro artigos e serviço ainda desconhecidos do Google. Planejamento em revisão, sem novo deploy.
+[Plano 007 — SEO/GEO e mapa temático](plans/007-aquisicao-organica-seo-geo.md): diagnóstico OpenSEO/Search Console, pesquisa de termos BR, matriz de URLs e prioridades. Home/blog indexados; quatro artigos e serviço ainda desconhecidos do Google. A/G publicados e validados (PR #26); D/V preparados para publicação. Quatro novas URLs aguardam solicitação de indexação após confirmação pública.
 
 ## Estado atual — 25/11/2026
 
