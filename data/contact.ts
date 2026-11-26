@@ -1,4 +1,5 @@
 import contact from './contact.json'
+import blogPosts from './blogPosts.json'
 
 export const WHATSAPP_PHONE_NUMBER = contact.whatsappPhoneNumber
 
@@ -8,12 +9,7 @@ export type ContactAttribution = {
 }
 
 // Somente artigos publicados podem se declarar como origem editorial em links da home.
-const ALLOWED_BLOG_ORIGINS = new Set([
-  'blog/como-melhorar-sua-produtividade',
-  'blog/automacao-de-tarefas-repetitivas',
-  'blog/cuidar-do-cliente-ou-do-negocio',
-  'blog/atendimento-ia-alem-respostas-automaticas',
-])
+const ALLOWED_BLOG_ORIGINS = new Set(blogPosts.map(({ slug }) => `blog/${slug}`))
 
 const normalizeContactCode = (value: string): string =>
   value
