@@ -221,6 +221,13 @@
               "label": "como automatizar o atendimento pelo WhatsApp",
               "href": "/blog/como-automatizar-atendimento-whatsapp",
               "after": "."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Para decidir entre soluções, compare ",
+              "label": "chatbot e agente de IA no WhatsApp",
+              "href": "/blog/chatbot-ou-agente-de-ia-whatsapp",
+              "after": "."
             }
           ]
         },
@@ -500,6 +507,10 @@
       {
         "slug": "agendamento-automatico-whatsapp",
         "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar"
+      },
+      {
+        "slug": "chatbot-ou-agente-de-ia-whatsapp",
+        "title": "Chatbot ou agente de IA no WhatsApp: qual a diferença e qual escolher?"
       }
     ]
   },
@@ -551,6 +562,13 @@
               "label": "respostas rápidas do WhatsApp Business",
               "href": "https://faq.whatsapp.com/1791149784551042/?locale=pt_BR",
               "after": ". Para tarefas mais complexas, avalie se a ferramenta consegue consultar dados atuais em vez de apenas gerar uma resposta."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Se está comparando ferramentas, veja ",
+              "label": "as diferenças entre chatbot e agente de IA no WhatsApp",
+              "href": "/blog/chatbot-ou-agente-de-ia-whatsapp",
+              "after": "."
             }
           ]
         },
@@ -735,6 +753,10 @@
       {
         "slug": "atendimento-ia-alem-respostas-automaticas",
         "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema."
+      },
+      {
+        "slug": "chatbot-ou-agente-de-ia-whatsapp",
+        "title": "Chatbot ou agente de IA no WhatsApp: qual a diferença e qual escolher?"
       }
     ],
     "cta": {
@@ -809,6 +831,13 @@
             {
               "type": "paragraph",
               "text": "Cadastre duração, preço quando divulgável, combinações permitidas e recursos necessários. Se um serviço exigir avaliação prévia, defina como encaminhar em vez de aceitar qualquer pedido."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Para quem trabalha com beleza, veja nosso guia de ",
+              "label": "agenda para salão de beleza",
+              "href": "/blog/agenda-para-salao-de-beleza",
+              "after": ", com exemplos de capacidade e combos."
             }
           ]
         },
@@ -972,6 +1001,10 @@
       {
         "slug": "atendimento-ia-alem-respostas-automaticas",
         "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema."
+      },
+      {
+        "slug": "agenda-para-salao-de-beleza",
+        "title": "Agenda para salão de beleza: como organizar horários e agendamentos pelo WhatsApp"
       }
     ],
     "cta": {
@@ -982,6 +1015,424 @@
       "Agendamentos",
       "WhatsApp",
       "Agenda inteligente"
+    ]
+  },
+  {
+    "author": "Equipe TECHWAY",
+    "date": "2026-11-25",
+    "layout": "editorial",
+    "slug": "chatbot-ou-agente-de-ia-whatsapp",
+    "title": "Chatbot ou agente de IA no WhatsApp: qual a diferença e qual escolher?",
+    "subtitle": "Compare respostas por regras, conversas com inteligência artificial e execução de tarefas. Saiba qual solução faz sentido para sua empresa.",
+    "seoTitle": "Chatbot ou agente de IA no WhatsApp? | Techway",
+    "metaDescription": "Entenda a diferença entre chatbot e agente de IA no WhatsApp e aprenda a testar se a ferramenta consegue executar tarefas reais.",
+    "featuredImage": "/automacao_capa.webp",
+    "featuredImageAlt": "Ilustração sobre automação de tarefas empresariais.",
+    "featuredImageWidth": 1792,
+    "featuredImageHeight": 1024,
+    "content": {
+      "introduction": "",
+      "introductionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Um chatbot tradicional conduz o atendimento por respostas ou caminhos previamente definidos. Um agente de IA pode interpretar uma solicitação, consultar informações autorizadas e escolher os próximos passos para resolver uma tarefa. Para quem atende pelo WhatsApp, a diferença prática está no que acontece depois da resposta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Os nomes não são categorias rígidas: um chatbot também pode usar IA e executar ações por integrações; um agente pode seguir regras fixas. Compare o comportamento da ferramenta, e não apenas seu nome comercial."
+        }
+      ],
+      "sections": [
+        {
+          "title": "Três formas de automatizar uma conversa",
+          "text": "",
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "**Chatbot por regras:** usa menus, palavras-chave ou fluxos programados. É útil para perguntas frequentes, triagem e processos previsíveis.",
+                "**Chatbot com IA generativa:** entende perguntas mais abertas e formula respostas com informações fornecidas. Pode não ter acesso a sistemas para executar tarefas.",
+                "**Agente de IA:** combina instruções, contexto e ferramentas autorizadas para decidir quais etapas seguir. Pode consultar uma agenda ou registrar uma alteração, conforme a integração."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Essas abordagens podem coexistir. Um menu simples pode resolver um pedido previsível com menos esforço de implantação e manutenção. Mais autonomia não é necessariamente melhor."
+            }
+          ]
+        },
+        {
+          "title": "Uma pergunta, três resultados",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Imagine uma cliente perguntando se há horário para corte amanhã depois das 14h. Os exemplos abaixo são fictícios."
+            },
+            {
+              "type": "quote",
+              "text": "Chatbot por regras: Escolha uma opção: 1 — Serviços; 2 — Horários; 3 — Falar com a equipe."
+            },
+            {
+              "type": "quote",
+              "text": "Chatbot com IA sem agenda: Fazemos cortes e atendemos amanhã à tarde. Vou encaminhar seu pedido para confirmar um horário."
+            },
+            {
+              "type": "quote",
+              "text": "Agente conectado à agenda: Para corte amanhã, encontrei 14h30 e 16h. Qual você prefere?"
+            },
+            {
+              "type": "paragraph",
+              "text": "No terceiro cenário, as opções dependem de uma consulta real. Quando a cliente escolhe, ainda é preciso conferir e registrar a reserva. A confirmação só deve ser enviada se o sistema concluir a operação."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Veja por que essa distinção importa no artigo sobre ",
+              "label": "atendimento com IA além das respostas automáticas",
+              "href": "/blog/atendimento-ia-alem-respostas-automaticas",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "title": "Qual solução escolher para a sua empresa?",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Comece pela tarefa. Para enviar o endereço ou o catálogo, respostas prontas podem bastar. Para entender perguntas variadas, uma IA conversacional pode ser útil. Para reservar horários ou alterar registros, procure integração e regras de execução."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Pedidos previsíveis: priorize simplicidade e manutenção fácil.",
+                "Perguntas abertas: avalie entendimento de linguagem, qualidade das informações e encaminhamento.",
+                "Tarefas que alteram a operação: exija consulta, permissão, confirmação e tratamento de falhas.",
+                "Reclamações e negociações: defina quando a equipe deve assumir."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Não é preciso escolher apenas uma abordagem. A empresa pode combinar recursos conforme a necessidade e reservar decisões delicadas para pessoas."
+            }
+          ]
+        },
+        {
+          "title": "Cinco testes antes de contratar",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Peça uma demonstração com situações próximas da sua rotina, usando dados fictícios. Confira o resultado, não apenas a qualidade da conversa."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Pergunte a mesma coisa de duas maneiras: a resposta deve permanecer coerente.",
+                "Peça um desconto inexistente: a ferramenta deve reconhecer o limite.",
+                "Troque o serviço ou o dia durante a conversa: o pedido atualizado precisa ser considerado.",
+                "Simule falha de agenda: o atendente não deve declarar uma reserva concluída.",
+                "Peça atendimento humano: deve existir um caminho claro para continuar."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Se houver execução de tarefas, confira também o registro no sistema. Uma resposta convincente não prova que o trabalho aconteceu."
+            }
+          ]
+        },
+        {
+          "title": "O que comparar além das funcionalidades",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Compare custo de implantação e operação, limites de uso, manutenção das informações, integração do canal, permissões e suporte. Pergunte como corrigir dados incorretos e interromper a automação se necessário."
+            },
+            {
+              "type": "paragraph",
+              "text": "Meça pedidos resolvidos corretamente, tempo da equipe e retrabalho. O total de mensagens respondidas, sozinho, não informa o benefício operacional."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Para identificar o que vale a pena delegar, siga nosso ",
+              "label": "guia para automatizar o atendimento pelo WhatsApp",
+              "href": "/blog/como-automatizar-atendimento-whatsapp",
+              "after": "."
+            }
+          ]
+        },
+        {
+          "title": "Perguntas frequentes",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "**Todo chatbot usa IA?** Não. Alguns seguem regras, outros usam modelos de IA."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Um chatbot pode agendar?** Sim, quando integrado a uma agenda e com fluxo apropriado. Um agente pode oferecer mais flexibilidade, mas ambos precisam validar a reserva."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Um agente pode errar?** Sim. Informações desatualizadas, interpretações equivocadas e falhas de integração são possíveis. Limites e testes são essenciais."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Preciso substituir a equipe?** Não. É possível delegar tarefas repetitivas e preservar as decisões que exigem uma pessoa."
+            }
+          ]
+        }
+      ],
+      "conclusion": "",
+      "conclusionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Escolha a automação pela tarefa a resolver. Se o cliente só precisa de uma informação, uma resposta pronta pode bastar. Se precisa concluir uma ação, verifique se a solução realmente consegue executá-la."
+        },
+        {
+          "type": "paragraph-link",
+          "before": "A Techway configura funcionários digitais conforme as informações e regras de cada negócio. Conheça nossa solução de ",
+          "label": "atendimento com IA e agendamentos pelo WhatsApp",
+          "href": "/atendimento-agendamentos-whatsapp",
+          "after": "."
+        }
+      ]
+    },
+    "sources": [
+      {
+        "title": "Infobip — Agentes de IA para WhatsApp",
+        "url": "https://www.infobip.com/pt/blog/agentes-de-ia-para-whatsapp"
+      }
+    ],
+    "related": [
+      {
+        "slug": "como-automatizar-atendimento-whatsapp",
+        "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios"
+      },
+      {
+        "slug": "atendimento-ia-alem-respostas-automaticas",
+        "title": "Seu cliente não quer uma resposta automática. Ele quer resolver o problema."
+      },
+      {
+        "slug": "agendamento-automatico-whatsapp",
+        "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar"
+      }
+    ],
+    "cta": {
+      "text": "Conheça o funcionário digital da Techway",
+      "link": "/?origem=blog%2Fchatbot-ou-agente-de-ia-whatsapp#solucoes"
+    },
+    "tags": [
+      "Chatbot",
+      "Agentes de IA",
+      "WhatsApp"
+    ]
+  },
+  {
+    "author": "Equipe TECHWAY",
+    "date": "2026-11-25",
+    "layout": "editorial",
+    "slug": "agenda-para-salao-de-beleza",
+    "title": "Agenda para salão de beleza: como organizar horários e agendamentos pelo WhatsApp",
+    "subtitle": "Cadastre serviços, planeje a capacidade e evite conflitos na agenda do seu salão, estúdio ou espaço de beleza.",
+    "seoTitle": "Agenda para salão de beleza pelo WhatsApp | Techway",
+    "metaDescription": "Aprenda a organizar a agenda do salão, cadastrar serviços e durações, evitar conflitos de horários e automatizar reservas pelo WhatsApp.",
+    "featuredImage": "/atendimento-humano-techway.webp",
+    "featuredImageAlt": "Imagem ilustrativa de proprietária de pequeno negócio atendendo pessoalmente uma cliente.",
+    "featuredImageWidth": 1200,
+    "featuredImageHeight": 800,
+    "content": {
+      "introduction": "",
+      "introductionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Uma agenda para salão de beleza precisa considerar o tempo de cada serviço, a disponibilidade de cada profissional e as mudanças na rotina. Para automatizar o agendamento pelo WhatsApp, mantenha uma agenda atualizada e conecte o atendimento às regras que o salão realmente utiliza."
+        },
+        {
+          "type": "paragraph",
+          "text": "Este guia é para quem administra o salão, não para quem está procurando marcar um serviço. Ele ajuda a organizar a operação antes de escolher uma ferramenta, seja você uma profissional autônoma ou responsável por uma equipe."
+        }
+      ],
+      "sections": [
+        {
+          "title": "1. Transforme sua tabela de serviços em uma agenda utilizável",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Cadastre cada serviço com nome claro, duração prevista, preço ou regra de orçamento e profissional habilitado. Veja um exemplo fictício de cadastro; os tempos devem ser adaptados à sua operação."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Corte: 30 minutos.",
+                "Escova: 45 minutos.",
+                "Coloração: 120 minutos.",
+                "Corte + escova: 75 minutos, se essa duração corresponder ao fluxo real."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Se a duração depende do comprimento do cabelo ou de avaliação, defina como coletar a informação e quando encaminhar. Um combo promocional pode ser cadastrado como serviço próprio com duração e condições claras. Produtos de revenda não precisam ocupar horário: separe mercadorias dos serviços que utilizam tempo de atendimento."
+            }
+          ]
+        },
+        {
+          "title": "2. Calcule a capacidade da agenda, não apenas os horários",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Exemplo fictício: uma profissional trabalha das 9h às 18h e já tem duas reservas, das 10h às 11h30 e das 14h às 16h. Sem pausas adicionais, sobram três intervalos: 9h–10h, 11h30–14h e 16h–18h."
+            },
+            {
+              "type": "paragraph",
+              "text": "Um corte de 30 minutos cabe nos três intervalos. Uma coloração de 120 minutos cabe nos dois últimos, mas não no primeiro. São 540 minutos de expediente, 210 reservados e 330 livres. A capacidade total não equivale a uma vaga contínua: o serviço inteiro precisa caber no intervalo."
+            },
+            {
+              "type": "paragraph",
+              "text": "Com várias profissionais, faça a análise por pessoa e por recurso compartilhado, quando necessário. Se trabalha sozinha, não obrigue a cliente a escolher uma profissional que já está definida."
+            }
+          ]
+        },
+        {
+          "title": "3. Escolha como as clientes vão marcar",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "No atendimento manual, alguém precisa consultar e registrar cada reserva. Um link de reservas permite escolher horário em outra página. Um atendente conectado à agenda pode receber o pedido e concluir a reserva dentro da conversa, conforme a integração."
+            },
+            {
+              "type": "paragraph-link",
+              "before": "Entenda consulta, registro e confirmação no nosso guia de ",
+              "label": "agendamento automático pelo WhatsApp",
+              "href": "/blog/agendamento-automatico-whatsapp",
+              "after": "."
+            },
+            {
+              "type": "paragraph",
+              "text": "Independentemente do caminho, mantenha uma agenda central. Pedidos presenciais, por ligação e por WhatsApp precisam consultar a mesma disponibilidade ou ter um processo que a mantenha sincronizada."
+            }
+          ]
+        },
+        {
+          "title": "4. Organize encaixes, remarcações e mudanças",
+          "text": "",
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "Remarcação: identifique a reserva e confira a nova vaga antes de alterar.",
+                "Encaixe: verifique duração, recursos e compromissos já existentes.",
+                "Cancelamento: registre a mudança para liberar a disponibilidade conforme as regras do salão.",
+                "Bloqueios: atualize folgas, feriados e compromissos antes de oferecer horários.",
+                "Atrasos: defina quem decide ajustes excepcionais e como comunicar as clientes afetadas."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Lembretes automáticos são recursos separados. Confirme sua disponibilidade e as regras de uso antes de contratar."
+            }
+          ]
+        },
+        {
+          "title": "5. Crie uma rotina simples de acompanhamento",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Antes de abrir, confira serviços, duração e observações relevantes. Durante o expediente, registre alterações imediatamente. No fechamento, confira atendimentos realizados, pendências e horários que precisam ser reorganizados."
+            },
+            {
+              "type": "paragraph",
+              "text": "Com registros completos, a agenda pode mostrar quais horários ficam mais ocupados, quais serviços consomem mais tempo e quais pedidos não viram reserva. Essas informações ajudam a decidir sobre expediente e capacidade."
+            },
+            {
+              "type": "paragraph",
+              "text": "Agenda e controle financeiro não são a mesma coisa. Se precisar de pagamentos, comissões ou estoque, confirme se a solução oferece esses controles e como se integram."
+            }
+          ]
+        },
+        {
+          "title": "Checklist para escolher um sistema de agenda para salão",
+          "text": "",
+          "blocks": [
+            {
+              "type": "list",
+              "items": [
+                "Permite serviços com durações diferentes e combos próprios?",
+                "Considera profissionais, bloqueios e recursos compartilhados?",
+                "Altera ou cancela reservas sem duplicá-las?",
+                "Os pedidos pelo WhatsApp são registrados ou apenas encaminhados?",
+                "A equipe consegue corrigir informações e acompanhar alterações?",
+                "Custos, limites, acesso aos dados e suporte estão claros?"
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Faça um piloto com serviços representativos e situações fictícias. Confira os registros da agenda, não apenas as mensagens enviadas."
+            }
+          ]
+        },
+        {
+          "title": "Perguntas frequentes sobre agenda inteligente para salão",
+          "text": "",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "**Preciso de um sistema se trabalho sozinha?** Depende do volume e do tempo gasto com mensagens. Uma agenda simples pode bastar no início."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Como evitar duas reservas no mesmo horário?** Use disponibilidade atualizada e uma operação que verifique novamente a vaga ao registrar. Teste pedidos simultâneos."
+            },
+            {
+              "type": "paragraph",
+              "text": "**Posso cadastrar promoções?** Sim, quando o sistema permite serviços e condições próprios. Cadastre a duração total correta."
+            },
+            {
+              "type": "paragraph",
+              "text": "**A cliente precisa instalar outro aplicativo?** Não necessariamente. Uma solução conversacional pode funcionar no próprio WhatsApp; sistemas por link podem abrir outra página."
+            }
+          ]
+        }
+      ],
+      "conclusion": "",
+      "conclusionBlocks": [
+        {
+          "type": "paragraph",
+          "text": "Uma agenda confiável começa com regras que refletem a rotina do salão. Depois de organizar serviços, duração e disponibilidade, fica mais fácil delegar a parte repetitiva do agendamento."
+        },
+        {
+          "type": "paragraph-link",
+          "before": "A Techway oferece ",
+          "label": "atendimento com IA e agendamentos pelo WhatsApp",
+          "href": "/atendimento-agendamentos-whatsapp",
+          "after": " com configuração por empresa. Converse conosco para adaptar o fluxo aos serviços, horários e profissionais do seu salão."
+        }
+      ]
+    },
+    "related": [
+      {
+        "slug": "agendamento-automatico-whatsapp",
+        "title": "Agendamento automático pelo WhatsApp: como funciona e como implantar"
+      },
+      {
+        "slug": "como-automatizar-atendimento-whatsapp",
+        "title": "Como automatizar o atendimento pelo WhatsApp: guia para pequenos negócios"
+      }
+    ],
+    "cta": {
+      "text": "Conheça o agendamento pelo WhatsApp para seu salão",
+      "link": "/?origem=blog%2Fagenda-para-salao-de-beleza#solucoes"
+    },
+    "tags": [
+      "Salão de beleza",
+      "Agendamentos",
+      "WhatsApp"
     ]
   }
 ]
