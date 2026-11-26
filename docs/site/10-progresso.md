@@ -1,5 +1,7 @@
 # Progresso
 
+**Correção de homologação F/O/R/T:** CI #45742820576 identificou TS2339 no tipo do bloco editorial. Separados os discriminantes de comparação e calculadora, sem alteração do comportamento. Reexecutar todos os gates antes do merge.
+
 ## Aquisição orgânica e lote F/O/R/T — 25/11/2026 (BRT)
 
 **Produção D/V confirmada:** [PR #27](https://github.com/Techwayteam/techway-site/pull/27), squash 6fa07a67 e árvore Git igual à branch homologada; CI #45741088754 success. [Deploy #45741882005](https://github.com/Techwayteam/techway-site/actions/runs/45741882005): build, deploy e smoke success; oito artigos HTTP 200, canonical e BlogPosting, 12 URLs no sitemap. Capas existentes, capturas automatizadas; sem inspeção humana direta.
