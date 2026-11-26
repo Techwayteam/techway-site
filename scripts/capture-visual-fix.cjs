@@ -12,7 +12,7 @@ async function main(){
   for(const viewport of [{id:'desktop',width:1440,height:900},{id:'mobile',width:390,height:844}]){
    const page=await browser.newPage({viewport:{width:viewport.width,height:viewport.height},deviceScaleFactor:1});
    await page.emulateMedia({reducedMotion:'reduce'});
-   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}, ...posts.filter(p=>['como-automatizar-atendimento-whatsapp','agendamento-automatico-whatsapp'].includes(p.slug)).map(p=>({url:'/blog/'+p.slug,name:'artigo-'+p.slug}))]){
+   for(const item of [{url:'/',name:'home'}, {url:'/atendimento-agendamentos-whatsapp',name:'solucao'}, {url:'/blog',name:'blog'},{url:'/blog/'+posts[0].slug,name:'artigo'}, ...posts.filter(p=>['como-automatizar-atendimento-whatsapp','agendamento-automatico-whatsapp','chatbot-ou-agente-de-ia-whatsapp','agenda-para-salao-de-beleza'].includes(p.slug)).map(p=>({url:'/blog/'+p.slug,name:'artigo-'+p.slug}))]){
     await page.goto(base+item.url,{waitUntil:'domcontentloaded'});
     await page.evaluate(()=>document.fonts.ready);
     if(item.name==='home'){
